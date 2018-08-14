@@ -1,5 +1,16 @@
 # FEW-2.3-Advanced-CSS-and-Visual-Design
 
+---
+
+Prerequisites: FEW 1.1, FEW 1.2
+Projects: 
+
+This class is a deep exploration of CSS. Students take a close look at rendering web pages with CSS, using CSS for motion and interaction, optimizing CSS for use with CSS variables and working with modern CSS frameworks. 
+
+Tools: HTML, CSS, JavaScript
+
+---
+
 ## Course Description
 
 CSS is an amazing language that provides control over 
