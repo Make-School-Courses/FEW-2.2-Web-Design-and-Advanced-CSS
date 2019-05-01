@@ -1,114 +1,107 @@
-# FEW-2.3-Advanced-CSS-and-Visual-Design
-
----
-
-Prerequisites: FEW 1.1, FEW 1.2
-Projects: 
-
-This class is a deep exploration of CSS. Students take a close look at rendering web pages with CSS, using CSS for motion and interaction, optimizing CSS for use with CSS variables and working with modern CSS frameworks. 
-
-Tools: HTML, CSS, JavaScript
-
----
+# FEW-2.2: Advanced-CSS-and-Visual-Design
 
 ## Course Description
 
-CSS is an amazing language that provides control over 
-the visual appearance of everything you see in the 
-browser. You can harness this to create amazing visual 
-experiences and user experiences. 
+This class is a deep exploration of CSS. Students take a close look at rendering web pages with CSS, using CSS for motion and interaction, optimizing CSS for use with CSS variables and working with modern CSS frameworks. 
+
 
 ## Prerequisites
 
-A list of prerequisites students need to be successful 
-in this class. Include previous classes you expect 
-students should have taken, and knowledge and skills 
-that students should have coming into the class.
+- [FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations)
+- [FEW 1.2](https://github.com/Make-School-Courses/FEW-1.2-JavaScript-Foundations)
 
-1. Use an...
-1. ordered list. 
+## Learning Outcomes
 
-### Who should enroll (optional)
+Students by the end of the course will be able to ...
 
-A short description of who would benefit most from 
-taking this class. This is optional. Include this if you 
-feel your class would not benefit everyone.
+1. Use grid systems for layout
+1. Implement CSS variables to make more modular stylesheets
+1. Apply principles of typography and color theory
+1. Implement SEO concepts in Web design
+1. Use UI best practices 
+1. Conduct User Experience tests
 
-## Competencies & Objectives
+## Schedule
 
-A description of the skills a student aquire by taking 
-the class.
+**Course Dates:** Wednesday, May 29 – Wednesday, July 3, 2019 (6 weeks)
 
-Must be measurable! Make School does not have grades 
-but we do evaluate student progress. Usually this 
-will evaluate to something a student will be able to 
-do after taking the class.
+**Class Times:** Monday and Wednesday at 3:30–5:20pm (12 class sessions)
 
-Follow the guide here for writing competencies.
+| Class  |                 Topics                  |
+|:-----:|:---------------------------------------:|
+|  1 |                           [CSS Variables]() |
+|  2 |                        [Grid Systems]() |
+|  3 |                        [CSS Frameworks ]() |
+|  4 |                       [Web design: Color]() |
+|  5 |                       [Web design: Typography]() |
+|  6 |                       [Web Design: Designing on a grid]() |
+|  7 |                       [Web design: Headers, Footers, CTA]() |
+|  8 |                       [Web Design: Navigation]() |
+|  9 |                       [UX Testing / Speed Optimization]() |
+| 10 |                       [Presentation: Static Product Website]() |
+| 11 |                       [SEO]() |  
+| 12 |                       [Project Workshop]() |
+| 13 |                       Presentations: Redesign Existing Project |
+| 14 |                       Final Exam |
 
-https://sph.uth.edu/content/uploads/2012/01/Competencies-and-Learning-Objectives.pdf
+## Class Assignments
 
-1. List all of the course 
-1. Competencies here.
-1. Use an orderd list
+### Projects
 
-## Required Text and Materials (Optional)
+- Publish a CSS Library to GitHub
+- Design a static Product Website 
+- Redesign an Existing product or project
 
-- List required materials here
+**All projects will require a minimum of 10 commits, and must take place throughout the entirety of the course**
 
-### Evaluation
+- **Good Example:** 40+ commits throughout the length of the course, looking for a healthy spattering of commits each week (such as 3-5 per day).
+- **Bad Example:** 10 commits on one day during the course and no others. Students who do this will be at severe risk of not passing the class.
+- **Unacceptable Example:** 2 commits the day before a project is due. Students who do this should not expect to pass the class. 
 
-Define what students need to do to pass this class. 
-Be clear and accurate, avoid vague terms. 
+#### Why are we doing this?
 
-Make School does not provide grades but we do evaulate 
-student work. Determine what work assigned in class is 
-required to pass.
+We want to encourage best practices that you will see working as a professional software engineer. Breaking up a project by doing a large amount of commits helps engineers in the following ways:
 
-All work must Must have Pass Fail Criteria!
+- It's much easier to retrace your steps if you break your project/product/code up into smaller pieces
+- It helps with being able to comprehend the larger problem, and also will help with your debugging (i.e. finding exactly when you pushed that piece of broken code)
+- It allows for more streamlined, iterative communication in your team, as it's much easier to hand off a small change to someone (updating a function) than a huge one (changed the architecture of the project)
 
-As a general guide list the number of projects and 
-baseline challenges that must be completed to pass the 
-class.
+Through this requirement, we hope to encourage you to think about projects with an iterative, modular mindset. Doing so will allow you to break projects down into smaller milestones that come together to make your fully-realized solution.
 
-Here is some more information on learning assessment.
+### Final Exam
 
-https://www.cte.cornell.edu/teaching-ideas/assessing-student-learning/measuring-student-learning.html
+-  **Passing the exam is a requirement for passing the class.**
+- You will have 2 hours to complete this exam - it will be in class using paper and pencil, or a format of the instructor's choosing
+- There are no retakes of the exam.
+- If you have a disability that needs an accommodation such as extended time or a different format, please take advantage of our [accommodations program](make.sc/disability-policy).
 
-- Use a list 
+## Evaluation
 
-## Lessons
+To pass this course you must meet the following requirements:
 
-- List your lessons here
-- Provide a link to each lesson
-- Use a list
+- Complete all required assignments 
+- Pass all projects according to the associated project rubric
+- Pass the final summative assessment >=75%
+- Actively participate in class and abide by the attendance policy
+- Make up all classwork from all absences
 
-### Projects 
+## Attendance
+Just like any job, attendance at Make School is required and a key component of your success. Attendance is being onsite from 9:30 to 5:30 each day, attending all scheduled sessions including classes, huddles, coaching and school meetings, and working in the study labs when not in a scheduled session. Working onsite allows you to learn with your peers, have access to support from TAs, instructors and others, and is vital to your learning.
 
-- List all of the projects 
-- Use a list
+Attendance requirements for scheduled sessions are:
+- No more than two no call no shows per term in any scheduled session.
+- No more than four excused absences per term in any scheduled session.
 
-### Vocabulary & Conventions
+Failure to meet these requirements will result in a PIP (Participation Improvement Plan).  Failure to improve after the PIP is cause for not being allowed to continue at Make School. 
 
-- List vocabulary
-- and definitions 
-- for terms students 
-- need to understand
-- This is optional 
 
-### Best Practices
+## Make School Course Policies
 
-- List best practices 
-- This is optional 
-
-### Resources
-
-Any resources to be used by students in class. Include:
-
-- books
-- videos
-- blog posts
-- online articles
-- links to tutorials
-- other media
-
+[Academic Honesty](https://make.sc/academic-honesty)<br>
+[Accommodations for Students](https://make.sc/accommodations-for-students)<br>
+[Attendance Policy](https://make.sc/attendance-policy)  
+[Diversity and Inclusion Policy](https://make.sc/diversity-and-inclusion-policy)<br>
+[Grading System](https://make.sc/grading-system)
+<br>
+[Title IX Policy](https://make.sc/title-ix-policy)<br>
+[Program Learning Outcomes](https://make.sc/program-learning-outcomes)
