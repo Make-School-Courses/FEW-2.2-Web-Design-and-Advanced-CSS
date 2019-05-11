@@ -3,6 +3,7 @@
 /* Reset */
 
 /* Fonts */
+
 /* Native font stack: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/*/
 * {
 	font-family: -apple-system, BlinkMacSystemFont,
@@ -11,30 +12,57 @@
     "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
+/* Text Element Styles */
+
+p {}
+strong {}
+em {}
+i {}
+b {}
+q {}
+
+blockquote {}
+
+
 
 /* Colors */
+/* Color Scheme Variables */
+
 /* Color Schemes */
+
 /* scheme-light */
+
 /* scheme-dark */
+
 
 /* Headings */
 
+
 /* Buttons */
+button {
+
+}
 
 /* Layout */
+
 /* center in row */
+
 /* center in col */
+
 /* left in row */
+
 /* right in row */
 
-/* CTA */
 
 /* Cards */
 
+/* CTA */
 
 /* Headers */
 
 /* Footers */
+
+/* Drop Down Menu */
 
 
 
