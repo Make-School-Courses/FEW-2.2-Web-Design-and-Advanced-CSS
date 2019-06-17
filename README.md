@@ -21,26 +21,24 @@ Students by the end of the course will be able to ...
 
 ## Schedule
 
-**Course Dates:** Wednesday, May 29 – Wednesday, July 3, 2019 (6 weeks)
+**Course Dates:** Monday, July 8 – Wednesday, August 14, 2019 (6 weeks)
 
 **Class Times:** Monday and Wednesday at 3:30–5:20pm (12 class sessions)
 
-| Class  |                 Topics                  |
-|:-----:|:---------------------------------------:|
-|  1 |                           [CSS Variables]() |
-|  2 |                        [Grid Systems]() |
-|  3 |                        [CSS Frameworks ]() |
-|  4 |                       [Web design: Color]() |
-|  5 |                       [Web design: Typography]() |
-|  6 |                       [Web Design: Designing on a grid]() |
-|  7 |                       [Web design: Headers, Footers, CTA]() |
-|  8 |                       [Web Design: Navigation]() |
-|  9 |                       [UX Testing / Speed Optimization]() |
-| 10 |                       [Presentation: Static Product Website]() |
-| 11 |                       [SEO]() |  
-| 12 |                       [Project Workshop]() |
-| 13 |                       Presentations: Redesign Existing Project |
-| 14 |                       Final Exam |
+| Class  |          Date          |                  Topics                  |
+|:-----:|:----------------------:|:---------------------------------------:|
+|  1 |  Mon, July 8 |    [CSS Variables](https://docs.google.com/presentation/d/1cvs0ZoXmHYjDKEu_0f081YkGMH7KZnro2dWRE9WCnW0/edit?usp=sharing) |
+|  2 |  Wed, July 10 |   [CSS Variables - Scope](https://docs.google.com/presentation/d/1GhwHeprm8qxffXlrlDEL-LvG1EEoq6lvARXn7yVjuzQ/edit?usp=sharing) |
+|  3 |  Mon, July 15 |    [Typography](https://docs.google.com/presentation/d/1nP2sBxh_AUXRGsrXdRtXE70nGoFMT_CU59S0bcHtY5Q/edit?usp=sharing) |
+|  4 |  Wed, July 17 |    [Applying Color + CSS Drawing Pt. 1](https://docs.google.com/presentation/d/1MnnZZu_RX528c9Kqz5VU-QyQsUBSyAkegwGmDlhicAQ/edit?usp=sharing) |
+|  5 |  Mon, July 22 |    [Drawing with CSS Pt. 2](https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7FZI/edit?usp=sharing) |
+|  6 |  Wed, July 24 |    [Headers, Footers, CTAs](https://docs.google.com/presentation/d/1rJcp_j90I4v8zP_xTMlOpb-MEAsnEF4Gb7YrpsFH3u4/edit?usp=sharing) |
+|  7 |  Mon, July 29 |    [Midterm Presentations](https://docs.google.com/presentation/d/1852OD-ONOZ0R0h1Q-_V_Ir9ABhAVvLpQpFl7_Ul2Ebg/edit?usp=sharing) |
+|  8 |  Wed, July 31 |    [Reviewe of CSS Grid](https://docs.google.com/presentation/d/1Zbu-lIHHv-rtxcxivqkZwM3xGTYT2QdMInYML89kOfw/edit?usp=sharing) |
+|  9 |  Mon, Aug 5 |    [UX Testing](https://docs.google.com/presentation/d/18i8y6N-WLHWReWmzZFfz6Zr6SJsTVyJPd1jhYFKlHQo/edit?usp=sharing) |
+| 10 |  Wed, Aug 7 |    [SEO + Prep for Final](https://docs.google.com/presentation/d/1fPouoUdwTOxx3bNJPvRFrD3zMNlD1IX64GnByT1Cmn8/edit?usp=sharing) |  
+| 11 |  Mon, Aug 12 |    Final Exam |
+| 12 |  Wed, Aug 14 |    Final Presentations |
 
 ## Class Assignments
 
