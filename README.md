@@ -34,7 +34,7 @@ Students by the end of the course will be able to ...
 |  5 |  Mon, July 22 |    [Drawing with CSS Pt. 2](https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7FZI/edit?usp=sharing) |
 |  6 |  Wed, July 24 |    [Headers, Footers, CTAs](https://docs.google.com/presentation/d/1rJcp_j90I4v8zP_xTMlOpb-MEAsnEF4Gb7YrpsFH3u4/edit?usp=sharing) |
 |  7 |  Mon, July 29 |    [Midterm Presentations](https://docs.google.com/presentation/d/1852OD-ONOZ0R0h1Q-_V_Ir9ABhAVvLpQpFl7_Ul2Ebg/edit?usp=sharing) |
-|  8 |  Wed, July 31 |    [Reviewe of CSS Grid](https://docs.google.com/presentation/d/1Zbu-lIHHv-rtxcxivqkZwM3xGTYT2QdMInYML89kOfw/edit?usp=sharing) |
+|  8 |  Wed, July 31 |    [Review of CSS Grid](https://docs.google.com/presentation/d/1Zbu-lIHHv-rtxcxivqkZwM3xGTYT2QdMInYML89kOfw/edit?usp=sharing) |
 |  9 |  Mon, Aug 5 |    [UX Testing](https://docs.google.com/presentation/d/18i8y6N-WLHWReWmzZFfz6Zr6SJsTVyJPd1jhYFKlHQo/edit?usp=sharing) |
 | 10 |  Wed, Aug 7 |    [SEO + Prep for Final](https://docs.google.com/presentation/d/1fPouoUdwTOxx3bNJPvRFrD3zMNlD1IX64GnByT1Cmn8/edit?usp=sharing) |  
 | 11 |  Mon, Aug 12 |    Final Exam |
@@ -42,11 +42,31 @@ Students by the end of the course will be able to ...
 
 ## Class Assignments
 
-### Projects
+### Custom CSS Framework
 
-- Publish a CSS Library to GitHub
-- Design a static Product Website 
-- Redesign an Existing product or project
+- **Midterm Presentation Due Date: Beginning of Class 7**
+- **Final Presentation Due Date: Beginning of Class 12**
+
+You will be building a CSS framework to use for the frontend of any web project. It's like making your own [Bootstrap!](https://getbootstrap.com/)
+
+You'll build this framework throughout the course, with a midterm checkin to show progress and get feedback, as well as a final presentation in front of the class, where you show an example of your framework in use on a web app (previous project, sample static page used for the demo, etc.)
+
+**Full spec for this project coming soon!**
+
+### Product Design
+
+- **Wireframes + 1st draft of homepage due: Beginning of Class 9**
+- **Final wireframes + final draft of homepage due: Beginning of Class 12**
+
+What's a produt you wish existed? Or what's an improvement to an existing product you wish you had? This assignment will allow you to realize this by creating the design for this product!
+
+**Requirements**
+
+- It can be an imaginary product, an improvement on an existing product, or a real product that doesn't exist yet
+- You need to make wireframes for the product that show how the user will interact with the product
+- You need to create a static home page of the product. Should only use CSS and HTML (no backend)
+
+**Full spec for this project coming soon!**
 
 ## Evaluation
 
