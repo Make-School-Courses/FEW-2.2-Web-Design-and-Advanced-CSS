@@ -4,7 +4,6 @@
 
 This class is a deep exploration of CSS. Students take a close look at rendering web pages with CSS, using CSS for motion and interaction, optimizing CSS for use with CSS variables and working with modern CSS frameworks. 
 
-
 ## Prerequisites
 
 - [FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations)
@@ -27,22 +26,22 @@ Students by the end of the course will be able to ...
 
 **Class Times:** Monday and Wednesday at 3:30–5:20pm (12 class sessions)
 
-| Class  |                 Topics                  |
-|:-----:|:---------------------------------------:|
-|  1 |                           [CSS Variables]() |
-|  2 |                        [Grid Systems]() |
-|  3 |                        [CSS Frameworks ]() |
-|  4 |                       [Web design: Color]() |
-|  5 |                       [Web design: Typography]() |
-|  6 |                       [Web Design: Designing on a grid]() |
-|  7 |                       [Web design: Headers, Footers, CTA]() |
-|  8 |                       [Web Design: Navigation]() |
-|  9 |                       [UX Testing / Speed Optimization]() |
-| 10 |                       [Presentation: Static Product Website]() |
-| 11 |                       [SEO]() |  
-| 12 |                       [Project Workshop]() |
-| 13 |                       Presentations: Redesign Existing Project |
-| 14 |                       Final Exam |
+| Class  |                  Topics                  |
+|-------:|:-----------------------------------------|
+|      1 | [CSS Variables]()                        |
+|      2 | [Grid Systems]()                         |
+|      3 | [CSS Frameworks ]()                      |
+|      4 | [Web design: Color]()                    |
+|      5 | [Web design: Typography]()               |
+|      6 | [Web Design: Designing on a grid]()      |
+|      7 | [Web design: Headers, Footers, CTA]()    |
+|      8 | [Web Design: Navigation]()               |
+|      9 | [UX Testing / Speed Optimization]()      |
+|     10 | [Presentation: Static Product Website]() |
+|     11 | [SEO]()                                  |  
+|     12 | [Project Workshop]()                     |
+|     13 | Presentations: Redesign Existing Project |
+|     14 | Final Exam                               |
 
 ## Class Assignments
 

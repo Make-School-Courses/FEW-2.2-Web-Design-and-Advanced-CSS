@@ -1,4 +1,4 @@
-# Title
+# FEW-2.2: Advanced-CSS-and-Visual-Design
 
 ## Course Description
 
@@ -12,15 +12,16 @@ Explain why students should care to learn the material presented in this class.
 
 ## Learning Outcomes
 
-**[INSTRUCTOR NOTE: PLEASE LIST (5-8) LEARNING OUTCOMES]**
-
 Students by the end of the course will be able to ...
 
-1. Identify & Describe
-1. Explain
-1. Compare & Contrast
-1. Design & Implement
-1. Practice
+1. Use grid systems for layout
+1. Implement CSS variables to make more modular stylesheets
+1. Apply principles of typography and color theory
+1. Implement SEO concepts in Web design
+1. Use UI best practices 
+1. Conduct User Experience tests
+
+Beyond these you students should be able apply CSS like a boss and bring their wildest imaginings to the large and small screen! 
 
 ## Schedule
 
