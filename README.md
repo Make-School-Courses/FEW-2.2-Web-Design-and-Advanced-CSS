@@ -2,16 +2,13 @@
 
 ## Course Description
 
-Describe your course here. A short elevator pitch for the course. This will be listed as the course description in the course catalog.
-
-### Why you should know this (optional)
+This course is a deep exploration of CSS. Students take a close look at rendering web pages with CSS, using CSS for motion and interaction, optimizing CSS for use with CSS variables and working with modern CSS frameworks.
 
 Explain why students should care to learn the material presented in this class.
 
 ## Prerequisites:  
 
-- [Prerequisite 1]()
-- [Prerequisite 2]()
+- [FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations)
 
 ## Learning Outcomes
 
@@ -27,77 +24,51 @@ Students by the end of the course will be able to ...
 
 ## Schedule
 
-**NOTE:** Due to the shorter summer sessions, for some class sessions you will see multiple topics covered. This is to ensure that we cover the same material that we normally would in non-summer terms.
+**Class Times:** Monday and Wednesday at 3:30–5:20pm (12 class sessions)
 
----
-### **[INSTRUCTOR NOTE: PLEASE REMOVE THIS BEFORE MAY 27]**
-If you teach **M/W** or **Tu/Th**, please pick from a template below and delete the other one
-
----
-### M/W Template **[PLEASE REMOVE THIS HEADER BEFORE MAY 27]**
-**Course Dates:** Wednesday, May 29 – Wednesday, July 3, 2019 (6 weeks)
-
-**Class Times:** Monday and Wednesday at 3:30–5:20pm (11 class sessions)
-
-| Class |          Date          |                 Topics                  |
+| Class  |          Date          |                  Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  - |  Mon, May 27                         | **Memorial Day** |
-|  1 |  Wed, May 29                      | [Lesson 1] |
-|  2 |  Mon, June 3                         | [Lesson 2] |
-|  3 |  Wed, June 5                     | [Lesson 3] <br/> **/** <br/> [Lesson 4] |
-|  4 |  Mon, June 10                        | [Lesson 5] |
-|  5 |  Wed, June 12                     | [Lesson 6] |
-|  6 |  Mon, June 17                        | [Lesson 7] <br/> **/** <br/> [Lesson 8] |
-|  7 |  Wed, June 19                     | [Lesson 9] |
-|  8 |  Mon, June 24                        | [Lesson 10] <br/> **/** <br/> [Lesson 11] |
-| 9 |  Wed, June 26                        | [Lesson 12] |
-| 10 |  Mon, July 1                           | [Lesson 13] |  
-| 11 |  Wed, July 3                        | Final Exams/Presentations |
-
-
-### Tu/Th Template **[PLEASE REMOVE THIS HEADER BEFORE MAY 27]**
-**Course Dates:** Tuesday, May 28 – Tuesday, July 2, 2019 (6 weeks)
-
-**Class Times:** Tuesday and Thursday at 3:30–5:20pm (11 class sessions)
-
-| Class |          Date          |                 Topics                  |
-|:-----:|:----------------------:|:---------------------------------------:|
-|  1 |  Tu, May 28                        | [Lesson 1] |
-|  2 |  Th, May 30                       | [Lesson 2] |
-|  3 |  Tu, June 4                        | [Lesson 3] <br/> **/** <br/> [Lesson 4] |
-|  4 |  Th, June 6                      | [Lesson 5] |
-|  5 |  Tu, June 11                       | [Lesson 6] |
-|  6 |  Th, June 13                      | [Lesson 7] <br/> **/** <br/> [Lesson 8] |
-|  7 |  Tu, June 18                       | [Lesson 9] |
-|  8 |  Th, June 20                      | [Lesson 10] <br/> **/** <br/> [Lesson 11] |
-|  9 |  Tu, June 25                       | [Lesson 12] |
-| 10 |  Th, June 27                        | [Lesson 13] |
-| 11 |  Tu, July 2                       | Final Exams/Presentations |  
-
-[Lesson 1]: Lessons/Lesson1.md
-[Lesson 2]: Lessons/Lesson2.md
-[Lesson 3]: Lessons/Lesson3.md
-[Lesson 4]: Lessons/Lesson4.md
-[Lesson 5]: Lessons/Lesson5.md
-[Lesson 6]: Lessons/Lesson6.md
-[Lesson 7]: Lessons/Lesson7.md
-[Lesson 8]: Lessons/Lesson8.md
-[Lesson 9]: Lessons/Lesson9.md
-[Lesson 10]: Lessons/Lesson10.md
-[Lesson 11]: Lessons/Lesson11.md
-[Lesson 12]: Lessons/Lesson12.md
-[Lesson 13]: Lessons/Lesson13.md
+|  1 |  Mon, July 8 |    [CSS Variables](https://docs.google.com/presentation/d/1cvs0ZoXmHYjDKEu_0f081YkGMH7KZnro2dWRE9WCnW0/edit?usp=sharing) |
+|  2 |  Wed, July 10 |   [CSS Variables - Scope](https://docs.google.com/presentation/d/1GhwHeprm8qxffXlrlDEL-LvG1EEoq6lvARXn7yVjuzQ/edit?usp=sharing) |
+|  3 |  Mon, July 15 |    [Typography](https://docs.google.com/presentation/d/1nP2sBxh_AUXRGsrXdRtXE70nGoFMT_CU59S0bcHtY5Q/edit?usp=sharing) |
+|  4 |  Wed, July 17 |    [Applying Color + CSS Drawing Pt. 1](https://docs.google.com/presentation/d/1MnnZZu_RX528c9Kqz5VU-QyQsUBSyAkegwGmDlhicAQ/edit?usp=sharing) |
+|  5 |  Mon, July 22 |    [Drawing with CSS Pt. 2](https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7FZI/edit?usp=sharing) |
+|  6 |  Wed, July 24 |    [Headers, Footers, CTAs](https://docs.google.com/presentation/d/1rJcp_j90I4v8zP_xTMlOpb-MEAsnEF4Gb7YrpsFH3u4/edit?usp=sharing) |
+|  7 |  Mon, July 29 |    [Midterm Presentations](https://docs.google.com/presentation/d/1852OD-ONOZ0R0h1Q-_V_Ir9ABhAVvLpQpFl7_Ul2Ebg/edit?usp=sharing) |
+|  8 |  Wed, July 31 |    [Review of CSS Grid](https://docs.google.com/presentation/d/1Zbu-lIHHv-rtxcxivqkZwM3xGTYT2QdMInYML89kOfw/edit?usp=sharing) |
+|  9 |  Mon, Aug 5 |    [UX Testing](https://docs.google.com/presentation/d/18i8y6N-WLHWReWmzZFfz6Zr6SJsTVyJPd1jhYFKlHQo/edit?usp=sharing) |
+| 10 |  Wed, Aug 7 |    [SEO + Prep for Final](https://docs.google.com/presentation/d/1fPouoUdwTOxx3bNJPvRFrD3zMNlD1IX64GnByT1Cmn8/edit?usp=sharing) |  
+| 11 |  Mon, Aug 12 |    Final Exam |
+| 12 |  Wed, Aug 14 |    Final Presentations |
 
 ## Class Assignments
 
-### Tutorials
+### Custom CSS Framework
 
-- [Do Cool Stuff Tutorial]()
+- **Midterm Presentation Due Date: Beginning of Class 7**
+- **Final Presentation Due Date: Beginning of Class 12**
 
-### Projects
+You will be building a CSS framework to use for the frontend of any web project. It's like making your own [Bootstrap!](https://getbootstrap.com/)
 
-- [Project Template - Use to build your own project spec](https://docs.google.com/document/d/1j4ualsYjrd-7ePdyP3KU03xrpg41k1AoSU0YKkx9_I8/edit?usp=sharing)
-    -   [Sample Project Rubric](Sample_Rubric.md)
+You'll build this framework throughout the course, with a midterm checkin to show progress and get feedback, as well as a final presentation in front of the class, where you show an example of your framework in use on a web app (previous project, sample static page used for the demo, etc.)
+
+**Full spec for this project coming soon!**
+
+### Product Design
+
+- **Wireframes + 1st draft of homepage due: Beginning of Class 9**
+- **Final wireframes + final draft of homepage due: Beginning of Class 12**
+
+What's a produt you wish existed? Or what's an improvement to an existing product you wish you had? This assignment will allow you to realize this by creating the design for this product!
+
+**Requirements**
+
+- It can be an imaginary product, an improvement on an existing product, or a real product that doesn't exist yet
+- You need to make wireframes for the product that show how the user will interact with the product
+- You need to create a static home page of the product. Should only use CSS and HTML (no backend)
+
+**Full spec for this project coming soon!**
+>>>>>>> 6c7e9718d60729a81822fc854585854ae91b61a9
 
 ## Evaluation
 **[MAKE SPECIFIC TO YOUR COURSE SO IT IS SUPER CLEAR]**
