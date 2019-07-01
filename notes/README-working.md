@@ -45,6 +45,8 @@ Students by the end of the course will be able to ...
 
 ## Class Assignments
 
+
+
 ### Projects
 
 - Publish a CSS Library to GitHub
