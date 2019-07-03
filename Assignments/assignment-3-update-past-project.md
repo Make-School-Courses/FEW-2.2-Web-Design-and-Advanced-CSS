@@ -26,11 +26,17 @@ Apply CSS Custom Properties in the following ways:
 
 ### Deliverable
 
-A link to your project on Gihub. 
+Your goal is to improve the CSS used in a previous project. You'll do this by making a new branch and working with that branch implement the changes. 
+
+Start by choosing a project that you will improve. This can be any past web project using CSS. If your previous project used Bootstrap you'll need to remove boot strap which will mena you'll need to work with the layout. We will be working with CSS grid in the future so you can leave changes to the layout till then. 
+
+The goal of this assignment is improve the typography. That's all you need to focus on for now. 
+
+- A link to your project on Gihub
 
 ### Due date
 
-Class 3 
+Class 4
 
 ## Assessing the assignment
 

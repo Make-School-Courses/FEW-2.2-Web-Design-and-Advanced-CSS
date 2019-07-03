@@ -15,7 +15,10 @@ While you might not be concerned with drawing and making pictures, it's quite po
   - Translate
   - Skew
   - Scale
-1. Using CSS to 
+1. Using CSS to draw basic shapes 
+  - Rectangles 
+  - Circles 
+  - Triangles
 
 ## Initial Exercise
 

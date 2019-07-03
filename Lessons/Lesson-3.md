@@ -153,11 +153,13 @@ Discussion:
 
 Q: What happened here? 
 Q: Was it useful? 
-Q: Does this make better CSS code? 
+Q: Does this make better CSS code?
 
 ## Homework 
 
+The goal of the homework assignment is to update a past project with CSS Custom properties. 
 
+[Assignment 3](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-And-Advanced-CSS/blob/master/Assignments/assignment-2-update-past-project.md) 
 
 ## Additional Resources
 
