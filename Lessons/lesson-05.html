@@ -1,0 +1,108 @@
+<style>
+  button {
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  :root { 
+    --color: #333333;
+    --body-color: #eee;
+    --primary-color: #47b6e9;
+    --light-color: #fff;
+    --font-family: Helvetica;
+    --font-size: 16px;
+  }
+
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--body-color);
+  }
+
+  button {
+    --weight: normal;
+
+    font-weight: var(--weight);
+    background-color: var(--background-color, var(--primary-color));
+    /* background-color: var(--background-color); */
+    color: var(--light-color);
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0.5em;
+    padding: 0.7em 1em;
+    font-size: 1em;
+    box-shadow: none;
+  }
+
+  button:hover {
+    background-color: var(--body-color);
+    border-color: var(--background-color, var(--primary-color));
+    color: var(--background-color, var(--primary-color));
+  }
+
+  button:active {
+    background-color:var(--background-color, var(--primary-color));
+    color: var(--light-color);
+  }
+
+  input[type=text] {
+    padding: 0.7em 1em;
+    border: 1px solid var(--color);
+    border-radius: 0.5em;
+    font-size: 1em;
+  }
+
+  label {
+    display: block;
+  }
+
+  label > span {
+    display: block;
+    margin: 0 1em;
+    position: relative;
+    top: 2em;
+    transition: 200ms
+  }
+
+  label:focus-within > span {
+    top: 0;
+  }
+
+  label:placeholder-shown > span {
+    color: red;
+  }
+</style>
+
+<body>
+
+  <div>
+      <p>This is your average button. You might want to click it.</p>
+      <button>Submit</button>
+    
+      <p>This button has consequences. You might want to think twice before clicking.</p>
+      <button 
+        style="--weight: bold; --background-color: #f85353;"
+      >Delete</button>
+
+      <button 
+        style="--background-color: #6bc253;"
+      >Go!</button>
+
+      <form>
+
+        <label>
+          <span>Name:</span>
+          <input type="text" placeholder="What is your name?">
+        </label>
+        
+      </form>
+
+  </div>
+
+  
+</body>

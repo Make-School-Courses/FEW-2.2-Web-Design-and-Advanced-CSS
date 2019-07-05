@@ -2,6 +2,8 @@
 
 This class will look at some CSS tools that let you transform elements. 
 
+We will also use this class to review the basic concepts of CSS. 
+
 ## Why you should know this?
 
 Great question! Having the ability to place an element anywhere on the screen is useful, has many applications, and opens up the range of the things you can make. When these ideas are applied to animations it opens even more options. 
@@ -19,8 +21,62 @@ While you might not be concerned with drawing and making pictures, it's quite po
   - Rectangles 
   - Circles 
   - Triangles
+1. Use and define CSS selectors. Apply styles to elements with selectors 
 
-## Initial Exercise
+## Quick review your knowledge of CSS
+
+CSS is the presentation layer. It defines the appearance of the structure layer (HTML).
+
+You'll use selectors to target elements. 
+
+Quick review your selectors! Pair up, using a single computer work through as many of the problems here as you can in 10mins.  https://flukeout.github.io
+
+Q: How far did you get? 
+Q: What did you learn? 
+
+## Can you draw with CSS? 
+
+Sure you can! But it's not easy. Of course limitation opens creativity!
+
+<blockquote>
+  <p><q>Limitations breed creativity.<br>
+  Limitations breed freedom.<q></p>
+  <cite>- Taylor Gahm</cite>
+</blockquote>
+
+<blockquote>
+  <p><q>The enemy of art is the absence of limitations.<q></p>
+  <cite>- Orson Welles</cite>
+</blockquote>
+
+<blockquote>
+  <p><q>Creativity is intelligence having fun.<q></p>
+  <cite>- ?</cite>
+</blockquote>
+
+With CSS you can draw a few shapes using: 
+
+- width
+- height
+- border
+- background-color
+- border-radius
+
+Position elements using: 
+
+- position: absolute and relative
+- transform: translate, rotate, scale, skew 
+
+## Drawing Shapes
+
+What can you draw?
+
+Pair up with someone you haven't paired with before. Look at the examples below and identify the shapes used to make the drawing. Discuss a strategy to create that shape. 
+
+- https://css-tricks.com/the-shapes-of-css/
+- https://blog.prototypr.io/how-i-started-drawing-css-images-3fd878675c89
+
+## CSS Transform
 
 People make the the most amazing drawings with only CSS. The goal is to get back into CSS and learn a few new features. 
 
@@ -30,14 +86,24 @@ People make the the most amazing drawings with only CSS. The goal is to get back
   - skew()
   - translate()
 
-What can you draw?
+## Quick draw a logo for your new product! 
 
-Pair up with someone you haven't paired with before. Look at the examples below and identify the shapes used to make the drawing. Discuss a strategy to create that shape. 
+Use a whiteboard and draw a logo. **Keep it simple with basic shapes**. 
 
-- https://blog.prototypr.io/how-i-started-drawing-css-images-3fd878675c89
-- https://css-tricks.com/the-shapes-of-css/
+- Circles 
+- Squares 
+- Triangles
 
-Draw a logo using simple shapes on a whiteboard. Discuss how these shapes would be created using CSS. 
+If you're not sure what to draw try one of these: 
+
+- tree
+- face
+- home 
+- bee 
+- leaf 
+- candle 
+
+Simplify your logo as much as possible. Erase it and draw it again.
 
 Draw your logo with Codepen. Vote on best pen. Use these properties: 
 
@@ -54,15 +120,11 @@ Draw your logo with Codepen. Vote on best pen. Use these properties:
 
 Post your pen to Class Slack. Rate the logos with emojis. The winning logo receives a prize. 
 
-CSS Clipping path
+## Advanced
+
+If all of that was too easy try using CSS Clipping path.
 
 https://bennettfeely.com/clippy/
-
-Resources 
-
-- https://medium.com/coding-artist/a-beginners-guide-to-pure-css-images-ef9a5d069dd2
-- https://a.singlediv.com
-- https://medium.com/coding-artist/how-pure-css-images-helped-me-understand-react-components-3ad7b05051b0
 
 ## Homework 
 
@@ -78,7 +140,10 @@ Improve your logo or draw another. Make it iconic. It should all be created with
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+
+- https://medium.com/coding-artist/a-beginners-guide-to-pure-css-images-ef9a5d069dd2
+- https://a.singlediv.com
+- https://medium.com/coding-artist/how-pure-css-images-helped-me-understand-react-components-3ad7b05051b0
 
 ## Minute-by-Minute [OPTIONAL]
 
