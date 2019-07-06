@@ -140,7 +140,6 @@ Improve your logo or draw another. Make it iconic. It should all be created with
 
 ## Additional Resources
 
-
 - https://medium.com/coding-artist/a-beginners-guide-to-pure-css-images-ef9a5d069dd2
 - https://a.singlediv.com
 - https://medium.com/coding-artist/how-pure-css-images-helped-me-understand-react-components-3ad7b05051b0

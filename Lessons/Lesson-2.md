@@ -10,6 +10,7 @@ Engagment is important. Things that move are much more interesting. Adding motio
 
 1. Describe easing
 1. Use CSS transition and keyframes to make things move
+1. Control and define the time and easing for elements that move
 
 ## Initial Exercise
 
@@ -33,60 +34,106 @@ Explore some CSS animations
 14. https://codepen.io/oliviale/full/jxPgKv
 15. https://codepen.io/antho-fsy/pen/wJqWKj
 
-What is happening in these animations?
+What is happening in these animations? Don't worry about the technical details just _identify what is moving_ and _how is it moving_.
 
-## Making things move with CSS
+## Making things move
 
-CSS provides 
+There are a couple ways to make things move with CSS. 
 
-Quick read the first section. What are the three advantages to use CSS animations? 
+- `transition`
+- `@keyframe`
 
-### Transition Animtion
+In a nutshell `transition` causes chnages to CSS properties to chnage over time rather than instantly, `@keyframe` defines changes that are mapped out over time. 
 
-CSS Transition provides a quick and easy way to animate elements. 
+### Transition
 
-Transition sets the length of time a change will take. 
+```CSS
+.a {
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+  /* Sets the time to apply changes to this element */
+  transition: 400ms;
+  /* s = secs ms = milliseconds  */
+}
+
+.a:hover {
+  /* These changes occur over the transition time */
+  transform: scale(1.25) rotate(12deg);
+}
+```
+
+The base rule declares a transition of 400 milliseconds. The hover rule changes the scale and rotation. Rather than happening immediately the change takes 400 milliseconds.
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
 
-### Keyframe Animation
+### Keyframes
 
-Keyframe animations provide more conrol over motion. 
+To create keyframe animations define some keyframes. A key frame describes the values for CSS properties at a point in time. 
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+Give animation a name, `scaleAndRotate` in the example below. 
+
+Define the value for properties along the length of the animation. Here `transform: scale(0.5) rotate(0)` happens at the beginning `0%`, `background-color: blue` happens at the half way point `50%`, and `transform: scale(1.0) rotate(23deg)` happens at the end of the animation `100%`.
+```CSS
+@keyframes scaleAndRotate {
+  0% {transform: scale(0.5) rotate(0);}
+  50% {background-color: blue}
+  100% {transform: scale(1.0) rotate(23deg)}
+}
+```
+
+The code above defines the animation. Below the animation is applied to an element. 
+
+The `animation` property applies an animation to an element. The line: `animation: scaleAndRotate 5s infinite` sets the animation to `scaleAndRotate` (matches the name above), sets the length of the animation 5 secs (`5s`), and repeat infinitely (`infinite`).
+
+```CSS
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position :relative;
+  animation: scaleAndRotate 5s infinite;
+}
+```
+
+The animation property is the shorthand property for: 
+
+- animation-delay
+- animation-duration
+- animation-fill-mode
+- animation-iteration-count
+- animation-name
+- animation-play-state
+- animation-timing-function
+
+The code above could be broken into three lines: 
+
+```CSS
+animation-name: scaleAndRotate;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+```
+
+## Easing 
+
+Easing describes the change in rate of motion. When things speed up, think a car starting from a stop sign, we say they are easing in. When things slow down, think a car slowing as it reaches a stop sign, we say they are easing out. 
+
+Everythin in the real world eases in or eases out. You should always apply easing. This will give your motion character and make it more realistic and interesting to watch. 
+
+Play around with: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function
+
+## Making things move with CSS
+
+Pair up with someone you haven't paired with in class before and take a look at these tutorials. The idea is to find some things you can incorporate into your logo/icon. 
+
+- https://css-tricks.com/almanac/properties/a/animation/
+- https://thoughtbot.com/blog/css-animation-for-beginners
 
 ## Animate your CSS Logo
 
+Add some motion to your logo/icon from class 1. Keep the motion simple. 
 
-
-
-
-
-
-
-## Overview/TT I (20 min)
-
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
-
-## In Class Activity I (30 min)
-
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
-
-## Overview/TT II (optional) (20 min)
-
-## In Class Activity II (optional) (30 min)
+It's easiest to use `transition` for interactive animations on hover or click and keyframes for a cycling animations or complex animations.
 
 ## Wrap Up (5 min)
 
@@ -99,7 +146,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animat
 1. https://css-tricks.com/almanac/properties/a/animation/
 1. https://www.mockplus.com/blog/post/css-animation-examples
 1. https://uicookies.com/css-animation-examples/
-1. 
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
 
 ## Minute-by-Minute [OPTIONAL]
 
