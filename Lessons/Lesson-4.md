@@ -174,13 +174,13 @@ Why Do font choices matter: https://themeisle.com/blog/wordpress-fonts/
 
 ## Font Units: em vs rem
 
+The **`em`** is a unit that represents a multiple of the inherited font size. Think of this as a number that multiplies the font size an element would inherit. 
 
+The **`rem`** is root em. It represents a multiple of the root font size. This is the font size set on the html element, or body if you haven't set the font size on html. 
 
 ## Wrap Up 
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- Review objectives 
 
 ## Additional Resources
 

@@ -32,7 +32,7 @@
   <code>html {...}</code>.</p>
 
   <ul>
-    <li>html - Set all fo the base font styles:
+    <li>html - Set all of the base font styles:
       <ul>
         <li>font-family</li>
         <li>font-size</li>
@@ -91,6 +91,17 @@
       go through anything. You read and you're pierced.</p>
     <footer>-Aldous Huxley, <cite>Brave New World</cite></footer>
   </blockquote>
+
+  <h3>em vs rem</h3>
+  <p>The box below has a font-size of 20px.</p>
+  <div style="font-size: 20px; border: 1px solid; padding: 0 1em">
+    <p style=""><strong>Inherit</strong> this text is inherits it's font-size 20px.</p>
+    <p style="font-size: 1em"><strong>font-size: 1em</strong> this text is 1em. It's font-size is 20px. This is 1 times the inherited font-size of 20px.</p>
+    <p style="font-size: 1.5em"><strong>font-size: 1.5em</strong> this text is 1.5em. Here the font-size is 30px. That's 1.5 times the inherited font-size of 20px.</p>
+    <p style="font-size: 18px"><strong>font-size: 18px</strong> this text is 18px.</p>
+    <p style="font-size: 1rem"><strong>font-size: 1rem</strong> this text is 1rem. Here the size is 16px because the root font-size is 16. That's 1 times the root font-size.</p>
+    <p style="font-size: 1.25rem"><strong>font-size: 1.25rem</strong> this text is 1.25rem. Here the size is 20px because the root font-size is 16. That's 1.25 times the root font-size of 16px.</p>
+  </div>
 
   <pre>
     <code>

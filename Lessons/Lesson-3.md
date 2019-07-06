@@ -94,11 +94,52 @@ https://sass-lang.com/documentation
 - [For](https://sass-lang.com/documentation/at-rules/control/for)
 - [Extend](https://sass-lang.com/documentation/at-rules/extend)
 
+## Typography on Web
+
+CSS provides a few properties to control the appearance of text on the screen. 
+
+- font-family - The font face to display
+- font-size - the size of characters
+- color - The color of the text
+- line-height - The of a line of text
+
+Here are strategies for each of these properties. 
+
+**font-family** sets the font to use. You're limited to fonts available on any given computer unless you import a custom font. 
+
+Since font-family is inherited it's best to set the font-family on body or html tag and all children will share it. 
+
+Usually you'll provide a font stack. This is a list of fonts, the browser will use the first available font on the list. Here is a list of modern font stacks. 
+
+https://gist.github.com/don1138/5761014
+
+**font-size** sets the size of the characters. This property is inherited, that means all children will get the font size of their parent. For this reason it's best to set a base font size on the body or html tag. 
+
+Use `em` to set a relative font size of the base font size. 
+
+```CSS
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2em; /* 36px */
+}
+```
+
+**color** it's color, do we need to say more? Maybe... Contrast is important. Low contrast makes things hard to read, especially for people with bad vision. There is a rule you can follow. 
+
+https://webaim.org/resources/contrastchecker/
+
+**line-height** the height of a line of type. This doesn't effect size of the characters. Why is line-height a thing? Lines that are too close together are harder to read. Usually the default value for line-height is too small! 
+
+How do you know what a good line height is? Use your best judgement. Longer lines need larger lineheight. 
+
+Your goal this week is to apply the idea above to a project of your own. We will talk more about type in the next class. 
+
 ## Homework 
 
 To really get an understanding for SASS you have to use it. Your goal is to apply SASS to one of your past projects. 
-
-
 
 ## Wrap Up (5 min)
 

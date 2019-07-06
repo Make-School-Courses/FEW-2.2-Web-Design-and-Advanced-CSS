@@ -12,6 +12,10 @@ SASS is a common industry tool. You should know what it is and how it works. By 
 
 ## Project requirements
 
+There are two parts to this assignment. The first part is to apply SASS to a project and improve the typography of your site. The second part is to present a short two minute presentation on a technique that you used with SASS and Type in your project. 
+
+**Part 1.**
+
 Choose a project a web project or contact me and I will give you a web project to work on. The project must be on GitHub. 
 
 Create a branch where you will apply SASS. 
@@ -29,9 +33,17 @@ Add SASS to your project. Apply SASS in as many ways as you can think. Try these
   - Use for loops to automate your stylesheet. 
   - Use mixins to make it easier to apply complex rules. 
 
+**Part 2**
+
+For part two you should work with anotehr student. Between the two of you come up with a 2 minute presentation on a technique you used with SASS and Type. You need to show a code sample in a GitHub gist.
+
+The goal is show a simple technique that anyone in class could apply to their work. 
+
 ### Deliverable
 
 A link to the branch of your project that uses SASS. 
+
+Your GitHub Gist and live code sample. 
 
 ### Due date
 
