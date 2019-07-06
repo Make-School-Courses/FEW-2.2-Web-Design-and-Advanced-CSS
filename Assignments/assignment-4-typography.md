@@ -2,7 +2,7 @@
 
 ## Description 
 
-Web sites are mostly text. People are absolrbing your content on mobile phones by reading test, and inputing text. It's really important that your text looks good. 
+Web sites are mostly text. People are absorbing your content on mobile phones by reading and inputing text. It's important that your text looks good and more important that reads clearly. 
 
 ### Why this assignment?
 
@@ -10,23 +10,33 @@ Understand how type works and the features of typography will make your projects
 
 ## Project requirements
 
-Use a custom font for your project. 
+Choose a past project and improve the typography. Your project must be on GitHub. 
 
-Adjust the font sizes
+Make a branch in your GitHub project. Name it for the type improvements. Do your work on this branch. 
 
-Adjust the lineheight
+Adjust the type in in these ways:
 
-
+- Use a custom font for your project. 
+  - https://fonts.google.com
+- Set a base font
+  - Set the `font-family` on the body or html elements
+- Adjust the font sizes
+- Adjust font styles for headings
+- Adjust the line height
+- Set the color and background color
+  - Check the contrast: https://webaim.org/resources/contrastchecker/
+- Ask youself these questions?
+  - Does this look good?
+  - Does this read well? 
 
 ### Deliverable
 
-Describe what is due, file, type, link to repo etc. 
+A link to the branch of your project with the improved typography. 
 
 ### Due date
 
-Date this project is due 
+Class 5 
 
 ## Assessing the assignment
 
-[Assignment Name Rubric](./assignment-rubric.md)
-
+[Assignment Name Rubric](./assignment-4-typography-rubric.md)

@@ -172,6 +172,10 @@ Bootstrap: https://getbootstrap.com/docs/4.0/content/typography/
 
 Why Do font choices matter: https://themeisle.com/blog/wordpress-fonts/
 
+## Font Units: em vs rem
+
+
+
 ## Wrap Up 
 
 - Continue working on your current tutorial
