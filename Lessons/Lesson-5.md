@@ -1,122 +1,165 @@
-# FEW 2.2 - CSS Custom Properties Scope and Styling Controls
+# FEW 2.2 - Advanced CSS - CSS Custom Properties 
 
-Styling controls like buttons and form elements provides some extra challenges and opportunities.
+CSS Custom properties are a feature that allows you to define your own custom properties and use their values in your CSS. 
 
 ## Why you should know this?
 
-Form elements and controls are points of interaction in your applications. These need to be extra engaging. Hard to use and confusing forms risk losing potential users for application and customers for your business. 
+CSS Custom Properties are a new game changing feature. Expect this to be the future of CSS. This expands what you can do with the CSS language immensely. Learning this today will make you feel like an expert when the rest of the world catches on to this feature. 
+
+Besides making your CSS code skills up to day it will empower your projects with cutting edge CSS tech, save you to time and make your CSS more flexible and powerful. 
 
 ## Learning Objectives
 
-1. Use scope to control custom proeprties
-1. Create Form elements that use custom proeprties
-1. Use fallback values 
-1. 
+1. Explain CSS Custom Propertis their features and use cases 
+2. Use CSS Custom properties in real world applications
+3. Use Math operations in CSS
 
-## CSS Custom Properties: Fallback Values 
+## Logos 
 
-var(--variable, fallback-value)
+Look at the logo exercise from the previous 
 
-## Scope and Custom properties
+## CSS Custom Properties
 
-Custom properties are used in the scope where they are defined. This local scope is defined by the selector where a custom property is defined. 
+CSS Custom Properties let you define variables in CSS. Really you're defining a new CSS property, hence the name. In use it feels like variables that you are familiar with from other languages. 
+
+### Defining a custom property
+
+Properties names must begin with `--`, rest of the name can be anything that would normally work in CSS. 
+
+Assign a value like setting the value of a property in CSS. 
 
 ```CSS
-button {
-  --button-color: #47b6e9;
+--color: red;
+--primary-color: rgba(123, 37, 44, 0.7);
+--size: 121px;
+--base-font-size: 16px;
+--large-font-size: 1.85em;
+--number-of-columns: 4;
+--golden-ratio: 1.618;
+```
+
+Any value that would work in CSS can be assigned to a property. 
+
+You can assign values with and without a unit. When you use a value you need to include a unit! (see calc() below)
+
+You can define custom properties anywhere. Custom properties have scope, more on this later. 
+
+```CSS
+:root {
+  --golden-ratio: 1.618;
+  --base-font-size: 16px;
+  --large-font-size: 1.85em;
   ...
-  background-color: var(--button-color);
+}
+
+.main {
+  --number-of-columns: 4;
+  ...
+}
+
+.alert {
+  --color: red;
+  --primary-color: rgba(123, 37, 44, 0.7);
+  --size: 121px;
+  ...
+}
+
+```
+
+### Accessing custom property values
+
+To access the value of a custom property use the `val()` method.
+
+```CSS
+var(--size)
+var(--base-font-size)
+var(--color)
+va(--background-color)
+```
+
+Here in context
+
+```CSS
+:root {
+  --golden-ratio: 1.618;
+  --base-font-size: 16px;
+  --large-font-size: 1.85em;
+  ...
+}
+
+.main {
+  --number-of-columns: 4;
+  ...
+  grid-template-columns: repeat(var(--number-of-columns), 1fr);
+}
+
+.alert {
+  --color: red;
+  --size: 121px;
+  ...
+  color: var(--color);
+  width: var(--size);
+  ...
 }
 ```
 
-Custom properties are inherited. A variable that exists on the scope of an ancestor is available to descendents. 
+### Math with CSS calc()
+
+CSS supports some basic math through the `calc()` method. You can use `+`, `-`, `*`, and `/`. 
 
 ```CSS
-body {
-  --button-color: #47b6e9;
-  ...
+.heading {
+  font-size: calc(16px * 1.85);
 }
 
-button {
-  background-color: var(--button-color);
+.input[type=text] {
+  padding: calc(1em * 1.5);
+}
+
+.alert {
+  margin: calc(1em + 5px);
 }
 ```
 
-The `:root` selector represents the root of the document. This 
+The beauty of `calc()` is the ability to mix units! It may not seem like much but ask yourself what you would need to do to make this calculation: 
 
-## Media Query
+`calc(1em * 1.5 + 2%)`
 
-Use @media to target a platform with features. 
+Custom properties work with `calc()`. 
 
+```CSS
+.heading {
+  font-size: calc(16px * 1.85);
+}
 
+.input[type=text] {
+  padding: calc(1em * 1.5);
+}
 
-## Form element strategies 
+.alert {
+  margin: calc(1em + 5px);
+}
+```
 
+## Apply CSS Custom properties to your work
 
-## Interview Questions 
+Take your CSS logo and move all of the values into CSS custom properties. Anything that is a value can be a property. Move these to a location in your code where it makes them easier to access. 
 
-You need to have flexible UI elements. The default colors work but in some cases you need to be able to easily redefine the color of a button. 
+Is this an improvement? 
 
-You need to define a range of font sizes. Imagine you need 4 sizes each larger than the previous. All of the sizes should relative to a base size. 
+Take it a step further. Look at the cade and find values that are calculated from other values. Use `calc()` and custom properties to figure these values. 
 
-On mobile devices your range of font sizes need to be different from the sizes you are using on the desktop. 
+Discussion: 
 
+Q: What happened here? 
+Q: Was it useful? 
+Q: Does this make better CSS code?
 
+## Homework 
 
+The goal of the homework assignment is to update a past project with CSS Custom properties. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Initial Exercise (15 min)
-
-- Funny comic
-- Prime the Pump (e.g. think and jot, think pair share, etc)
-- Productivity Tip/Tool
-- Review of current event (e.g. tech news relevant to your track/topic)
-- Quiz on homework or topic(s) of past class
-- Concept Test
-
-## Overview/TT I (20 min)
-
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
-
-## In Class Activity I (30 min)
-
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
-
-## Overview/TT II (optional) (20 min)
-
-## In Class Activity II (optional) (30 min)
-
-## Wrap Up (5 min)
-
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+[Assignment 3](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-And-Advanced-CSS/blob/master/Assignments/assignment-2-update-past-project.md) 
 
 ## Additional Resources
 

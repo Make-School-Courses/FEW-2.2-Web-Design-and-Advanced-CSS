@@ -1,169 +1,114 @@
-# FEW 2.2 - Advanced CSS - CSS Custom Properties 
+# FEW 2.2 - Advanced CSS - SASS
 
-CSS Custom properties are a feature that allows you to define your own custom properties and use their values in your CSS. 
+CSS Preprocessors SASS: Syntactically Awesome StyleSheets. 
 
 ## Why you should know this?
 
-CSS Custom Properties are a new game changing feature. Expect this to be the future of CSS. This expands what you can do with the CSS language immensely. Learning this today will make you feel like an expert when the rest of the world catches on to this feature. 
-
-Besides making your CSS code skills up to day it will empower your projects with cutting edge CSS tech, save you to time and make your CSS more flexible and powerful. 
+CSS preprocessors are common in industry and provide some valuable functionality. Expect to see them in the work flow of companies large and small.
 
 ## Learning Objectives
 
-1. Explain CSS Custom Propertis their features and use cases 
-2. Use CSS Custom properties in real world applications
-3. Use Math operations in CSS
+1. Define CSS preprocessor functionality and uses
+1. Write SASS code
+1. Compile code writte in SASS to vanilla CSS
 
-## Logos 
+## What is SASS? 
 
-Look at the logo exercise from the previous 
+Q: What is SASS? 
+A: SASS is an alternative language that compiles to vanilla CSS. 
 
-## CSS Custom Properties
+Q: Why use SASS? 
+A: SASS provides a way to generate CSS from higher level code that inlcudes variables, if then logic, for loops, and more, that doesn't exist in vanilla CSS. 
 
-CSS Custom Properties let you define variables in CSS. Really you're defining a new CSS property, hence the name. In use it feels like variables that you are familiar with from other languages. 
+Q: Can I use SASS in web projects?
+A: No, you must compile SASS to CSS and use CSS in your projects. 
 
-### Defining a custom property
+Q: How do you compile SASS? 
+A: Use preprocessor, there are a few to choose from. 
 
-Properties names must begin with `--`, rest of the name can be anything that would normally work in CSS. 
+## Install SASS
 
-Assign a value like setting the value of a property in CSS. 
+There are several tools you can use to compile SASS. There are desktop apps like: 
+
+- http://koala-app.com
+- http://compass-style.org
+
+There are a couple command line tools also. We will use Node JS version since we have been using Node for projects. 
+
+Install Node SASS. 
+
+`npm install -g sass`
+
+## Compiling SASS
+
+Compile SASS.
+
+1. Make a new folder
+1. Create `index.html`
+1. Create `style.scss`
+1. `sass --watch style.scss style.css`
+
+The last line above runs SASS. The `--watch` flag tells SASS to watch for changes and update when it sees them. The last two parameters: `style.scss style.css` define the input (`style.scss`) and output (`style.css`) files. 
+
+Try it. 
+
+## Getting started with SASS
+
+SASS supports variables. Use to 
+
+- Share values for DRY code
+- Calculate relative values for DRY code 
+- And more!
+
+Variables in SASS always beginw with the `$`
 
 ```CSS
---color: red;
---primary-color: rgba(123, 37, 44, 0.7);
---size: 121px;
---base-font-size: 16px;
---large-font-size: 1.85em;
---number-of-columns: 4;
---golden-ratio: 1.618;
+$bg-color: #eee;
+$font-color: #333;
+$font-size: 16px;
 ```
 
-Any value that would work in CSS can be assigned to a property. 
-
-You can assign values with and without a unit. When you use a value you need to include a unit! (see calc() below)
-
-You can define custom properties anywhere. Custom properties have scope, more on this later. 
+Use these where you like: 
 
 ```CSS
-:root {
-  --golden-ratio: 1.618;
-  --base-font-size: 16px;
-  --large-font-size: 1.85em;
-  ...
-}
-
-.main {
-  --number-of-columns: 4;
-  ...
-}
-
-.alert {
-  --color: red;
-  --primary-color: rgba(123, 37, 44, 0.7);
-  --size: 121px;
-  ...
-}
-
-```
-
-### Accessing custom property values
-
-To access the value of a custom property use the `val()` method.
-
-```CSS
-var(--size)
-var(--base-font-size)
-var(--color)
-va(--background-color)
-```
-
-Here in context
-
-```CSS
-:root {
-  --golden-ratio: 1.618;
-  --base-font-size: 16px;
-  --large-font-size: 1.85em;
-  ...
-}
-
-.main {
-  --number-of-columns: 4;
-  ...
-  grid-template-columns: repeat(var(--number-of-columns), 1fr);
-}
-
-.alert {
-  --color: red;
-  --size: 121px;
-  ...
-  color: var(--color);
-  width: var(--size);
-  ...
+body {
+  background-color: $bg-color;
+  color: $font-color;
+  font-size: $font-size;
 }
 ```
 
-### Math with CSS calc()
+There is a lot you can do with this it extends CSS in new ways. _Keep in mind that SASS is always rendered to vanilla CSS!_
 
-CSS supports some basic math through the `calc()` method. You can use `+`, `-`, `*`, and `/`. 
+## In Class Activity 
 
-```CSS
-.heading {
-  font-size: calc(16px * 1.85);
-}
+Pair up with someone you haven't paired with before. You'll be assigned a topic from the list below. You and your pair are repsonsible for studying and **making an example that explains the concept**. Do you best to think of a practical use for your topic and code sample. 
 
-.input[type=text] {
-  padding: calc(1em * 1.5);
-}
+https://sass-lang.com/documentation
 
-.alert {
-  margin: calc(1em + 5px);
-}
-```
-
-The beauty of `calc()` is the ability to mix units! It may not seem like much but ask yourself what you would need to do to make this calculation: 
-
-`calc(1em * 1.5 + 2%)`
-
-Custom properties work with `calc()`. 
-
-```CSS
-.heading {
-  font-size: calc(16px * 1.85);
-}
-
-.input[type=text] {
-  padding: calc(1em * 1.5);
-}
-
-.alert {
-  margin: calc(1em + 5px);
-}
-```
-
-## Apply CSS Custom properties to your work
-
-Take your CSS logo and move all of the values into CSS custom properties. Anything that is a value can be a property. Move these to a location in your code where it makes them easier to access. 
-
-Is this an improvement? 
-
-Take it a step further. Look at the cade and find values that are calculated from other values. Use `calc()` and custom properties to figure these values. 
-
-Discussion: 
-
-Q: What happened here? 
-Q: Was it useful? 
-Q: Does this make better CSS code?
+- [Variables](https://sass-lang.com/documentation/variables)
+- [Nested Rules](https://sass-lang.com/documentation/style-rules#nesting)
+- [Mixins](https://sass-lang.com/documentation/at-rules/mixin)
+- [Functions](https://sass-lang.com/documentation/functions)
+- [If else](https://sass-lang.com/documentation/at-rules/control/if)
+- [For](https://sass-lang.com/documentation/at-rules/control/for)
+- [Extend](https://sass-lang.com/documentation/at-rules/extend)
 
 ## Homework 
 
-The goal of the homework assignment is to update a past project with CSS Custom properties. 
+To really get an understanding for SASS you have to use it. Your goal is to apply SASS to one of your past projects. 
 
-[Assignment 3](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-And-Advanced-CSS/blob/master/Assignments/assignment-2-update-past-project.md) 
+
+
+## Wrap Up (5 min)
+
+- Continue working on your current tutorial
+- Complete reading
+- Complete challenges
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+1. https://sass-lang.com
 
 ## Minute-by-Minute [OPTIONAL]
 

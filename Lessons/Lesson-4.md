@@ -2,11 +2,11 @@
 
 This lesson will take a look at Typography and CSS. 
 
-## Why you should know this or industry application (optional) (5 min)
+## Why you should know this or industry application
 
 A majority of the content on the internet is text. Making good looking text that is easy to read will make your websites stand apart from the rest. 
 
-## Learning Objectives (5 min)
+## Learning Objectives
 
 1. Identify features of typography
 1. Use CSS styles to style type
@@ -14,9 +14,9 @@ A majority of the content on the internet is text. Making good looking text that
 
 ## Features of typography
 
-- Kearnin
-- Leading 
-- Baseline 
+- Kearning
+- Leading
+- Baseline
 
 ## Styling type
 
@@ -70,7 +70,6 @@ For any web site you are probably Using either serif or a San serif as your base
 These UI specific fonts. These are newer and more up to date than the standard system fonts. These work especially good for mobile since mobile devices tend to not use the same fonts available on the desktop. 
 
 You should include these in your font stack. 
-
 
 | OS       | Version      | Font name     |
 |:---------|:-------------|:--------------|
@@ -163,7 +162,7 @@ html {
 }
 ```
 
-## Initial Exercise (15 min)
+## Take a look at how fonts are used
 
 Explore some good font styles.
 
@@ -173,31 +172,7 @@ Bootstrap: https://getbootstrap.com/docs/4.0/content/typography/
 
 Why Do font choices matter: https://themeisle.com/blog/wordpress-fonts/
 
-## Overview/TT I (20 min)
-
-- Why learn this?
-- Industry examples of usage
-- Best practices
-- Personal anecdote
-
-## In Class Activity I (30 min)
-
-- I do, We do, You do
-- Reading & Discussion Questions in small groups
-- Draw a picture/diagram
-- Complete Challenges solo or in pair
-- Q&A about tutorials
-- Pair up and code review
-- Pair program
-- Formative assessment
-- Form into groups
-- etc (get creative :D)
-
-## Overview/TT II (optional) (20 min)
-
-## In Class Activity II (optional) (30 min)
-
-## Wrap Up (5 min)
+## Wrap Up 
 
 - Continue working on your current tutorial
 - Complete reading
