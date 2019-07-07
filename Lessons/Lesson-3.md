@@ -141,7 +141,7 @@ Your goal this week is to apply the idea above to a project of your own. We will
 
 To really get an understanding for SASS you have to use it. Your goal is to apply SASS to one of your past projects. 
 
-## Wrap Up (5 min)
+## Wrap Up
 
 - Continue working on your current tutorial
 - Complete reading

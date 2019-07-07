@@ -1,35 +1,30 @@
-# FEW 2.2 - Advanced CSS - CSS Grid (review)
+# FEW 2.2 - Advanced CSS - Web Components
 
-CSS Grid is amazing. It needs no abstraction!
+This could be the future of the web pay attention.  
 
 ## Why you should know this?
 
-You weant to arrange things on a page? You need CSS Grid. 
+This could be the future of the web. As a web developer you should have an understanding of what is around the next corner! 
 
 ## Learning Objectives 
 
-1. Use Grid to arrange elements in a 2d layout.
-1. Arrange elements using template columns 
-1. Arrange elements using named areas
-1. Define a grid columns and 
+1. Define custom components
+1. Define use cases for custom components
+1. Build custom components 
 
-## Designing on a grid
+## Web Components
 
-Who uses a grid for design? 
+What are Web components?
 
-Why use a grid for design? 
+Can I use Web Components?
 
-What are these columns and rows? 
+## Build a Web Component
 
-## CSS Grid
-
-grid-template-columns
-
-grid-template-areas
+Build a Web component..........
 
 ## Activity 
 
-Apply Grid to a past project
+Make your own component..........
 
 ## Wrap Up
 

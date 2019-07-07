@@ -1,35 +1,32 @@
-# FEW 2.2 - Advanced CSS - CSS Grid (review)
+# FEW 2.2 - Advanced CSS - Shadow DOM
 
-CSS Grid is amazing. It needs no abstraction!
+This is a new feature, it may not be ready for mainstream use, but it may be the future. 
 
 ## Why you should know this?
 
-You weant to arrange things on a page? You need CSS Grid. 
+While this is an experimental feature it is worth looking into as it wil give a deeper look at what is really happening when see elements like the buttons, text inputs, drop down menus, and range sliders.  
 
 ## Learning Objectives 
 
-1. Use Grid to arrange elements in a 2d layout.
-1. Arrange elements using template columns 
-1. Arrange elements using named areas
-1. Define a grid columns and 
+1. Define the shadow DOM
+1. Formulate use cases for the Shadow DOM
+1. Build custom controls with the Shadow DOM
 
-## Designing on a grid
+## The Shadow DOM
 
-Who uses a grid for design? 
+What is the shadow DOM? 
 
-Why use a grid for design? 
+Can I use the Shadow DOM? 
 
-What are these columns and rows? 
+Should I be using the Shadow DOM? 
 
-## CSS Grid
+## Using the Shadow DOM
 
-grid-template-columns
-
-grid-template-areas
+Example Ranger Slider ..........
 
 ## Activity 
 
-Apply Grid to a past project
+Customize the ................
 
 ## Wrap Up
 

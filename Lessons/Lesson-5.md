@@ -16,7 +16,7 @@ Besides making your CSS code skills up to day it will empower your projects with
 
 ## Logos 
 
-Look at the logo exercise from the previous 
+Look at the logo exercise from the previous class
 
 ## CSS Custom Properties
 

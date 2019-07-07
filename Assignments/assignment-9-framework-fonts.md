@@ -1,4 +1,4 @@
-# FEW 2.2 - Assignment 4 - fonts 
+# FEW 2.2 - Assignment 4 - Fonts 
 
 ## Description 
 

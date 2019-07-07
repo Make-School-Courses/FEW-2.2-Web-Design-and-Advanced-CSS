@@ -1,35 +1,22 @@
-# FEW 2.2 - Advanced CSS - CSS Grid (review)
+# FEW 2.2 - Advanced CSS - Presentation
 
-CSS Grid is amazing. It needs no abstraction!
+Present your framework 
 
 ## Why you should know this?
 
-You weant to arrange things on a page? You need CSS Grid. 
+In the real world you have to show your work. 
 
 ## Learning Objectives 
 
-1. Use Grid to arrange elements in a 2d layout.
-1. Arrange elements using template columns 
-1. Arrange elements using named areas
-1. Define a grid columns and 
+1. Presenting your work
 
-## Designing on a grid
+## Present your framework
 
-Who uses a grid for design? 
+What is it? 
 
-Why use a grid for design? 
+Who should use it? 
 
-What are these columns and rows? 
-
-## CSS Grid
-
-grid-template-columns
-
-grid-template-areas
-
-## Activity 
-
-Apply Grid to a past project
+How to use it? 
 
 ## Wrap Up
 

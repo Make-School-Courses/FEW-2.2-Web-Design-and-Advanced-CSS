@@ -135,7 +135,7 @@ Add some motion to your logo/icon from class 1. Keep the motion simple.
 
 It's easiest to use `transition` for interactive animations on hover or click and keyframes for a cycling animations or complex animations.
 
-## Wrap Up (5 min)
+## Wrap Up
 
 - Continue working on your current tutorial
 - Complete reading

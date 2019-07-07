@@ -1,17 +1,17 @@
-# FEW 2.2 - Advanced CSS - CSS Grid (review)
+# FEW 2.2 - Advanced CSS - Headers, Footers, CTAs
 
-CSS Grid is amazing. It needs no abstraction!
+Your framework should have some standard elements to make it useful!
 
 ## Why you should know this?
 
-You weant to arrange things on a page? You need CSS Grid. 
+Many of these standard elements help communicate your ideas. Practice designing these is a usedful skill. 
 
 ## Learning Objectives 
 
 1. Use Grid to arrange elements in a 2d layout.
 1. Arrange elements using template columns 
 1. Arrange elements using named areas
-1. Define a grid columns and 
+1. Define a grid columns and rows
 
 ## Designing on a grid
 
