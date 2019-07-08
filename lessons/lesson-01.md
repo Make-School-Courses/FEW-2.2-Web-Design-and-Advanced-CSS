@@ -21,7 +21,9 @@ While you might not be concerned with drawing and making pictures, it's quite po
   - Rectangles 
   - Circles 
   - Triangles
-1. Use and define CSS selectors. Apply styles to elements with selectors 
+1. Use and define CSS selectors to select anything on the DOM
+1. Apply styles to elements with selectors 
+1. Use styles to control the appearance of everything! 
 
 ## Quick review your knowledge of CSS
 

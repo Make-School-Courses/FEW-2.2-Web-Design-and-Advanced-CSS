@@ -37,7 +37,7 @@ Add SASS to your project. Apply SASS in as many ways as you can think. Try these
 
 For part two you should work with anotehr student. Between the two of you come up with a 2 minute presentation on a technique you used with SASS and Type. You need to show a code sample in a GitHub gist.
 
-The goal is show a simple technique that anyone in class could apply to their work. 
+The goal is show a simple technique that anyone in class could apply to their work. A code sample and live example of the technique. 
 
 ### Deliverable
 
