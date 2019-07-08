@@ -12,16 +12,16 @@ Explain why students should care to learn the material presented in this class.
 
 ## Learning Outcomes
 
-Students by the end of the course will be able to ...
+Students by the end of the course will be able to:
 
 1. Use grid systems for layout
+1. Use CSS preprocessors
 1. Implement CSS variables to make more modular stylesheets
 1. Apply principles of typography and color theory
-1. Implement SEO concepts in Web design
-1. Use UI best practices 
-1. Conduct User Experience tests
+1. Apply advanced CSS concepts inlcuding transform, transition, and keyframes
+1. Implement industry best practices
 
-Beyond these you students should be able apply CSS like a boss and bring their wildest imaginings to the large and small screen! 
+Beyond these you students should be able apply CSS like a boss and bring their ideas to the large and small screen! Students will also explore new bleeding edge concepts that hint at the future of CSS. 
 
 ## Schedule
 
@@ -40,45 +40,24 @@ Beyond these you students should be able apply CSS like a boss and bring their w
 |  9 | Mon, Aug 5   | [Shadow DOM](lessons/lesson-09.md) |
 | 10 | Wed, Aug 7   | [Web Components](lessons/lesson-10.md) |  
 | 11 | Mon, Aug 12  | [Final Exam](lessons/lesson-11.md) |
-| 12 | Wed, Aug 14 | [Final Presentations](lessons/lesson-12.md) |
+| 12 | Wed, Aug 14  | [Final Presentations](lessons/lesson-12.md) |
 
 ## Class Assignments
 
-### Custom CSS Framework
+We will begin the term reviewing CSS concepts. Then moving into new concepts that you will apply to your projects. The final project is to build a CSS framework. 
 
-- **Midterm Presentation Due Date: Beginning of Class 7**
-- **Final Presentation Due Date: Beginning of Class 12**
+### Custom CSS Framework
 
 You will be building a CSS framework to use for the frontend of any web project. It's like making your own [Bootstrap!](https://getbootstrap.com/)
 
 You'll build this framework throughout the course, with a midterm checkin to show progress and get feedback, as well as a final presentation in front of the class, where you show an example of your framework in use on a web app (previous project, sample static page used for the demo, etc.)
 
-**Full spec for this project coming soon!**
-
-### Product Design
-
-- **Wireframes + 1st draft of homepage due: Beginning of Class 9**
-- **Final wireframes + final draft of homepage due: Beginning of Class 12**
-
-What's a produt you wish existed? Or what's an improvement to an existing product you wish you had? This assignment will allow you to realize this by creating the design for this product!
-
-**Requirements**
-
-- It can be an imaginary product, an improvement on an existing product, or a real product that doesn't exist yet
-- You need to make wireframes for the product that show how the user will interact with the product
-- You need to create a static home page of the product. Should only use CSS and HTML (no backend)
-
-**Full spec for this project coming soon!**
->>>>>>> 6c7e9718d60729a81822fc854585854ae91b61a9
-
 ## Evaluation
-**[MAKE SPECIFIC TO YOUR COURSE SO IT IS SUPER CLEAR]**
+
 To pass this course you must meet the following requirements:
 
 - Complete all required assignments 
-- Pass all projects according to the associated project rubric
-- Pass the final summative assessment according to the rubric as specified in this class
-    - This will be further explained in the [study guide](ADD_STUDY_GUIDE_LNK)
+- Achieve a passing score on the final assessment
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 
