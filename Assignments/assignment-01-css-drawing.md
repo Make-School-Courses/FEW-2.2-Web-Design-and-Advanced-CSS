@@ -4,8 +4,6 @@
 
 Draw a logo with CSS. Keep it simple and iconic. 
 
-- Sample logos
-
 ### Why this assignment?
 
 To be a master at CSS you should be able to push it to it's limits. CSS wasn't really meant as a too for drawing which is what makes this a challenge!
@@ -28,6 +26,11 @@ Class 2
 
 ## Assessing the assignment
 
-[Assignment Name Rubric](./assignment-1-css-drawing-rubric.md)
+[Assignment Name Rubric](./assignment-01-css-drawing-rubric.md)
+
+## Resources 
+
+- https://www.youtube.com/watch?v=QZdj42liTtU
+- 
 
 

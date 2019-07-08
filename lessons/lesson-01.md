@@ -136,9 +136,9 @@ Improve your logo or draw another. Make it iconic. It should all be created with
 
 ## Wrap Up (5 min)
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- What's a selector?
+- What's your favorite selector? 
+- What's the weirdest selector? 
 
 ## Additional Resources
 

@@ -39,4 +39,4 @@ Class 5
 
 ## Assessing the assignment
 
-[Assignment Name Rubric](./assignment-4-typography-rubric.md)
+[Assignment Name Rubric](./assignment-04-typography-rubric.md)
