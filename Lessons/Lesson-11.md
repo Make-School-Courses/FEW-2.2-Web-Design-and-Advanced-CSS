@@ -20,9 +20,7 @@ How to use it?
 
 ## Wrap Up
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- 
 
 ## Additional Resources
 

@@ -20,11 +20,11 @@ Can I use Web Components?
 
 ## Build a Web Component
 
-Build a Web component..........
+Build a Web component ..........
 
 ## Activity 
 
-Make your own component..........
+Make your own component ..........
 
 ## Wrap Up
 
