@@ -1,14 +1,18 @@
 # FEW 2.2 - Advanced CSS - Drawing with CSS
 
-This class will look at some CSS tools that let you transform elements. 
-
-We will also use this class to review the basic concepts of CSS. 
+This introduction will review CSS concepts and introcude transform.  
 
 ## Why you should know this?
 
 Great question! Having the ability to place an element anywhere on the screen is useful, has many applications, and opens up the range of the things you can make. When these ideas are applied to animations it opens even more options. 
 
 While you might not be concerned with drawing and making pictures, it's quite possible someone will come to you with a visual idea and want you to recreate it. These are the tools you need. 
+
+Let's be honest your CSS skills are rusty you just need some practice! 
+
+## Lesson Slides 
+
+https://docs.google.com/presentation/d/1PrmtOPuSov0XPkSCYwM24rHeZ4GPFM1IWDQeyv5wH6U/edit?usp=sharing
 
 ## Learning Objectives
 
