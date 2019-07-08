@@ -33,7 +33,7 @@ Beyond these you students should be able apply CSS like a boss and bring their i
 |  2 | Wed, July 10 | [Animation with CSS](lessons/lesson-02.md) |
 |  3 | Mon, July 15 | [SASS](lessons/lesson-3.md) |
 |  4 | Wed, July 17 | [Typography](lessons/lesson-04.md) |
-|  5 | Mon, July 22 | [CSS Custom Porperties](lessons/lesson-05.md) |
+|  5 | Mon, July 22 | [CSS Custom Properties](lessons/lesson-05.md) |
 |  6 | Wed, July 24 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) |
 |  7 | Mon, July 29 | [CSS Grid](lessons/lesson-07.md) |
 |  8 | Wed, July 31 | [Content Elements](lessons/lesson-08.md) |
