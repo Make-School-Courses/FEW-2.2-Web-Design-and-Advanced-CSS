@@ -51,7 +51,7 @@ Class 4
 
 ## Assessing the assignment
 
-[Assignment Name Rubric](./assignment-03-SASS-rubric.md)
+[Assignment 3 - SASS Rubric](./assignment-03-SASS-rubric.md)
 
 
 

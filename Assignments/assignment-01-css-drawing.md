@@ -26,7 +26,7 @@ Class 2
 
 ## Assessing the assignment
 
-[Assignment Name Rubric](./assignment-01-css-drawing-rubric.md)
+[Assignment 1 - CSS Drawing Rubric](./assignment-01-css-drawing-rubric.md)
 
 ## Resources 
 
