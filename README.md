@@ -1,4 +1,4 @@
-# FEW-2.2: Advanced-CSS-and-Visual-Design
+# FEW-2.2: Advanced CSS and Visual Design
 
 ## Course Description
 
@@ -29,18 +29,18 @@ Beyond these you students should be able apply CSS like a boss and bring their w
 
 | Class  |          Date          |                  Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
-|  1 |  Mon, July 8 |    [CSS Variables](https://docs.google.com/presentation/d/1cvs0ZoXmHYjDKEu_0f081YkGMH7KZnro2dWRE9WCnW0/edit?usp=sharing) |
-|  2 |  Wed, July 10 |   [CSS Variables - Scope](https://docs.google.com/presentation/d/1GhwHeprm8qxffXlrlDEL-LvG1EEoq6lvARXn7yVjuzQ/edit?usp=sharing) |
-|  3 |  Mon, July 15 |    [Typography](https://docs.google.com/presentation/d/1nP2sBxh_AUXRGsrXdRtXE70nGoFMT_CU59S0bcHtY5Q/edit?usp=sharing) |
-|  4 |  Wed, July 17 |    [Applying Color + CSS Drawing Pt. 1](https://docs.google.com/presentation/d/1MnnZZu_RX528c9Kqz5VU-QyQsUBSyAkegwGmDlhicAQ/edit?usp=sharing) |
-|  5 |  Mon, July 22 |    [Drawing with CSS Pt. 2](https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7FZI/edit?usp=sharing) |
-|  6 |  Wed, July 24 |    [Headers, Footers, CTAs](https://docs.google.com/presentation/d/1rJcp_j90I4v8zP_xTMlOpb-MEAsnEF4Gb7YrpsFH3u4/edit?usp=sharing) |
-|  7 |  Mon, July 29 |    [Midterm Presentations](https://docs.google.com/presentation/d/1852OD-ONOZ0R0h1Q-_V_Ir9ABhAVvLpQpFl7_Ul2Ebg/edit?usp=sharing) |
-|  8 |  Wed, July 31 |    [Review of CSS Grid](https://docs.google.com/presentation/d/1Zbu-lIHHv-rtxcxivqkZwM3xGTYT2QdMInYML89kOfw/edit?usp=sharing) |
-|  9 |  Mon, Aug 5 |    [UX Testing](https://docs.google.com/presentation/d/18i8y6N-WLHWReWmzZFfz6Zr6SJsTVyJPd1jhYFKlHQo/edit?usp=sharing) |
-| 10 |  Wed, Aug 7 |    [SEO + Prep for Final](https://docs.google.com/presentation/d/1fPouoUdwTOxx3bNJPvRFrD3zMNlD1IX64GnByT1Cmn8/edit?usp=sharing) |  
-| 11 |  Mon, Aug 12 |    Final Exam |
-| 12 |  Wed, Aug 14 |    Final Presentations |
+|  1 | Mon, July 8  | [Drawing with CSS](lessons/lesson-01.md) |
+|  2 | Wed, July 10 | [Animation with CSS](lessons/lesson-02.md) |
+|  3 | Mon, July 15 | [SASS](lessons/lesson-3.md) |
+|  4 | Wed, July 17 | [Typography](lessons/lesson-04.md) |
+|  5 | Mon, July 22 | [CSS Custom Porperties](lessons/lesson-05.md) |
+|  6 | Wed, July 24 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) |
+|  7 | Mon, July 29 | [CSS Grid](lessons/lesson-07.md) |
+|  8 | Wed, July 31 | [Content Elements](lessons/lesson-08.md) |
+|  9 | Mon, Aug 5   | [Shadow DOM](lessons/lesson-09.md) |
+| 10 | Wed, Aug 7   | [Web Components](lessons/lesson-10.md) |  
+| 11 | Mon, Aug 12  | [Final Exam](lessons/lesson-11.md) |
+| 12 | Wed, Aug 14 | [Final Presentations](lessons/lesson-12.md) |
 
 ## Class Assignments
 

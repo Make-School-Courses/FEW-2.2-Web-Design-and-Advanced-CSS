@@ -1,4 +1,4 @@
-# FEW 2.2 - Advanced CSS - Headers, Footers, CTAs
+# FEW 2.2 - Advanced CSS - Content Elements: Headers, Footers, CTAs
 
 Your framework should have some standard elements to make it useful!
 
