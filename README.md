@@ -18,14 +18,14 @@ Students by the end of the course will be able to:
 1. Use CSS preprocessors
 1. Implement CSS variables to make more modular stylesheets
 1. Apply principles of typography and color theory
-1. Apply advanced CSS concepts inlcuding transform, transition, and keyframes
+1. Apply advanced CSS concepts including transform, transition, and keyframes
 1. Implement industry best practices
 
-Beyond these you students should be able apply CSS like a boss and bring their ideas to the large and small screen! Students will also explore new bleeding edge concepts that hint at the future of CSS. 
+Beyond these you, students should be able to apply CSS like a boss and bring their ideas to the large and small screen! Students will also explore new bleeding edge concepts that hint at the future of CSS. 
 
 ## Schedule
 
-**Class Times:** Monday and Wednesday at 3:30–5:20pm (12 class sessions)
+**Class Times:** Monday and Wednesday from 3:30–5:20 pm (12 class sessions)
 
 | Class  |          Date          |                  Topics                  |
 |:-----:|:----------------------:|:---------------------------------------:|
@@ -33,7 +33,7 @@ Beyond these you students should be able apply CSS like a boss and bring their i
 |  2 | Wed, July 10 | [Animation with CSS](lessons/lesson-02.md) |
 |  3 | Mon, July 15 | [SASS](lessons/lesson-3.md) |
 |  4 | Wed, July 17 | [Typography](lessons/lesson-04.md) |
-|  5 | Mon, July 22 | [CSS Custom Porperties](lessons/lesson-05.md) |
+|  5 | Mon, July 22 | [CSS Custom Properties](lessons/lesson-05.md) |
 |  6 | Wed, July 24 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) |
 |  7 | Mon, July 29 | [CSS Grid](lessons/lesson-07.md) |
 |  8 | Wed, July 31 | [Content Elements](lessons/lesson-08.md) |
@@ -50,7 +50,7 @@ We will begin the term reviewing CSS concepts. Then moving into new concepts tha
 
 You will be building a CSS framework to use for the frontend of any web project. It's like making your own [Bootstrap!](https://getbootstrap.com/)
 
-You'll build this framework throughout the course, with a midterm checkin to show progress and get feedback, as well as a final presentation in front of the class, where you show an example of your framework in use on a web app (previous project, sample static page used for the demo, etc.)
+You'll build this framework throughout the course, with a midterm check-in to show progress and get feedback, as well as a final presentation in front of the class, where you show an example of your framework in use on a web app (previous project, sample static page used for the demo, etc.)
 
 ## Evaluation
 
