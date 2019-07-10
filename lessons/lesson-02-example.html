@@ -329,7 +329,7 @@
       <div class="g">
         <div></div>
       </div>
-      <span>Hover: Switch</span>
+      <span>:hover Switch</span>
     </div>
   
     <style>
@@ -378,7 +378,7 @@
       <div id="switch-1" class="switch">
         <div></div>
       </div>
-      <span>Click Switch: JS</span>
+      <span>Click Switch w/JS</span>
     </div>
   
     <style>
@@ -448,7 +448,7 @@
             <div></div>
           </div>
         </label>
-        <span>Click Switch: No JS</span>
+        <span>Click Switch no JS</span>
       </div>
     
       <style>
@@ -509,6 +509,7 @@
         <div></div>
         <div></div>
       </div>
+      <span>Hamburger 1</span>
     </div>
     <!-- Styles for hamburger X -->
     <style>
@@ -571,6 +572,7 @@
         <div></div>
         <div></div>
       </div>
+      <span>Hamburger 2</span>
     </div>
     <!-- Styles for Hamburger X 2 -->
     <style>
@@ -645,6 +647,7 @@
         <div></div>
         <div></div>
       </div>
+      <span>Hamburger 3</span>
     </div>
     <!-- Styles for Hamburger X 3 -->
     <style>
@@ -717,6 +720,7 @@
         <div></div>
         <div></div>
       </div>
+      <span>Hamburger 4</span>
     </div>
     <!-- Styles for Hamburger X 4 -->
     <style>
@@ -781,52 +785,7 @@
   
     </style>
     <!-- ******************************************* -->
-  
 
-    <!-- ******************************************* -->
-    <!-- Better nested hover -->
-    <div>
-        <div class="c">
-          <div></div>
-        </div>
-      </div>
-    
-      <style>
-        /* 
-        
-        Better Nested Hover 
-        
-        Here the outer container is triggering the hover animation 
-        on the innder nested element. 
-        
-        */
-        
-        .c {
-          width: 100px;
-          height: 100px;
-          border: 1px solid #000;
-          position: relative;
-        }
-        
-        .c>div {
-          width: 60px;
-          height: 60px;
-          background-color: red;
-          position: absolute;
-          left: 20px;
-          top: 20px;
-          transition: 400ms;
-        }
-        /* The :hover pseudo class is applied to the parent
-        with the animation is targeting the child div. */
-        
-        .c:hover>div {
-          transform: scale(1.25) rotate(12deg);
-        }
-    
-      </style>
-      <!-- ******************************************* -->
-  
   
     <!-- ******************************************* -->
     <!-- Filters - blur -->
@@ -834,6 +793,7 @@
       <div>
         <div class="blur"></div>
       </div>
+      <span>Fliter: blur</span>
     </div>
     <style>
       .blur {
@@ -858,6 +818,7 @@
       <div>
         <div class="gray"></div>
       </div>
+      <span>Filter: grayscale</span>
     </div>
     <style>
       .gray {
@@ -883,6 +844,7 @@
       <div>
         <div class="brightness"></div>
       </div>
+      <span>Filter: brightness</span>
     </div>
     <style>
       .brightness {
@@ -907,6 +869,7 @@
       <div>
         <div class="color-rotate"></div>
       </div>
+      <span>filter: color rotate</span>
     </div>
     <style>
       .color-rotate {
@@ -931,6 +894,7 @@
       <div>
         <div class="contrast"></div>
       </div>
+      <span>Filter: contrast</span>
     </div>
     <style>
       .contrast {
@@ -939,12 +903,12 @@
         background-image: url(images/o.png);
         background-repeat: none;
         background-position: center;
-        filter: contrast(300%);
+        filter: contrast(0%);
         transition: 400ms;
       }
       
-      .constrast:hover {
-        filter: contrast(0%);
+      .contrast:hover {
+        filter: contrast(100%);
       }
   
     </style>
@@ -956,6 +920,7 @@
       <div>
         <div class="sepia"></div>
       </div>
+      <span>Filter: sepia</span>
     </div>
     <style>
       .sepia {
@@ -976,10 +941,7 @@
   
   </div>
   
-  
-  
   <!-- Container styles -->
-  
   <style>
     body {
       background-color: #eee;
@@ -1004,6 +966,7 @@
     }
     .container > div > span {
       justify-self: flex-end;
+      margin-top: 1em;
     }
   
   </style>
