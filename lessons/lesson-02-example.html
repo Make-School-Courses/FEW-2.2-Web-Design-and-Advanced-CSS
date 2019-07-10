@@ -31,7 +31,7 @@
   
   
     <!-- ******************************************* -->
-    <!-- Nested Hover -->
+    <!-- Animate radius -->
     <div>
       <div class="b">
         <div></div>
@@ -64,7 +64,7 @@
       }
       
       .b>div:hover {
-        transform: scale(1.25) rotate(12deg);
+        border-radius: 50%;
       }
   
     </style>
@@ -75,46 +75,51 @@
   
   
     <!-- ******************************************* -->
-    <!-- Nested Hover problem -->
+    <!-- Nested Hovers -->
     <div>
       <div class="b2">
         <div></div>
+        <div>Hello</div>
       </div>
-      <span>Hover problem</span>
+      <span>Hover hovers</span>
     </div>
   
     <style>
-      /* Problem hover 
-      
-      This example some times "stutters" when you hover 
-      the cursor near the edge of the box. 
-      
-      The problem is caused when the hover effect moves the 
-      element out from under the cursor, this ends the hover
-      and causes the animation reverse, where the hover begins 
-      again, and the process repeats. 
-      
-      */
-      
       .b2 {
         width: 100px;
         height: 100px;
         border: 1px solid #000;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       
-      .b2>div {
-        width: 60px;
-        height: 60px;
+      .b2 > div:first-child {
+        height: 0;
+        width: 100%;
         background-color: red;
         position: absolute;
-        left: 20px;
-        top: 20px;
+        left: 0;
+        top: 0;
+        transition: 400ms;
+      }
+
+      .b2 > div:last-child {
+        position: absolute;
+        left: 0;
+        top: calc(50% - 1em / 2);
+        text-align: center;
+        width: 100%;
         transition: 400ms;
       }
       
-      .b2>div:hover {
-        transform: scale(.85) rotate(15deg);
+      .b2:hover > div:first-child {
+        height: 100px;
+      }
+
+      .b2:hover > div:last-child {
+        color: white;
       }
   
     </style>
@@ -192,6 +197,7 @@
         position: relative;
         overflow: hidden;
         border: 1px solid #000;
+        cursor: pointer; /* Style the cursor */
       }
       
       .d>div {
@@ -237,6 +243,7 @@
         position: relative;
         overflow: hidden;
         border: 1px solid #000;
+        cursor: pointer;
       }
       
       .e>div {
