@@ -6,7 +6,6 @@
         <span>Hover</span>
     </div>
     
-  
     <style>
       /* Simple Hover */
       
@@ -26,10 +25,7 @@
   
     </style>
     <!-- ******************************************* -->
-  
-  
-  
-  
+
     <!-- ******************************************* -->
     <!-- Animate radius -->
     <div>
@@ -69,11 +65,7 @@
   
     </style>
     <!-- ******************************************* -->
-  
-  
-  
-  
-  
+
     <!-- ******************************************* -->
     <!-- Nested Hovers -->
     <div>
@@ -114,6 +106,9 @@
         transition: 400ms;
       }
       
+      /* The hover triggers on the parent 
+      and changes to properties apply to 
+      a descendant */
       .b2:hover > div:first-child {
         height: 100px;
       }
@@ -125,12 +120,8 @@
     </style>
     <!-- ******************************************* -->
   
-  
-  
-  
-  
     <!-- ******************************************* -->
-    <!-- Better nested hover -->
+    <!-- Nested Hover -->
     <div>
       <div class="c">
         <div></div>
@@ -173,9 +164,149 @@
   
     </style>
     <!-- ******************************************* -->
+
+    <!-- ******************************************* -->
+    <!-- Timing function linear -->
+    <div>
+      <div class="c1">
+        <div></div>
+      </div>
+      <span>Hover parent</span>
+    </div>
   
+    <style>
+      .c1 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        position: relative;
+      }
+      
+      .c1>div {
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        transition: 1000ms;
+        /* Use timing function */
+        transition-timing-function: linear;
+      }
+      .c1:hover>div {
+        transform: scale(1.25) rotate(12deg);
+      }
   
+    </style>
+    <!-- ******************************************* -->
+
+    <!-- ******************************************* -->
+    <!-- Timeing function ease in -->
+    <div>
+      <div class="c2">
+        <div></div>
+      </div>
+      <span>Hover parent</span>
+    </div>
   
+    <style>
+      .c2 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        position: relative;
+      }
+      
+      .c2>div {
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        transition: 1000ms;
+        /* Use timing function */
+        transition-timing-function: ease-in;
+      }
+      
+      .c2:hover>div {
+        transform: scale(1.25) rotate(12deg);
+      }
+  
+    </style>
+    <!-- ******************************************* -->
+
+    <!-- ******************************************* -->
+    <!-- Timing function ease out -->
+    <div>
+      <div class="c2">
+        <div></div>
+      </div>
+      <span>Hover parent</span>
+    </div>
+  
+    <style>
+      .c2 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        position: relative;
+      }
+      
+      .c2>div {
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        transition: 1000ms;
+        /* Use timing function */
+        transition-timing-function: ease-out;
+      }
+      
+      .c2:hover>div {
+        transform: scale(1.25) rotate(12deg);
+      }
+  
+    </style>
+    <!-- ******************************************* -->
+
+     <!-- ******************************************* -->
+    <!-- Timing function ease in out -->
+    <div>
+      <div class="c2">
+        <div></div>
+      </div>
+      <span>Hover parent</span>
+    </div>
+  
+    <style>
+      .c2 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        position: relative;
+      }
+      
+      .c2>div {
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        transition: 1000ms;
+        /* Use timing function */
+        transition-timing-function: ease-in-out;
+      }
+      
+      .c2:hover>div {
+        transform: scale(1.25) rotate(12deg);
+      }
+  
+    </style>
+    <!-- ******************************************* -->
   
     <!-- ******************************************* -->
     <!-- Overflow -->
@@ -209,7 +340,8 @@
         left: 0;
         top: 40px;
         background-color: red;
-        transition: 200ms;
+        transition: 400ms;
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       }
       
       .d:hover>div {
@@ -218,9 +350,6 @@
   
     </style>
     <!-- ******************************************* -->
-  
-  
-  
   
     <!-- ******************************************* -->
     <!-- Overflow 2 -->
@@ -273,9 +402,6 @@
     </style>
     <!-- ******************************************* -->
   
-  
-  
-  
     <!-- ******************************************* -->
     <!-- Active -->
     <div>
@@ -317,18 +443,14 @@
       .f:hover>div {
         background-color: orange;
         transform: scale(1.25) rotate(12deg);
+        transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
       }
       
       .f:active>div {
         background-color: blue;
       }
-  
-  
     </style>
     <!-- ******************************************* -->
-  
-  
-  
   
     <!-- ******************************************* -->
     <!-- Switch hover -->
@@ -375,9 +497,6 @@
   
     </style>
     <!-- ******************************************* -->
-  
-  
-  
   
     <!-- ******************************************* -->
     <!-- Switch with Click -->
@@ -437,16 +556,10 @@
       switch_1.onclick = function(e) {
         this.classList.toggle('on') // Adds or removes the class "on"
       }
-  
     </script>
     <!-- ******************************************* -->
 
-
-
-
-
-
-     <!-- ******************************************* -->
+    <!-- ******************************************* -->
     <!-- Switch with Click -->
     <div>
         <label id="switch-2" class="switch-2">
@@ -503,11 +616,7 @@
         }
     
       </style>
-      <!-- ******************************************* -->
-  
-  
-  
-  
+    <!-- ******************************************* -->
   
     <!-- ******************************************* -->
     <!-- Hamburger X -->
@@ -568,8 +677,6 @@
   
     </style>
     <!-- ******************************************* -->
-  
-  
   
     <!-- ******************************************* -->
     <!-- Hamburger X 2 -->
@@ -641,11 +748,6 @@
     </style>
     <!-- ******************************************* -->
   
-  
-  
-  
-  
-  
     <!-- ******************************************* -->
     <!-- Hamburger X 3 -->
     <div>
@@ -715,9 +817,6 @@
   
     </style>
     <!-- ******************************************* -->
-  
-  
-  
   
     <!-- ******************************************* -->
     <!-- Hamburger X 4 -->
@@ -793,7 +892,6 @@
     </style>
     <!-- ******************************************* -->
 
-  
     <!-- ******************************************* -->
     <!-- Filters - blur -->
     <div>
@@ -818,6 +916,7 @@
       }
   
     </style>
+    <!-- ******************************************* -->
   
     <!-- ******************************************* -->
     <!-- Filters - grayscale -->
@@ -843,7 +942,7 @@
       }
   
     </style>
-  
+    <!-- ******************************************* -->
   
     <!-- ******************************************* -->
     <!-- Filters - brightness -->
@@ -869,6 +968,7 @@
       }
   
     </style>
+    <!-- ******************************************* -->
   
     <!-- ******************************************* -->
     <!-- Filters - brightness -->
@@ -894,6 +994,7 @@
       }
   
     </style>
+    <!-- ******************************************* -->
   
     <!-- ******************************************* -->
     <!-- Filters - Contrast -->
@@ -919,7 +1020,7 @@
       }
   
     </style>
-  
+    <!-- ******************************************* -->
   
     <!-- ******************************************* -->
     <!-- Filters - sepia -->
@@ -945,8 +1046,10 @@
       }
   
     </style>
+    <!-- ******************************************* -->
   
   </div>
+  
   
   <!-- Container styles -->
   <style>
