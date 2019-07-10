@@ -12,6 +12,10 @@ Engagment is important. Things that move are much more interesting. Adding motio
 1. Use CSS transition and keyframes to make things move
 1. Control and define the time and easing for elements that move
 
+## Slides 
+
+https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7FZI/edit?usp=sharing
+
 ## Initial Exercise
 
 Animation is everywhere on the computer. Even your code editor has some animation. 
