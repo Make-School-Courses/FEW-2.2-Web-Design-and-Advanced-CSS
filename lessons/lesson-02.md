@@ -129,6 +129,10 @@ Pair up with someone you haven't paired with in class before and take a look at 
 - https://css-tricks.com/almanac/properties/a/animation/
 - https://thoughtbot.com/blog/css-animation-for-beginners
 
+## Quick look at some sample code
+
+See the [example](lesson-02-example.html)
+
 ## Animate your CSS Logo
 
 Add some motion to your logo/icon from class 1. Keep the motion simple. 
