@@ -6,7 +6,7 @@ Making things move.
 
 Engagment is important. Things that move are much more interesting. Adding motion adds another dimention to your content. All of your favorite apps probably have little bits of animation. 
 
-## Learning Objectives (5 min)
+## Learning Objectives
 
 1. Describe easing
 1. Use CSS transition and keyframes to make things move

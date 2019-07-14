@@ -1,6 +1,6 @@
 # FEW 2.2 - Advanced CSS - SASS
 
-CSS Preprocessors SASS: Syntactically Awesome StyleSheets. 
+CSS Preprocessors: SASS - Syntactically Awesome StyleSheets. 
 
 ## Why you should know this?
 
@@ -9,31 +9,32 @@ CSS preprocessors are common in industry and provide some valuable functionality
 ## Learning Objectives
 
 1. Define CSS preprocessor functionality and uses
-1. Write SASS code
-1. Compile code writte in SASS to vanilla CSS
+1. Write code in the scss language
+1. Compile code written in scss to vanilla CSS
 
 ## What is SASS? 
 
 Q: What is SASS? 
-A: SASS is an alternative language that compiles to vanilla CSS. 
+A: SASS is a language that compiles to vanilla CSS. 
 
 Q: Why use SASS? 
-A: SASS provides a way to generate CSS from higher level code that inlcudes variables, if then logic, for loops, and more, that doesn't exist in vanilla CSS. 
+A: SASS provides a way to generate CSS from higher level code that inlcudes variables, conditional statements, loops, and more, that don't exist in vanilla CSS. 
 
-Q: Can I use SASS in web projects?
-A: No, you must compile SASS to CSS and use CSS in your projects. 
+Q: Can I use the SASS language in the browser?
+A: No, you must compile scss to CSS first. 
 
 Q: How do you compile SASS? 
-A: Use preprocessor, there are a few to choose from. 
+A: Use a preprocessor, there are a few to choose from. Both command line tools and desktop applications. 
 
 ## Install SASS
 
-There are several tools you can use to compile SASS. There are desktop apps like: 
+There are several tools you can use to compile SASS.
 
 - http://koala-app.com
 - http://compass-style.org
+- SASS CLI
 
-There are a couple command line tools also. We will use Node JS version since we have been using Node for projects. 
+You will use Node JS version since you have been using Node for other projects. 
 
 Install Node SASS. 
 
@@ -45,36 +46,122 @@ Compile SASS.
 
 1. Make a new folder
 1. Create `index.html`
+  - add a link to `styles.css` - `<link rel="stylesheet" href="styles.css">`
 1. Create `style.scss`
-1. `sass --watch style.scss style.css`
+1. Run SASS from the command line: `sass --watch style.scss style.css`
 
-The last line above runs SASS. The `--watch` flag tells SASS to watch for changes and update when it sees them. The last two parameters: `style.scss style.css` define the input (`style.scss`) and output (`style.css`) files. 
+The last line above runs SASS. The `--watch` flag tells SASS to watch for changes and update when it sees them. The last two parameters: `style.scss style.css` define the input (`style.scss`) and output (`style.css`) files.
+
+The setup above will watch for changes in `styles.scss` and upon seeing them compile the scss code there into regular css in `style.css`.
 
 Try it. 
 
 ## Getting started with SASS
 
-SASS supports variables. Use to 
+SASS supports variables. Use it to: 
 
 - Share values for DRY code
 - Calculate relative values for DRY code 
-- And more!
+- Create mixins (functions) for DRY code
+- Use utility functions to help your work
 
-Variables in SASS always beginw with the `$`
+The main use of SASS is to more maintainable CSS code. 
 
-```CSS
+**Variables** in SASS always begin with the `$`
+
+<small style="color: #999">SCSS code</small>
+```SCSS
 $bg-color: #eee;
 $font-color: #333;
 $font-size: 16px;
+$typical-margin: 0 0 1em 0;
 ```
 
-Use these where you like: 
+Notice variables always begin with the `$`. You can assign any value. This includes any value that is legal CSS. 
 
-```CSS
+Use a variable where any value might appear: 
+
+<small style="color: #999">SCSS code</small>
+```SCSS
 body {
   background-color: $bg-color;
   color: $font-color;
   font-size: $font-size;
+}
+```
+
+The code above would compile into: 
+
+<small style="color: #999">CSS code</small>
+```CSS
+body {
+  background-color: #eee;
+  color: #333;
+  font-size: 16px;
+}
+```
+
+Use all of those math operators! 
+
+<small style="color: #999">SCSS code</small>
+```SCSS
+$margin: 16px;
+$cols: 4;
+$width: 800px;
+$col-width: $width / $cols + $margin * 2;
+```
+
+**Loops** are directives that begin with `@`. 
+
+<small style="color: #999">SCSS code</small>
+```SCSS
+@for $i from 1 to 4 {
+  .h#{$i} {
+    font-size: #{(5 - $i) * 0.85}em;
+  }
+}
+```
+
+<small style="color: #999">CSS code</small>
+```CSS
+.h1 {
+  font-size: 3.4em;
+}
+
+.h2 {
+  font-size: 2.55em;
+}
+
+.h3 {
+  font-size: 1.7em;
+}
+```
+
+Define a list and use an each loop: 
+
+<small style="color: #999">SCSS code</small>
+```SCSS
+$list: github, twitter, facebook;
+
+@each $icon in $list {
+  .photo-#{$icon} {
+    background: image-url("images/#{$icon}.png") no-repeat;
+  }
+}
+```
+
+<small style="color: #999">CSS code</small>
+```CSS
+.photo-github {
+  background: image-url("images/github.png") no-repeat;
+}
+
+.photo-twitter {
+  background: image-url("images/twitter.png") no-repeat;
+}
+
+.photo-facebook {
+  background: image-url("images/facebook.png") no-repeat;
 }
 ```
 
@@ -98,22 +185,22 @@ https://sass-lang.com/documentation
 
 CSS provides a few properties to control the appearance of text on the screen. 
 
-- font-family - The font face to display
-- font-size - the size of characters
-- color - The color of the text
-- line-height - The of a line of text
+- `font-family` - The font face to display
+- `font-size` - the size of characters
+- `color` - The color of the text
+- `line-height` - The of a line of text
 
 Here are strategies for each of these properties. 
 
-**font-family** sets the font to use. You're limited to fonts available on any given computer unless you import a custom font. 
+**`font-family`** sets the font to use. You're limited to fonts available on any given computer unless you import a custom font. 
 
-Since font-family is inherited it's best to set the font-family on body or html tag and all children will share it. 
+Since `font-family` is inherited it's best to set the font-family on body or html tag and all children will share it. 
 
 Usually you'll provide a font stack. This is a list of fonts, the browser will use the first available font on the list. Here is a list of modern font stacks. 
 
 https://gist.github.com/don1138/5761014
 
-**font-size** sets the size of the characters. This property is inherited, that means all children will get the font size of their parent. For this reason it's best to set a base font size on the body or html tag. 
+**`font-size`** sets the size of the characters. This property is inherited, that means all children will get the `font-size` of their parent. For this reason it's best to set a base font size on the `body` or `html` element. 
 
 Use `em` to set a relative font size of the base font size. 
 
@@ -127,15 +214,27 @@ h1 {
 }
 ```
 
-**color** it's color, do we need to say more? Maybe... Contrast is important. Low contrast makes things hard to read, especially for people with bad vision. There is a rule you can follow. 
+**`color`** it's color of the text, do we need to say more? Maybe... 
+
+Contrast is important. Low contrast makes things hard to read, especially for people with bad vision. There is a rule you can follow. 
 
 https://webaim.org/resources/contrastchecker/
 
-**line-height** the height of a line of type. This doesn't effect size of the characters. Why is line-height a thing? Lines that are too close together are harder to read. Usually the default value for line-height is too small! 
+**`line-height`** the height of a line of text. This doesn't effect size of the characters. Why is `line-height` a thing? Lines that are too close together are harder to read. Usually the default value for `line-height` is too small! 
 
-How do you know what a good line height is? Use your best judgement. Longer lines need larger lineheight. 
+How do you know what a good line height is? Use your best judgement. Longer lines need larger `line-height`. 
 
-Your goal this week is to apply the idea above to a project of your own. We will talk more about type in the next class. 
+Your goal this week is to apply the ideas above to a project of your own. We will talk more about type in the next class. 
+
+## In Clss Activity
+
+Apply SASS to your CSS drawing and animation. Look for these opportunities: 
+
+- Look for values that can be moved to the top of the code and defined as constants.
+- Look for related values that can be calculated rather than written explicitly
+- Look for elements that are repeated. Use the two ideas above along with a loop to generate repeated values. 
+
+Review your work with another student before the end of class. 
 
 ## Homework 
 
@@ -143,9 +242,10 @@ To really get an understanding for SASS you have to use it. Your goal is to appl
 
 ## Wrap Up
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- Review class 
+  - What is SASS?
+  - What is good for? 
+  - Do you think you would use this? 
 
 ## Additional Resources
 
