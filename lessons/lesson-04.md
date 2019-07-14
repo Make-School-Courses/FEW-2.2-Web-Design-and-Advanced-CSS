@@ -9,14 +9,23 @@ A majority of the content on the internet is text. Making good looking text that
 ## Learning Objectives
 
 1. Identify features of typography
-1. Use CSS styles to style type
+1. Use CSS styles to style text
 1. Implement custom fonts
+
+## What is type on the web?
+
+https://webstyleguide.com/9-typography.html
 
 ## Features of typography
 
 - Kearning
 - Leading
 - Baseline
+
+## Font types
+
+- Serif
+- San Serif
 
 ## Styling type
 
@@ -27,6 +36,13 @@ In CSS we use the following properties to style type.
 - font-weight
 - color
 - line-height
+
+### Activity
+
+Apply some styles to the sample html document. Set the `font-size` and `line-height` on the body element. 
+
+Q: What happened? 
+A: Could these be used to make the page look better than the default? 
 
 ## Native Fonts 
 
@@ -47,7 +63,7 @@ In the old days there was:
 - Arial Black
 - Impact
 
-These don't work on all systems. The Mac includes some of these and Windows includes others. Linux probably has it's own subset. 
+These don't work on all systems. The Mac includes some of these and Windows includes others. Linux has it's own subset. 
 
 The list of fonts that are very likely to exist across all operating systems is shorter: 
 
@@ -58,16 +74,24 @@ The list of fonts that are very likely to exist across all operating systems is 
 - Trebuchet MS
 - Verdana
 
-Looking at the list the fonts fall into two categories:
+Looking at the list these fonts fall into two categories:
 
 - Serif - Courier New, Georgia, Times New Roman
 - San Serif - Arial, Verdana, Trebuchet MS
 
-For any web site you are probably Using either serif or a San serif as your base font.
+In simple terms you are probably going to choose serif or a san serif font for your web projects based on hwo you want to present a product or a message. 
+
+- Serif 
+  - Look better and read better in print
+  - Tend look "old school", repectable, and formal
+  - Tend to be easier to read at small point sizes
+- San Serif
+  - Clean, stable, and reliable
+  - Looks modern and youthful
 
 ## UI System Fonts 
 
-These UI specific fonts. These are newer and more up to date than the standard system fonts. These work especially good for mobile since mobile devices tend to not use the same fonts available on the desktop. 
+These UI specific fonts are newer and more up to date than the standard system fonts. These work especially good for mobile since mobile devices tend to not use the same fonts available on the desktop. 
 
 You should include these in your font stack. 
 
@@ -85,7 +109,9 @@ You should include these in your font stack.
 
 It's hard to support everyone, and you never know which system is viewing your site. You'll need a large font stack. 
 
-Here is what the pros are doing: 
+So that's pretty complicated. What is your font stack across all the desktop and mobile devices out there? 
+
+Here are the font stacks used by large companies with products that you use every day. 
 
 **GitHub**
 
@@ -101,9 +127,32 @@ body {
 ```CSS
 /* System Fonts as used by Medium and WordPress */
 body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,Cantarell, "Helvetica Neue", sans-serif;
 }
 ```
+
+There are a couple strange key words in there. I'm looking at you: `BlinkMacSystemFont`. What is this? Rather than naming a font these keywords target devices which know what font to use when they see the word. 
+
+| Font | Device Targeted |
+|:-----|:----------------|
+| -apple-system (San Francisco) | iOS Safari, macOS Safari, macOS Firefox |
+| BlinkMacSystemFont (San Francisco) | macOS Chrome |
+| Segoe UI | Windows |
+| Roboto | Android, Chrome OS |
+| Oxygen / Oxygen-Sans | KDE |
+| Fira Sans | Firefox OS |
+| Droid Sans | Older versions of Android |
+| Ubuntu | Ubuntu |
+| Cantarell | GNOME |
+| Helvetica Neue | macOS versions < 10.11 |
+| Arial | Any |
+| sans-serif | Any |
+
+Here you can see translates to "San Francisco" (the font) on macOS and Chrome. This allows the font change in the future if the Apple came up with a new font to replace "San Francisc". 
+
+https://bitsofco.de/the-new-system-font-stack/
+
+For performance consider this: 
 
 Using the the methods above is quick and easy but forces the system to check the font stack each time fonts are applied. Alternatively you can use `@font-face` to declare a font in advance and reference that choice by name. 
 
@@ -129,6 +178,13 @@ Which should you use? For now your choice. The first is easier to manage. The se
 
 Speaking of `@font-face` what does this do? 
 
+### Activity
+
+Apply one of the font stacks above to the sample html document. 
+
+Q: What happened? 
+Q: Does it look better? 
+
 ## Custom Fonts 
 
 Load a custom font using `@font-face`. You'll need to host your font files and have license to the serve them. 
@@ -143,14 +199,39 @@ Google Fonts has hundereds of fonts. You can borwse them all at the link below.
 
 Custom fonts have the downside that they take longer load. System fonts are already installed. 
 
+### Activity
+
+Choose a custom font from Google Fonts and apply it to the sample HTML document. Be sure to adjust the `font-size` and `line-height`. 
+
+Q: Does it look better? 
+Q: What font did you choose? 
+
 ## Font Strategies 
 
-Choosing fonts 
+Choose a font for your project. It should probably be a san-serif unless you have a good reason to use a serif. 
+
+If you are making software or a web site that is less concerned about brand identity the default system font should come first: 
+
+```CSS
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+```
+
+Why? Using system fonts will give your work a native feel. This is probably the right choice most often. Making your site look native on the device that is viewing it makes it comfortable for everyone to view, and look best in that environment, it also increases performance. 
+
+If you're making something that has strong brand identity and it's important to have a custom font but that font first on the list and default to serif or san-serif native fonts. 
+
+https://blog.logrocket.com/how-to-use-web-fonts-in-css-a0326f4d6a4d/
 
 - Pick a family 
 - Set the base font style for all tags by setting styles on the html tag
   - Set the font size on the html tag
   - Set the line height
+
+### Activity 
+
+Try one of the font stacks above on the sample html. 
 
 ## Defining your Font Stack
 
@@ -184,6 +265,7 @@ The **`rem`** is root em. It represents a multiple of the root font size. This i
 
 ## Additional Resources
 
+1. https://webstyleguide.com/9-typography.html
 1. https://blog.prototypr.io/top-10-ui-fonts-for-web-mobile-a8488e561ce3
 1. https://uxplanet.org/5-universal-fonts-for-web-mobile-design-7b491df0ea16
 1. https://css-tricks.com/snippets/css/system-font-stack/
