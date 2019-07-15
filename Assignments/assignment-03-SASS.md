@@ -6,6 +6,10 @@ The goal of this assignment is to apply SASS to a project. You can choose any pa
 
 If you don't have a suitable project contact me and I will give you a project to work on. 
 
+## Slides 
+
+https://docs.google.com/presentation/d/1ptueI32nTL6P_pMXoQMeV6k-JLmpUJ3YQFpxUGE5PkY/edit#slide=id.g4cf79cf4e3_0_202
+
 ### Why this assignment?
 
 SASS is a common industry tool. You should know what it is and how it works. By implementing SASS in your own work you will get a close up view of what it does and how to work with it. 
