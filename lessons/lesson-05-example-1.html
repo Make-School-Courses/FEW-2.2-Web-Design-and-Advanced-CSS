@@ -15,12 +15,12 @@
 				--color-danger: #dc3545;
 				--color-callout: #ffa107;
 				
-				--font-stack: Helvetica;
+				--font-stack: "Helvetica Neue";
 				--font-stack-code: Courier;
 				--font-size: 18px;
 				--font-line-height: 1.65;
 				
-				--vertical-space: 1em;
+				--vertical-space: 2em;
 			}
 			
 			body {
@@ -78,8 +78,8 @@
 				<p>CSS Custom properties add a whole new dimension to CSS.</p>
 			</div>
 			
-			<div class="info">
-				<p><strong>Important!</strong></p>
+			<div class="info" style="--color-info: var(--color-danger)">
+				<p><strong style="color: var(--color-light)">Important!</strong></p>
 				<ul>
 					<li>Custom property names must begin with a double hyphen: <br><code>'--name'</code></li>
 					<li>The rest of the name should be kabobcase: <br><code>'--font-stack'</code></li> 

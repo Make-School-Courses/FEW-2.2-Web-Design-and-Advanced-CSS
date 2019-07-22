@@ -300,10 +300,6 @@ This is working well, but it could be better. There are a few places where the c
 1. Change the second info box has a warning. This should use `--color-danger` or `--color-callout`. 
 2. The color of "Important!" is not right. This should use the `--color-light` or another color. 
 
-## Apply some Custom properties
-
-There is a 
-
 ## Reset CSS
 
 The reason HTML that you write looks the way it does is because browser applies default CSS styles to elements. 
