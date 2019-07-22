@@ -26,6 +26,7 @@ https://webstyleguide.com/9-typography.html
 
 - Serif
 - San Serif
+- fixed width (code)
 
 ## Styling type
 

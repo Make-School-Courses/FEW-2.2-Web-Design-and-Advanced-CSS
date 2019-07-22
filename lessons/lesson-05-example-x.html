@@ -1,12 +1,5 @@
 <style>
-  button {
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
+  
   :root { 
     --color: #333333;
     --body-color: #eee;
@@ -24,6 +17,12 @@
 
   button {
     --weight: normal;
+
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
 
     font-weight: var(--weight);
     background-color: var(--background-color, var(--primary-color));
@@ -47,7 +46,6 @@
 
   button:active {
     background-color:var(--background-color, var(--primary-color));
-    
     color: var(--light-color);
   }
 
