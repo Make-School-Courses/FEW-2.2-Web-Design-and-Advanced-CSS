@@ -1,0 +1,8 @@
+# FEW 2.2 - Assignment 4 - Typography Rubric
+
+| Expectations | Does not meet              | Meets                 | Exceeds                          |
+|:-------------|:---------------------------|:----------------------|:---------------------------------|
+| Completion   | You have only completed some of the items described in the homework description | The changes you have made feel complete and cover all of the important elements on the page: headings, body copy, footers, links, blockquotes, etc. | Besides you making changes to typography you have shown your work to others and incorporated their feedback. Your framework could be applied to a future project and would apply a reasonable set of styles |
+| Quality      | The styles don't improve on the default styles applied by the browser | Applying your stylesheet to the sample document makes the test read well **without applying more styles**  | When using your stylesheet and no other styles the sample document looks as good as any of the other frameworks listed above. |
+| Comprehension | Can't explain how and why you are making this CSS framework | Can explain the rationale behind making the framework and offer insight as to where and when it would be good to use a CSS framework. | You have a plan for this framework and see a path through to making something that could be applied to almost any website |
+| Work ethic   | few massive commits | Commits outline progress. Your repo has a readme that explains the purpose of the work | The progress of your work is clearly outlined by commit messages. |

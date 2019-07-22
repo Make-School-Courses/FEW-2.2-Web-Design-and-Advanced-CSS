@@ -326,14 +326,6 @@ Q: What are the differences between these different resets?
 
 Choose one of the stylesheets and apply it to the example code. 
 
-## Tutorial
-
-https://www.sitepoint.com/css-theming-custom-properties-javascript/
-
-https://codeburst.io/css-variables-explained-with-5-examples-84adaffaa5bd
-
-https://css-tricks.com/css-custom-properties-theming/
-
 ## Apply CSS Custom properties to your work
 
 Take your CSS logo and move all of the values into CSS custom properties. Anything that is a value can be a property. Move these to a location in your code where it makes them easier to access. 
@@ -350,13 +342,16 @@ Q: Does this make better CSS code?
 
 ## Homework 
 
-The goal of the homework assignment is to update a past project with CSS Custom properties. 
+The goal of this assignment is to start your CSS Framework. This assignment will continue through the next few classes. You'll be adding features with each new assignment until it is complete.  
 
-[Assignment 3](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-And-Advanced-CSS/blob/master/Assignments/assignment-2-update-past-project.md) 
+[Assignment 5](assignment-05-framework-fonts.md) 
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+1. assignment-05-framework-fonts.md
+2. https://www.sitepoint.com/css-theming-custom-properties-javascript/
+3. https://codeburst.io/css-variables-explained-with-5-examples-84adaffaa5bd
+4. https://css-tricks.com/css-custom-properties-theming/
 
 ## Minute-by-Minute [OPTIONAL]
 
