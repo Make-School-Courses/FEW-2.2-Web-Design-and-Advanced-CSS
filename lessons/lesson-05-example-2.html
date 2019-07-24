@@ -3,10 +3,17 @@
   :root { 
     --color: #333333;
     --body-color: #eee;
-    --primary-color: #47b6e9;
-    --light-color: #fff;
+    
     --font-family: Helvetica;
     --font-size: 16px;
+
+    --color-primary: #47b6e9;
+    --color-darker: #333;
+    --color-dark: #666;
+    --color-medium: #999;
+    --color-lighter: #aaa;
+    --color-lightest: #ddd;
+    --color-light: #fff;
   }
 
   body {
@@ -16,64 +23,89 @@
   }
 
   button {
-    --weight: normal;
-
+    --weight: normal; 
+    /* Remove the default styles */
     border: none;
     font: inherit;
     color: inherit;
+    box-shadow: none;
     background-color: transparent;
+
+    /* Give the button a finger cursor */
     cursor: pointer;
-
-    font-weight: var(--weight);
-    background-color: var(--background-color, var(--primary-color));
-    /* background-color: var(--background-color); */
-    color: var(--light-color);
-
+    /* Style the button */
     border-width: 2px;
     border-style: solid;
     border-color: transparent;
     border-radius: 0.5em;
-    padding: 0.7em 1em;
+    padding: 0.7em 1em; /* Use padding to give the text some space */
     font-size: 1em;
-    box-shadow: none;
+
+    /* Think about adding a transition */
+    transition: 200ms;
+    
+    /* Use some variables to control the appearance */
+    font-weight: var(--weight);
+    background-color: var(--background-color, var(--color-primary));
+    color: var(--color-light);
   }
 
+  /* Style the interactive states of the button */
   button:hover {
+    /* Use the variables here */ 
     background-color: var(--body-color);
-    border-color: var(--background-color, var(--primary-color));
-    color: var(--background-color, var(--primary-color));
+    border-color: var(--background-color, var(--color-primary));
+    color: var(--background-color, var(--color-primary));
   }
 
   button:active {
-    background-color:var(--background-color, var(--primary-color));
-    color: var(--light-color);
+    background-color:var(--background-color, var(--color-primary));
+    color: var(--color-light);
+    /* Use filter to make the button darker */
+    -webkit-filter: brightness(80%);
+    -moz-filter: brightness(80%); 
+    -ms-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    filter: brightness(80%);
   }
 
-  input[type=text] {
+  input[type=text], 
+  input[type=email], 
+  input[type=password], 
+  textarea {
+    --border-color: var(--color-medium);
     padding: 0.7em 1em;
-    border: 1px solid var(--color);
+    border: 2px solid var(--border-color);
     border-radius: 0.5em;
     font-size: 1em;
+
+    /* Add a transition */
+    transition: 200ms;
+
+    /* 
+      This removes the accessibility outline 
+      which should never be removed
+      https://a11yproject.com/posts/never-remove-css-outlines/
+    */
+  outline: none !important; 
+  }
+
+  input[type=text]:focus, 
+  input[type=email]:focus, 
+  input[type=password]:focus,
+  textarea:focus {
+    --border-color: var(--color-primary);
   }
 
   label {
     display: block;
+    margin: 0 0 1em 0;
   }
 
   label > span {
+    font-size: 0.75em;
     display: block;
-    margin: 0 1em;
-    position: relative;
-    top: 2em;
-    transition: 200ms
-  }
-
-  label:focus-within > span {
-    top: 0;
-  }
-
-  label:placeholder-shown > span {
-    color: red;
+    margin: 1em 0;
   }
 </style>
 
@@ -95,11 +127,86 @@
       <form>
 
         <label>
-          <span>Name:</span>
+          <span>Text:</span>
           <input type="text" placeholder="What is your name?">
         </label>
+
+        <label>
+          <span>Email:</span>
+          <input type="email" placeholder="What is your name?">
+        </label>
+
+        <label>
+          <span>Password:</span>
+          <input type="password" placeholder="What is your name?">
+        </label>
+
+        <label>
+          <span>Your comments</span>
+          <textarea placeholder="Your comment"></textarea>
+        </label>
+
+        <!-- ******************************************* -->
+    <!-- Switch with Click -->
+    <div>
+      <label id="switch-2" class="switch-2">
+        <input type="checkbox">
+        <div>
+          <div></div>
+        </div>
+      </label>
+      <span>Click Switch no JS</span>
+    </div>
+  
+    <style>
+      /* Switch Click 
+      This switch is toggled on a click. The JavaScript 
+      below adds or removes the class .on to change the 
+      visual state of the switch. */
+      
+      .switch-2 {
+        width: 100px;
+        height: 60px;
+        border-radius: 30px;
+        border: 1px solid #ddd;
+        background-color: #efefef;
+        position: relative;
+        transition: 200ms;
+        cursor: pointer;
+      }
+
+      .switch-2 > input {
+        display: none;
+      }
+      
+      .switch-2 > div {
+        width: 56px;
+        height: 56px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 2px;
+        position: absolute;
+        left: 0;
+        transition: 200ms
+      }
+      /* When the .switch has the class .on change the 
+      color to green. */
+      
+      .switch-2 input:checked ~ div {
+        background-color: #07e207;
+      }
+      /* When the .switch has the .on class change the 
+      position left to 40px. */
+      
+      .switch-2 input:checked ~ div {
+        left: 40px;
+      }
+  
+    </style>
+  <!-- ******************************************* -->
         
       </form>
+
 
   </div>
 

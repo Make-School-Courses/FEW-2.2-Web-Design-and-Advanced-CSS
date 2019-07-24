@@ -1,4 +1,4 @@
-# FEW 2.2 - Assignment 4 - Typography Rubric
+# FEW 2.2 - Assignment 5 - Typography Rubric
 
 | Expectations | Does not meet              | Meets                 | Exceeds                          |
 |:-------------|:---------------------------|:----------------------|:---------------------------------|
