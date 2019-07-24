@@ -107,6 +107,127 @@
     display: block;
     margin: 1em 0;
   }
+
+
+
+  /* Switch Click 
+  This switch is toggled on a click. The JavaScript 
+  below adds or removes the class .on to change the 
+  visual state of the switch. */
+    
+  .switch-2 {
+    width: 54px;
+    height: 32px;
+    border-radius: 18px;
+    border: 2px solid var(--color-medium);
+    background-color: var(--color-light);
+    position: relative;
+    transition: 200ms;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .switch-2 > input[type=checkbox] {
+    display: none;
+  }
+  
+  .switch-2 > div {
+    width: 28px;
+    height: 28px;
+    background-color: var(--color-medium);
+    border-radius: 50%;
+    margin: 2px;
+    position: absolute;
+    left: 0;
+    transition: 200ms
+  }
+  /* When the .switch has the class .on change the 
+  color to green. */
+      
+  .switch-2 input:checked ~ div {
+    background-color: var(--color-primary);
+  }
+  /* When the .switch has the .on class change the 
+  position left to 40px. */
+  
+  .switch-2 input:checked ~ div {
+    left: 22px;
+  }
+
+
+  /* ---------------- */
+
+
+  /* The container */
+.control-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.control-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.control-checkbox > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.control-checkbox:hover input ~ .control-checkbox > span {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.control-checkbox input:checked ~ .control-checkbox > span {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.control-checkbox > span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.control-checkbox input:checked ~ .control-checkbox > span:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.control-checkbox > span:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 </style>
 
 <body>
@@ -146,67 +267,22 @@
           <textarea placeholder="Your comment"></textarea>
         </label>
 
-        <!-- ******************************************* -->
-    <!-- Switch with Click -->
-    <div>
-      <label id="switch-2" class="switch-2">
-        <input type="checkbox">
-        <div>
-          <div></div>
-        </div>
+      <!-- Switch with Click -->
+      <div>
+        <label id="switch-2" class="switch-2">
+          <input type="checkbox">
+          <div>
+            <div></div>
+          </div>
+        </label>
+        <span>Click Switch no JS</span>
+      </div>
+
+      <label class="control-checkbox">One
+        <input type="checkbox" checked="checked">
+        <span></span>
       </label>
-      <span>Click Switch no JS</span>
-    </div>
-  
-    <style>
-      /* Switch Click 
-      This switch is toggled on a click. The JavaScript 
-      below adds or removes the class .on to change the 
-      visual state of the switch. */
-      
-      .switch-2 {
-        width: 100px;
-        height: 60px;
-        border-radius: 30px;
-        border: 1px solid #ddd;
-        background-color: #efefef;
-        position: relative;
-        transition: 200ms;
-        cursor: pointer;
-      }
-
-      .switch-2 > input {
-        display: none;
-      }
-      
-      .switch-2 > div {
-        width: 56px;
-        height: 56px;
-        background-color: #fff;
-        border-radius: 50%;
-        margin: 2px;
-        position: absolute;
-        left: 0;
-        transition: 200ms
-      }
-      /* When the .switch has the class .on change the 
-      color to green. */
-      
-      .switch-2 input:checked ~ div {
-        background-color: #07e207;
-      }
-      /* When the .switch has the .on class change the 
-      position left to 40px. */
-      
-      .switch-2 input:checked ~ div {
-        left: 40px;
-      }
-  
-    </style>
-  <!-- ******************************************* -->
-        
-      </form>
-
+    </form>
 
   </div>
 

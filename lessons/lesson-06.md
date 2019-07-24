@@ -13,6 +13,26 @@ Form elements and controls are points of interaction in your applications. These
 1. Use CSS Filters
 1. Use browser prefixes to make styles work across all browsers
 
+
+## Getting your framework started
+
+These are all my opinionate ideas. I want you to consider them and make your own decisions on how you handle styles in your framework. 
+
+### Files and Structure
+
+Break your framework into files. This will make it managable and modular. Here are some ideas. 
+
+- Theming - 
+  - Use a file to contain all of the CSS Custom properties. 
+  - Use a file to contain all of the base styles
+- Use SASS - If you're using SASS you can move styles for various elements into separate files and include these in your compiled CSS. 
+- Anyone using your framework will almost always have another style sheet for their own customization. **Your framework doesn't have to style all things in all situations** it only needs to provide a good starting point. 
+- Use comments to organize your CSS code. CSS Code is verbose and you will write a lot of it. As the length grows it becomes more difficult to track styles. 
+
+## Make a Sample File 
+
+You need to have a sample file to show off your styles and see them in context. Take a clue from the other frameworks they all do this in their documentation. 
+
 ## Styling Controls 
 
 Controls are important people interact with your web products through the controls you provide. If the controls work well and people can intuit what to do with them they are more likely create user accounts, submit content, and buy products on your sites. 
@@ -358,6 +378,10 @@ position left to 40px. */
 }
 ```
 
+- https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3
+- https://www.456bereastreet.com/archive/201211/accessible_custom_checkboxes_and_radio_buttons/
+- https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3
+
 ### Challenge: Style radio buttons
 
 Use the concepts above to style radio buttons. 
@@ -365,16 +389,6 @@ Use the concepts above to style radio buttons.
 ### Get inspired by form styles
 
 https://uicookies.com/css-input-text/
-
-### Media Queries 
-
-
-
-
-
-
-
-
 
 ## CSS Custom Properties: Fallback Values 
 
