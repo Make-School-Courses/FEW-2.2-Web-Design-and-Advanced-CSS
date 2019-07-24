@@ -28,10 +28,24 @@ Break your framework into files. This will make it managable and modular. Here a
 - Use SASS - If you're using SASS you can move styles for various elements into separate files and include these in your compiled CSS. 
 - Anyone using your framework will almost always have another style sheet for their own customization. **Your framework doesn't have to style all things in all situations** it only needs to provide a good starting point. 
 - Use comments to organize your CSS code. CSS Code is verbose and you will write a lot of it. As the length grows it becomes more difficult to track styles. 
+- Use a prefix for all of the classnames in your framework. This will help in use and prevent namespace collisons. 
 
 ## Make a Sample File 
 
 You need to have a sample file to show off your styles and see them in context. Take a clue from the other frameworks they all do this in their documentation. 
+
+## Colors 
+
+Discuss with a partner your colors and choices. There are two questions to answer and get feedback on: 
+
+- What colors you have? What situations do your colors cover? Do you have a color for a warning? 
+- What do the colors look like? What do you think of the colors? Do they work together well? 
+
+## Naming
+
+You need to make names for things that explain how these things are used. The big two are class names and custom properties. 
+
+Discuss your code with your partner. Read your partners code and give them feedback on the names used for custom properties and classes. Ask yourself if you understand the purpose of the custom property or class and how you would apply it. 
 
 ## Styling Controls 
 
