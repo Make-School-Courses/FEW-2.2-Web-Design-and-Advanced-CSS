@@ -8,9 +8,9 @@ To create the layouts that you envision you'll need to use both of these tools.
 
 ## Learning Objectives
 
-1. Create one dimensional layouts with flexbox
+1. Create one-dimensional layouts with flexbox
 1. Arrange elements on an axis
-1. Create a nav bar
+1. Create a navbar
 
 ## Designing on a grid
 
@@ -18,7 +18,7 @@ Who uses a grid for design? Everyone. If you're not using a grid you're not desi
 
 Why use a grid for design? A grid provides an underlying structure. 
 
-What are these columns and rows? Columns run vertically and place elements across the page horizontally and rows run horizontally and set the vertical layout. Most ofte you won't set a row height and you'll let this be set by the height of the content. 
+What are these columns and rows? Columns run vertically and place elements across the page horizontally and rows run horizontally and set the vertical layout. Most often you won't set a row height and you'll let this be set by the height of the content. 
 
 ## Nav Bars
 
@@ -31,7 +31,7 @@ Look at some navbars.
 
 ## Markup
 
-The first step is to define some markup that will represent a navbar. The navbar will share mark with other elements to separate it and identify it as unique use a class name. 
+The first step is to define some markup that will represent a navbar. The navbar will share markup with other elements to separate it and identify it as unique use a class name. 
 
 ```HTML
 <div class="navbar">
@@ -55,12 +55,12 @@ The bar is used for navigation so each list item should contain an anchor.
 
 ```HTML
 <div class="navbar">
-	<ul>
-		<li><a href="#">Link 1</a></li>
-		<li><a href="#">Link 2</a></li>
-		<li><a href="#">Link 3</a></li>
-		<li><a href="#">Link 4</a></li>
-	</ul>
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+    </ul>
 </div>
 ```
 
@@ -72,21 +72,21 @@ Use a class name.
 
 ```HTML
 <div class="navbar">
-	<ul>
-		<li><h1 class="title">TITLE</h1></li>
-		<li><a href="#">Link 1</a></li>
-		<li><a href="#">Link 2</a></li>
-		<li><a href="#">Link 3</a></li>
-		<li><a href="#">Link 4</a></li>
-	</ul>
+    <ul>
+        <li><h1 class="title">TITLE</h1></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+    </ul>
 </div>
 ```
 
 ## Styles 
 
-The navbar will needs some styles to make it look like a navbar. The colors will be different from what is on the main part of the page but should use colors from your palette of colors. 
+The navbar will need some styles to make it look like a navbar. The colors will be different from what is on the main part of the page but should use colors from your palette of colors. 
 
-Document your code showing the expected structure of the navbar. You can use the child and descendent selctors to your advantage. 
+Document your code showing the expected structure of the navbar. You can use the child and descendant selectors to your advantage. 
 
 ```CSS
 .navbar { /* styles for navbar */ }
@@ -117,50 +117,69 @@ The ul has the following default styles:
 
 ```CSS
 .navbar > ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 ```
 
 ## Flexbox 
 
-Use flexbox to arrange things in the navbar. At the top level you'll want to arrange groups of links on the left and right. 
+Use flexbox to arrange things in the navbar. At the top level, you'll want to arrange groups of links on the left and right. 
 
 ```CSS
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
 }
 ```
 
 Use `space-between` and `row`. This should place the first list on the left. If there is a second list it should appear on the right. 
 
-Within a ul you'll also want to arrange elements in a row. 
+Within a ul, you'll also want to arrange elements in a row. 
 
 ```CSS
 .navbar > ul {
   /* Remove the default styles */
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   /* Arrange all of the links in a row */
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 ```
 
 https://cssreference.io/flexbox/
 
+## The State of your CSS Framework 
+
+This is class 7 You should have been working on your CSS framework for ~2 weeks by now. Consider this a big project. You should be investing time and energy into this. It is your final project. 
+
+So far you should have styles in your framework that cover: 
+
+- Type - Set the basic font styles for common elements: 
+  - p, h1-6, strong, em, blockquote, etc. 
+- Colors - You should have defined some custom properties for colors that will be used by your framework. This should include colors for: 
+  - foreground, background
+  - primary, info, danger, and success operations
+- You should also have styled form elements and controls. These styles should cover:
+  - Text input, buttons, radio buttons, and checkboxes. 
+
+This week you should be adding styles for: 
+
+- Navbar
+- Footer
+
 ## Activity 
 
 Follow the guide above to get your navbar started. Build from there and style the navbar to make it fit the design and theme of your framework. 
 
-We will will remove all of these at the break to get comments from your peers. After the break we will work to improve the navbars and review a second time. 
+We will remove all of these at the break to get comments from your peers. After the break, we will work to improve the navbars and review a second time. 
 
 ## Wrap Up
 

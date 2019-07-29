@@ -1,31 +1,14 @@
-# FEW 2.2 - Advanced CSS - Content Elements: Headers, Footers, CTAs
+# FEW 2.2 - Advanced CSS - Footers 
 
-Your framework should have some standard elements to make it useful!
+Standard elements are great. You should include easy ways for people to implement standard elements when using your framework. 
 
 ## Why you should know this?
 
-Many of these standard elements help communicate your ideas. Practice designing these is a usedful skill. 
+Every site could benenfit from a well designed footer! Flexbox is a skill you should master, you need more practice! 
 
 ## Learning Objectives 
 
-1. Use Grid to arrange elements in a 2d layout.
-1. Arrange elements using template columns 
-1. Arrange elements using named areas
-1. Define a grid columns and rows
-
-## Designing on a grid
-
-Who uses a grid for design? 
-
-Why use a grid for design? 
-
-What are these columns and rows? 
-
-## CSS Grid
-
-grid-template-columns
-
-grid-template-areas
+1. 
 
 ## Activity 
 
