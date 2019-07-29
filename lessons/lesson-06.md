@@ -38,8 +38,8 @@ You need to have a sample file to show off your styles and see them in context. 
 
 Discuss with a partner your colors and choices. There are two questions to answer and get feedback on: 
 
-- What colors you have? What situations do your colors cover? Do you have a color for a warning? 
-- What do the colors look like? What do you think of the colors? Do they work together well? 
+1. What colors you have? What situations do your colors cover? Do you have a color for a warning? 
+2. What do the colors look like? What do you think of the colors? Do they work together well? 
 
 ## Naming
 
@@ -88,6 +88,7 @@ button {
 
   /* Give the button a finger cursor */
   cursor: pointer;
+  
   /* Style the button */
   border-width: 2px;
   border-style: solid;
