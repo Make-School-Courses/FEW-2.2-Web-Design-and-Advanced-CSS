@@ -28,6 +28,14 @@ Your Nav Bar should:
 - Stretch goals
   - Has an option to arrange links on the left and right
 
+You should also document the navbar styles in your framework documentation. 
+
+### Stretch Challenge 
+
+A drop down menu would be a great addition to your framework! You can create one using only CSS. Follow the guide here: 
+
+https://css-tricks.com/solved-with-css-dropdown-menus/
+
 ### Deliverable
 
 All of the code for the Navbar is in your framework css repo. 
