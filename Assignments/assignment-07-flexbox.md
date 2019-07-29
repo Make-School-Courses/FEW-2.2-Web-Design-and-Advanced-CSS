@@ -1,4 +1,4 @@
-# FEW 2.2 - Assignment 7 - Nav Bar
+# FEW 2.2 - Assignment 7 - Nav Bar and Footer
 
 ## Description 
 
@@ -36,11 +36,23 @@ A drop down menu would be a great addition to your framework! You can create one
 
 https://css-tricks.com/solved-with-css-dropdown-menus/
 
+## Footer 
+
+You should design a footer. Use a class name for the footer container. 
+
+The footer should arrange lists (ul) in a row using flexbox. 
+
+The footer should also style the background and foreground colors in an appropriate way. You may need to change the link color to make it make sense in the context of the footer. Use the descendant selector to target these elements and override styles that need to be chnaged.  
+
 ### Deliverable
 
 All of the code for the Navbar is in your framework css repo. 
 
 Your readme documents Navbar. 
+
+The code for your footers are added to your framework repo. 
+
+Documentation for the footer added to your framework documentation. 
 
 ### Due date
 

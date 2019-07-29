@@ -11,6 +11,7 @@ To create the layouts that you envision you'll need to use both of these tools.
 1. Create one-dimensional layouts with flexbox
 1. Arrange elements on an axis
 1. Create a navbar
+1. Create a footer
 
 ## Designing on a grid
 
