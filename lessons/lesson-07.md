@@ -175,6 +175,12 @@ This week you should be adding styles for:
 - Navbar
 - Footer
 
+## Documentation for your framework
+
+You must document your framework. This inlcudes code samples showing the framework in use. Show a sample for each of the styles the framework generates. 
+
+You can follow the example I have created here: https://github.com/soggybag/frmwrk-css
+
 ## Activity 
 
 Follow the guide above to get your navbar started. Build from there and style the navbar to make it fit the design and theme of your framework. 
