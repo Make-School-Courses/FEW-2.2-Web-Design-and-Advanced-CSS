@@ -60,7 +60,7 @@ Class 8
 
 ## Assessing the assignment
 
-[Assignment Name Rubric](./assignment-rubric.md)
+[Assignment Name Rubric](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-And-Advanced-CSS/blob/master/Assignments/assignment-07-flexbox-rubric.md)
 
 
 

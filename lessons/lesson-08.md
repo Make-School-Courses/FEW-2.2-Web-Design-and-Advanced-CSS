@@ -1,6 +1,6 @@
-# FEW 2.2 - Advanced CSS - Footers 
+# FEW 2.2 - Advanced CSS - Grid 
 
-Standard elements are great. You should include easy ways for people to implement standard elements when using your framework. 
+CSS Grid is great you need to know this.
 
 ## Why you should know this?
 
