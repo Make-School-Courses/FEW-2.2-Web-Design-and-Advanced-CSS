@@ -26,11 +26,10 @@ Class 2
 
 ## Assessing the assignment
 
-[Assignment 1 - CSS Drawing Rubric](./assignment-01-css-drawing-rubric.md)
+[Assignment 1 - CSS Drawing Rubric](assignment-01-css-drawing-rubric.md)
 
 ## Resources 
 
 - https://www.youtube.com/watch?v=QZdj42liTtU
-- 
 
 

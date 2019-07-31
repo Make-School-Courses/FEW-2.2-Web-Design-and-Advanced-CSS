@@ -1,4 +1,4 @@
-# FEW 2.2 - Assignment 5 - Fonts 
+# FEW 2.2 - Assignment 4 - Fonts 
 
 ## Description 
 
@@ -113,6 +113,6 @@ Class 6
 
 ## Assessing the assignment
 
-[Assignment Name Rubric](./assignment-05-framework-rubric.md)
+[Assignment Name Rubric](assignment-05-framework-rubric.md)
 
 

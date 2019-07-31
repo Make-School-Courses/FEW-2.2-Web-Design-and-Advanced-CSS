@@ -24,7 +24,7 @@ Class 3
 
 ## Assessing the assignment
 
-[Assignment 2 - Animate Logo rubric](./assignment-02-Animate-Logo-rubric.md)
+[Assignment 2 - Animate Logo rubric]assignment-02-Animate-Logo-rubric.md)
 
 
 

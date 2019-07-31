@@ -1,4 +1,4 @@
-# FEW 2.2 - Advanced CSS - Grid 
+# FEW 2.2 - Advanced CSS -  
 
 CSS Grid is great you need to know this.
 
@@ -12,7 +12,7 @@ Every site could benenfit from a well designed footer! Flexbox is a skill you sh
 
 ## Activity 
 
-Apply Grid to a past project
+
 
 ## Wrap Up
 
