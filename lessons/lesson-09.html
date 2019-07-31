@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+
+
+    <!-- Shadow DOM Google Example -->
+    <script>
+      // Create non shadow DOM elements
+      // const header = document.createElement('header');
+      // const h1 = document.createElement('h1');
+      // h1.textContent = 'Hello world!';
+      // header.appendChild(h1);
+      // document.body.appendChild(header);
+
+      // Create Shadow elements
+      const header = document.createElement('header');
+      const shadowRoot = header.attachShadow({mode: 'open'});
+      shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>'; // Could also use appendChild().
+
+      header.shadowRoot === shadowRoot
+      shadowRoot.host === header
+
+      // -----
+
+      // Use custom elements API v1 to register a new HTML tag and define its JS behavior
+// using an ES6 class. Every instance of <fancy-tab> will have this same prototype.
+
+  // Custom element names must be hyphenated
+customElements.define('frmwrk-widget', class extends HTMLElement {
+  constructor() {
+    super(); // always call super() first in the constructor.
+
+    // Attach a shadow root
+    const shadowRoot = this.attachShadow({mode: 'open'});
+    shadowRoot.innerHTML = `
+      <style>#tabs {
+
+      }</style> 
+      <!-- styles are scoped to fancy-tabs! -->
+      <div id="tabs">Tabs...</div>
+      <div id="panels">Panels...</div>
+    `;
+  }
+  
+});
+    </script>
+
+
+
+    <!-- Shadow DOM MDN Example -->
+
+    <script>
+      // Create a class for the element
+      class PopUpInfo extends HTMLElement {
+        constructor() {
+          // Always call super first in constructor
+          super();
+
+          // Create a shadow root
+          const shadow = this.attachShadow({mode: 'open'});
+
+          // Create spans
+          const wrapper = document.createElement('span');
+          wrapper.setAttribute('class', 'wrapper');
+
+          const icon = document.createElement('span');
+          icon.setAttribute('class', 'icon');
+          icon.setAttribute('tabindex', 0);
+
+          const info = document.createElement('span');
+          info.setAttribute('class', 'info');
+
+          // Take attribute content and put it inside the info span
+          const text = this.getAttribute('data-text');
+          info.textContent = text;
+
+          // Insert icon
+          let imgUrl;
+          if(this.hasAttribute('img')) {
+            imgUrl = this.getAttribute('img');
+          } else {
+            imgUrl = 'img/default.png';
+          }
+
+          const img = document.createElement('img');
+          img.src = imgUrl;
+          icon.appendChild(img);
+
+          // Create some CSS to apply to the shadow dom
+          const style = document.createElement('style');
+          console.log(style.isConnected);
+
+          style.textContent = `
+            .wrapper {
+              position: relative;
+            }
+
+            .info {
+              font-size: 0.8rem;
+              width: 200px;
+              display: inline-block;
+              border: 1px solid black;
+              padding: 10px;
+              background: white;
+              border-radius: 10px;
+              opacity: 0;
+              transition: 0.6s all;
+              position: absolute;
+              bottom: 20px;
+              left: 10px;
+              z-index: 3;
+            }
+
+            img {
+              width: 1.2rem;
+            }
+
+            .icon:hover + .info, .icon:focus + .info {
+              opacity: 1;
+            }
+          `;
+
+          // Attach the created elements to the shadow dom
+          shadow.appendChild(style);
+          console.log(style.isConnected);
+          shadow.appendChild(wrapper);
+          wrapper.appendChild(icon);
+          wrapper.appendChild(info);
+        }
+      }
+
+      // Define the new element
+      customElements.define('popup-info', PopUpInfo);
+    </script>
+
+
+    <!-- Shadow DOM -->
+    <span class="shadow-git">
+      <a href="https://github.com">GitHub</a>
+    </span>
+
+    <script>
+      const gitEl = document.querySelector('.shadow-git')
+      const shadowGit = gitEl.attachShadow({ mode: 'open' })
+      const link = document.createElement('a')
+      link.href = gitEl.querySelector('a').href
+      link.innerHTML = `
+        <span aria-label="GitHub"></span>
+        ${gitEl.querySelector('a').textContent}
+      `
+      shadowGit.appendChild(link)
+
+      const styles = document.createElement('style')
+      styles.textContent = `
+        a, span {
+          display: inline-block;
+          box-sizing: border-box;
+        }
+
+        a {
+          font-family: Helvetica;
+          padding: 0.5em;
+          background-color: #1b95e0;
+          color: #fff;
+          border-radius: 0.25em;
+          text-decoration: none;
+          line-height: 1em;
+        }
+      `
+        shadowGit.appendChild(styles)
+    </script>
+  </body>
+</html>

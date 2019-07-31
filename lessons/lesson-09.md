@@ -14,6 +14,23 @@ While this is an experimental feature it is worth looking into as it wil give a 
 
 ## The Shadow DOM
 
+Quick read this. Complete this tutorial. 
+
+https://bitsofco.de/what-is-the-shadow-dom/
+
+
+### Notes 
+
+The Shadow DOM has gone through revision. There is a lot of info about Shadow DOM v0.x. Currently the Shadow DOM is v1.0. There are a couple differences. Mostly around mode open or closed. 
+
+Certain elements can't be used for the Shadow root. These are elements that: 
+
+- Have a Shadow DOM of their own like: `<input>`, `<textarea>`
+- Doesn't make sense the element should host a shadow dom like: `<canvas>`, `<img>`
+
+- `<template>` and `<slot>`
+
+
 What is the shadow DOM? 
 
 Can I use the Shadow DOM? 
@@ -36,7 +53,11 @@ Customize the ..................
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+1. https://bitsofco.de/what-is-the-shadow-dom/
+1. https://developers.google.com/web/fundamentals/web-components/shadowdom
+1. https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM
+1. https://blog.logrocket.com/understanding-shadow-dom-v1-fa9b81ebe3ac/
+1. https://css-tricks.com/playing-shadow-dom/
 
 ## Minute-by-Minute [OPTIONAL]
 

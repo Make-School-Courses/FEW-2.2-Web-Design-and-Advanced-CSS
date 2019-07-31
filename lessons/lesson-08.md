@@ -1,28 +1,26 @@
-# FEW 2.2 - Advanced CSS -  
+# FEW 2.2 - Advanced CSS - Wrapping up CSS Framework
 
-CSS Grid is great you need to know this.
+Wrapping up the CSS Framework
 
 ## Why you should know this?
 
-Every site could benenfit from a well designed footer! Flexbox is a skill you should master, you need more practice! 
+Today will be a workshop day you can use to finalize your framework. 
 
 ## Learning Objectives 
 
-1. 
+1. Review and work
 
 ## Activity 
 
-
+Workshop Pair up with another student get some feedback on your framework. Use this feedback to improve the styles you have and incorporate it into the the design of the new components you are creating. 
 
 ## Wrap Up
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- 
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+1. 
 
 ## Minute-by-Minute [OPTIONAL]
 
