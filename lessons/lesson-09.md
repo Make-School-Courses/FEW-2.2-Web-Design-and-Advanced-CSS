@@ -119,10 +119,10 @@ Open `example-02.html`. Take a close look at this file and discuss it with your 
 - Open the code in the browser
 - Inspect the DOM in the browser
 - Look at the source code. There are two files: 
- - example-02.html
- - hello-world.js
+  - example-02.html
+  - hello-world.js
  - Read the comments 
- - Uncomment the code at the bottom of `example-01.html`
+ - Uncomment the code at the bottom of `example-02.html`
  - Read the code and guess what will happen
  - Refresh the browser and check your assumptions
 

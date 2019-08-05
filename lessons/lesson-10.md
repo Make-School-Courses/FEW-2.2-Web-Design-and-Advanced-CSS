@@ -1,30 +1,29 @@
-# FEW 2.2 - Advanced CSS - Web Components
+# FEW 2.2 - Advanced CSS - Web Components part 2
 
-This could be the future of the web pay attention.  
+Looking templates and slots   
 
 ## Why you should know this?
 
-This could be the future of the web. As a web developer you should have an understanding of what is around the next corner! 
+Web Components are new and possibly game changing. 
 
 ## Learning Objectives 
 
-1. Define custom components
-1. Define use cases for custom components
-1. Build custom components 
+1. Use Templates to define reusable blocks of HTML
+1. Uses Slots to define where template s will appear
+1. Style components internally with a template
+1. Style components externally by using :host internally
 
 ## Web Components
 
-What are Web components?
 
-Can I use Web Components?
 
-## Build a Web Component
+## Templates 
 
-Build a Web component ..........
+
 
 ## Activity 
 
-Make your own component ..........
+
 
 ## Wrap Up
 
