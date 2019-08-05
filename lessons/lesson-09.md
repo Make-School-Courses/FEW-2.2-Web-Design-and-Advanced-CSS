@@ -126,8 +126,8 @@ Open `example-02.html`. Take a close look at this file and discuss it with your 
  - Read the code and guess what will happen
  - Refresh the browser and check your assumptions
 
-Q: What did you see? 
-Q: What can you infer about how this operates? 
+- Q: What did you see? 
+- Q: What can you infer about how this operates? 
 
 #### Let's stop and reflect...
 
