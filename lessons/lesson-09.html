@@ -26,26 +26,21 @@
       // -----
 
       // Use custom elements API v1 to register a new HTML tag and define its JS behavior
-// using an ES6 class. Every instance of <fancy-tab> will have this same prototype.
+      // using an ES6 class. Every instance of <fancy-tab> will have this same prototype.
+      customElements.define('fancy-tabs', class extends HTMLElement {
+        constructor() {
+          super(); // always call super() first in the constructor.
 
-  // Custom element names must be hyphenated
-customElements.define('frmwrk-widget', class extends HTMLElement {
-  constructor() {
-    super(); // always call super() first in the constructor.
-
-    // Attach a shadow root
-    const shadowRoot = this.attachShadow({mode: 'open'});
-    shadowRoot.innerHTML = `
-      <style>#tabs {
-
-      }</style> 
-      <!-- styles are scoped to fancy-tabs! -->
-      <div id="tabs">Tabs...</div>
-      <div id="panels">Panels...</div>
-    `;
-  }
-  
-});
+          // Attach a shadow root to <fancy-tabs>.
+          const shadowRoot = this.attachShadow({mode: 'open'});
+          shadowRoot.innerHTML = `
+            <style>#tabs { ... }</style> <!-- styles are scoped to fancy-tabs! -->
+            <div id="tabs">...</div>
+            <div id="panels">...</div>
+          `;
+        }
+        
+      });
     </script>
 
 
