@@ -50,17 +50,148 @@ When using custom tags you must use a closing tag, even if the tag is empty.
 - `<my-component />` bad
 - `<frmwrk-blink>` worse
 
-
-
 ## Concepts 
 
 There are few concepts that are important to Web Components. The challenge problems here build components from the ideas presented in class 9. 
 
-- Shadow Root 
-- Attributes, Properties, and refelction
-- Component Lifecycle methods 
-- Templates 
-- Defining Custom Elements 
+### Extend HTMLElement and define a new tag
+
+Extend HTMLElement and call super in the constructor. 
+
+```JS 
+// Create a class that backs the new element
+class MyElement extends HTMLElement {
+  constructor() {
+    super()
+    ...
+  }
+  ...
+}
+
+// Define the new element
+customElements.define('my-element', MyElement)
+```
+
+### Property names 
+
+Since you are extending HTMLElement you'll need to be careful about overriding properties that exist in HTMLElement. 
+
+Best practice: Use and underscore in front of all of the property names you define. 
+
+```JS 
+this._name = 'widget' // good
+this.name = 'wonky' // bad
+```
+
+### Shadow Root 
+
+Create a shadow root in your constructor. Probably a good idea to store this in a property. 
+
+This attaches a shadow root and stores it in a property: `_shadowRoot`
+
+```JS 
+...
+  constructor() {
+    super()
+    this._shadowRoot = this.attachShadow({ mode: 'open' })
+    ...
+  }
+  ...
+```
+
+### Templates 
+
+If the markup is complex make a template. You can add styles also. 
+
+You may not need this if the markup in your component is simple. 
+
+Think of a template as some markup you can use in your shadowroot. This can also contain styles in a style tag. 
+
+Best practice: define a template in a variable outside of your class inside the IFFE. 
+
+```JS 
+(function() {
+   const template = document.createElement('template')
+  template.innerHTML = `
+    <style>
+      /* some styles */
+    </style>
+    <div class="container">
+      <!-- some markup -->
+    </div>
+  `
+  class MyComponent extends HTMLElement {
+    ...
+```
+
+### Lifecycle methods 
+
+Use these to setup and take down your components. 
+
+Use the contructor to initialize class properties and create the shadow root. 
+
+Use `connectedCallback()` to handle things that should happen when the component is added to the DOM. For example adding a timer. 
+
+Use `disconnectedCallback()` to clean up when a component is removed from the DOM. For example remving a timer. 
+
+```JS 
+...
+class MyComponent extends HTMLElement {
+...
+    connectedCallback() {
+      // Create a timer and save a reference 
+      this._timer = setInterval(() => {
+        this._nextImg()
+      }, 3000)
+    }
+
+    disconnectedCallback() {
+      // Clear your timer
+      clearInterval(this._timer)
+    }
+    ...
+```
+
+In some cases you may not be able to get at the content of a node in your custom tag. There are a couple things you can try. 
+
+Make sure to include your JS files at the bottom of the body tag. This gaurantees the custom tags are loaded before the code runs. 
+
+You can also use `customElements.whenDefined()`. This method returns a promise. 
+
+```JS 
+class MyComponent extends HTMLElement {
+...
+    connectedCallback() {
+      ...
+      customElements.whenDefined('simple-slides').then(() => {
+        // do stuff after elements are defined
+      })
+    }
+    ...
+```
+
+### Attributes 
+
+If you are using attributes to confgure your component. You'll need to list the attribute names that are being observed and listen for changes. 
+
+Listening for changes and look at the name of the property that changed with `attributeChangedCallback(name, oldValue, newValue)`. 
+
+```js
+class MyComponent extends HTMLElement {
+  ...
+  static get observableAttibutes() {
+    return ['title', 'time']
+  }
+  ...
+  attributeChangedCallback(name, oldValue, newValue) {
+    console.log(name, oldValue, newValue)
+    if (name === 'title') {
+      this._title = newValue
+    } 
+    this.render()
+  }
+  ...
+```
 
 ## Activity 
 
@@ -130,7 +261,7 @@ Stretch Challenge: Make a cross fade between images. To do this you'll need two 
 
 ## Additional Resources
 
-1. 
+1.  
 
 ## Minute-by-Minute [OPTIONAL]
 

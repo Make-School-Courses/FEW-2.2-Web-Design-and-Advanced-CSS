@@ -274,7 +274,6 @@ Read the comments and find the tags at the bottom. The code defines a new tag: `
 
 With your partner try and define a new web component. Reference the `hello-world.js` component. You can peek at the `frmwrk-copy` source code if you need to but do as much on your own as you can. 
 
-
 Challenges: 
 
 - Make the Copyright component. Your component should: 
