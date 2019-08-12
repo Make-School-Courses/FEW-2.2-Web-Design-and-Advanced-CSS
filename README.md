@@ -27,8 +27,8 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 
 **Class Times:** Monday and Wednesday from 3:30–5:20 pm (12 class sessions)
 
-| Class  |         Date         |                Topics                |
-|:-----:|:----------------------|:---------------------------------------|
+| Class  |  Date         | Topics                |
+|:-----:|:---------------|:----------------------|
 |  1 | Mon, Aug 26  | [Drawing with CSS](lessons/lesson-01.md) |
 |  2 | Wed, Aug 28  | [Animation with CSS](lessons/lesson-02.md) |
 |  - | Mon, Sept 2  | **NO CLASS** - Labor Day |
