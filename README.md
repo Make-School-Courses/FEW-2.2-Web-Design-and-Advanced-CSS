@@ -32,7 +32,7 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 |  1 | Mon, Aug 26  | [Drawing with CSS](lessons/lesson-01.md) | [CSS Drawing](./Assignments/assignment-01-css-drawing.md) |
 |  2 | Wed, Aug 28  | [Animation with CSS](lessons/lesson-02.md) | [Animate your Drawing](./Assignments/assignment-02-Animate-Logo.md) |
 |  - | Mon, Sept 2  | **NO CLASS** - Labor Day | - |
-|  3 | Wed, Sept 4  | [SASS](lessons/lesson-3.md) | [Apply SASS to a past project](./Assignments/assignment-03-SASS.md) |
+|  3 | Wed, Sept 4  | [SASS](lessons/lesson-03.md) | [Apply SASS to a past project](./Assignments/assignment-03-SASS.md) |
 |  4 | Mon, Sept 9  | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-04-typography.md) |
 |  5 | Wed, Sept 11 | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts ](./Assignments/assignment-05-framework-fonts.md)  |
 |  6 | Mon, Sept 16 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-06-controls.md) |
