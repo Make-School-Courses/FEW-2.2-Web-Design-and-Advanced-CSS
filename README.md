@@ -29,7 +29,7 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 
 | Class  |  Date | Topics | Assignment |
 |:------:|:------|:-------|:-----------|
-|  1 | Mon, Aug 26  | [Drawing with CSS](lessons/lesson-01.md) | [CSS Drawing](./Assignments/assignment-1-css-drawing.md) |
+|  1 | Mon, Aug 26  | [Drawing with CSS](lessons/lesson-01.md) | [CSS Drawing](./Assignments/assignment-01-css-drawing.md) |
 |  2 | Wed, Aug 28  | [Animation with CSS](lessons/lesson-02.md) | [Animate your Drawing](./Assignments/assignment-02-Animate-Logo.md) |
 |  - | Mon, Sept 2  | **NO CLASS** - Labor Day | - |
 |  3 | Wed, Sept 4  | [SASS](lessons/lesson-3.md) | [Apply SASS to a past project](./Assignments/assignment-03-SASS.md) |
