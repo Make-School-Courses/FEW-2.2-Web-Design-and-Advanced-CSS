@@ -27,8 +27,8 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 
 **Class Times:** Monday and Wednesday from 3:30–5:20 pm (12 class sessions)
 
-| Class  |  Date         | Topics                |
-|:-----:|:---------------|:----------------------|
+| Class  |  Date | Topics |
+|:------:|:------|:-------|
 |  1 | Mon, Aug 26  | [Drawing with CSS](lessons/lesson-01.md) |
 |  2 | Wed, Aug 28  | [Animation with CSS](lessons/lesson-02.md) |
 |  - | Mon, Sept 2  | **NO CLASS** - Labor Day |
@@ -46,11 +46,11 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 
 ## Class Assignments
 
-We will begin the term reviewing CSS concepts. Then moving into new concepts that you will apply to your projects. The final project is to build a CSS framework. 
+We will begin the term reviewing CSS concepts. Then move into new concepts that you will apply to your projects. The final project is to build a CSS framework. 
 
 ### Custom CSS Framework
 
-You will be building a CSS framework to use for the frontend of any web project. It's like making your own [Bootstrap!](https://getbootstrap.com/)
+You will be building a CSS framework to use for the frontend of any web project. It's like making your own [Bootstrap!](https://getbootstrap.com/). It's about time that someone challenged Bootstrap and produced a viable replacement that is leaner, more flexible, and easier to use by implementing new CSS tools. 
 
 You'll build this framework throughout the course, with a midterm check-in to show progress and get feedback, as well as a final presentation in front of the class, where you show an example of your framework in use on a web app (previous project, sample static page used for the demo, etc.)
 
@@ -65,11 +65,11 @@ To pass this course you must meet the following requirements:
 
 ## Make School Course Policies
 
-- [Program Learning Outcomes](https://make.sc/program-learning-outcomes)
-- [Grading System](https://make.sc/grading-system)
-- [Diversity and Inclusion Statement](https://make.sc/diversity-and-inclusion-statement)
-- [Academic Honesty](https://make.sc/academic-honesty-policy)
-- [Attendance Policy](https://make.sc/attendance-policy)
-- [Course Credit Policy](https://make.sc/course-credit-policy)
-- [Disability Services (Academic Accommodations)](https://make.sc/disability-services)
-- [Student Handbook](https://make.sc/student-handbook)
+- [Program Learning Outcomes](https://make.sc/program-learning-outcomes) - What you will achieve after finishing Make School, all courses are designed around these outcomes.
+- [Grading System](https://make.sc/grading-system) - How grading is done at Make School
+- [Diversity and Inclusion Statement](https://make.sc/diversity-and-inclusion-statement) - Learn about Diversity and Inclusion at Make School
+- [Academic Honesty](https://make.sc/academic-honesty-policy) - Our policies around plagerism, cheating, and other forms of academic misconduct 
+- [Attendance Policy](https://make.sc/attendance-policy) - What we expect from you in terms of attendance for all classes at Make School
+- [Course Credit Policy](https://make.sc/course-credit-policy) - Our policy for how you obtain credit for your courses
+- [Disability Services (Academic Accommodations)](https://make.sc/disability-services) - Services and accommodations we provide for students
+- [Student Handbook](https://make.sc/student-handbook) - Guidelines, policies, and resources for all Make School students
