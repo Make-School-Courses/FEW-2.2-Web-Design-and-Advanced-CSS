@@ -36,7 +36,7 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 |  4 | Mon, Sept 9  | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-04-typography.md) |
 |  5 | Wed, Sept 11 | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts ](./Assignments/assignment-05-framework-fonts.md)  |
 |  6 | Mon, Sept 16 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-06-controls.md) |
-|  7 | Wed, Sept 18 | [CSS Flexbox](lessons/lesson-07.md) | [Framework: Nav Bar and Footer](../Assignments/assignment-07-flexbox.md) |
+|  7 | Wed, Sept 18 | [CSS Layout](lessons/lesson-07.md) | [Framework: Nav Bar and Footer](../Assignments/assignment-07-flexbox.md) |
 |  8 | Mon, Sept 23 | [Content Elements](lessons/lesson-08.md) | [Adding new elements and improving your framework](./Assignments/assignment-08-components.md) |
 |  9 | Wed, Sept 25 | [Web Components Part 1](lessons/lesson-09.md) |  |
 | 10 | Mon, Sept 30 | [Web Components Part 2](lessons/lesson-10.md) |  |
