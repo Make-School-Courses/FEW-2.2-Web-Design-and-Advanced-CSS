@@ -1,6 +1,6 @@
 # FEW 2.2 - Advanced CSS - Drawing with CSS
 
-This introduction will review CSS concepts and introcude transform.  
+This introduction will review CSS concepts and introduce transform.  
 
 ## Why you should know this?
 

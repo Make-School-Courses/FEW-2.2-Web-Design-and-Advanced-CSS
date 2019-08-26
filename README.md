@@ -35,7 +35,7 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 |  3 | Wed, Sept 4  | [SASS](lessons/lesson-3.md) |
 |  4 | Mon, Sept 9  | [Typography](lessons/lesson-04.md) |
 |  5 | Wed, Sept 11 | [CSS Custom Properties](lessons/lesson-05.md) |
-|  6 | Mon, Sept 1  | [CSS Custom Properties pt. 2](lessons/lesson-06.md) |
+|  6 | Mon, Sept 16 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) |
 |  7 | Wed, Sept 18 | [CSS Grid](lessons/lesson-07.md) |
 |  8 | Mon, Sept 23 | [Content Elements](lessons/lesson-08.md) |
 |  9 | Wed, Sept 25 | [Shadow DOM](lessons/lesson-09.md) |

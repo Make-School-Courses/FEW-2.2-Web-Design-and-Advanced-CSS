@@ -1,4 +1,4 @@
-# FEW 2.2 - Animate your Logo
+# FEW 2.2 - Animate your Drawing
 
 ## Description 
 
