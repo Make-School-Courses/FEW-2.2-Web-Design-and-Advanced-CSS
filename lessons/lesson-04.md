@@ -260,6 +260,12 @@ The **`em`** is a unit that represents a multiple of the inherited font size. Th
 
 The **`rem`** is root em. It represents a multiple of the root font size. This is the font size set on the html element, or body if you haven't set the font size on html. 
 
+## Homework: Improve your Typography
+
+The goal of this assignment is to improve the typography of a past project. See the homework description for details and requirements of this assignment. 
+
+- [Improve your Typography](../Assignments/assignment-04-typography.md)
+
 ## Wrap Up 
 
 - Review objectives 

@@ -1,4 +1,4 @@
-# FEW 2.2 - Assignment 4 - Typography
+# FEW 2.2 - Assignment 4 - Improve your Typography
 
 ## Description 
 

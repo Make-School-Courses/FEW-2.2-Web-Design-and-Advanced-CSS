@@ -27,22 +27,22 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 
 **Class Times:** Monday and Wednesday from 3:30–5:20 pm (12 class sessions)
 
-| Class  |  Date | Topics |
-|:------:|:------|:-------|
-|  1 | Mon, Aug 26  | [Drawing with CSS](lessons/lesson-01.md) |
-|  2 | Wed, Aug 28  | [Animation with CSS](lessons/lesson-02.md) |
-|  - | Mon, Sept 2  | **NO CLASS** - Labor Day |
-|  3 | Wed, Sept 4  | [SASS](lessons/lesson-3.md) |
-|  4 | Mon, Sept 9  | [Typography](lessons/lesson-04.md) |
-|  5 | Wed, Sept 11 | [CSS Custom Properties](lessons/lesson-05.md) |
-|  6 | Mon, Sept 16 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) |
-|  7 | Wed, Sept 18 | [CSS Grid](lessons/lesson-07.md) |
-|  8 | Mon, Sept 23 | [Content Elements](lessons/lesson-08.md) |
-|  9 | Wed, Sept 25 | [Shadow DOM](lessons/lesson-09.md) |
-| 10 | Mon, Sept 30 | [Web Components](lessons/lesson-10.md) |  
-| 11 | Wed, Oct 2   | [Final Exam](lessons/lesson-11.md) |
-| 12 | Mon, Oct 7   | TBD |
-| 13 | Wed, Oct 9   | [Final Presentations](lessons/lesson-12.md) |
+| Class  |  Date | Topics | Assignment |
+|:------:|:------|:-------|:-----------|
+|  1 | Mon, Aug 26  | [Drawing with CSS](lessons/lesson-01.md) | [CSS Drawing](./Assignments/assignment-1-css-drawing.md) |
+|  2 | Wed, Aug 28  | [Animation with CSS](lessons/lesson-02.md) | [Animate your Drawing](./Assignments/assignment-02-Animate-Logo.md) |
+|  - | Mon, Sept 2  | **NO CLASS** - Labor Day | - |
+|  3 | Wed, Sept 4  | [SASS](lessons/lesson-3.md) | [Apply SASS to a past project](./Assignments/assignment-03-SASS.md) |
+|  4 | Mon, Sept 9  | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-04-typography.md) |
+|  5 | Wed, Sept 11 | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts ](./Assignments/assignment-05-framework-fonts.md)  |
+|  6 | Mon, Sept 16 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-06-controls.md) |
+|  7 | Wed, Sept 18 | [CSS Flexbox](lessons/lesson-07.md) | [Framework: Nav Bar and Footer](../Assignments/assignment-07-flexbox.md) |
+|  8 | Mon, Sept 23 | [Content Elements](lessons/lesson-08.md) | [Adding new elements and improving your framework](./Assignments/assignment-08-components.md) |
+|  9 | Wed, Sept 25 | [Web Components Part 1](lessons/lesson-09.md) |  |
+| 10 | Mon, Sept 30 | [Web Components Part 2](lessons/lesson-10.md) |  |
+| 11 | Wed, Oct 2   | lab | - |
+| 12 | Mon, Oct 7   | [Final Assessment](lessons/lesson-11.md) | - |
+| 13 | Wed, Oct 9   | [Final Presentations](lessons/lesson-12.md) | - |
 
 ## Class Assignments
 

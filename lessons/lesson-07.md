@@ -180,13 +180,20 @@ This week you should be adding styles for:
 
 You must document your framework. This inlcudes code samples showing the framework in use. Show a sample for each of the styles the framework generates. 
 
-You can follow the example I have created here: https://github.com/soggybag/frmwrk-css
+You can follow the example I have created here: https://github.com/soggybag/frmwrk-cs
 
 ## Activity 
 
 Follow the guide above to get your navbar started. Build from there and style the navbar to make it fit the design and theme of your framework. 
 
 We will remove all of these at the break to get comments from your peers. After the break, we will work to improve the navbars and review a second time. 
+
+
+## Homework: Framework - Nav Bar and Footer
+
+Add a Navbar to your framework. See the description linked below for more details on this assignment: 
+
+- [Framework: Nav Bar and Footer](../Assignments/assignment-07-flexbox.md)
 
 ## Wrap Up
 

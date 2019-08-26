@@ -470,6 +470,12 @@ You need to define a range of font sizes. Imagine you need 4 sizes each larger t
 
 On mobile devices your range of font sizes need to be different from the sizes you are using on the desktop. 
 
+## Homework: Framework - Controls
+
+Define some styles for controls in your CSS Framework. See the home description linked below for more details:
+
+- [Framework: Controls](../Assignments/assignment-06-controls.md)
+
 ## Wrap Up (5 min)
 
 - Continue working on your current tutorial

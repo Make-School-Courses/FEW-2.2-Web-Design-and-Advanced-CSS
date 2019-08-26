@@ -134,9 +134,9 @@ https://bennettfeely.com/clippy/
 
 ## Homework 
 
-Improve your logo or draw another. Make it iconic. It should all be created with CSS! 
+The goal of this assignment is to create a drawing with only CSS. See the assignment description linked below for more details. 
 
-[./Assignments/assignment-1-css-drawing.md]
+[CSS Drawing](../Assignments/assignment-1-css-drawing.md)
 
 ## Wrap Up (5 min)
 

@@ -336,11 +336,11 @@ Q: What happened here?
 Q: Was it useful? 
 Q: Does this make better CSS code?
 
-## Homework 
+## Homework: Start your Framework - Fonts 
 
 The goal of this assignment is to start your CSS Framework. This assignment will continue through the next few classes. You'll be adding features with each new assignment until it is complete.  
 
-[Assignment 5](assignment-05-framework-fonts.md) 
+[Start your Framework: Fonts ](../Assignments/assignment-05-framework-fonts.md) 
 
 ## Additional Resources
 

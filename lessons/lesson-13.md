@@ -1,27 +1,30 @@
-# FEW 2.2 - Advanced CSS - Lab Web Components
+# FEW 2.2 - Advanced CSS - Presentation
 
-Working on your web components in class.
+Present your framework 
 
 ## Why you should know this?
 
-
+In the real world you have to show your work. 
 
 ## Learning Objectives 
 
-1. 
+1. Presenting your work
 
-## Web Components
+## Present your framework
 
-## Homework: 
+What is it? 
 
-- [](../Assignments/)
+Who should use it? 
+
+How to use it? 
 
 ## Wrap Up
 
+- 
 
 ## Additional Resources
 
-1.  
+1. Links to additional readings and videos
 
 ## Minute-by-Minute [OPTIONAL]
 

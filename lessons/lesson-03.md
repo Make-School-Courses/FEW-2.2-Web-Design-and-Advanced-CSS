@@ -240,6 +240,10 @@ Review your work with another student before the end of class.
 
 To really get an understanding for SASS you have to use it. Your goal is to apply SASS to one of your past projects. 
 
+See the description here for details and requirements for this assignment: 
+
+- [Apply SASS to a past project](../Assignments/assignment-03-SASS.md)
+
 ## Wrap Up
 
 - Review class 
