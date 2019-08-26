@@ -60,4 +60,4 @@ Class 8
 
 ## Assessing the assignment
 
-[Assignment Name Rubric](assignment-07-flexbox-rubric.md)
+[Assignment Name Rubric](assignment-07-layout-rubric.md)
