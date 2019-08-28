@@ -38,7 +38,7 @@ Explore some CSS animations
 14. https://codepen.io/oliviale/full/jxPgKv
 15. https://codepen.io/antho-fsy/pen/wJqWKj
 
-What is happening in these animations? Don't worry about the technical details just _identify what is moving_ and _how is it moving_.
+What is happening in these animations? Don't worry about the technical details just _identify what is moving_ and _the quality of its motion_.
 
 ## Making things move
 
@@ -47,7 +47,7 @@ There are a couple ways to make things move with CSS.
 - `transition`
 - `@keyframe`
 
-In a nutshell `transition` causes chnages to CSS properties to chnage over time rather than instantly, `@keyframe` defines changes that are mapped out over time. 
+In a nutshell `transition` causes changes to CSS properties to change over time instead of changing instantly, `@keyframe` defines changes that are mapped out over time. Transition animates a change to a property keyframes map out changes that are then applied to properties. 
 
 ### Transition
 
@@ -62,7 +62,7 @@ In a nutshell `transition` causes chnages to CSS properties to chnage over time 
 }
 
 .a:hover {
-  /* These changes occur over the transition time */
+  /* These changes occur over the transition time set above */
   transform: scale(1.25) rotate(12deg);
 }
 ```
@@ -75,7 +75,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_trans
 
 To create keyframe animations define some keyframes. A key frame describes the values for CSS properties at a point in time. 
 
-Give animation a name, `scaleAndRotate` in the example below. 
+Assign keyframe animation a name, `scaleAndRotate` in the example below. 
 
 Define the value for properties along the length of the animation. Here `transform: scale(0.5) rotate(0)` happens at the beginning `0%`, `background-color: blue` happens at the half way point `50%`, and `transform: scale(1.0) rotate(23deg)` happens at the end of the animation `100%`.
 ```CSS
@@ -96,6 +96,7 @@ div {
   height: 100px;
   background: red;
   position :relative;
+  /*         name     duration iteration-count */
   animation: scaleAndRotate 5s infinite;
 }
 ```
