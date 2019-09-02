@@ -57,9 +57,9 @@ The goal is show a simple technique that anyone in class could apply to their wo
 
 ### Deliverable
 
-A link to the branch of your project that uses SASS. 
+A link to the branch of your project that uses SASS. Put this in the progress tracker. 
 
-Your GitHub Gist and live code sample. 
+Your GitHub Gist and live code sample. You will present this in class 4. 
 
 ### Due date
 

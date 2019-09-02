@@ -18,7 +18,7 @@ Q: What is SASS?
 A: SASS is a language that compiles to vanilla CSS. 
 
 Q: Why use SASS? 
-A: SASS provides a way to generate CSS from higher level code that inlcudes variables, conditional statements, loops, and more, that don't exist in vanilla CSS. 
+A: SASS provides a way to generate CSS from higher level code that inlcudes variables, conditional statements, loops, and more. These are things that _don't exist in vanilla CSS_. 
 
 Q: Can I use the SASS language in the browser?
 A: No, you must compile scss to CSS first. 
@@ -62,7 +62,7 @@ SASS supports variables. Use it to:
 
 - Share values for DRY code
 - Calculate relative values for DRY code 
-- Create mixins (functions) for DRY code
+- Create mixins (like functions) for DRY code
 - Use utility functions to help your work
 
 The main use of SASS is to more maintainable CSS code. 

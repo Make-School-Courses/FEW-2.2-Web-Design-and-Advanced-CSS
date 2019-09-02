@@ -12,6 +12,10 @@ A majority of the content on the internet is text. Making good looking text that
 1. Use CSS styles to style text
 1. Implement custom fonts
 
+## SASS Presentation 
+
+Show how you applied SASS to your work from class 3.
+
 ## What is type on the web?
 
 https://webstyleguide.com/9-typography.html
@@ -149,7 +153,7 @@ There are a couple strange key words in there. I'm looking at you: `BlinkMacSyst
 | Arial | Any |
 | sans-serif | Any |
 
-Here you can see translates to "San Francisco" (the font) on macOS and Chrome. This allows the font change in the future if the Apple came up with a new font to replace "San Francisc". 
+Here you can see `BlinkMacSystemFont` translates to "San Francisco" (the font) on macOS and Chrome. This allows the font to change in the future if the Apple came up with a new font to replace "San Francisco". 
 
 https://bitsofco.de/the-new-system-font-stack/
 
@@ -175,9 +179,7 @@ body {
 
 Read more about this here: https://css-tricks.com/snippets/css/system-font-stack/
 
-Which should you use? For now your choice. The first is easier to manage. The second might have better performance. 
-
-Speaking of `@font-face` what does this do? 
+Which should you use? For now your choice. The first is easier to manage. The second might have better performance.  
 
 ### Activity
 
@@ -187,6 +189,8 @@ Q: What happened?
 Q: Does it look better? 
 
 ## Custom Fonts 
+
+Speaking of `@font-face` what does this do?
 
 Load a custom font using `@font-face`. You'll need to host your font files and have license to the serve them. 
 
@@ -207,7 +211,7 @@ Choose a custom font from Google Fonts and apply it to the sample HTML document.
 Q: Does it look better? 
 Q: What font did you choose? 
 
-## Font Strategies 
+## Choosing Fonts 
 
 Choose a font for your project. It should probably be a san-serif unless you have a good reason to use a serif. 
 
@@ -259,6 +263,15 @@ Why Do font choices matter: https://themeisle.com/blog/wordpress-fonts/
 The **`em`** is a unit that represents a multiple of the inherited font size. Think of this as a number that multiplies the font size an element would inherit. 
 
 The **`rem`** is root em. It represents a multiple of the root font size. This is the font size set on the html element, or body if you haven't set the font size on html. 
+
+### Activity 
+
+- Open the sample file [lesson-04.html](lesson-04.html)
+- Find the `<div id="ems-and-rems">`
+- Look at each `<p>` in the `<div id="ems-and-rems">`
+- Inspect the elements and examine the font size of each
+  - Use the inpsector 
+  - Using the "Computed" pane to see the actual value
 
 ## Homework: Improve your Typography
 
