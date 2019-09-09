@@ -1,5 +1,7 @@
 # FEW 2.2 - Advanced CSS - SASS
 
+Not Special Array Storage System...
+
 CSS Preprocessors: SASS - Syntactically Awesome StyleSheets. 
 
 ## Why you should know this?
@@ -8,23 +10,23 @@ CSS preprocessors are common in industry and provide some valuable functionality
 
 ## Learning Objectives
 
-1. Define CSS preprocessor functionality and uses
+1. Define CSS preprocessor functionality and uses cases
 1. Write code in the scss language
 1. Compile code written in scss to vanilla CSS
 
 ## What is SASS? 
 
-Q: What is SASS? 
-A: SASS is a language that compiles to vanilla CSS. 
+**Q:** What is SASS? 
+**A:** SASS is a language that compiles to vanilla CSS. 
 
-Q: Why use SASS? 
-A: SASS provides a way to generate CSS from higher level code that inlcudes variables, conditional statements, loops, and more. These are things that _don't exist in vanilla CSS_. 
+**Q:** Why use SASS? 
+**A:** SASS provides a way to generate CSS from higher level code that inlcudes variables, conditional statements, loops, and more. These are things that _don't exist in vanilla CSS_. 
 
-Q: Can I use the SASS language in the browser?
-A: No, you must compile scss to CSS first. 
+**Q:** Can I use the SASS language in the browser?
+**A:** No, you must compile scss to CSS first. 
 
-Q: How do you compile SASS? 
-A: Use a preprocessor, there are a few to choose from. Both command line tools and desktop applications. 
+**Q:** How do you compile SASS? 
+**A:** Use a preprocessor, there are a few to choose from. Both command line tools and desktop applications. 
 
 ## Install SASS
 
@@ -36,7 +38,7 @@ There are several tools you can use to compile SASS.
 
 You will use Node JS version since you have been using Node for other projects. 
 
-Install Node SASS. 
+Install Node SASS.
 
 `npm install -g sass`
 

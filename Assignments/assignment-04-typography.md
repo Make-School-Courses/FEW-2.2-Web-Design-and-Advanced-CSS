@@ -36,7 +36,7 @@ A link to the branch of your project with the improved typography.
 
 ### Due date
 
-Class 5 
+Class 5
 
 ## Assessing the assignment
 

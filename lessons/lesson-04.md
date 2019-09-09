@@ -16,6 +16,10 @@ A majority of the content on the internet is text. Making good looking text that
 
 Show how you applied SASS to your work from class 3.
 
+## What typography do you like? 
+
+Find soem type that you like on the web. Compare it to the type in the [example document](lesson-04.html). 
+
 ## What is type on the web?
 
 https://webstyleguide.com/9-typography.html
