@@ -16,9 +16,15 @@ A majority of the content on the internet is text. Making good looking text that
 
 Show how you applied SASS to your work from class 3.
 
+## What is Typography? 
+
+
+
 ## What typography do you like? 
 
-Find soem type that you like on the web. Compare it to the type in the [example document](lesson-04.html). 
+Find some typography that you like on the web. 
+
+Compare it to the type in the [example document](lesson-04.html). You can view this live on the web [here](https://make-school-courses.github.io/FEW-2.2-Web-Design-And-Advanced-CSS/lessons/lesson-04.html).
 
 ## What is type on the web?
 
@@ -88,7 +94,7 @@ Looking at the list these fonts fall into two categories:
 - Serif - Courier New, Georgia, Times New Roman
 - San Serif - Arial, Verdana, Trebuchet MS
 
-In simple terms you are probably going to choose serif or a san serif font for your web projects based on hwo you want to present a product or a message. 
+In simple terms you are probably going to choose serif or a san serif font for your web projects based on how you want to present a product or a message. 
 
 - Serif 
   - Look better and read better in print

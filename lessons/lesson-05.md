@@ -1,6 +1,6 @@
 # FEW 2.2 - Advanced CSS - CSS Custom Properties 
 
-CSS Custom properties are a feature that allows you to define your own custom properties and use their values in your CSS. 
+CSS Custom properties are a feature that allows you to define your own custom properties and use their values in your CSS.
 
 ## Why you should know this?
 
@@ -14,6 +14,51 @@ Besides making your CSS code skills up to date it will empower your projects wit
 2. Use CSS Custom properties in real world applications
 3. Use Math operations in CSS
 4. Use Reset CSS to remove browser inconsistencies
+
+## Custom CSS Framework
+
+You are going to create your own framework. 
+
+Q: What is a framework? 
+
+A: It's a collection of code that works together as a system. 
+
+You have probably used other frameworks before. BootStrap is very popular, there is also Foundation. These frameworks include systems that allow developers to easily create common UI elements. 
+
+let's take a look at some frameworks. 
+
+---
+
+- Explore Frameworks 
+  - What is a Framework
+  - What is inside the framework? 
+  - How do you think it was made? 
+    - Take apart Bootstrap and Foundation
+- You are going to make a Framework
+  - What does your framework need to contain/What does it need to do?
+
+What do other frameworks have? 
+- Layout - We will use CSS Grid instead
+- Content 
+  - Typography
+    - Headings - https://getbootstrap.com/docs/4.3/content/typography/#headings
+    - Copy 
+      - Inline elements - https://getbootstrap.com/docs/4.3/content/typography/#inline-text-elements
+        - em, strong, strike, abbr, code, quotes
+      - Blocks
+        - blockquote
+        - pre > code
+
+- Acivities 
+  - Sample Code set the fonts 
+  - Split code
+    - theme.css - contains variable values 
+    - style.css - contains styles rules 
+---
+
+
+
+
 
 ## CSS Custom Properties
 
@@ -39,25 +84,22 @@ Assigning a value is like setting the value of a property in CSS.
 
 Any value that would work in CSS can be assigned to a property. 
 
-You can assign values with and without a unit. When you use a value you need to include a unit! (see calc() below)
-
-You can define custom properties anywhere. Custom properties have scope, more on this later. 
+You can define custom properties anywhere. Where they are defined determines their scope. Scope follows the same rules as inheritence. 
 
 ```CSS
-:root {
+:root { /* Define custom properties on :root */
   --golden-ratio: 1.618;
   --base-font-size: 16px;
   --large-font-size: 1.85em;
   ...
 }
 
-.main {
+.main { /* define some custom properties on .main */
   --number-of-columns: 4;
   ...
-  grid-template-columns: repeat(var(--number-of-columns), 1fr);
 }
 
-.alert {
+button { /* define some custom properties on each button */
   --color: red;
   --primary-color: rgba(123, 37, 44, 0.7);
   --size: 121px;
@@ -71,22 +113,21 @@ You can define custom properties anywhere. Custom properties have scope, more on
 
 By declaring custom properties on `:root` they become global and available everywhere. 
 
-Otherwise declaring a cusom property on an element makes it available to that element and inherited by the elements descendents, but unavailable to it's anscestors. 
+Otherwise declaring a cusom property on an element makes it available to that element and inherited by the element's descendents, but unavailable to it's anscestors. 
 
 ### Accessing custom property values
 
-To access the value of a custom property use the `val()` method.
+To access the value of a custom property use the `val()` function.
 
 ```CSS
 .some-class {
-  var(--size)
-  var(--base-font-size)
-  var(--color)
-  va(--background-color)
+  width: var(--size);
+  color: var(--color);
+  background-color: var(--bg-color);
 }
 ```
 
-Here in context
+For example, you might define some values in `:root` then use those values throughout the rest of your stylesheet. 
 
 ```CSS
 :root {
@@ -140,15 +181,13 @@ Custom properties work with `calc()`.
 
 ```CSS
 .heading {
-  font-size: calc(16px * 1.85);
+  --size: 16px;
+  font-size: calc(var(--size) * 1.85);
 }
 
 .input[type=text] {
-  padding: calc(1em * 1.5);
-}
-
-.alert {
-  margin: calc(1em + 5px);
+  --scale: 1.5;
+  padding: calc(1em * var(--scale));
 }
 ```
 
@@ -223,7 +262,13 @@ Use a fall back value when a property may not exist.
 
 You can use a custom property as a fallback value! 
 
+Imagine `--background-color` is sometimes defined inline. When it is you want to use it. When it is not you want to use `--primary-color` defined in `:root`. 
+
 ```CSS
+:root {
+  --primary-color: #2478fe;
+}
+...
 .box {
   background-color: var(--background-color, var(--primary-color));
 }

@@ -10,19 +10,19 @@ Understand how type works and the features of typography will make your projects
 
 ## Project requirements
 
-Choose a past project and improve the typography. Your project must be on GitHub. 
+Choose a past project and improve the typography, your project must be on GitHub. 
 
 Make a branch in your GitHub project. Name it for the type improvements. Do your work on this branch. 
 
 Adjust the type in these ways:
 
 - If appropriate Use a custom font for your project otherwise use one of the [Font Stacks from lesson 4](../lessons/lesson-04.md#ui-system-fonts)  
-  - Custom font use - https://fonts.google.com
-  - System Fonts use - [Font Stacks from lesson 4](../lessons/lesson-04.md#ui-system-fonts)  
+  - Use a custome font - https://fonts.google.com
+  - Use a system font - [Font Stacks from lesson 4](../lessons/lesson-04.md#ui-system-fonts)  
 - Set a base font on the body. Set the `font-family` and `font-size`
-  - Set the `font-family` on the body or html elements
-- Adjust the font sizes in ems. Set the `font-size` in `em` on elements that are larger or smaller than the base font size. 
-  - Adjust font styles for headings
+  - Set the `font-family` on the body or html elements (while this will not change the appearance it will make working with typographic styles easier.)
+- Adjust the font sizes in `ems`. Set the `font-size` in `em` to make elements larger and smaller than the base size defined on the body. 
+  - Adjust font styles for headings. For example `h`1 { 2em; }`
 - Adjust the line height in the body. The base line-height is too small use 1.5em as a starting point. The goal is to use line-height to make the text more easy to read. use your best judgement. 
 - Set the color and background color
   - Check the contrast: https://webaim.org/resources/contrastchecker/
