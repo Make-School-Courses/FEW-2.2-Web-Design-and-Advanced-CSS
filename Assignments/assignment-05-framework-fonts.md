@@ -56,44 +56,7 @@ You need to define typographic styles for your framework. Think about making a l
 
 ### What should you style? 
 
-Concentrate on applying styles to basic elements. Link your stylesheet the [sample HTML doc from class 4](../lessons/lesson-04.html).
-
-Your styles should cover the elements listed below. Remember, styles are inherited, by setting the `font-family` and `font-size` on the body all of the other elements will inherit these values. Use this to your advantage whenever possible. 
-
-- body - all of your base styles here
-  - font-family
-  - line-height
-  - font-size
-  - color
-- h1-6 - most important here is the sizes, use em to make these elements relative to the base size you set on the body
-  - color
-  - font-size
-- strong and em 
-  - color
-  - font-weight
-- blockquote and q
-  - font-size
-  - font-family
-  - margin
-  - padding
-  - color
-- a - Be sure to style the :link, :visited, :hover, and :active styles (in this order!)
-  - color
-  - text-decoration
-
-You must set a base font style on body. All other elements will inherit from this. You can use a px size here. 
-
-Style all of the other elements using a relative size in em. 
-
-What's important here is choosing a good font stack and setting reasonable values for font size and line height. 
-
-### Use Reset 
-
-Choose one of the reset styles from [lesson 5](../lessons/lesson-05.md). 
-
-Either include this in your stylesheet or include it as a CSS file that will be linked to when using your framework. 
-
-Be sure to attribute/credit the creator of the reset. It should clear where this came from. 
+Copy this file, add a stylesheet and apply styles: [sample HTML doc from class 5](../lessons/lesson-05.html). Read the page and follow the instructions for each challenge. They all involve adding styles.
 
 ### Use Custom Properties 
 
