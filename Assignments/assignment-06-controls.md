@@ -35,6 +35,14 @@ When styling these be sure to use the label to your advantage where appropriate.
 
 You may want to search examples of these in the wild and look at how other frameworks handle these to inform your choices. 
 
+### Stretch Goal!
+
+Make some custom Radio buttons and check boxes. Follow this guide: 
+
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+
+Or google for more examples. 
+
 ## Deliverables
 
 Your new styles for controls should be added to your framework. 
