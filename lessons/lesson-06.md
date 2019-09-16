@@ -16,7 +16,160 @@ Form elements and controls are points of interaction in your applications. These
 
 ## Getting your framework started
 
-These are all my opinionate ideas. I want you to consider them and make your own decisions on how you handle styles in your framework. 
+These are all my opinionate ideas. I want you to consider them and make your own decisions on how you handle styles in your framework.
+
+## SASS and CSS Custom properties
+
+Use SASS to do what it does best and use custom properties for what they do best. 
+
+What to know? 
+
+**SASS is a preprocessor.** SASS is applied before your code ever reaches the browser. Use SASS to calculate things in advance. 
+
+**Custom Properties are live.** They exist in the browser. If the value of a custom property changes anything that relies on that values renders itself. 
+
+Here is an example. Imagine you have some colors. Often it's good to have tints and shades of your base colors. A tint is lighter version of a color, imgine you added white. A shade is a darker version of a color, imagine you added black. 
+
+While you could calculate these colors on your own, and this might be best if you are picky about colors, it also could be very tedious. Imagine you had 9 colors and needed 4 lighter (tints) and 4 darker (shades) versions of each base color. You would need to write 81 colors! It wouold also be very tedius to change the number of tints and shades since you'd have to recalculate each of your colors. 
+
+Let SASS handle this. **Why SASS?** The colors themselves don't change they can be calculated in advance. 
+
+The colors themselves are best defined as Custom Properties. The values are best calculated with SASS. 
+
+Define some colors in a map/dictionary. Using a map you can loop through the values and sue the keys as names. 
+
+```scss
+$colors: (
+	'gray': rgb(128, 128, 128),	
+	'primary': #007bff,
+	'info': #17a2b8,
+	'success': #28a745,
+	'danger': #dc3545,
+	'callout': #ffa107,
+	'secondary': #ffcd07,
+	'other': #ca5ae1,
+	'alternate': #a45ae1
+);
+```
+
+In SASS loop through the map/dictionary with `@each in`. This will give you the`$key` and the `$value` for each item. 
+
+```SCSS
+@each $key, $value in $colors {
+
+}
+```
+
+SASS provides some functions for working with colors. To make lighter and darker colors you can use `lighten($color, %)` and `darken($color, %)`. These will lighten or darken your colors by the %. For example `lighten(#f00, 10%)` lightens red by 10%. 
+
+Use a `@for from through` to lighten a color in steps. 
+
+``` SCSS
+$color: #f00;
+
+:root {
+  @for $i from 4 through 1 {
+    --color-lighter-#{$i}: #{lighten($color, 10% * $i)};
+  }
+}
+```
+
+This should generate 4 custom properties 10%, 20%, 30%, and 40% lighter. The output should look like: 
+
+```CSS
+:root {
+  --color-lighter-4: #ffcccc;
+  --color-lighter-3: #ff9999;
+  --color-lighter-2: #ff6666;
+  --color-lighter-1: #ff3333;
+}
+```
+
+Take note! 
+
+```SCSS
+/* Good! */
+--color-lighter-#{$i}: #{lighten($color, 10% * $i)};
+
+/* NOT! */
+--color-lighter-#{$i}: lighten($color, 10% * $i);
+
+/* This works for a class */
+.color-lighter-#{$i}: lighten($color, 10% * $i);
+```
+
+This line uses `#{...}` to write the values intot he stylesheet. Normally you'd be able use `lighten($color, 10% * $i)` alone. But this didn't work when the property was a custom property! I had to wrap it in `#{...}`. 
+
+Here is a more complete code snippet. The code below 
+
+```SCSS
+/* Colors - define an map/dictionary of colors */
+$colors: (
+	'gray': rgb(128, 128, 128),	
+	'primary': #007bff,
+	'info': #17a2b8,
+	'success': #28a745,
+	'danger': #dc3545,
+	'callout': #ffa107,
+	'secondary': #ffcd07,
+	'other': #ca5ae1,
+	'alternate': #a45ae1
+);
+/* Define Custom properties here */
+:root {
+	@each $key, $value in $colors {
+    /* Tints */
+		@for $i from 4 through 1 {
+			--color-#{$key}-lighter-#{$i}: #{lighten($value, 10% * $i)};
+		}
+
+		--color-#{$key}: #{$value}; /* Base Color */
+
+		/* Shades */
+		@for $i from 1 through 4 {
+			--color-#{$key}-darker-#{$i}: #{darken($value, 10% * $i)};
+		}
+  }
+}
+```
+The code above should generate something like: 
+
+```CSS
+:root {
+/* Tints */
+  --color-gray-lighter-4: #e6e6e6;
+  --color-gray-lighter-3: #cdcdcd;
+  --color-gray-lighter-2: #b3b3b3;
+  --color-gray-lighter-1: #9a9a9a;
+  --color-gray: gray; /* Base Color */
+  /* Shades */
+  --color-gray-darker-1: #676767;
+  --color-gray-darker-2: #4d4d4d;
+  --color-gray-darker-3: #343434;
+  --color-gray-darker-4: #1a1a1a;
+  ...
+}
+```
+
+How should you implement this? **Think very carefully about the naming.** The names are what's important here. They will determine how you work with these colors and how useful they will be. 
+
+The scheme I used names every base color with `--color-<name>`. The lighter versions of each color are named: `--color-<name>-lighter-<#>` and the darker colors are named: `--color-<name>-darker-<#>`.
+
+Ask yourself if this is a good naming convention or if you can think of a better system, or just improve on this. 
+
+### Working with SCSS files
+
+Remember your SCSS files need to be compiled into CSS files. Spend a few minutes thinking about your file structure. 
+
+- css
+  - framework.css
+  - theme.css
+- scss
+  - colors.scss
+  - framework.scss
+  - theme.scss
+
+Use `@import` to import one SCSS into another. Above `theme.scss` could import `colors.scss`. 
 
 ### Files and Structure
 
@@ -227,6 +380,20 @@ button:active {
   -ms-filter: brightness(80%);
   -o-filter: brightness(80%);
   filter: brightness(80%);
+}
+```
+
+### Custom properties color recipe
+
+```CSS
+:root {
+  --hue: 235;
+  --sat: 100%;
+  --lum: 87%;
+  --sat-dark: calc(var(--sat) * 0.6);
+  --lum-dark: calc(var(--lum) * 0.7);
+  --color: hsla(var(--hue), var(--sat), var(--lum), 1);
+  --color-dark: hsla(var(--hue), var(--sat), var(--lum-dark), 1);
 }
 ```
 

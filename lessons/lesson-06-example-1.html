@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>Buttons</h1>
+    <p>Buttons with custom properties</p>
+    <p>Your CSS Framework needs some good looking buttons. 
+      Buttons are all the action happens. Users login, buy things, 
+    answer questions, and more!</p>
+
+    <h2>Here are a few examples.</h2>
+
+    <section>
+      <!-- ******** EXAMPLE 1 ********* -->
+      <h3>Example 1</h3>
+
+      <p>These buttons use CSS custom properties. 
+        The advantage is the second button is easily customizable
+        by setting the value of custom properties <em>inline</em>.
+      </p>
+
+      <div>
+        <style>
+          .example-1-button {
+            --button-color: #222;
+            --label-color: #ddd;
+            border: 2px solid var(--button-color);
+            border-radius: 0.5em;
+            background-color: var(--button-color);
+            color: var(--label-color);
+            padding: 0.5em 1em;
+            font-size: inherit;
+          }
+        </style>
+        <p>
+          <button class="example-1-button">Button 1</button>
+          <button 
+            class="example-1-button" 
+            style="--button-color: #4a8ce2; --label-color: #fff">Button 2</button>
+        </p>
+      </div>
+
+      <h4>Challenge 1</h4>
+      <p>Make a third button. Use the class name 
+        <code>.example-1-button</code></p>
+      <p>Customize the color of the new button by using an 
+        <em>inline</em> style that sets the <code>--button-color</code> 
+        and <code>--label-color</code> custom properties to new colors.</p>
+    </section>
+
+
+    <section>
+      <!-- ******** EXAMPLE 2 ********* -->
+      <h3>Example 2</h3>
+
+      <p>These buttons add some interaction. 
+        Notice how the custom properties are used. 
+        custom properties defined in the <code>.example-2-button</code>
+        selector are available (through scope) in the 
+        <code>.example-2-button:hover</code> selector. 
+      </p>
+
+      <p>We can use an inline style to customize the values
+        in the same way as example 1.
+      </p>
+
+      <div>
+        <style>
+          .example-2-button {
+            --button-color: #4a8ce2;
+            --label-color: #fff;
+            border: 2px solid var(--button-color);
+            border-radius: 0.5em;
+            background-color: var(--button-color);
+            color: var(--label-color);
+            padding: 0.5em 1em;
+            font-size: inherit;
+          }
+
+          .example-2-button:hover {
+            background-color: var(--label-color);
+            color: var(--button-color);
+          }
+
+          .example-2-button:active {
+            filter: brightness(80%);
+          }
+        </style>
+        <p>
+          <button class="example-2-button">Button 1</button>
+          <button 
+            class="example-2-button" 
+            style="--button-color: #7cc24a">Button 1</button>
+      </div>
+
+      <p><strong>Important!</strong> In this example the value of 
+      <code>--button-color</code> changes in the <code>:hover</code>
+      rule and the appearance of button changes. 
+      <strong>Changes to CSS custom properties are applied 
+      immediately!</strong>
+    </p>
+
+    <p>That deserves repeating. Anytime the value of a custom property
+      changes those changes are applied immediately.
+    </p>
+
+    </section>
+
+    <section>
+      <!-- ************ Example 3 ************ -->
+      <h4>Challenge 3</h4>
+      <p>Make a new button. Use an <em>inline</em> style to give it a 
+        custom color. 
+      </p>
+    </section>
+  </body>
+</html>
