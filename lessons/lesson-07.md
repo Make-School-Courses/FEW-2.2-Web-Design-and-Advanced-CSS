@@ -13,13 +13,9 @@ To create the layouts that you envision you'll need to use both of these tools.
 1. Create a navbar
 1. Create a footer
 
-## Designing on a grid
+## Slides
 
-Who uses a grid for design? Everyone. If you're not using a grid you're not designing. 
-
-Why use a grid for design? A grid provides an underlying structure. 
-
-What are these columns and rows? Columns run vertically and place elements across the page horizontally and rows run horizontally and set the vertical layout. Most often you won't set a row height and you'll let this be set by the height of the content. 
+https://docs.google.com/presentation/d/1rJcp_j90I4v8zP_xTMlOpb-MEAsnEF4Gb7YrpsFH3u4/edit?usp=sharing
 
 ## Nav Bars
 
