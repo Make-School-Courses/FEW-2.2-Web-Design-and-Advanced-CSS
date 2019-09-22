@@ -48,6 +48,27 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 
 We will begin the term reviewing CSS concepts. Then move into new concepts that you will apply to your projects. The final project is to build a CSS framework. 
 
+1. [ ] CSS Drawing
+1. [ ] CSS Animation 
+1. Explore SASS
+    - Added SASS to a past project 
+        - [ ] Used at least three variables 
+        - [ ] Used one mixin
+        - [ ] Used one other SASS feature loop, function etc. 
+1. Improve Your Typography
+1. CSS Framework
+    - [ ] Define some colors with Custom properties
+    - Type Styles 
+        - [ ] Base Font family on body element
+        - [ ] Set the base font size on body
+        - [ ] Style h1-6
+        - [ ] Style inline elements strong, em, mark, etc.
+        - [ ] Style controls button, input 
+        - [ ] Style navbar
+        - [ ] Style footer
+1. Web Components 
+    - [ ] Completed Web Component tutorial
+
 ### Custom CSS Framework
 
 You will be building a CSS framework to use for the frontend of any web project. It's like making your own [Bootstrap!](https://getbootstrap.com/). It's about time that someone challenged Bootstrap and produced a viable replacement that is leaner, more flexible, and easier to use by implementing new CSS tools. 

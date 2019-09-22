@@ -1,323 +1,43 @@
-# FEW 2.2 - Advanced CSS - Web Components
+# FEW 2.2 - Advanced CSS - Review your framework
 
-Web components are the future of the web. In a nutshell, they allow you to create your _new_ tags that generate elements with encapsulated behavior. 
+Your framework needs many more elements to be useful in a wide range of cases. The goal of this class will be to look at what kinds of elements other frameworks implement. 
+
+Getting feedback on your framework is important to making something is truly useful. 
 
 ## Why you should know this?
 
-This is the future of the web. More web sites than you suspect are using web components.
+Your goal is to make something that could be used as a professional tool that will make this project a worthy contribution to your portfolio.  
 
 ## Learning Objectives 
 
-1. Define Web Components advantages and use cases
-1. Create a simple web component
-1. Use a web component on a web page
-1. Defining a new tag
-1. Create a shadow root
-1. Use reflection 
+1. Identify Elements used in profesional frameworks
+1. Strategize on how to implement these elements
 
-## Web Components 
+## Activity 
 
-Web components are one of the newest technologies available to web developers. Web Components are the building blocks of modern web applications. 
+Workshop Pair up with another student get some feedback on your framework. Use this feedback to improve the styles you have and incorporate it into the the design of the new components you are creating.
 
-Web Components give developers the ability to extend HTML and create new tags with custom functionality. 
+## Homework: Continue working on your framework
 
-Web Components are based on the existing component model. This results in more modular code that can be shared across teams and projects. 
+Take the feedback collected in class today to improve your framework. Continue working on your framework
 
-Who's using Web Components and where are they used? 
-
-https://www.youtube.com/watch?time_continue=12&v=YBwgkr_Sbx0
-
-Web components are:
-
-- Encapsulate functionality
-- Extend the browser with new components 
-- Low-Level Browser API
-- Created with HTML and JS
-- Portable
-- Standard Interface
- - Can work anywhere a standard component can work
-
-Web Components are not: 
-
-- Note Web Frameworks
-- Not opinionated
-
-Advantages 
-
-- Works with any app/stack
-- Not locked in
-- Future Proof
-
-Web Components also are known as custom elements is a system that allows you to define new HTML tags that generate elements within the DOM with encapsulated behavior you define. 
-
-### Shadow DOM
-
-A `<div>` displays only a box and it's text content. Which is pretty much the same for most tags. A few tags display more. Some display much more. 
-
-Tags like `<input>`, `<select>`, and `<video>` all display more than just a box and have encapsulated behaviors? 
-
-Each of these elements has a behavior backed by code and extra display elements backed by DOM elements that are **not** displayed in the inspector. 
-
-The shadow DOM is a hidden DOM tree that is separate from the "light" DOM. 
-
-![Shadow DOM](shadow-dom.png)
-
-Generally speaking a Shadow DOM is separate and not connected to the "light" DOM. 
-
-Terms: 
-
-- **Shadow host**: The regular DOM node that the shadow DOM is attached to.
-- **Shadow tree**: The DOM tree inside the shadow DOM.
-- **Shadow boundary**: the place where the shadow DOM ends, and the regular DOM begins.
-- **Shadow root**: The root node of the shadow tree.
-
-When you use a tag like audio the browser generates a controller with several buttons and other UI elements. These elements are displayed through the shadow DOM. Think of the shadow DOM as a subtree of regular DOM that is invisible to the "light" DOM. 
-
-Why use the shadow DOM? The shadow DOM allows you as a developer to encapsulate web structures that include DOM elements, Styles, and JS. 
-
-## Sample Code for activities 
-
-Download the files here: 
-
-https://github.com/Make-School-Labs/simple-component
-
-### Activity: Explore the shadows
-
-Don't believe me. You've never seen these "shadow" elements. Take a look at them for yourself. 
-
-Open `example-01.html` in your browser. 
-
-Inspect the slider. It should look like this: 
-
-`<input type="range">`
-
-Turn on "Show User Agen Shadow DOM" option. 
-
-Chrome: In the inspector go to settings, scroll to Elements and check the box: "Show user agent shadow DOM"
-
-Safari: Click the `< >` button in the inspector. 
-
-Pair up and discuss what you find...
-
-- Examine the Markup
-- Look for class and id names
-- Look at the styles
-- Stretch: Look at this with different browsers
-
-Discuss the shadow DOM
-
-Shadow DOM use case 1: Modify elements that use the shadow DOM for consistency across browsers. 
-
-For more information: https://css-tricks.com/sliding-nightmare-understanding-range-input/
-
-### Activity: hello shadow world
-
-While modifying the existing shadow DOM is possible where Web Components shine is when you make your _own_ components. Take a look at the Hello World of the Shadow DOM and Web Components. 
-
-Open `example-02.html`. Take a close look at this file and discuss it with your partner. Look at these areas: 
-
-- Open the code in the browser
-- Inspect the DOM in the browser
-- Look at the source code. There are two files: 
-  - example-02.html
-  - hello-world.js
- - Read the comments 
- - Uncomment the code at the bottom of `example-02.html`
- - Read the code and guess what will happen
- - Refresh the browser and check your assumptions
-
-- Q: What did you see? 
-- Q: What can you infer about how this operates? 
-
-#### Let's stop and reflect...
-
-There's a very important concept going on here, it's called reflection. 
-
-- With `example-02.html` open in a browser uncomment the code at the bottom of this file (it's in the script tag at the bottom of the page). 
-- Open the inspector and look at the first `<hello-world></hello-world>` tag. 
-- Refresh the page after 4 seconds an attribute should appear on the tag. 
-
-What is happening here? Answer: Reflection. 
-
-Reflection is a CS concept that describes how a program or structure can modify its structure to display its internal state, or you could say "reflect" it's internal state. 
-
-The `HelloWorld` class stores a property `this._name`. This holds the extra message the component can display. 
-
-An end-user can set this property through an attribute and conversely if the attribute changes internally it should be reflected in the HTML structure. 
-
-This reflection doesn't happen automatically. To make it happen in the component a couple of methods were used. 
-
-- line 17: `this._name` define a property
-- line 21: `static get observedAttributes()` this static method returns an array of properties that can be accessed from outside.
-- line 26: `attributeChangedCallback(name, oldValue, newValue)` This callback handles changes to an attribute. Use this to handle changes to an attribute. I compared the `name` of the property changed, and then set `this._name` to the `newValue`, then called `render()`
-
-The goal is to change the internal property when the attribute is changed and change the external attribute when the internal property is changed. 
-
-### Quick Topic: Getters and Setters
-
-Take a look at `getters-setters.js`. 
-
-Getters and setters are methods that look like properties. The class below creates a simple counter. 
-
-Internally it stores a property: _count. 
-Externally you can get or set the property: count
-
-The class also creates an HTML element, `el`, which it attaches to the DOM. This class displays the value
-of count in this element. 
-
-Then the count property is set we want el to update and display the new value. Normally you'd have to by calling a method since setting a 
-property doesn't run a code block. 
-
-Use a setter you can run a code block when setting
-a property. 
-
-In the sample code when `count` changes the new value needs to be displayed. 
-
-Without a getter and setter you might do this: 
-
-```JS
-const counter = new Counter()
-counter.count = 0 // Sets the property nocode is run internally
-counter.render() // So we need to call the render method
-console.log(counter.count) // Here we print the value like always. 
-// It's not possible to run code here.
-```
-
-An alternate idea, still without a getter or setter: 
-
-```JS 
-const counter = new Counter()
-counter.setCount(0) // Sets the count to 0 by calling a method
-// Internally this method calls this.render()
-console.log(counter.count) // get the value of count like usual
-// It is not possible to run code here. 
-```
-
-Let's do all of that with getters and setters
-
-```JS 
-const counter = new Counter()
-counter.count = 0 // Sets the count and runs the code in the setter function calling this.render()
-// Looks like a property from outside
-// Acts like a method internally
-console.log(counter.count) // Displays the count
-// Internally this acts as a method call and 
-// you could have run a code block. 
-```
-
-**Getters**: are methods preceded with the keyword `get`. These methods must return the value they are responsible for. 
-
-Getters can not take parameters! 
-
-**Setters**: are methods that are preceded by the keyword `set`. These methods can take one parameter. Which should be the new value to be assigned to the property they are responsible for. 
-
-**Note!** You can't use the same name for the getter/setter and the property where the value is stored. 
-
-For example, never do this: 
-
-```JS 
-get count() {
- return this.count
-}
-
-set count(val) {
- this.count = val
-}
-```
-
-This creates a recursive situation since setting the property `count` also calls the `set count(val)` method. 
-
-**Challenge**: Add a new getter and setter for a property that defines an increment for the count. 
-
-### Quick Topic: Static Properties and Methods
-
-A static method or property is a property or method that belongs to the class and is not owned by an instance of that class. 
-
-Use static methods when a method is shared by all instances and that method DOESN'T any values owned by that instance. 
-
-Static properties are properties that belong to the class NOT to an instance of the class. 
-
-At this time only Chrome allows the static keyword for properties.
-
-Static methods and properties are accessed from the class! NOT with `this`. For example: 
-
-```js 
-class Dog {
- ...
-}
-
-const sparky = new Dog()
-sparky.bark() // Call on an instance to bark
-Dog.numOfLegs // 4 since all dogs have 4 legs
-```
-
-Take a look at the sample code: `static-methods-properties.js`.
-
-- Read the code and discuss it with your partner. 
-- Make an assumption about what the code will output. 
-- Run the code and test your assumptions. 
-
-Challenge: 
-
-- Tesla is updating its factory every car must have a serial number that includes the year and the color along with the unique id number in use at the moment. For example: `2019red1`, `2019red2`, `2019red3`, `2019red4` etc. 
-- Tesla also needs to track the serial numbers of all cars sold. Store the serial numbers in an array. This should be a static property since there is a single list. 
-
-### Activity: Copyright Component
-
-Take a look at `example-03.html`. This example creates a simple Web Component that prints a copyright message. You don't want to update the date every year. Why not have it appear automatically. While you could write the code to do this on every page. You could easily make a component that encapsulated that code. 
-
-Open `example-03.html` in the browser. Note the copyright messages. 
-
-Open the source code. You should see `frmwrk-copy.js` imported at the top of the page.
-
-Read the comments and find the tags at the bottom. The code defines a new tag: `frmwrk-copy`. This works with two attributes: `year` and `title`. You'll see these in use in the sample code. 
-
-With your partner try and define a new web component. Reference the `hello-world.js` component. You can peek at the `frmwrk-copy` source code if you need to but do as much on your own as you can. 
-
-Challenges: 
-
-- Make the Copyright component. Your component should: 
- - Display "Copyright <year>" where the year is generated in code to get the current year. 
- - Takes an attribute for the year and displays this or the current year if it has not been set.
- - Takes a title attribute that is optionally displayed before the copyright and year, or is not displayed if it is missing. 
-- Create a blink component. Everyone is lamenting the fact the blink tag has been removed. 
- - Your blink component should take an attribute that defines the text it displays.
- - Use `setInterval()` to make the text "blink". You'll need to add an interval when the Component is created and remove when the component is removed from the DOM. Use the lifecycle methods for this. 
- - Use `connectedCallback()`
- - Use `disconnectedCallback()` to clear your interval
- - Use an attribute to set the time between blinks
- - Use two properties, one to set the on-time and another for the off-time. 
-
-### Homework 
-
-Choose one of the tutorials below. 
-
-- Web Component Todo list: https://dev.to/thepassle/web-components-from-zero-to-hero-4n4m
-- Tabs display: https://googlechromelabs.github.io/howto-components/howto-tabs/#demo
+- [Adding new elements and improving your framework](../Assignments/assignment-08-components.md)
 
 ## Wrap Up
 
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- 
 
 ## Additional Resources
 
-1. https://bitsofco.de/what-is-the-shadow-dom/
-1. https://developers.google.com/web/fundamentals/web-components/shadowdom
-1. https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM
-1. https://blog.logrocket.com/understanding-shadow-dom-v1-fa9b81ebe3ac/
-1. https://css-tricks.com/playing-shadow-dom/
-1. https://www.youtube.com/watch?v=YBwgkr_Sbx0
+1. 
 
 ## Minute-by-Minute [OPTIONAL]
 
-| **Elapsed** | **Time** | **Activity** |
+| **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00 | 0:05 | Objectives |
-| 0:05 | 0:15 | Overview |
-| 0:20 | 0:45 | In Class Activity I |
-| 1:05 | 0:10 | BREAK |
-| 1:15 | 0:45 | In Class Activity II |
-| TOTAL | 2:00 | |
-
+| 0:00        | 0:05      | Objectives                |
+| 0:05        | 0:15      | Overview                  |
+| 0:20        | 0:45      | In Class Activity I       |
+| 1:05        | 0:10      | BREAK                     |
+| 1:15        | 0:45      | In Class Activity II      |
+| TOTAL       | 2:00      |                           |

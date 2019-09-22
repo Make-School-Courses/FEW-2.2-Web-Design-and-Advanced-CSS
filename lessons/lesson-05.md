@@ -386,6 +386,9 @@ Q: Does this make better CSS code?
 The goal of this assignment is to start your CSS Framework. This assignment will continue through the next few classes. You'll be adding features with each new assignment until it is complete.  
 
 [Start your Framework: Fonts ](../Assignments/assignment-05-framework-fonts.md) 
+Clarify what you are doing by looking at what other people are doing who are doing the same thing. Check out this awesome list of CSS Frameworks. 
+
+- https://github.com/troxler/awesome-css-frameworks
 
 ## Additional Resources
 
@@ -393,6 +396,7 @@ The goal of this assignment is to start your CSS Framework. This assignment will
 2. https://www.sitepoint.com/css-theming-custom-properties-javascript/
 3. https://codeburst.io/css-variables-explained-with-5-examples-84adaffaa5bd
 4. https://css-tricks.com/css-custom-properties-theming/
+5. https://github.com/troxler/awesome-css-frameworks
 
 ## Minute-by-Minute [OPTIONAL]
 
