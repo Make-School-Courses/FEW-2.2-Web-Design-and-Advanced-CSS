@@ -103,7 +103,7 @@ Inspect the slider. It should look like this:
 
 `<input type="range">`
 
-Turn on "Show User Agen Shadow DOM" option. 
+Turn on "Show User Agent Shadow DOM" option. 
 
 Chrome: In the inspector go to settings, scroll to Elements and check the box: "Show user agent shadow DOM"
 
@@ -305,7 +305,7 @@ Challenges:
 Choose one of the tutorials below. 
 
 - Web Component Todo list: https://dev.to/thepassle/web-components-from-zero-to-hero-4n4m
-- Tabs display: https://googlechromelabs.github.io/howto-components/howto-tabs/#demo
+- Tabs display: https://developers.google.com/web/fundamentals/web-components/examples/howto-tabs
 
 ## Wrap Up
 

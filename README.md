@@ -49,7 +49,9 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 We will begin the term reviewing CSS concepts. Then move into new concepts that you will apply to your projects. The final project is to build a CSS framework. 
 
 1. [ ] CSS Drawing
+    - Deliverable: GitHub repo or link to Codepen
 1. [ ] CSS Animation 
+    - Deliverable: GitHub Repo or link to Codepen (this can be project 1 with animation added)
 1. Explore SASS
     - Added SASS to a past project 
         - [ ] Used at least three variables 
@@ -68,6 +70,7 @@ We will begin the term reviewing CSS concepts. Then move into new concepts that 
         - [ ] Style footer
 1. Web Components 
     - [ ] Completed Web Component tutorial
+    - [ ] Add web compomnent to your framework
 
 ### Custom CSS Framework
 
