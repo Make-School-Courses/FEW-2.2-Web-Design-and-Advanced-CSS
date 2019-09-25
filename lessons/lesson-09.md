@@ -25,7 +25,15 @@ Web Components are probably the most important new and emerging web technology. 
 - Review the homework
 - Publish your Framework to GitHub Pages
 
-## Activity 
+## Web Components Activity 
+
+To solve the challenges below we need to do a little prework. 
+
+- Add a script to a page
+- Select an element in the DOM
+- Get the text contents of that element
+- Create a new element
+- Append that new element as a child to another element 
 
 Try these challenges. Walk through the first, collaborate, on the second, solve the third in pairs. 
 
