@@ -307,6 +307,8 @@ Choose one of the tutorials below.
 - Web Component Todo list: https://dev.to/thepassle/web-components-from-zero-to-hero-4n4m
 - Tabs display: https://developers.google.com/web/fundamentals/web-components/examples/howto-tabs
 
+Due Class 9 (this wednesday)
+
 ## Wrap Up
 
 - Continue working on your current tutorial

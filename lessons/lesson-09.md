@@ -1,21 +1,44 @@
-# FEW 2.2 - Advanced CSS - Review your framework
+# FEW 2.2 - Advanced CSS - Exploring Web Components
 
-Your framework needs many more elements to be useful in a wide range of cases. The goal of this class will be to look at what kinds of elements other frameworks implement. 
-
-Getting feedback on your framework is important to making something is truly useful. 
+Continuing the discussion of Web Components from lesson 8. 
 
 ## Why you should know this?
 
-Your goal is to make something that could be used as a professional tool that will make this project a worthy contribution to your portfolio.  
+Web Components are probably the most important new and emerging web technology. They will take some practice to master.  
 
 ## Learning Objectives 
 
-1. Identify Elements used in profesional frameworks
-1. Strategize on how to implement these elements
+1. Identify major features of Web Components
+1. Use refelction with attributes 
+1. Build Web Components
 
 ## Activity 
 
-Workshop Pair up with another student get some feedback on your framework. Use this feedback to improve the styles you have and incorporate it into the the design of the new components you are creating.
+Try these challenges. Walk through the first, collaborate, on the second, solve the third in pairs. 
+
+- Copyright Component - Component displays a copyright message
+  - Make a new custom element
+  - Make a shadow root
+  - Use the date object to generate the year
+  - Override the year
+  - Display a message before and after the copyright
+- Blink - Lets bring back the Blink tag!
+  - Make a custom component named 'blink-text'
+  - Make a new shadow root
+  - Use `this.innerText` to get the inner text content of the tag
+  - Make the text 50% transparent using a style
+  - Animate the opactity using `setInterval()`
+  - Add a transition
+  - Use an attribute `time` to set the timing of the blinks
+  - Listen for chnages to the `time` attribute
+  - Remove the intverval when the component is removed
+- Rainbow text - The goal is to make a component that colors all of it's in a rainbow of colors. Imagine each word is a different color. 
+  - Make a new custom element `rainbow-text`
+  - Get the text from the host element
+  - Split the text on the space to get an array of words
+  - Transform the array of words into an array of spans
+  - Append these spans to the shadow root
+  - Assign each span a color style 
 
 ## Homework: Continue working on your framework
 
