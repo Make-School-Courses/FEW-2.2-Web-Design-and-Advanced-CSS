@@ -12,6 +12,19 @@ Web Components are probably the most important new and emerging web technology. 
 1. Use refelction with attributes 
 1. Build Web Components
 
+## Review CSS Frameworks 
+
+- Show your framework
+- Hacktober
+  - https://hacktoberfest.digitalocean.com
+  - Try some of these 
+    - https://github.com/soggybag/tetris-redux-app
+    - https://github.com/soggybag/simple-journal
+    - https://github.com/soggybag/course-book-react
+    - https://github.com/soggybag/sf-public-spaces
+- Review the homework
+- Publish your Framework to GitHub Pages
+
 ## Activity 
 
 Try these challenges. Walk through the first, collaborate, on the second, solve the third in pairs. 
