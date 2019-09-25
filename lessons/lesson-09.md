@@ -44,7 +44,7 @@ Try these challenges. Walk through the first, collaborate, on the second, solve 
 
 Take the feedback collected in class today to improve your framework. Continue working on your framework
 
-- [Adding new elements and improving your framework](../Assignments/assignment-08-components.md)
+- [Assignment 9](../Assignments/Assignment-09.md)
 
 ## Wrap Up
 
