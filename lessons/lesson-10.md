@@ -235,7 +235,21 @@ Stretch Challenge: Make the text that appears inside your blink tag blink. For e
 
 To do this you'll need to get the content text of the element and add it to the shadow root. 
 
-**Challenge 3** - Simple Slide Show 
+**Challenge 3** - Rainbow text 
+
+The goal is to make a component that colors all of it's in a rainbow of colors. Imagine each word is a different color. 
+
+Follow these steps:
+
+- Make a new custom element `rainbow-text`
+- Make a shadowroot
+- Get the text from the host element
+- Split the text on the space to get an array of words
+- Transform the array of words into an array of `<span>` tags
+- Append these spans to the shadow root
+- Assign each span a color style
+
+**Challenge 4** - Simple Slide Show 
 
 Make a simple slide show. Your slide show should cycle through a series of img tags that provided in the custom tag. For example: 
 
