@@ -54,3 +54,10 @@ Create a web component that makes each letter of a text string blink in order.
 
 Using the coponent above the letter A would blink then B, C etc. After E, A sould blink and the process would start over again. 
 
+## Extra Credit - Add one of your web components
+
+Use one of your Web Components in the web page. 
+
+## Extra Credit - Circle hover pop thing
+
+Make a Web Component that acts like a link but shows an expanding circle when you hover. 
