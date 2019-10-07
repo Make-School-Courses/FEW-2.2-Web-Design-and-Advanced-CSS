@@ -46,6 +46,14 @@ The links below images, for example "Samsung Galaxy 10 5g" have a hover effect w
 
 Extra Credit: Notice how the phone image bumps up a little on hover, include this also. 
 
+## Extra Credit - Web Component 
+
+Create a web component that makes each letter of a text string blink in order. 
+
+`<blinky-text>ABCDE</blinky-text>`
+
+Using the coponent above the letter A would blink then B, C etc. After E, A sould blink and the process would start over again. 
+
 ## Extra Credit - Add one of your web components
 
 Use one of your Web Components in the web page. 
