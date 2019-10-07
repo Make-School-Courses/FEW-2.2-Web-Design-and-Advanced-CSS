@@ -45,3 +45,11 @@ Extra Credit: Include the hover effect where the text changes color.
 The links below images, for example "Samsung Galaxy 10 5g" have a hover effect where a circle appears and expands. Try your best to implement this on all of the product links. 
 
 Extra Credit: Notice how the phone image bumps up a little on hover, include this also. 
+
+## Extra Credit - Add one of your web components
+
+Use one of your Web Components in the web page. 
+
+## Extra Credit - Circle hover pop thing
+
+Make a Web Component that acts like a link but shows an expanding circle when you hover. 
