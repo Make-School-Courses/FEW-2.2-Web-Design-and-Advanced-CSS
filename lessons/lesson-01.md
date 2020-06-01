@@ -8,7 +8,7 @@ Great question! Having the ability to place an element anywhere on the screen is
 
 While you might not be concerned with drawing and making pictures, it's quite possible someone will come to you with a visual idea and want you to recreate it. These are the tools you need. 
 
-Let's be honest your CSS skills are rusty you just need some practice! 
+Let's be honest your CSS skills are rusty you just need some practice!
 
 ## Lesson Slides 
 

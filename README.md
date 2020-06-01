@@ -6,6 +6,10 @@ This course is a deep exploration of CSS. Students take a close look at renderin
 
 Explain why students should care to learn the material presented in this class.
 
+### Why Learn advanced CSS? 
+
+CSS is a language that is responsible for the appearance of you web apps. To make great looking web apps that gather great user base you'll need to know it. 
+
 ## Prerequisites:  
 
 - [FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations)
@@ -21,10 +25,39 @@ Students by the end of the course will be able to:
 1. Apply advanced CSS concepts including transform, transition, and keyframes
 1. Implement industry best practices
 
-Beyond these you, students should be able to apply CSS like a boss and bring their ideas to the large and small screen! Students will also explore new bleeding edge concepts that hint at the future of CSS. 
+Beyond these you should be able to apply CSS like a boss and bring your ideas to the large and small screen! Students will also explore new bleeding edge concepts that are the future of the web. 
 
 ## Schedule
 
+**Course Dates:** Monday, June 1 – Friday, July 17, 2020 (7 weeks)
+
+**Class Times:** Monday, Wednesday, and Friday at 9:30–11:20am (20 class sessions)
+
+| Class  |  Date | Topics | Assignment |
+|:------:|:------|:-------|:-----------|
+|  1 |  Mon, June 1   | [Drawing with CSS](lessons/lesson-01.md) | [CSS Drawing](./Assignments/assignment-01-css-drawing.md) |
+|  2 |  Wed, June 3   | [CSS Drawing Lab] |
+|  3 |  Fri, June 5   | [Drawing with CSS](lessons/lesson-02.md) | [CSS Drawing part 2](./Assignments/assignment-02-css-drawing.md) |
+|  4 |  Mon, June 8   | [Animation with CSS](lessons/lesson-03.md) | [Animate your Drawing](./Assignments/assignment-03-Animate-Logo.md) |
+|  5 |  Wed, June 10  | [CSS Animation Lab] |
+|  6 |  Fri, June 12  | [Animation with CSS](lessons/lesson-04.md) | [Animate your Drawing](./Assignments/assignment-04-Animate-Logo.md) |
+|  7 |  Mon, June 15  | [SASS](lessons/lesson-03.md) | [Apply SASS to a past project](./Assignments/assignment-05-SASS.md) |
+|  8 |  Wed, June 17  | [SASS Lab] |
+|  9 |  Fri, June 19  | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-04-typography.md) |
+| 10 |  Mon, June 22  | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts](./Assignments/assignment-05-framework-fonts.md)  |
+| 11 |  Wed, June 24  | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-06-controls.md) |
+| 12 |  Fri, June 26  | [CSS Layout](lessons/lesson-07.md) | [Framework: Nav Bar and Footer](./Assignments/assignment-07-layout.md) |
+| 13 |  Mon, June 29  | [Content Elements](lessons/lesson-08.md) | [Adding new elements and improving your framework](./Assignments/assignment-08-components.md) |
+| 14 |  Wed, July 1   | [CSS Framework Lab]|  
+| -  |  Fri, July 3   | **NO CLASS - INDEPENDENCE DAY OBSERVED**|
+| 15 |  Mon, July 6   | [Web Components Part 1](lessons/lesson-09.md) |  |
+| 16 |  Wed, July 8   | [Web Components Part 2](lessons/lesson-10.md) |  |
+| 17 |  Fri, July 10  | [Web Components Lab |
+| 18 |  Mon, July 13  | [Final Assignment Lab] |
+| 19 |  Wed, July 15  | [Final Assessment](lessons/lesson-11.md) | - |
+| 20 |  Fri, July 17  | [Final Presentations](lessons/lesson-12.md) | - |
+
+<!-- 
 **Class Times:** Monday and Wednesday from 3:30–5:20 pm (12 class sessions)
 
 | Class  |  Date | Topics | Assignment |
@@ -42,7 +75,8 @@ Beyond these you, students should be able to apply CSS like a boss and bring the
 | 10 | Mon, Sept 30 | [Web Components Part 2](lessons/lesson-10.md) |  |
 | 11 | Wed, Oct 2   | lab | - |
 | 12 | Mon, Oct 7   | [Final Assessment](lessons/lesson-11.md) | - |
-| 13 | Wed, Oct 9   | [Final Presentations](lessons/lesson-12.md) | - |
+| 13 | Wed, Oct 9   | [Final Presentations](lessons/lesson-12.md) | - | 
+-->
 
 ## Class Assignments
 

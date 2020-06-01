@@ -2,7 +2,9 @@
 
 ## Description 
 
-Draw a logo with CSS. Keep it simple and iconic. 
+For this assignment you need top recreate all of the drawings that in the sample document. The answers are in the document but you should try and do them on your own. 
+
+Draw a logo with CSS. Keep it simple and iconic.
 
 ### Why this assignment?
 
