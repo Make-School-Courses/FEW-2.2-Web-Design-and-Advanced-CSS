@@ -38,7 +38,7 @@ You'll use selectors to target elements.
 Quick review your selectors! Pair up, using a single computer work through as many of the problems here as you can in 10mins.  https://flukeout.github.io
 
 Q: How far did you get? 
-Q: What did you learn? 
+Q: What did you learn?
 
 ## Can you draw with CSS? 
 
@@ -60,6 +60,16 @@ Sure you can! But it's not easy. Of course limitation opens creativity!
   <cite>- ?</cite>
 </blockquote>
 
+### Ideas
+
+With CSS you can draw basic shapes like rectangles and circles. Each shape can have a fill and a border. 
+
+To make a circle round the corners of a square using `border-radius`. 
+
+The `border-radius` can be applied to each of the four corners separately. You can use this to create leaf and drop shapes. 
+
+You can create more complex drawings by combining shapes. 
+
 With CSS you can draw a few shapes using: 
 
 - width
@@ -68,10 +78,37 @@ With CSS you can draw a few shapes using:
 - background-color
 - border-radius
 
-Position elements using: 
+Position and transform elements using: 
 
 - position: absolute and relative
 - transform: translate, rotate, scale, skew 
+
+Use `position: relative` on the parent element. This will define the coordinate context for descendants that are position relative. 
+
+Use `position: absolute` on elements when you want to place an element at an exact location. 
+
+Use `transform` to apply a CSS transform to an element. There are several transforms: 
+
+- translate(x, y) - moves/positions an element 
+- rotate(angle) - rotates an element (units are `deg` or `rad`)
+- scale(mult) - scales an element
+- skew(angle) - skews an element (units are `deg` or `rad`)
+
+**Transforms should be combined on a single line!** The transform property should only appear once but it can have as many values assigned as needed. For example:
+
+`transform: translate(100px, 30px) rotate(45deg) scale(1.5) skew(-30deg)`
+
+Here the element these rules apply to would be moved 100px to the right, 30px down, rotated 45deg clockwise, scale 150%, and skewed -30 degrees. 
+
+`transform: translate(100px, 30px)` - moves this element 100px to the right and 30px down
+
+`transform: translate(-50px, 0)` - moves this element 50px to the left
+
+### Cartesian Coordinates 
+
+Cartesian coordinates are like graph paper. The x position is measured along the horizontal axis and the y position is measured along the vertical axis.
+
+x = 0 and y = 0 would place an element in the upper left corner. **Where that upper left corner is depends on which element has `position: relative`.** When using position absolute it's the relative ancestor that defines the coordinate space. 
 
 ## Drawing Shapes
 
@@ -81,6 +118,34 @@ Pair up with someone you haven't paired with before. Look at the examples below 
 
 - https://css-tricks.com/the-shapes-of-css/
 - https://blog.prototypr.io/how-i-started-drawing-css-images-3fd878675c89
+
+### Border Radius
+
+Use border radius to round the corners of elements. You can round all the corners or choose the corners and round each seprately. 
+
+`border-radius: 50%` makes a circle if the height and width are equal
+
+`border-radius: 12px` all corners have a radius of 12px
+
+`border-bottom-left-radius: 50%` rounds the bottom left corner. 
+
+Alternately you can round set the radius for each of the four corners on the same line: 
+
+`border-radius: 12px 23px 34px 45px` here the upper left corner is 12px, the upper right is 23px, lower right is 34px, and the lower left is 45px. Remember this by starting in the upper left and moving clockwise. 
+
+### Borders
+
+To apply a border you need to include the width and style. 
+
+`border: 1px solid` creates a 1px wide solid border (uses the font color since no color was included)
+
+You can also the color:
+
+`border: 1px solid red` the border is red. 
+
+You can apply a border to each of the four sides of an element: 
+
+`border-left: 3px solid green` sets the border on the left to 3px solid and green. 
 
 ## CSS Transform
 
