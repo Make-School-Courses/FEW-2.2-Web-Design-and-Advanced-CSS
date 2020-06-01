@@ -16,7 +16,7 @@ Creating the drawings in this assignment will giev you an opportunity to practic
 
 Recreate each of the the 16 drawings in the example file. Each of the drawings is in a 50px by 50px box. You're going to recreate each at twice that size 100px by 100px. Otherwise try to make your drawings look the same as what is shown. 
 
-assignment-01.html
+[assignment-01.html](assignment-01.html)
 
 ### Stretch Goals 
 
