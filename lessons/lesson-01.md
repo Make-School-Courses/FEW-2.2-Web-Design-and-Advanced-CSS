@@ -197,6 +197,14 @@ If all of that was too easy try using CSS Clipping path.
 
 https://bennettfeely.com/clippy/
 
+## Logos with CSS
+
+It's surprosing what you can create with pure CSS. 
+
+https://freefrontend.com/css-logos/
+
+Take a look at these. Realize that they are all built around basic shapes and use features like border-radius, opacity, and transform creatively. 
+
 ## Homework 
 
 The goal of this assignment is to create a drawing with only CSS. See the assignment description linked below for more details. 

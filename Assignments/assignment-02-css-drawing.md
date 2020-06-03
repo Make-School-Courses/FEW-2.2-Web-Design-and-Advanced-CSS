@@ -1,8 +1,6 @@
 # FEW 2.2 - CSS Drawing
 
-## Description 
-
-For this assignment you need top recreate all of the drawings that in the sample document. The answers are in the document but you should try and do them on your own. 
+## Description  
 
 Draw a logo with CSS. Keep it simple and iconic.
 
@@ -16,7 +14,9 @@ Your CSS is probably rusty might as well get back into practice by challenging y
 
 You will create one logo drawn only using CSS. The logos should be your own invention for a completely fictitious company or product. 
 
-The logo should strive to be simple and iconic with strong contrast. 
+The logo should strive to be simple and iconic with strong contrast.
+
+Start by drawing the logo and identifying basic shapes that make up the image. 
 
 ### Deliverable
 
