@@ -4,8 +4,9 @@
 
   <!-- #b -->
   <div id="b">
-    <div></div>
-    <div></div>
+    <!-- #b > div -->
+    <div></div> <!-- #b > div:nth-child(1) -->
+    <div></div> <!-- #b > div:nth-child(2) -->
   </div>
 
 
@@ -72,28 +73,31 @@
 
   #c {
     width: 0;
-    height: 0;
-    border-left: 10px solid yellowgreen;
-    border-top: 10px solid orange;
-    border-right: 10px solid cornflowerblue;
+    height: 10px;
+    border-left: 10px solid transparent;
+    border-top: 0px solid transparent;
+    border-right: 10px solid transparent;
     border-bottom: 10px solid violet;
 
     position: absolute;
 
-    transform: translate(20px, 120px);
+    transform: translate(20px, 120px) rotate(45deg);
   }
 
 
   #heart {
+    width: 50px;
+    height: 50px;
     position: absolute;
     transform: translate(120px, 140px);
+    border: 1px solid;
   }
 
   #heart > div:nth-child(1) {
     width: 30px;
     height: 20px;
     position: absolute;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.381);
     border-radius: 20px 0 0 20px;
     transform: translate(-4px, 0) rotate(45deg);
   }
@@ -102,9 +106,9 @@
     width: 30px;
     height: 20px;
     position: absolute;
-    background-color: red;
+    background-color: rgba(255, 221, 0, 0.49);
     border-radius: 20px 0 0 20px;
-    transform: translate(4px, 0) rotate(135deg);
+    transform: rotate(135deg) translate(14px, 0);
   }
 
   #d {
@@ -112,6 +116,6 @@
     height: 30px;
     background-color: tomato;
     position: absolute;
-    transform: translate3d(140px, 60px, 0) perspective(60px) rotateY(45deg);
+    transform: translate3d(140px, 60px, 0) perspective(60px) rotate3d(0, 45deg, 0);
   }
 </style>

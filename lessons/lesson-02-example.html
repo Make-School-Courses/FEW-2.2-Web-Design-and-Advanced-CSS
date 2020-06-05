@@ -1,13 +1,16 @@
 <div class="container">
+
+
+
     <!-- ******************************************* -->
-    <!-- Simple Hover -->
+    <!-- Transition with Hover -->
     <div>
         <div class="a"></div>
-        <span>Hover</span>
+        <span>1. Hover</span>
     </div>
     
     <style>
-      /* Simple Hover */
+      /* Transitions with Hover */
       
       .a {
         width: 100px;
@@ -16,6 +19,8 @@
         /* Sets the time to apply changes to this element */
         transition: 400ms;
         /* s = secs ms = milliseconds  */
+        /* Starting values */
+        transform: scale(1) rotate(0);
       }
       
       .a:hover {
@@ -26,21 +31,19 @@
     </style>
     <!-- ******************************************* -->
 
+
+
+
     <!-- ******************************************* -->
-    <!-- Animate radius -->
+    <!-- You can animation any property -->
     <div>
       <div class="b">
         <div></div>
       </div>
-      <span>Nested Hover</span>
+      <span>2. Animate Radius</span>
     </div>
   
     <style>
-      /* 
-      Nested Hover 
-      While this example works this arrangement can have 
-      problems see the next example. 
-      */
       
       .b {
         width: 100px;
@@ -49,7 +52,7 @@
         position: relative;
       }
       
-      .b>div {
+      .b > div {
         width: 60px;
         height: 60px;
         background-color: red;
@@ -59,12 +62,16 @@
         transition: 400ms;
       }
       
+      /* Change the radius on a hover */
       .b > div:hover {
         border-radius: 50%;
       }
   
     </style>
     <!-- ******************************************* -->
+
+
+
 
     <!-- ******************************************* -->
     <!-- Nested Hovers -->
@@ -73,7 +80,7 @@
         <div></div>
         <div>Hello</div>
       </div>
-      <span>Hover hovers</span>
+      <span>3. Nest Hover</span>
     </div>
   
     <style>
@@ -109,6 +116,7 @@
       /* The hover triggers on the parent 
       and changes to properties apply to 
       a descendant */
+
       .b2:hover > div:first-child {
         height: 100px;
       }
@@ -120,50 +128,8 @@
     </style>
     <!-- ******************************************* -->
   
-    <!-- ******************************************* -->
-    <!-- Nested Hover -->
-    <div>
-      <div class="c">
-        <div></div>
-      </div>
-      <span>Hover parent</span>
-    </div>
-  
-    <style>
-      /* 
-      
-      Better Nested Hover 
-      
-      Here the outer container is triggering the hover animation 
-      on the innder nested element. 
-      
-      */
-      
-      .c {
-        width: 100px;
-        height: 100px;
-        border: 1px solid #000;
-        position: relative;
-      }
-      
-      .c>div {
-        width: 60px;
-        height: 60px;
-        background-color: red;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        transition: 400ms;
-      }
-      /* The :hover pseudo class is applied to the parent
-      with the animation is targeting the child div. */
-      
-      .c:hover>div {
-        transform: scale(1.25) rotate(12deg);
-      }
-  
-    </style>
-    <!-- ******************************************* -->
+
+
 
     <!-- ******************************************* -->
     <!-- Timing function linear -->
@@ -171,7 +137,7 @@
       <div class="c1">
         <div></div>
       </div>
-      <span>Hover parent</span>
+      <span>4. Easing</span>
     </div>
   
     <style>
@@ -182,7 +148,7 @@
         position: relative;
       }
       
-      .c1>div {
+      .c1 > div {
         width: 60px;
         height: 60px;
         background-color: red;
@@ -193,166 +159,18 @@
         /* Use timing function */
         transition-timing-function: linear;
       }
-      .c1:hover>div {
+      .c1:hover > div {
         transform: scale(1.25) rotate(12deg);
       }
   
     </style>
     <!-- ******************************************* -->
 
-    <!-- ******************************************* -->
-    <!-- Timeing function ease in -->
-    <div>
-      <div class="c2">
-        <div></div>
-      </div>
-      <span>Hover parent</span>
-    </div>
-  
-    <style>
-      .c2 {
-        width: 100px;
-        height: 100px;
-        border: 1px solid #000;
-        position: relative;
-      }
-      
-      .c2>div {
-        width: 60px;
-        height: 60px;
-        background-color: red;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        transition: 1000ms;
-        /* Use timing function */
-        transition-timing-function: ease-in;
-      }
-      
-      .c2:hover>div {
-        transform: scale(1.25) rotate(12deg);
-      }
-  
-    </style>
-    <!-- ******************************************* -->
 
-    <!-- ******************************************* -->
-    <!-- Timing function ease out -->
-    <div>
-      <div class="c2">
-        <div></div>
-      </div>
-      <span>Hover parent</span>
-    </div>
-  
-    <style>
-      .c2 {
-        width: 100px;
-        height: 100px;
-        border: 1px solid #000;
-        position: relative;
-      }
-      
-      .c2>div {
-        width: 60px;
-        height: 60px;
-        background-color: red;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        transition: 1000ms;
-        /* Use timing function */
-        transition-timing-function: ease-out;
-      }
-      
-      .c2:hover>div {
-        transform: scale(1.25) rotate(12deg);
-      }
-  
-    </style>
-    <!-- ******************************************* -->
 
-     <!-- ******************************************* -->
-    <!-- Timing function ease in out -->
-    <div>
-      <div class="c2">
-        <div></div>
-      </div>
-      <span>Hover parent</span>
-    </div>
-  
-    <style>
-      .c2 {
-        width: 100px;
-        height: 100px;
-        border: 1px solid #000;
-        position: relative;
-      }
-      
-      .c2>div {
-        width: 60px;
-        height: 60px;
-        background-color: red;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        transition: 1000ms;
-        /* Use timing function */
-        transition-timing-function: ease-in-out;
-      }
-      
-      .c2:hover>div {
-        transform: scale(1.25) rotate(12deg);
-      }
-  
-    </style>
-    <!-- ******************************************* -->
-  
+
     <!-- ******************************************* -->
     <!-- Overflow -->
-    <div>
-      <div class="d">
-        <div>Hello</div>
-      </div>
-      <span>Overflow</span>
-    </div>
-  
-    <style>
-      /* Overflow 
-      Use overflow to hide content outside the bounds of 
-      a parent element. */
-      
-      .d {
-        width: 100px;
-        height: 40px;
-        position: relative;
-        overflow: hidden;
-        border: 1px solid #000;
-        cursor: pointer; /* Style the cursor */
-      }
-      
-      .d>div {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        line-height: 40px;
-        left: 0;
-        top: 40px;
-        background-color: red;
-        transition: 400ms;
-        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
-      
-      .d:hover>div {
-        top: 0;
-      }
-  
-    </style>
-    <!-- ******************************************* -->
-  
-    <!-- ******************************************* -->
-    <!-- Overflow 2 -->
     <div>
       <div class="e">
         <div>
@@ -360,7 +178,7 @@
           <div>Hello</div>
         </div>
       </div>
-      <span>Overflow 2</span>
+      <span>5. Overflow</span>
     </div>
   
     <style>
@@ -375,7 +193,7 @@
         cursor: pointer;
       }
       
-      .e>div {
+      .e > div {
         position: absolute;
         width: 100%;
         height: 200%;
@@ -386,15 +204,15 @@
         transition: 200ms;
       }
       
-      .e:hover>div {
+      .e:hover > div {
         top: -40px;
       }
       
-      .e>div>div:first-child {
+      .e > div > div:first-child {
         color: black;
       }
       
-      .e>div>div:last-child {
+      .e > div > div:last-child {
         color: white;
         background-color: red;
       }
@@ -402,13 +220,17 @@
     </style>
     <!-- ******************************************* -->
   
+
+
+
+
     <!-- ******************************************* -->
     <!-- Active -->
     <div>
       <div class="f">
         <div>Click</div>
       </div>
-      <span>:active (click)</span>
+      <span>6. :active (click)</span>
     </div>
   
     <style>
@@ -440,25 +262,28 @@
         :link :visited :hover :active
       */
       
-      .f:hover>div {
+      .f:hover > div {
         background-color: orange;
         transform: scale(1.25) rotate(12deg);
         transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
       }
       
-      .f:active>div {
+      .f:active > div {
         background-color: blue;
       }
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Switch hover -->
     <div>
       <div class="g">
         <div></div>
       </div>
-      <span>:hover Switch</span>
+      <span>7. :hover Switch</span>
     </div>
   
     <style>
@@ -476,7 +301,7 @@
         cursor: pointer;
       }
       
-      .g>div {
+      .g > div {
         width: 56px;
         height: 56px;
         background-color: #fff;
@@ -491,20 +316,23 @@
         background-color: #07e207;
       }
       
-      .g:hover>div {
+      .g:hover > div {
         left: 40px;
       }
   
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Switch with Click -->
     <div>
       <div id="switch-1" class="switch">
         <div></div>
       </div>
-      <span>Click Switch w/JS</span>
+      <span>8. Click Switch w/JS</span>
     </div>
   
     <style>
@@ -559,16 +387,19 @@
     </script>
     <!-- ******************************************* -->
 
+
+
+
     <!-- ******************************************* -->
     <!-- Switch with Click -->
     <div>
-        <label id="switch-2" class="switch-2">
-          <input type="checkbox">
+      <label id="switch-2" class="switch-2">
+        <input type="checkbox">
           <div>
             <div></div>
           </div>
         </label>
-        <span>Click Switch no JS</span>
+        <span>9. Click Switch no JS</span>
       </div>
     
       <style>
@@ -618,6 +449,9 @@
       </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Hamburger X -->
     <div>
@@ -678,6 +512,9 @@
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Hamburger X 2 -->
     <div>
@@ -748,6 +585,9 @@
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Hamburger X 3 -->
     <div>
@@ -818,6 +658,9 @@
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Hamburger X 4 -->
     <div>
@@ -892,6 +735,9 @@
     </style>
     <!-- ******************************************* -->
 
+
+
+
     <!-- ******************************************* -->
     <!-- Filters - blur -->
     <div>
@@ -918,6 +764,9 @@
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Filters - grayscale -->
     <div>
@@ -944,6 +793,9 @@
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Filters - brightness -->
     <div>
@@ -970,6 +822,9 @@
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Filters - brightness -->
     <div>
@@ -996,6 +851,9 @@
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Filters - Contrast -->
     <div>
@@ -1022,6 +880,9 @@
     </style>
     <!-- ******************************************* -->
   
+
+
+
     <!-- ******************************************* -->
     <!-- Filters - sepia -->
     <div>
@@ -1051,10 +912,14 @@
   </div>
   
   
+
+
+  
   <!-- Container styles -->
   <style>
     body {
       background-color: #eee;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .container {
       display: grid;

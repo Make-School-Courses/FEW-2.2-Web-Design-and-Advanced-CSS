@@ -203,7 +203,7 @@ It's surprosing what you can create with pure CSS.
 
 https://freefrontend.com/css-logos/
 
-Take a look at these. Realize that they are all built around basic shapes and use features like border-radius, opacity, and transform creatively. 
+Take a look at these. Realize that they are all built around basic shapes and use features like border-radius, opacity, and transform creatively.
 
 ## Homework 
 
