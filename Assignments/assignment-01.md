@@ -33,7 +33,7 @@ A link to your code pen in the progress tracker.
 
 ### Due date
 
-Class 3
+Class 3 - JUN 05 AT 7:00PM
 
 ## Assessing the assignment
 
