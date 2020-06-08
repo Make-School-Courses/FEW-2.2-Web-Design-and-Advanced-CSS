@@ -2,7 +2,9 @@
 
 ## Description 
 
-Animation isn't easy, you need to practice. This assignment asks you to spend three hours adding animation to the previous assignment. 
+The goal of this assignment is to add some motion to your CSS drawing. Take the previous assignment where you created a drawing with CSS and apply animation to the elements in the drawing. 
+
+Make an effort ot use both transition and keyframe. 
 
 ### Why this assignment?
 
@@ -16,15 +18,17 @@ You must **animate at least three properties**. For example: `background-color`,
 
 ### Deliverable
 
-A link to your project on codepen.  
+Add your completed assignment to Gradescope 
 
 ### Due date
 
-Class 3 
+Class 7 - JUN 15 AT 12:00PM
 
 ## Assessing the assignment
 
-[Assignment 2 - Animate Logo rubric](assignment-02-Animate-Logo-rubric.md)
-
-
-
+| Expectations | Does not meet              | Meets                 | Exceeds                          |
+|:-------------|:---------------------------|:----------------------|:---------------------------------|
+| Completion   | Not complete               | Completed             | Goes beyond the state requirements of the assignment |
+| Quality      | Animated less than three properties, did not use transition and keyframe | Uses transition and keyframe, animated three or more properties | Shows exceptional quality. Motion elicites delight in viewers. |
+| Comprehension| Can't explain concepts covered | Can explain the concepts covered | Could apply these concepts to new and future projects with ease |
+| Work ethic   | few massive commits | Commits outline progress | Clearly show progression of the work |

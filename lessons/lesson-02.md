@@ -40,6 +40,10 @@ Explore some CSS animations
 
 What is happening in these animations? Don't worry about the technical details just _identify what is moving_ and _the quality of its motion_.
 
+## Video lessons 
+
+- https://www.youtube.com/playlist?list=PLoN_ejT35AEg-xKnTgIjE5VU-3IHO2N6i
+
 ## Making things move
 
 There are a couple ways to make things move with CSS. 
@@ -80,9 +84,9 @@ Assign keyframe animation a name, `scaleAndRotate` in the example below.
 Define the value for properties along the length of the animation. Here `transform: scale(0.5) rotate(0)` happens at the beginning `0%`, `background-color: blue` happens at the half way point `50%`, and `transform: scale(1.0) rotate(23deg)` happens at the end of the animation `100%`.
 ```CSS
 @keyframes scaleAndRotate {
-  0% {transform: scale(0.5) rotate(0);}
-  50% {background-color: blue}
-  100% {transform: scale(1.0) rotate(23deg)}
+  0% { transform: scale(0.5) rotate(0); }
+  50% { background-color: blue; }
+  100% { transform: scale(1.0) rotate(23deg); }
 }
 ```
 

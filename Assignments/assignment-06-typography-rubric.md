@@ -1,8 +1,0 @@
-# FEW 2.2 - Assignment 4 - Typography Rubric
-
-| Expectations | Does not meet              | Meets                 | Exceeds                          |
-|:-------------|:---------------------------|:----------------------|:---------------------------------|
-| Completion   | The changes you have made feel incomplete | The changes you have made feel complete and cover all of the important elements on the page: headings, body copy, footers, links, blockquotes, etc. | Besides you making changes to typography you have shown your work to others and incorporated their feedback |
-| Quality      | The experience of reading your site has not improved | The experience of reading the site has improved. The type reads better, and the type faces you have selected better reflect the content and subject matter of your site. | People can't help but offer comments about how amazing and professional your work looks |
-| Comprehension| Can't explain the typographical features that control the appearance of text on the screesn | Can explain the use of typographical controls and use them to control the presentation of type on the screen. | You could easily use these features in future projects. You now think of lineheight and font size when viewing other sites with ideas on what is working well and what is not working |
-| Work ethic   | few massive commits | Commits outline progress | Clearly show progression of the work |

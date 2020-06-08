@@ -60,11 +60,13 @@
         left: 20px;
         top: 20px;
         transition: 400ms;
+        border-radius: 0;
       }
       
       /* Change the radius on a hover */
       .b > div:hover {
         border-radius: 50%;
+        background-color: cornflowerblue;
       }
   
     </style>
@@ -80,6 +82,7 @@
         <div></div>
         <div>Hello</div>
       </div>
+
       <span>3. Nest Hover</span>
     </div>
   
@@ -115,7 +118,12 @@
       
       /* The hover triggers on the parent 
       and changes to properties apply to 
-      a descendant */
+      a descendant 
+      
+      div:first-child gets height 100px
+      When, div.b2 is in the hover state 
+
+      */
 
       .b2:hover > div:first-child {
         height: 100px;
@@ -155,9 +163,9 @@
         position: absolute;
         left: 20px;
         top: 20px;
-        transition: 1000ms;
+        transition: 2000ms;
         /* Use timing function */
-        transition-timing-function: linear;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
       }
       .c1:hover > div {
         transform: scale(1.25) rotate(12deg);
@@ -352,7 +360,7 @@
         cursor: pointer;
       }
       
-      .switch>div {
+      .switch > div {
         width: 56px;
         height: 56px;
         background-color: #fff;
@@ -360,8 +368,9 @@
         margin: 2px;
         position: absolute;
         left: 0;
-        transition: 200ms
+        transition: 200ms;
       }
+
       /* When the .switch has the class .on change the 
       color to green. */
       
@@ -371,7 +380,7 @@
       /* When the .switch has the .on class change the 
       position left to 40px. */
       
-      .switch.on>div {
+      .switch.on > div {
         left: 40px;
       }
   
@@ -420,7 +429,7 @@
         }
 
         .switch-2 > input {
-          display: none;
+          /* display: none; */
         }
         
         .switch-2 > div {
@@ -914,7 +923,7 @@
   
 
 
-  
+
   <!-- Container styles -->
   <style>
     body {
