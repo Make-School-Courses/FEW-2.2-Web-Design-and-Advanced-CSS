@@ -6,7 +6,7 @@ The goal of this assignment is to recreate the animations in the demo file.
 
 Recreate the animations in the demo file here: 
 
-assignment-03-Animation.html
+[Animation Challenges](assignment-03-Animation.html)
 
 Open this file in your browser. Your job is to recreate what you see. If you need a hint use the browser's inspector. 
 
