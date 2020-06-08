@@ -79,6 +79,7 @@
   <!-- ****************************************** -->
   <!-- Buttons -->
 
+  <!-- Simple Button 1 -->
   <div class="example">
     <button class="button-1">Hello</button>
     <style>
@@ -89,9 +90,10 @@
         color: #fff;
         border: 1px solid;
         font-size: 20px;
-        transition: 350ms;
+        transition: 350ms; /* Set the transition time */
       }
 
+      /* Change the color and background color */
       .button-1:hover {
         color:rgb(0, 143, 190);
         background-color: #fff;
@@ -99,6 +101,10 @@
     </style>
   </div>
 
+
+
+
+  <!-- Simple button 2 -->
   <div class="example">
     <button class="button-2">Hello</button>
     <style>
@@ -110,9 +116,10 @@
         border-bottom: 4px solid transparent;
         font-size: 20px;
         background-color: #fff;
-        transition: 300ms;
+        transition: 300ms; /* Set the time for the animation */
       }
 
+      /* Animate the borders and letter spacing */
       .button-2:hover {
         border-top: 4px solid rgb(0, 143, 190);
         border-bottom: 4px solid rgb(0, 143, 190);
@@ -122,6 +129,10 @@
     </style>
   </div>
 
+
+
+
+  <!-- Another button -->
   <div class="example">
     <button class="button-3">Hello</button>
     <style>
@@ -141,6 +152,9 @@
       }
     </style>
   </div>
+
+
+
 
     <!-- ******************************************* -->
     <!-- Hamburger X 2 -->
@@ -212,6 +226,8 @@
     </style>
     <!-- ******************************************* -->
   
+
+
 
 
 
@@ -365,6 +381,7 @@
 
 
 
+    <!-- Card animations the styles for these are below -->
   <div class="example">
     <div class="box-6">
       <img src="kitten-domo.jpg">
@@ -386,6 +403,76 @@
     </div>
   </div>
 
+
+  <!-- Button ripple effect -->
+  <div class="example">
+    <div class="boop">
+      <div></div>
+    </div>
+  </div>
+
+  <style>
+    .boop {
+      width: 100px;
+      height: 100px;
+      background-color: tomato;
+      position: relative;
+    }
+
+    .boop > div {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255,255,255, 0.5);
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(12);
+      transition: 200ms;
+    }
+
+    .boop:active > div {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0);
+      transition: 0ms;
+    }
+  </style>
+
+
+<div class="example">
+  <div class="boop">
+    <div></div>
+  </div>
+</div>
+
+<style>
+  .boop {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: relative;
+  }
+
+  .boop > div {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(12);
+    transition: 200ms;
+  }
+
+  .boop:active > div {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0ms;
+  }
+</style>
 </div>
 
 <style>

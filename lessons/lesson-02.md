@@ -142,14 +142,17 @@ Pair up with someone you haven't paired with in class before and take a look at 
 
 See the [example](lesson-02-example.html)
 
-## Homework: Animate your CSS Logo
+## Homework: Animation
 
-Add some motion to your logo/icon from class 1. Keep the motion simple. 
-
-It's easiest to use `transition` for interactive animations on hover or click and `@keyframes` for a cycling animations or complex animations. See the link below for a detailed description of the homework:
+Recreate the animations here using CSS transitions. 
 
 - [CSS Animation Challenges](../Assignments/assignment-03-Animation.md)
+
+Add some motion to your CSS drawing/logo:
+
 - [Animate your Drawing](../Assignments/assignment-04-Animate-Logo.md)
+
+It's easiest to use `transition` for interactive animations on hover or click and `@keyframes` for a cycling animations or complex animations. See the link below for a detailed description of the homework:
 
 ## Wrap Up
 
