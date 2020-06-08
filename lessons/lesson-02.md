@@ -148,7 +148,8 @@ Add some motion to your logo/icon from class 1. Keep the motion simple.
 
 It's easiest to use `transition` for interactive animations on hover or click and `@keyframes` for a cycling animations or complex animations. See the link below for a detailed description of the homework:
 
-[Animate your Drawing](../Assignments/assignment-02-Animate-Logo.md)
+- [CSS Animation Challenges](../Assignments/assignment-03-Animation.md)
+- [Animate your Drawing](../Assignments/assignment-04-Animate-Logo.md)
 
 ## Wrap Up
 
