@@ -427,11 +427,14 @@
       border-radius: 50%;
       left: 50%;
       top: 50%;
+      
+      /* Circle expanded and transparent */
       opacity: 0;
       transform: translate(-50%, -50%) scale(12);
       transition: 200ms;
     }
 
+    /* When clicked set the time to 0 and the size to small and opaque */
     .boop:active > div {
       opacity: 1;
       transform: translate(-50%, -50%) scale(0);
