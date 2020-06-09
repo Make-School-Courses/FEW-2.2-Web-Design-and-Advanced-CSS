@@ -261,6 +261,7 @@
         left: 20px;
         top: 20px;
         transition: 400ms;
+        transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
         text-align: center;
         line-height: 60px;
         color: white;
@@ -273,9 +274,10 @@
       .f:hover > div {
         background-color: orange;
         transform: scale(1.25) rotate(12deg);
-        transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        
       }
       
+      /* :checked */
       .f:active > div {
         background-color: blue;
       }

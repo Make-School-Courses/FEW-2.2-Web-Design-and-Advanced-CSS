@@ -113,7 +113,7 @@ button { /* define some custom properties on each button */
 
 By declaring custom properties on `:root` they become global and available everywhere. 
 
-Otherwise declaring a cusom property on an element makes it available to that element and inherited by the element's descendents, but unavailable to it's anscestors. 
+Otherwise declaring a custom property on an element makes it available to that element and inherited by the element's descendents, but unavailable to it's anscestors. 
 
 ### Accessing custom property values
 

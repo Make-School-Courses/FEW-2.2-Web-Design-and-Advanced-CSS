@@ -32,23 +32,366 @@
 
 <div class="container">
 
+
+  <!-- ***************************************** -->
   <!-- Circle Spin -->
-  <!-- <div class="example">
+  <div class="example">
     <div class="box-1"></div>
-  </div> -->
+    <style>
+      .box-1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-left: 18px solid gold;
+        border-top: 18px solid cornflowerblue;
+        border-right: 18px solid crimson;
+        border-bottom: 18px solid;
+        /* Use a key frame animation */
+        animation-name: spin; /* Set the name of the animation it's defined below */
+        animation-duration: 2000ms; /* Set the the duration of the animation */
+        animation-iteration-count: infinite; /* Set the number of times the animation will repeat */
+        animation-timing-function: linear; /* Set the timing function. */
+      }
 
+      /* Define some keyframes */
+      /* The name of this animation is spin */
+      @keyframes spin {
+        /* Define the values at the beginning */
+        0% { 
+          transform: rotateZ(0);
+        }
+        /* Define the values at the end */
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+    </style>
+  </div>
+
+
+  <!-- **************************************************** -->
   <!-- Circle Spin 2 -->
-  <!-- <div class="example">
+  <div class="example">
     <div class="box-2"></div>
-  </div> -->
+    <style>
+      .box-2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-left: 18px solid gold;
+        border-top: 18px solid cornflowerblue;
+        border-right: 18px solid crimson;
+        border-bottom: 18px solid transparent;
+        animation-name: spin; /* We can reuse the spin animation here */
+        animation-duration: 3000ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </div>
 
+
+  <!-- **************************************************** -->
   <!-- Arrow Spin -->
-  <!-- <div class="example">
+  <div class="example">
     <div class="box-3">
       <div></div>
       <div></div>
     </div>
-  </div> -->
+
+    <style>
+      .box-3 {
+        /* border: 1px solid; */
+        width: 100px;
+        height: 100px;
+        animation-name: spin;
+        animation-duration: 3000ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      .box-3 > div:first-child {
+        position: absolute;
+        transform: translate(0, 0);
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border-left: 18px solid;
+        border-top: 18px solid;
+        border-right: 18px solid;
+        border-bottom: 18px solid transparent;
+      }
+
+      .box-3 > div:last-child {
+        width: 20px;
+        height: 20px;
+        border-left: 18px solid;
+        border-top: 18px solid;
+        position: absolute;
+        transform: translate(60px, 57px) rotate(-90deg);
+      }
+    </style>
+  </div>
+
+
+  <!-- **************************************************** -->
+  <div class="example">
+    <div class="boxes">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <style>
+      .boxes {
+        width: 100px;
+        height: 100px;
+        position: relative;
+      }
+      /* These styles apply to all child divs */
+      .boxes > div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border-width: 18px;
+        border-style: solid;
+        border-color: transparent;
+        animation-name: spin; /* We can reuse the spin animation here */
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      /* For each div use a different color and duration */
+      .boxes > div:nth-child(1) {
+        border-left-color: gold;
+        animation-duration: 2000ms;
+      }
+
+      .boxes > div:nth-child(2) {
+        border-left-color: crimson;
+        animation-duration: 1500ms;
+      }
+
+      .boxes > div:nth-child(3) {
+        border-left-color: cornflowerblue;
+        animation-duration: 2500ms;
+      }
+
+    </style>
+  </div>
+
+
+  <!-- **************************************************** -->
+  <div class="example">
+    <div class="leaves">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <style>
+      .leaves {
+        width: 100px;
+        height: 100px;
+        position: relative;
+      }
+      /* These styles apply to all child divs */
+      .leaves > div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 0 50% 50% 50%;
+        border-width: 18px;
+        border-style: solid;
+        border-color: rgba(153, 205, 50, 0.484);
+        /* Set the animation name and duration for each leaf below */
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; /* Use this to play the animation forward and reverse */
+      }
+
+      /* For each div use a different color and duration */
+      .leaves > div:nth-child(1) {
+        animation-name: open-cw;
+        animation-duration: 4000ms;
+      }
+
+      .leaves > div:nth-child(2) {
+        animation-name: open-cw;
+        animation-duration: 6000ms;
+      }
+
+      .leaves > div:nth-child(3) {
+        animation-name: open-ccw;
+        animation-duration: 4000ms;
+      }
+
+      .leaves > div:nth-child(4) {
+        animation-name: open-ccw;
+        animation-duration: 6000ms;
+      }
+
+      @keyframes open-cw {
+        0% {
+          transform: rotate(45deg);
+        }
+
+        100% {
+          transform: rotate(135deg);
+        }
+      }
+
+      @keyframes open-ccw {
+        0% {
+          transform: rotate(45deg);
+        }
+
+        100% {
+          transform: rotate(-45deg);
+        }
+      }
+
+    </style>
+  </div>
+
+
+
+
+  <!-- **************************************************** -->
+  <div class="example">
+    <div class="clock">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <style>
+      .clock {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border: 1px solid;
+        border-radius: 50%;
+      }
+      /* These styles apply to all child divs */
+      .clock > div {
+        width: 4px;
+        height: 50px;
+        position: absolute;
+        left: 48px;
+        background-color: teal;
+        transform-origin: 50% 100%;
+
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      /* second hand */
+      .clock > div:nth-child(1) {
+        background-color: tomato;
+        animation-duration: 600ms;
+      }
+
+      /* minute hand */
+      .clock > div:nth-child(2) {
+        animation-duration: 36000ms;
+      }
+
+      /* hour hand */
+      .clock > div:nth-child(3) {
+        animation-duration: 216000ms;
+      }
+
+    </style>
+  </div>
+
+
+  <!-- **************************************************** -->
+  <!-- Eye -->
+  <div class="example">
+    <div class="eye">
+      <div>
+        <div></div>
+      </div>
+    </div>
+    <style>
+      .eye {
+        width: 100px;
+        height: 100px;
+        border-radius: 0 50% 0 50%;
+        border: 1px solid;
+        transform: rotate(-45deg);
+        position: relative;
+        overflow: hidden;
+        animation-name: blink;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+      }
+
+      .eye > div {
+        position: absolute;
+        background-color: chocolate;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        transform: translate(10px, 10px);
+        animation-name: look;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+      }
+
+      .eye > div > div {
+        position: absolute;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transform: translate(20px, 20px)
+      }
+
+      /* Here the animation is broken down into several steps */
+      @keyframes look {
+        0% {
+          transform: translate(10px, 10px);
+        }
+
+        25% {
+          transform: translate(10px, 10px);
+        }
+
+        30% {
+          transform: translate(-20px, -15px);
+        }
+
+        50% {
+          transform: translate(-20px, -15px);
+        }
+
+        55% {
+          transform: translate(10px, 10px);
+        }
+
+        70% {
+          transform: translate(10px, 10px);
+        }
+
+        75% {
+          transform: translate(40px, 35px);
+        }
+
+        90% {
+          transform: translate(40px, 35px);
+        }
+
+        100% {
+          transform: translate(10px, 10px);
+        }
+      }
+    </style>
+  </div>
 
   <!-- Battery -->
   <!-- <div class="example">
@@ -480,62 +823,6 @@
 
 <style>
 
-  .box-1 {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border-left: 18px solid gold;
-    border-top: 18px solid cornflowerblue;
-    border-right: 18px solid crimson;
-    border-bottom: 18px solid;
-    animation: spin 2000ms infinite linear;
-  }
-
-  .box-2 {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border-left: 18px solid gold;
-    border-top: 18px solid cornflowerblue;
-    border-right: 18px solid crimson;
-    border-bottom: 18px solid transparent;
-    animation-name: spin;
-    animation-duration: 3000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-
-  .box-3 {
-    /* border: 1px solid; */
-    width: 100px;
-    height: 100px;
-    animation-name: spin;
-    animation-duration: 3000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-
-  .box-3 > div:first-child {
-    position: absolute;
-    transform: translate(0, 0);
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    border-left: 18px solid;
-    border-top: 18px solid;
-    border-right: 18px solid;
-    border-bottom: 18px solid transparent;
-  }
-
-  .box-3 > div:last-child {
-    width: 20px;
-    height: 20px;
-    border-left: 18px solid;
-    border-top: 18px solid;
-    position: absolute;
-    transform: translate(60px, 57px) rotate(-90deg);
-  }
-
 
   .box-4 {
     width: 40px;
@@ -704,11 +991,7 @@
   .box-8:hover > p {
     transform: translate(0, 0) scale(1);
   }
-
-
-
-
-
+  
   .box-9 > div {
     width: 100px;
     height: 100px;
@@ -751,9 +1034,6 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
-
-
-
   @keyframes power {
     0% {
       height: 0;
@@ -763,18 +1043,6 @@
     100% {
       height: 90%;
       background-color: tomato;
-    }
-  }
-
-
-
-  @keyframes spin {
-    0% {
-      transform: rotateZ(0);
-    }
-
-    100% {
-      transform: rotateZ(360deg);
     }
   }
 
