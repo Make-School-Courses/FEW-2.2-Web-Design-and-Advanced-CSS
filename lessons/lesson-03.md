@@ -228,23 +228,13 @@ How do you know what a good line height is? Use your best judgement. Longer line
 
 Your goal this week is to apply the ideas above to a project of your own. We will talk more about type in the next class. 
 
-## In Clss Activity
-
-Apply SASS to your CSS drawing and animation. Look for these opportunities: 
-
-- Look for values that can be moved to the top of the code and defined as constants.
-- Look for related values that can be calculated rather than written explicitly
-- Look for elements that are repeated. Use the two ideas above along with a loop to generate repeated values. 
-
-Review your work with another student before the end of class. 
-
 ## Homework 
 
 To really get an understanding for SASS you have to use it. Your goal is to apply SASS to one of your past projects. 
 
 See the description here for details and requirements for this assignment: 
 
-- [Apply SASS to a past project](../Assignments/assignment-03-SASS.md)
+- [Apply SASS](../Assignments/assignment-06-SASS.md)
 
 ## Wrap Up
 
