@@ -41,52 +41,35 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  4 |  Mon, June 8   | [Animation with CSS](lessons/lesson-02.md) | [Animation Challenges](./Assignments/assignment-03-Animation.md) |
 |  5 |  Wed, June 10  | [CSS Animation with Keyframes](lessons/lesson-02.md) | [Animate your Drawing](./Assignments/assignment-04-Animate-Logo.md) |
 |  6 |  Fri, June 12  | [Animation with CSS](lessons/lesson-02.md) | [Animate your Drawing](./Assignments/assignment-04-Animate-Logo.md) |
-|  7 |  Mon, June 15  | [SASS](lessons/lesson-03.md) | [Apply SASS to a past project](./Assignments/assignment-05-SASS.md) |
+|  7 |  Mon, June 15  | [SASS](lessons/lesson-03.md) | [Apply SASS to a past project](./Assignments/assignment-06-SASS.md) |
 |  8 |  Wed, June 17  | [SASS Lab] |
-|  9 |  Fri, June 19  | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-04-typography.md) |
-| 10 |  Mon, June 22  | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts](./Assignments/assignment-05-framework-fonts.md)  |
-| 11 |  Wed, June 24  | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-06-controls.md) |
-| 12 |  Fri, June 26  | [CSS Layout](lessons/lesson-07.md) | [Framework: Nav Bar and Footer](./Assignments/assignment-07-layout.md) |
-| 13 |  Mon, June 29  | [Content Elements](lessons/lesson-08.md) | [Adding new elements and improving your framework](./Assignments/assignment-08-components.md) |
+|  9 |  Fri, June 19  | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-07-typography.md) |
+| 10 |  Mon, June 22  | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts](./Assignments/assignment-06-framework-fonts.md)  |
+| 11 |  Wed, June 24  | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-07-controls.md) |
+| 12 |  Fri, June 26  | [CSS Layout](lessons/lesson-07.md) | [Framework: Nav Bar and Footer](./Assignments/assignment-08-layout.md) |
+| 13 |  Mon, June 29  | [Content Elements](lessons/lesson-08.md) | [Adding new elements and improving your framework](./Assignments/assignment-09-components.md) |
 | 14 |  Wed, July 1   | [CSS Framework Lab]|  
 | -  |  Fri, July 3   | **NO CLASS - INDEPENDENCE DAY OBSERVED**|
-| 15 |  Mon, July 6   | [Web Components Part 1](lessons/lesson-09.md) |  |
-| 16 |  Wed, July 8   | [Web Components Part 2](lessons/lesson-10.md) |  |
+| 15 |  Mon, July 6   | [Web Components Part 1](lessons/lesson-10.md) |  |
+| 16 |  Wed, July 8   | [Web Components Part 2](lessons/lesson-11.md) |  |
 | 17 |  Fri, July 10  | [Web Components Lab |
 | 18 |  Mon, July 13  | [Final Assignment Lab] |
-| 19 |  Wed, July 15  | [Final Assessment](lessons/lesson-11.md) | - |
-| 20 |  Fri, July 17  | [Final Presentations](lessons/lesson-12.md) | - |
-
-<!-- 
-**Class Times:** Monday and Wednesday from 3:30–5:20 pm (12 class sessions)
-
-| Class  |  Date | Topics | Assignment |
-|:------:|:------|:-------|:-----------|
-|  1 | Mon, Aug 26  | [Drawing with CSS](lessons/lesson-01.md) | [CSS Drawing](./Assignments/assignment-01-css-drawing.md) |
-|  2 | Wed, Aug 28  | [Animation with CSS](lessons/lesson-02.md) | [Animate your Drawing](./Assignments/assignment-02-Animate-Logo.md) |
-|  - | Mon, Sept 2  | **NO CLASS** - Labor Day | - |
-|  3 | Wed, Sept 4  | [SASS](lessons/lesson-03.md) | [Apply SASS to a past project](./Assignments/assignment-03-SASS.md) |
-|  4 | Mon, Sept 9  | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-04-typography.md) |
-|  5 | Wed, Sept 11 | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts ](./Assignments/assignment-05-framework-fonts.md)  |
-|  6 | Mon, Sept 16 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-06-controls.md) |
-|  7 | Wed, Sept 18 | [CSS Layout](lessons/lesson-07.md) | [Framework: Nav Bar and Footer](./Assignments/assignment-07-layout.md) |
-|  8 | Mon, Sept 23 | [Content Elements](lessons/lesson-08.md) | [Adding new elements and improving your framework](./Assignments/assignment-08-components.md) |
-|  9 | Wed, Sept 25 | [Web Components Part 1](lessons/lesson-09.md) |  |
-| 10 | Mon, Sept 30 | [Web Components Part 2](lessons/lesson-10.md) |  |
-| 11 | Wed, Oct 2   | lab | - |
-| 12 | Mon, Oct 7   | [Final Assessment](lessons/lesson-11.md) | - |
-| 13 | Wed, Oct 9   | [Final Presentations](lessons/lesson-12.md) | - | 
--->
+| 19 |  Wed, July 15  | [Final Assessment](lessons/lesson-12.md) | - |
+| 20 |  Fri, July 17  | [Final Presentations](lessons/lesson-13.md) | - |
 
 ## Class Assignments
 
 We will begin the term reviewing CSS concepts. Then move into new concepts that you will apply to your projects. The final project is to build a CSS framework. 
 
-1. [ ] CSS Drawing
-    - Deliverable: GitHub repo or link to Codepen
-1. [ ] CSS Animation 
-    - Deliverable: GitHub Repo or link to Codepen (this can be project 1 with animation added)
-1. Explore SASS
+1. [ ] [CSS Drawing Examples](Assignments/assignment-01.md)
+    - Recreated the images in the example file
+1. [ ] [CSS Custom Drawing](Assignments/assignment-02.ms)
+    - Created your own custom drawing or logo
+1. [ ] [CSS Animation Examples](Assignments/assignment-03.md)
+    - Recreated the animations in the example file
+1. [ ] [CSS Custom animation](Assignments/assignment-04.md)
+    - Animated your custom drawing or logo
+1. [ ] [Explore SASS](Assignments/assignment-06-SASS.md)
     - Added SASS to a past project 
         - [ ] Used at least three variables 
         - [ ] Used one mixin
