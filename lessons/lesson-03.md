@@ -14,6 +14,10 @@ CSS preprocessors are common in the industry and provide some valuable functiona
 1. Write code in the SCSS language
 1. Compile code written in SCSS to vanilla CSS
 
+### Slides 
+
+https://docs.google.com/presentation/d/1ptueI32nTL6P_pMXoQMeV6k-JLmpUJ3YQFpxUGE5PkY/edit#slide=id.g4cf79cf4e3_0_202
+
 ## What is SASS? 
 
 **Q:** What is SASS? 
