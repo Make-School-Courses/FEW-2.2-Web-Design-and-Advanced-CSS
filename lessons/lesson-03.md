@@ -18,6 +18,10 @@ CSS preprocessors are common in the industry and provide some valuable functiona
 
 https://docs.google.com/presentation/d/1ptueI32nTL6P_pMXoQMeV6k-JLmpUJ3YQFpxUGE5PkY/edit#slide=id.g4cf79cf4e3_0_202
 
+### Video Lesson
+
+https://www.youtube.com/playlist?list=PLoN_ejT35AEh1a0ZUVu0JaFHGPN9yffWR
+
 ## What is SASS? 
 
 **Q:** What is SASS? 
