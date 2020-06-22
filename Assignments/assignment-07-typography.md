@@ -22,15 +22,31 @@ You will test your work against two sample files. The first file is the sample m
 
 https://github.com/Make-School-Labs/css-framework-starter
 
-Find a past project that or other web page you can test your framework against. This can be any HTML page. Remove any styles this page previouly used. 
+Find a past project or other web page you can test your framework against. This can be any HTML page. Remove any styles this page previouly used. 
 
 Think of a name for your CSS framework. Seriously, it needs a name, it's a product, no really it is and like any other product it needs a name. 
 
-Name your CSS file after your framework. The framework CSS should not be named: style.css!
+- Frmwrk
+- Framwërk
+- Ninja CSS
+- Chonky CSS
+- CSSS - Chonky Styles Solidly Served
+- CSSSS - CSS Served with Solid Sagacious Style 
+- CSSSSS - Colorful Simple Seamless Safely Served Styles 
+
+Seriously, your CSS framework needs a name. Make up a name. 
+
+Name your CSS file after your framework. **The framework CSS should not be named: style.css!**
 
 Copy your sample HTML files into the folder with your framework css repo and link them to your CSS files. 
 
 Add some styles! 
+
+What will your CSS framework look like? Your CSS framework will be a CSS file. Yep, it will be a single CSS file. 
+
+You can build your CSS file from SASS, break this up inot several .scss files but it should compile to a single .css file. 
+
+Anyone who wants to use your CSS framework should only have to download the .css file and link to it in head of their HTML document. 
 
 ### Styling type
 
@@ -60,13 +76,15 @@ Start by styling type. Set a default font style for your framework. Follow these
   - [ ] abbr
   - [ ] code (this might use a different font - probably a fixed width font)
 
+You may not specifically define styles for everyone of the elements above, but you should consider the styles for each of these. 
+
 ### Deliverable
 
 A link to the branch of your project with the improved typography. 
 
 ### Due date
 
-
+- Monday June 28 
 
 ## Assessing the assignment
 
