@@ -32,7 +32,7 @@ Think of a name for your CSS framework. Seriously, it needs a name, it's a produ
 - Chonky CSS
 - CSSS - Chonky Styles Solidly Served
 - CSSSS - CSS Served with Solid Sagacious Style 
-- CSSSSS - Colorful Simple Seamless Safely Served Styles 
+- CSSSSS - Colorful Simple Seamless and Safely Served Styles 
 
 Seriously, your CSS framework needs a name. Make up a name. 
 
@@ -52,6 +52,9 @@ Anyone who wants to use your CSS framework should only have to download the .css
 
 Start by styling type. Set a default font style for your framework. Follow these steps: 
 
+- [ ] Named your CSS framework
+- [ ] Made a Repo
+  - [ ] Copied Sample files into Repo
 - [ ] Choose a font 
   - It's probably best to use a system font. See the notes in lesson 4. 
   - The big decision here is choose between a serif or sans-serif font family. 
