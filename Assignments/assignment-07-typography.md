@@ -1,8 +1,14 @@
 # FEW 2.2 - Assignment 4 - Improve your Typography
 
-## Description 
+This is the first part of a larger assignment to create a CSS framework. 
 
-Web sites are mostly text. People are absorbing your content on mobile phones by reading and inputing text. It's important that your text looks good and more important that reads clearly. 
+What is a CSS framework? A framework is a library of code that has opinion about how things should be done. Your CSS framework should supply basic styles and take an opinion about what looks good on the web and how styles should be applied. 
+
+Your goal is create a framework that can be used to build better looking web pages. 
+
+Your framework will have the following features which you will implement across separate assignments from now til the end of the term. 
+
+The first step of this assignment is to define some font styles.
 
 ### Why this assignment?
 
@@ -10,25 +16,49 @@ Understand how type works and the features of typography will make your projects
 
 ## Project requirements
 
-Choose a past project and improve the typography, your project must be on GitHub. 
+You should create a new Repo that will host your CSS framework.
 
-Make a branch in your GitHub project. Name it for the type improvements. Do your work on this branch. 
+You will test your work against two sample files. The first file is the sample markup here: 
 
-Adjust the type in these ways:
+https://github.com/Make-School-Labs/css-framework-starter
 
-- If appropriate Use a custom font for your project otherwise use one of the [Font Stacks from lesson 4](../lessons/lesson-04.md#ui-system-fonts)  
-  - Use a custome font - https://fonts.google.com
-  - Use a system font - [Font Stacks from lesson 4](../lessons/lesson-04.md#ui-system-fonts)  
-- Set a base font on the body. Set the `font-family` and `font-size`
-  - Set the `font-family` on the body or html elements (while this will not change the appearance it will make working with typographic styles easier.)
-- Adjust the font sizes in `ems`. Set the `font-size` in `em` to make elements larger and smaller than the base size defined on the body. 
-  - Adjust font styles for headings. For example `h`1 { 2em; }`
-- Adjust the line height in the body. The base line-height is too small use 1.5em as a starting point. The goal is to use line-height to make the text more easy to read. use your best judgement. 
-- Set the color and background color
-  - Check the contrast: https://webaim.org/resources/contrastchecker/
-- Ask yourself these questions?
-  - Does this look good?
-  - Does this read well? 
+Find a past project that or other web page you can test your framework against. This can be any HTML page. Remove any styles this page previouly used. 
+
+Think of a name for your CSS framework. Seriously, it needs a name, it's a product, no really it is and like any other product it needs a name. 
+
+Name your CSS file after your framework. The framework CSS should not be named: style.css!
+
+Copy your sample HTML files into the folder with your framework css repo and link them to your CSS files. 
+
+Add some styles! 
+
+### Styling type
+
+Start by styling type. Set a default font style for your framework. Follow these steps: 
+
+- [ ] Choose a font 
+  - It's probably best to use a system font. See the notes in lesson 4. 
+  - The big decision here is choose between a serif or sans-serif font family. 
+- [ ] Set a default font style on thhe body element. 
+  - Define your default font style by styling the body tag. 
+  - Set the font-family
+  - Set the font-size
+  - Set the line-height
+  - Set the fore ground color 
+  - Set the background color
+- [ ] Set a style for the headings h1-6
+  - [ ] Set the sizes of each of these. 
+  - [ ] Set other styles to get a look that you like. Consider these: 
+    - margin-top and margin-bottom
+    - color 
+    - font-weight
+    - letter-spacing
+- [ ] Style other text elements 
+  - [ ] strong
+  - [ ] em
+  - [ ] a
+  - [ ] abbr
+  - [ ] code (this might use a different font - probably a fixed width font)
 
 ### Deliverable
 
@@ -36,7 +66,7 @@ A link to the branch of your project with the improved typography.
 
 ### Due date
 
-Class 5
+
 
 ## Assessing the assignment
 

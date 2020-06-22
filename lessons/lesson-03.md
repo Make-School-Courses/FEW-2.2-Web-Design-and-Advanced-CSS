@@ -1,7 +1,5 @@
 # FEW 2.2 - Advanced CSS - SASS
 
-Not Special Array Storage System...
-
 CSS Preprocessors: SASS - Syntactically Awesome StyleSheets. 
 
 ## Why you should know this?
@@ -163,15 +161,15 @@ $list: github, twitter, facebook;
 <small style="color: #999">CSS code</small>
 ```CSS
 .photo-github {
- background: image-url("images/github.png") no-repeat;
+  background: image-url("images/github.png") no-repeat;
 }
 
 .photo-twitter {
- background: image-url("images/twitter.png") no-repeat;
+  background: image-url("images/twitter.png") no-repeat;
 }
 
 .photo-facebook {
- background: image-url("images/facebook.png") no-repeat;
+  background: image-url("images/facebook.png") no-repeat;
 }
 ```
 
@@ -254,15 +252,6 @@ See the description here for details and requirements for this assignment:
 ## Additional Resources
 
 1. https://sass-lang.com
-
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------------------- |
-| 0:00 | 0:05 | Objectives |
-| 0:05 | 0:15 | Overview |
-| 0:20 | 0:45 | In Class Activity I |
-| 1:05 | 0:10 | BREAK |
-| 1:15 | 0:45 | In Class Activity II |
-| TOTAL | 2:00 | |
-
+1. https://sass-lang.com/documentation/variables
+1. https://sass-lang.com/documentation/at-rules/control/for
+1. https://sass-lang.com/guide#topic-3

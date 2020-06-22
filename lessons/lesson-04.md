@@ -12,17 +12,15 @@ A majority of the content on the internet is text. Making good looking text that
 1. Use CSS styles to style text
 1. Implement custom fonts
 
-## SASS Presentation 
-
-Show how you applied SASS to your work from class 3.
-
 ## What is Typography? 
 
-
+Discuss...
 
 ## What typography do you like? 
 
-Find some typography that you like on the web. 
+Find some typography that you like on the web.
+
+Pair up and find three examples of type on the web that looks good. 
 
 Compare it to the type in the [example document](lesson-04.html). You can view this live on the web [here](https://make-school-courses.github.io/FEW-2.2-Web-Design-And-Advanced-CSS/lessons/lesson-04.html).
 
@@ -54,7 +52,7 @@ In CSS we use the following properties to style type.
 
 ### Activity
 
-Apply some styles to the sample html document. Set the `font-size` and `line-height` on the body element. 
+Apply some styles to the sample html document. Set the `font-size` and `line-height` on the body element.
 
 Q: What happened? 
 A: Could these be used to make the page look better than the default? 
