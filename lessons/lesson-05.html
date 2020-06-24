@@ -4,9 +4,70 @@
     
   </head>
 <body>
+
+
+
+
+
 <!-- I added these inline styles to make this easy to read feel free 
   to edit or remove -->
 <div style="width: 600px; margin: auto;"> 
+
+
+  <button>Hello World</button>
+  <button class="warning">Delete</button>
+  <button class="warning invert">Delete</button>
+  <button class="action">Buy Now</button>
+  <button style="--bg-color: violet; --fg-color: #fff">Use Locaton</button>
+
+  <style>
+    :root {
+      --primary-color: cornflowerblue;
+      --foreground-color: #fff;
+    }
+
+    button {
+      --bg-color: var(--foreground-color);
+      --fg-color: var(--primary-color);
+
+      padding: 0.5em 0.75em;
+      border:2px solid;
+      color: var(--fg-color);
+      background-color: var(--bg-color);
+      border-radius: 0.5em;
+      font-size: 1em;
+      transition: 300ms;
+    }
+
+    button:hover {
+      background-color:var(--fg-color);
+      color: var(--bg-color);
+    }
+
+    button.warning {
+      --fg-color: tomato;
+    }
+
+    button.action {
+      --fg-color: yellowgreen;
+    }
+
+    button.invert {
+      color: var(--bg-color);
+      background-color: var(--fg-color);
+    }
+
+    button.invert:hover {
+      background-color:var(--bg-color);
+      color: var(--fg-color);
+    }
+  </style>
+
+
+
+
+
+
   <h1>Typography Sample</h1>
 
   <h2>What is this?</h2>
