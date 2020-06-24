@@ -86,9 +86,10 @@
 </pre>
 
   <style>
+
     :root {
-      --primary-color: cornflowerblue;
-      --foreground-color: #fff;
+      --primary-color: rgb(76, 131, 234);
+      --foreground-color: #eee;
     }
 
     button {
@@ -99,11 +100,12 @@
 
       padding: 0.5em 0.75em;
       border:2px solid;
-      color: var(--fg-color);
-      background-color: var(--bg-color);
       border-radius: 0.5em;
       font-size: 1em;
       transition: 300ms;
+
+      color: var(--fg-color);
+      background-color: var(--bg-color);
     }
 
     button:hover {
@@ -112,11 +114,11 @@
     }
 
     button.warning {
-      --fg-color: tomato;
+      --fg-color: rgb(234, 78, 50);
     }
 
     button.action {
-      --fg-color: yellowgreen;
+      --fg-color: rgb(131, 183, 28);
     }
 
     button.invert {
@@ -130,6 +132,7 @@
     }
 
     button.small {
+      font-size: 0.75em;
       padding: 0.2em 0.45em;
       border-radius: 0.35em;
     }
