@@ -46,7 +46,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  9 |  Fri, June 19  | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-07-typography.md) |
 | 10 |  Mon, June 22  | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts](./Assignments/assignment-06-framework-fonts.md)  |
 | 11 |  Wed, June 24  | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-07-controls.md) |
-| 12 |  Fri, June 26  | [Styling Forms](lessons/lesson-06.md) | [Add form styles](./Assignments/assignment-09-layout.md) |
+| 12 |  Fri, June 26  | [Styling Forms](lessons/lesson-06.md) | [Add form styles](./Assignments/assignment-09-controls.md) |
 | 13 |  Mon, June 29  | [Content Elements](lessons/lesson-08.md) | [Adding new elements and improving your framework](./Assignments/assignment-09-components.md) |
 | 14 |  Wed, July 1   | [CSS Framework Lab]|  
 | -  |  Fri, July 3   | **NO CLASS - INDEPENDENCE DAY OBSERVED**|
