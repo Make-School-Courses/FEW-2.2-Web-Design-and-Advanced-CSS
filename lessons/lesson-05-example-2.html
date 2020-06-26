@@ -1,5 +1,6 @@
 <style>
   
+  /* Define common values as custom properties */
   :root { 
     --color: #333333;
     --body-color: #eee;
@@ -16,12 +17,18 @@
     --color-light: #fff;
   }
 
+  /* Use the Custom properties */
   body {
     font-family: var(--font-family);
     font-size: var(--font-size);
     background-color: var(--body-color);
   }
 
+
+
+
+
+  /* Style buttons */
   button {
     --weight: normal; 
     /* Remove the default styles */
@@ -69,6 +76,11 @@
     filter: brightness(80%);
   }
 
+
+
+
+
+  /* Input styles */
   input[type=text], 
   input[type=email], 
   input[type=password], 
@@ -97,10 +109,14 @@
     --border-color: var(--color-primary);
   }
 
+
+  /* Form labels */
   label {
     display: block;
     margin: 0 0 1em 0;
   }
+
+
 
   label > span {
     font-size: 0.75em;
@@ -110,10 +126,8 @@
 
 
 
-  /* Switch Click 
-  This switch is toggled on a click. The JavaScript 
-  below adds or removes the class .on to change the 
-  visual state of the switch. */
+
+  /*  */
     
   .switch-2 {
     width: 54px;
@@ -162,72 +176,72 @@
 
 
   /* The container */
-.control-checkbox {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+  .control-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 
-/* Hide the browser's default checkbox */
-.control-checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
+  /* Hide the browser's default checkbox */
+  .control-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
 
-/* Create a custom checkbox */
-.control-checkbox > span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
+  /* Create a custom checkbox */
+  .control-checkbox > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
 
-/* On mouse-over, add a grey background color */
-.control-checkbox:hover input ~ .control-checkbox > span {
-  background-color: #ccc;
-}
+  /* On mouse-over, add a grey background color */
+  .control-checkbox:hover input ~ .control-checkbox > span {
+    background-color: #ccc;
+  }
 
-/* When the checkbox is checked, add a blue background */
-.control-checkbox input:checked ~ .control-checkbox > span {
-  background-color: #2196F3;
-}
+  /* When the checkbox is checked, add a blue background */
+  .control-checkbox input:checked ~ .control-checkbox > span {
+    background-color: #2196F3;
+  }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.control-checkbox > span:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .control-checkbox > span:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
 
-/* Show the checkmark when checked */
-.control-checkbox input:checked ~ .control-checkbox > span:after {
-  display: block;
-}
+  /* Show the checkmark when checked */
+  .control-checkbox input:checked ~ .control-checkbox > span:after {
+    display: block;
+  }
 
-/* Style the checkmark/indicator */
-.control-checkbox > span:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+  /* Style the checkmark/indicator */
+  .control-checkbox > span:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 </style>
 
 <body>
@@ -275,13 +289,7 @@
             <div></div>
           </div>
         </label>
-        <span>Click Switch no JS</span>
       </div>
-
-      <label class="control-checkbox">One
-        <input type="checkbox" checked="checked">
-        <span></span>
-      </label>
     </form>
 
   </div>

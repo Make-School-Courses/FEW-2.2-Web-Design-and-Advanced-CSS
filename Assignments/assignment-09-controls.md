@@ -10,7 +10,7 @@ Great looking forms set sites apart. The default styles for form elements leave 
 
 ## Project Requirements
 
-Add styles to your CSS frame that create reasonable styles for form controls. You shoul style these elements: 
+Add styles to your CSS frame that create reasonable styles for form controls. You shoul style these elements:
 
 - button
 - input[text], input[email], input[password]
