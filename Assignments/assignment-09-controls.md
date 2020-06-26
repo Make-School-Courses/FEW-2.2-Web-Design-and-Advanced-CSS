@@ -56,10 +56,9 @@ So far your framework CSS should support the following:
 - Styles the radio buttons and check boxes:
   - input type: radio and checkbox
 
-
 ### Due date
 
-Class 7
+- 
 
 ## Assessing the assignment
 

@@ -102,7 +102,7 @@ Use the :focus pseudo selector to style form elements in their forcussed state.
 
 Form elements should always have labels. It's important that a label be associated with it's form input. Why? 
 
-- Use by screen readers and accessibility helpers
+- Used by screen readers and accessibility helpers
 - Clicking a label activates the form element
 
 A label can be associated with a form element in one of two ways: 
@@ -177,14 +177,17 @@ https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
 
 With only the label element to work there is a limit to what you can draw. Luckily CSS provides to special elements: 
 
-- :before (adds a first child element)
-- :after (add a last child element)
+- `:before` (adds a first child element)
+- `:after` (add a last child element)
+- `:checked` (is active when the element is selected)
 
 These can be used to add elements that don't exist in your source markup. You can use them with the check box to add the check mark. 
 
 Use the content property to set what the content of the new pseudo element. 
 
 Follow the custom checkbox example. Here :after is use to add the checkmark. This checkmark is box with a border on two sides, that has been rotated 45 degrees. 
+
+The `:checked` pseudo class applies when a check box or a radio button is currently selected. 
 
 ## Homework: Framework - Controls
 
@@ -200,7 +203,7 @@ Define some styles for controls in your CSS Framework. See the home description 
 
 ## Additional Resources
 
-1. Links to additional readings and videos
+1. https://css-tricks.com/the-checkbox-hack/
 
 ## Minute-by-Minute [OPTIONAL]
 
