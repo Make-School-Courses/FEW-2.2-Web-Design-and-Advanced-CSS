@@ -35,19 +35,27 @@ When styling these be sure to use the label to your advantage where appropriate.
 
 You may want to search examples of these in the wild and look at how other frameworks handle these to inform your choices. 
 
-### Stretch Goal!
-
 Make some custom Radio buttons and check boxes. Follow this guide: 
 
 https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
-
-Or google for more examples. 
 
 ## Deliverables
 
 Your new styles for controls should be added to your framework. 
 
 Documentation for your framework. Include a code snippet showing markup for each element your framework styles. 
+
+So far your framework CSS should support the following: 
+
+- Basic font styles, including: 
+  - Should style p, h1-6, strong, em, and a tags
+- Buttons
+  - Style button
+- Styles form elements
+  - input, type: text, email, password
+- Styles the radio buttons and check boxes:
+  - input type: radio and checkbox
+
 
 ### Due date
 
