@@ -10,10 +10,93 @@ Form elements and controls are points of interaction in your applications. These
 
 1. Style form elements
 1. Style elements according to state
+1. Use attribute selector
+1. Use parent element to control the layout of children
 
 ### Form elements 
 
-Form elements are input, textarea, radio button, and checkbox. 
+Form elements are input, textarea, radio button, and checkbox. Your goal today is to style these elements. 
+
+Add the markup below to your style example: 
+
+```HTML
+<form>
+  <label>Name</label>
+  <input type="text" placeholder="enter name" />
+  <label>email</label>
+  <input type="email" placeholder="enter email" />
+  <label>password</label>
+  <input type="password" placeholder="enter password" />
+  <label>Notes</label>
+  <textarea placeholder="enter notes"></textarea>
+  <input type="submit">
+</form>
+```
+
+This is only a few of the input types. There are also input types for: 
+
+- number
+- date
+- color
+- and more...
+
+You'll just style these for now. 
+
+### Styling Inputs
+
+Selectors: 
+
+```CSS
+input[type=text], 
+input[type=email], 
+input[type=password], 
+textarea {
+  /* Your styles here */
+}
+```
+
+Use these properties: 
+
+- Typography
+  - `font-size`
+  - `font-weight` 
+  - c`olor
+- Box 
+  - `border-style`
+  - `border-width`
+  - `border-radius`
+  - `border-color`
+  - `background-color`
+  - `padding`
+  - `margin`
+  - `box-shadow` (can have multiple, can be inset)
+
+Let's talk about focus. An input has focus when the keyboard is able to enter text. You can style the input in it's focussed state. 
+
+```CSS
+input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=password]:focus, 
+textarea:focus {
+  /* Your styles here */
+}
+```
+
+What about that outline? The accessibility outline is very important. 
+
+https://a11yproject.com/posts/never-remove-css-outlines/
+
+`outline: none !important;`
+
+If you don't like this replace it with your own style. Don't remove it!
+
+## Challenge 
+
+Style the form inputs and textarea. Use the properties listed above to make good looking form inputs. 
+
+Think about readability by looking closely at padding and font-size. 
+
+Use the :focus pseudo selector to style form elements in their forcussed state. 
 
 #### Input 
 
