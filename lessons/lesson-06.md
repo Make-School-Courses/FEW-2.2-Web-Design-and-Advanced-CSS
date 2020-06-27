@@ -96,7 +96,39 @@ Style the form inputs and textarea. Use the properties listed above to make good
 
 Think about readability by looking closely at padding and font-size. 
 
-Use the :focus pseudo selector to style form elements in their forcussed state. 
+Use the :focus pseudo selector to style form elements in their forcussed state.
+
+Here are a few ideas: 
+
+- Set a consistant border for all elements 
+- Use padding to give some space around the text and the border
+- Set the font size, the default font is too small
+
+```CSS
+input[type=text], 
+input[type=email], 
+input[type=password], 
+textarea {
+  padding: 1em;
+  font-size: 1em;
+  border: 3px solid var(--dark-gray); /* use a custom property! */
+  /* Removing the outline! */
+  outline: none !important;
+  /* Animate changes */
+  transition: 300ms;
+}
+```
+
+If you've removed the outline be sure to Style the :focus state for these elements!
+
+```CSS
+input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=password]:focus, 
+textarea:focus {
+  border-color: var(--selected-color); /* Use a custom property! */
+}
+```
 
 ## Labels and Selectors
 

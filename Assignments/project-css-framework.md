@@ -1,0 +1,41 @@
+# CSS Framework Project 
+
+Your CSS framework should supprot the following features. Use this check list to mark off each feature as you complete it. 
+
+- [ ] Named your CSS framework
+- [ ] Made a Repo
+- [ ] Choose a font 
+  - It's probably best to use a system font. See the notes in lesson 4. 
+  - The big decision here is choose between a serif or sans-serif font family. 
+- [ ] Set a default font style on thhe body element. 
+  - Define your default font style by styling the body tag. 
+  - Set the font-family
+  - Set the font-size
+  - Set the line-height
+  - Set the fore ground color 
+  - Set the background color
+- [ ] Set a style for the headings h1-6
+  - [ ] Set the sizes of each of these. 
+  - [ ] Set other styles to get a look that you like. Consider these: 
+    - margin-top and margin-bottom
+    - color 
+    - font-weight
+    - letter-spacing
+- [ ] Style other text elements 
+  - [ ] strong
+  - [ ] em
+  - [ ] a
+  - [ ] abbr
+  - [ ] code (this might use a different font - probably a fixed width font)
+- [ ] Button styles Inlcude styles for the following. These can use the same styles and differ in color. Follow the guide [here](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-05.md#design-a-button).
+  - [ ] Primary
+  - [ ] Secondary
+  - [ ] Success
+  - [ ] Danger
+  - [ ] Warning
+  - [ ] Info
+  - [ ] Light
+  - [ ] Dark
+  - [ ] Link (this is not a button, make sure to style it)
+- [ ] Form styles. You should style these form elements: 
+  - [ ] input type

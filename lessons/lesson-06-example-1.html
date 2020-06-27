@@ -3,7 +3,48 @@
     <title>Form Playground</title>
 
     <style>
-      
+      input[type=text], 
+      input[type=email], 
+      input[type=password], 
+      textarea {
+        border: 4px solid #333;
+        padding: 1em;
+        font-size: 1em;
+        border-radius: 25px;
+        /* box-shadow: 1px 1px 6px #000 inset; */
+        outline: none !important;
+        transition: 400ms;
+      }
+
+
+      input[type=text]:focus, 
+      input[type=email]:focus, 
+      input[type=password]:focus, 
+      textarea:focus {
+        border-color: tomato;
+      }
+
+
+      input[type=submit] {
+        align-self: flex-end;
+      }
+
+      label {
+        margin: 0.5em;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      /* developers styles */
+      form {
+        width: 400px;
+        margin: auto;
+      }
+
     </style>
   </head>
   <body>
