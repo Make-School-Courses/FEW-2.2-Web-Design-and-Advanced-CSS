@@ -60,7 +60,7 @@ Use these properties:
 - Typography
   - `font-size`
   - `font-weight` 
-  - c`olor
+  - `color`
 - Box 
   - `border-style`
   - `border-width`
