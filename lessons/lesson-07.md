@@ -48,7 +48,7 @@ Links items on the bar should probably be grouped. A list makes a lot of sense.
 </div>
 ```
 
-The bar is used for navigation so each list item should contain an anchor. 
+The bar is used for navigation so each list item should contain an anchor.
 
 ```HTML
 <div class="navbar">

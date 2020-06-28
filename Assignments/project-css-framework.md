@@ -2,6 +2,35 @@
 
 Your CSS framework should supprot the following features. Use this check list to mark off each feature as you complete it. 
 
+- Setup name made a repo
+  - [ ] Named your framework
+  - [ ] Made a repo
+  - [ ] Stretch: organize files in folders
+- Font styles styled basic text elements
+  - [ ] Defined a font stack on the body 
+  - [ ] Styled headings: h1-6
+  - [ ] Styled inline elements: strong, em, code
+  - [ ] Style `<a>` tag. Include `:hover` styles
+- [Button styles](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-05.md#design-a-button) for warning, info, action, etc.
+  - [ ] Basic button styles
+  - [ ] Alternate button styles: warning, secondary, success, Danger, info, light, and dark. 
+- [Form Elements](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-06.md#challenge) 
+  - [ ] Styled inputs and textarea
+  - [ ] Styled form element
+- Use [CSS Custom properties](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-05.md#css-custom-properties) for colors and other repeated values 
+  - [ ] uses Custom properties
+- Navbar style 
+  - [ ] has navbar styles
+- Card style
+  - [ ] 
+- Footer style 
+  - [ ] Styled footer
+- Uses SASS
+  - [ ] Stretch: use @import to bring all files together into a single css file. 
+  - [ ] Stretch: Use @for to automate one or more processes
+  - [ ] Stretch: use mixins to reduce code duplication
+
+
 - [ ] Named your CSS framework
 - [ ] Made a Repo
 - [ ] Choose a font 
@@ -37,5 +66,6 @@ Your CSS framework should supprot the following features. Use this check list to
   - [ ] Light
   - [ ] Dark
   - [ ] Link (this is not a button, make sure to style it)
-- [ ] Form styles. You should style these form elements: 
-  - [ ] input type
+- [ ] Form styles. You should style these form elements. Look at the notes [here](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-06.md#challenge). 
+  - [ ] input types: text, email, password, and textarea
+- [ ] Nav bar. Design a nav bar. 
