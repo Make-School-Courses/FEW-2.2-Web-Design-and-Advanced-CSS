@@ -17,6 +17,12 @@ To create the layouts that you envision you'll need to use both of these tools.
 
 https://docs.google.com/presentation/d/1rJcp_j90I4v8zP_xTMlOpb-MEAsnEF4Gb7YrpsFH3u4/edit?usp=sharing
 
+## Framework Project 
+
+Check your CSS framework against the checklist here: 
+
+[project-css-framework.md](../Assignments/project-css-framework.md)
+
 ## Nav Bars
 
 What makes a good nav bar? 
