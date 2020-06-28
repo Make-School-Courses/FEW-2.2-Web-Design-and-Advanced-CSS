@@ -48,7 +48,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 | 11 |  Wed, June 24  | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-07-controls.md) |
 | 12 |  Fri, June 26  | [Styling Forms](lessons/lesson-06.md) | [Add form styles](./Assignments/assignment-09-controls.md) |
 | 13 |  Mon, June 29  | [Content Elements](lessons/lesson-07.md) | - |
-| 14 |  Wed, July 1   | [CSS Framework Lab]|  
+| 14 |  Wed, July 1   | [Web Component Intro](lessons/lesson-08.md) |  
 | -  |  Fri, July 3   | **NO CLASS - INDEPENDENCE DAY OBSERVED**|
 | 15 |  Mon, July 6   | [Web Components Part 1](lessons/lesson-10.md) |  |
 | 16 |  Wed, July 8   | [Web Components Part 2](lessons/lesson-11.md) |  |
