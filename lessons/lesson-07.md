@@ -15,7 +15,7 @@ To create the layouts that you envision you'll need to use both of these tools.
 
 ## Slides
 
-https://docs.google.com/presentation/d/1rJcp_j90I4v8zP_xTMlOpb-MEAsnEF4Gb7YrpsFH3u4/edit?usp=sharing
+https://docs.google.com/presentation/d/1F5sKKUNimgqiUn7YX8bQHo9VnQ_8kSk7AEVUrB5hUU0/edit?usp=sharing
 
 ## Framework Project 
 
@@ -132,10 +132,10 @@ Use flexbox to arrange things in the navbar. At the top level, you'll want to ar
 
 ```CSS
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
 }
 ```
 
@@ -159,30 +159,38 @@ Within a ul, you'll also want to arrange elements in a row.
 
 https://cssreference.io/flexbox/
 
+Set the color and background colors for your navbar. 
+
+```CSS
+.navbar {
+  ...
+  background-color: #222;
+  color: #eee;
+}
+```
+
+### Style links on the navbar
+
+Links on the navbar should be styled. Be sure to include a hover style.
+
+```CSS
+.navbar a {
+  color: rgb(130, 242, 231);
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+```
+
 ## The State of your CSS Framework 
 
-This is class 7 You should have been working on your CSS framework for ~2 weeks by now. Consider this a big project. You should be investing time and energy into this. It is your final project. 
+Use this check list to check the progress of your framework. 
 
-So far you should have styles in your framework that cover: 
-
-- Type - Set the basic font styles for common elements: 
-  - p, h1-6, strong, em, blockquote, etc. 
-- Colors - You should have defined some custom properties for colors that will be used by your framework. This should include colors for: 
-  - foreground, background
-  - primary, info, danger, and success operations
-- You should also have styled form elements and controls. These styles should cover:
-  - Text input, buttons, radio buttons, and checkboxes. 
-
-This week you should be adding styles for: 
-
-- Navbar
-- Footer
-
-## Documentation for your framework
-
-You must document your framework. This inlcudes code samples showing the framework in use. Show a sample for each of the styles the framework generates. 
-
-You can follow the example I have created here: https://github.com/soggybag/frmwrk-cs
+[project-css-framework.md](../Assignments/project-css-framework.md)
 
 ## Activity 
 
@@ -190,17 +198,11 @@ Follow the guide above to get your navbar started. Build from there and style th
 
 We will remove all of these at the break to get comments from your peers. After the break, we will work to improve the navbars and review a second time. 
 
-
 ## Homework: Framework - Nav Bar and Footer
 
 Add a Navbar to your framework. See the description linked below for more details on this assignment: 
 
-- [Framework: Nav Bar and Footer](../Assignments/assignment-07-flexbox.md)
-
-## Wrap Up
-
-- Continue working on your framework. 
-- Update the documentation for your framework.
+[project-css-framework.md](../Assignments/project-css-framework.md)
 
 ## Additional Resources
 

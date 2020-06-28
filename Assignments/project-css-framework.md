@@ -11,18 +11,23 @@ Your CSS framework should supprot the following features. Use this check list to
   - [ ] Styled headings: h1-6
   - [ ] Styled inline elements: strong, em, code
   - [ ] Style `<a>` tag. Include `:hover` styles
-  - [ ] Stretch: style `<mark>`
-  - [ ] Stretch: add a style for text selection, [read this](https://www.w3schools.com/cssref/sel_selection.asp)
+  - [ ] **Stretch:** style `<mark>`
+  - [ ] **Stretch:** add a style for text selection, [read this](https://www.w3schools.com/cssref/sel_selection.asp)
 - [Button styles](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-05.md#design-a-button) for warning, info, action, etc.
   - [ ] Basic button styles
   - [ ] Alternate button styles: warning, secondary, success, Danger, info, light, and dark. 
+  - [ ] document your buttons
 - [Form Elements](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-06.md#challenge) 
   - [ ] Styled inputs and textarea
   - [ ] Styled form element
+  - [ ] Documented forms and inputs
 - Use [CSS Custom properties](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-05.md#css-custom-properties) for colors and other repeated values 
   - [ ] uses Custom properties
+  - [ ] Document your custom properties
 - [Navbar style](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-07.md#nav-bars) 
   - [ ] Defined navbar styles
+  - [ ] Document your navbar
+  - [ ] Stretch: Add a sticky navbar style ([css position sticky](https://www.w3schools.com/howto/howto_js_sticky_header.asp))
   - [ ] Stretch: Footer styles
 - Card style
   - [ ] Defined a card style'
@@ -33,4 +38,5 @@ Your CSS framework should supprot the following features. Use this check list to
   - [ ] Stretch: use mixins to reduce code duplication
 - Web components 
   - [ ] You have at least one web component
+  - [ ] Document your web component
   - [ ] Stretch: You have a second web component
