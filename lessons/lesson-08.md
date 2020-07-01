@@ -29,7 +29,7 @@ https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
 
 Try this. 
 
-Save this in a file named: `check-box.js`
+Save this in a file named: `checky-box.js`
 
 ```JS 
 (function() {
