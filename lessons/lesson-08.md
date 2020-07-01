@@ -15,9 +15,104 @@ This is the future of the web. More web sites than you suspect are using web com
 1. Create a shadow root
 1. Use reflection
 
-## Review CSS Frameworks
+## Make a Custom CheckBox
 
-Your framework is due class 9. Review the homework assignment [here](../Assignments/assignment-08-css-framework.md). 
+The basic checkbox doesn't look that great. Seriously. It's a little too small. You can't style it either. Seriously. Try it yourself. 
+
+But you can make your custom checkbox. This takes a little effort but it's easier than you think. 
+
+Try it for yourself. 
+
+## What if you could make your checkbox? 
+
+Try this. 
+
+Save this in a file named: `check-box.js`
+
+```JS 
+(function() {
+  class CheckyBox extends HTMLElement {
+    constructor() {
+      super(); // MUST call super!
+      this._shadowRoot = this.attachShadow({ mode: 'open' });
+      
+      this._container = document.createElement('div')
+      this._container.style.display = 'flex'
+      this._container.style.alignItems = 'center'
+      this._container.style.cursor = 'pointer'
+      this._shadowRoot.appendChild(this._container)
+
+      this._box = document.createElement('div')
+      this._box.style.width = '20px'
+      this._box.style.height = '20px'
+      this._box.style.display = 'inline-block'
+      this._box.style.backgroundColor = 'red'
+      this._container.appendChild(this._box)
+
+      this._check = document.createElement('div')
+      this._check.style.width = '10px'
+      this._check.style.height = '6px'
+      this._check.style.display = 'inline-block'
+      this._check.style.borderColor = 'white'
+      this._check.style.borderLeftStyle = 'solid'
+      this._check.style.borderBottomStyle = 'solid'
+      this._check.style.transform = 'translate(4px, 2px) rotate(-45deg)'
+      this._box.appendChild(this._check)
+      
+      this._text = this.innerHTML
+      this._label = document.createElement('span')
+      this._label.innerHTML = this._text
+      this._label.style.marginLeft = '0.5em'
+      this._label.style.cursor = 'pointer'
+      this._container.appendChild(this._label)
+
+      this._isChecked = true
+
+      this._container.addEventListener('click', (e) => {
+        this._isChecked = !this._isChecked
+        this._check.style.display = this._isChecked ? 'block' : 'none'
+      })
+    }
+
+    static get observedAttributes() {
+      return [] // List an array of names
+    }
+
+    attributeChangedCallback(attributeName, oldValue, newValue) {
+      
+    }
+
+    connectedCallback() {
+      
+    }
+  }
+  
+  customElements.define('checky-box', CheckyBox);
+  // ---------
+})()
+```
+
+Next, make an HTML file, name it `index.html`
+
+```HTML
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div>
+        <checky-box>Check Me</checky-box>
+        <checky-box>Check Me</checky-box>
+
+        <input type="checkbox">
+        <input type="color">
+    </div>
+    <script src="checky-box.js"></script>
+  </body>
+</html>
+```
+
+Make these files. Load that page in your browser. What do you see? 
 
 ## Web Components
 
@@ -27,7 +122,7 @@ Web Components give developers the ability to extend HTML and create new tags wi
 
 Web Components are based on the existing component model. This results in more modular code that can be shared across teams and projects.
 
-Web Components, also are known as custom elements, is a system that allows you to define new HTML tags that generate elements within the DOM with encapsulated behavior you define. 
+Web Components, also are known as custom elements, are a system that allows you to define new HTML tags that generate elements within the DOM with encapsulated behavior you define. 
 
 Who's using Web Components and where are they used?
 
@@ -36,23 +131,23 @@ https://www.youtube.com/watch?time_continue=12&v=YBwgkr_Sbx0
 **Web components are:**
 
 - Encapsulate functionality
-  - Just by adding the tag to a document you get all of the functionality that comes with the tag. 
+ - Just by adding the tag to a document you get all of the functionality that comes with the tag. 
 - Extend the browser with new components
-  - Invent new tags beyond the default predefined tags
+ - Invent new tags beyond the default predefined tags
 - Low-Level Browser API
-  - Web components are built into the browser you don't need a library
+ - Web components are built into the browser you don't need a library
 - Created with HTML and JS
 - Portable
-  - A web component can be used in any project regardless of the other technologies being used. A React Component will only work in React projects, a Web Component will work in React projects, Angular Projects, and projects that don't use a library. You can use them anywhere. 
+ - A web component can be used in any project regardless of the other technologies being used. A React Component will only work in React projects, a Web Component will work in React projects, Angular Projects, and projects that don't use a library. You can use them anywhere. 
 - Standard Interface
-  - Can work anywhere you can put an HTML tag
+ - Can work anywhere you can put an HTML tag
 
 **Web Components are not:**
 
 - Not Web Frameworks
-  - They don't come with a predefined system they work within. 
+ - They don't come with a predefined system they work within. 
 - Not opinionated
-  - They don't require you to follow any rules and force you to work in any particular way or with any other required systems. 
+ - They don't require you to follow any rules and force you to work in any particular way or with any other required systems. 
 
 **Advantages:**
 
@@ -62,9 +157,9 @@ https://www.youtube.com/watch?time_continue=12&v=YBwgkr_Sbx0
 
 ### Shadow DOM
 
-To understand Web Components you need to first understand some of the features that allow them to work. Web Components are built from HTML, CSS, and JS that you are already familiar with. They also use a feature called the **Shadow DOM** which you may not be familiar with. Let's take a look at the Shadow DOM. 
+To understand Web Components you need to first understand some of the features that allow them to work. Web Components are built from HTML, CSS, and JS that you are already familiar with. They also use a feature called the **Shadow DOM** which you may not be familiar with. Let's take a look at the Shadow DOM.
 
-A `<div>` displays only a box and it's content. Which is pretty much the same for most tags. A few tags display more. Some display much more. 
+A `<div>` displays only a box and it's content. Which is pretty much the same for most tags. A few tags display more. Some display much more.
 
 Tags like `<input>`, `<select>`, and `<video>` all display more than just a box and have encapsulated behaviors? 
 
@@ -78,9 +173,9 @@ Generally speaking a Shadow DOM is separate and not connected to the "light" DOM
 
 Terms: 
 
-- **Shadow host**: The regular DOM node that the shadow DOM is attached to.
-- **Shadow tree**: The DOM tree inside the shadow DOM.
-- **Shadow boundary**: the place where the shadow DOM ends, and the regular DOM begins.
+- **Shadow host** The regular DOM node that the shadow DOM is attached to.
+- **Shadow tree** The DOM tree inside the shadow DOM.
+- **Shadow boundary** the place where the shadow DOM ends, and the regular DOM begins.
 - **Shadow root**: The root node of the shadow tree.
 
 When you use a tag like audio the browser generates a controller with several buttons and other UI elements. These elements are displayed through the shadow DOM. Think of the shadow DOM as a subtree of regular DOM that is invisible to the "light" DOM. 
@@ -103,7 +198,7 @@ Inspect the slider. It should look like this:
 
 `<input type="range">`
 
-Turn on "Show User Agent Shadow DOM" option. 
+Turn on "Show User-Agent Shadow DOM" option. 
 
 Chrome: In the inspector go to settings, scroll to Elements and check the box: "Show user agent shadow DOM"
 
@@ -133,10 +228,10 @@ Open `example-02.html`. Take a close look at this file and discuss it with your 
 - Look at the source code. There are two files: 
   - example-02.html
   - hello-world.js
- - Read the comments 
- - Uncomment the code at the bottom of `example-02.html`
- - Read the code and guess what will happen
- - Refresh the browser and check your assumptions
+  - Read the comments 
+  - Uncomment the code at the bottom of `example-02.html`
+  - Read the code and guess what will happen
+  - Refresh the browser and check your assumptions
 
 - Q: What did you see? 
 - Q: What can you infer about how this operates? 
@@ -151,7 +246,7 @@ There's a very important concept going on here, it's called reflection.
 
 What is happening here? Answer: Reflection. 
 
-Reflection is a CS concept that describes how a program or structure can modify its structure to display its internal state, or you could say "reflect" it's internal state. 
+Reflection is a CS concept that describes how a program or structure can modify its structure to display its internal state, or you could say "reflect" it's an internal state. 
 
 The `HelloWorld` class stores a property `this._name`. This holds the extra message the component can display. 
 
@@ -178,7 +273,7 @@ The class also creates an HTML element, `el`, which it attaches to the DOM. This
 of count in this element. 
 
 Then the count property is set we want el to update and display the new value. Normally you'd have to by calling a method since setting a 
-property doesn't run a code block. 
+the property doesn't run a code block. 
 
 Use a setter you can run a code block when setting
 a property. 
@@ -266,7 +361,7 @@ Dog.numOfLegs // 4 since all dogs have 4 legs
 Take a look at the sample code: `static-methods-properties.js`.
 
 - Read the code and discuss it with your partner. 
-- Make an assumption about what the code will output. 
+- Assume what the code will output. 
 - Run the code and test your assumptions. 
 
 Challenge: 
@@ -307,7 +402,7 @@ Choose one of the tutorials below.
 - Web Component Todo list: https://dev.to/thepassle/web-components-from-zero-to-hero-4n4m
 - Tabs display: https://developers.google.com/web/fundamentals/web-components/examples/howto-tabs
 
-Due Class 9 (this wednesday)
+Due to Class 9 (this Wednesday)
 
 ## Wrap Up
 
