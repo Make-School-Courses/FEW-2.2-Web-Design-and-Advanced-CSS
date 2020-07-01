@@ -23,6 +23,8 @@ But you can make your custom checkbox. This takes a little effort but it's easie
 
 Try it for yourself. 
 
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+
 ## What if you could make your checkbox? 
 
 Try this. 
