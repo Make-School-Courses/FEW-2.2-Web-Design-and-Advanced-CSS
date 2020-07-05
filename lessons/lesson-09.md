@@ -4,76 +4,98 @@ Continuing the discussion of Web Components from lesson 8.
 
 ## Why you should know this?
 
-Web Components are probably the most important new and emerging web technology. They will take some practice to master.  
+Web Components are probably the most important new and emerging web technology. They will take some practice to master. They are also not complete and will evolve. Learning this now will will give important background into this new realm.  
 
 ## Learning Objectives 
 
 1. Identify major features of Web Components
-1. Use refelction with attributes 
+1. Create elements with JS
+1. Style elements with JS 
 1. Build Web Components
 
-## Review CSS Frameworks 
+## Getting Started with Web Components
 
-- Show your framework
-- Hacktober
-  - https://hacktoberfest.digitalocean.com
-  - Try some of these 
-    - https://github.com/soggybag/tetris-redux-app
-    - https://github.com/soggybag/simple-journal
-    - https://github.com/soggybag/course-book-react
-    - https://github.com/soggybag/sf-public-spaces
-- Review the homework
-- Publish your Framework to GitHub Pages
+Work through the challenges here: https://github.com/Make-School-Labs/simple-component
 
-## Web Components Activity 
+Follow this by studying the guide here:
 
-To solve the challenges below we need to do a little prework. 
+- https://javascript.info/webcomponents-intro
+- https://javascript.info/custom-elements
+- https://javascript.info/shadow-dom
 
-- Add a script to a page
-- Select an element in the DOM
-- Get the text contents of that element
-- Create a new element
-- Append that new element as a child to another element 
+The goal is to create a custom element/web component that will be included 
+with your CSS framework.
 
-Try these challenges. Walk through the first, collaborate, on the second, solve the third in pairs. 
+Anyone using your web CSS framework would get a set of styles. Adding your JS they will also be able to use your custom elements.
 
-- Copyright Component - Component displays a copyright message
-  - Make a new custom element
-  - Make a shadow root
-  - Use the date object to generate the year
-  - Override the year
-  - Display a message before and after the copyright
-- Blink - Lets bring back the Blink tag!
-  - Make a custom component named 'blink-text'
-  - Make a new shadow root
-  - Use `this.innerText` to get the inner text content of the tag
-  - Make the text 50% transparent using a style
-  - Animate the opactity using `setInterval()`
-  - Add a transition
-  - Use an attribute `time` to set the timing of the blinks
-  - Listen for chnages to the `time` attribute
-  - Remove the intverval when the component is removed
-- Rainbow text - The goal is to make a component that colors all of it's in a rainbow of colors. Imagine each word is a different color. 
-  - Make a new custom element `rainbow-text`
-  - Get the text from the host element
-  - Split the text on the space to get an array of words
-  - Transform the array of words into an array of spans
-  - Append these spans to the shadow root
-  - Assign each span a color style 
+These components are fairly simple. You'll be tackling more complex components next week.
+
+## Web Components Concepts
+
+### Naming custom elements
+
+When creating web components you are creating new tags. It's possible that the names can clash with existing names. For this reason custom element names must use a hyphen. 
+
+- `my-component` good
+- `frmwork-blink` good
+- `mycomponent` bad
+- `blink` bad
+
+When using custom tags you must use a closing tag, even if the tag is empty. 
+
+- `<my-component></my-component>` good
+- `<frmwrk-blink></frmwrk-blink>` good
+- `<my-component />` bad
+- `<frmwrk-blink>` worse
+
+### Extend HTMLElement and define a new tag
+
+Extend HTMLElement and call super in the constructor. 
+
+```JS 
+// Create a class that backs the new element
+class MyElement extends HTMLElement {
+  constructor() {
+    super()
+    ...
+  }
+  ...
+}
+
+// Define the new element
+customElements.define('my-element', MyElement)
+```
+
+### Property names 
+
+Since you are extending HTMLElement you'll need to be careful about overriding properties that exist in HTMLElement. 
+
+Best practice: Use and underscore in front of all of the property names you define. 
+
+```JS 
+this._name = 'widget' // good
+this.name = 'wonky' // bad
+```
+
+### Shadow Root 
+
+Create a shadow root in your constructor. Probably a good idea to store this in a property. 
+
+This attaches a shadow root and stores it in a property: `_shadowRoot`
+
+```JS 
+...
+  constructor() {
+    super()
+    this._shadowRoot = this.attachShadow({ mode: 'open' })
+    ...
+  }
+  ...
+```
 
 ## Homework: Continue working on your framework
 
-Take the feedback collected in class today to improve your framework. Continue working on your framework
-
-- [Assignment 9](../Assignments/assignment-09.md)
-
-## Wrap Up
-
-- 
-
-## Additional Resources
-
-1. 
+Continue working on your CSS framework. 
 
 ## Minute-by-Minute [OPTIONAL]
 
