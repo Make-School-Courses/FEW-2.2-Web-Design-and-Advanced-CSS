@@ -79,7 +79,15 @@ Best practice: define a template in a variable outside of your class inside the 
 	`
 	
   class MyComponent extends HTMLElement {
-    ...
+		constructor() {
+			super() 
+			// This generates the HTML and styles in the template above 
+			// inside the shadowroot element
+			this._shadowRoot.appendChild(template.content.cloneNode(true))
+		}
+	}
+
+})()
 ```
 
 ### Lifecycle methods 

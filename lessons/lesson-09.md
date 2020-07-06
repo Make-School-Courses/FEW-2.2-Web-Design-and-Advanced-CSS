@@ -4,7 +4,7 @@ Continuing the discussion of Web Components from lesson 8.
 
 ## Why you should know this?
 
-Web Components are probably the most important new and emerging web technology. They will take some practice to master. They are also not complete and will evolve. Learning this now will will give important background into this new realm.  
+Web Components are probably the most important new and emerging web technology. They will take some practice to master. They are also not complete and will evolve. Learning this now will give important background into this new realm. 
 
 ## Learning Objectives 
 
@@ -34,7 +34,7 @@ These components are fairly simple. You'll be tackling more complex components n
 
 ### Naming custom elements
 
-When creating web components you are creating new tags. It's possible that the names can clash with existing names. For this reason custom element names must use a hyphen. 
+When creating web components you are creating new tags. It's possible that the names can clash with existing names. For this reason, custom element names must use a hyphen. 
 
 - `my-component` good
 - `frmwork-blink` good
@@ -57,8 +57,8 @@ Extend HTMLElement and call super in the constructor.
 class MyElement extends HTMLElement {
   constructor() {
     super()
-    ...
-  }
+      ...
+    }
   ...
 }
 
@@ -70,7 +70,7 @@ customElements.define('my-element', MyElement)
 
 Since you are extending HTMLElement you'll need to be careful about overriding properties that exist in HTMLElement. 
 
-Best practice: Use and underscore in front of all of the property names you define. 
+Best practice: Use an underscore in front of all of the property names you define. 
 
 ```JS 
 this._name = 'widget' // good
@@ -88,9 +88,9 @@ This attaches a shadow root and stores it in a property: `_shadowRoot`
   constructor() {
     super()
     this._shadowRoot = this.attachShadow({ mode: 'open' })
-    ...
-  }
-  ...
+      ...
+    }
+ ...
 ```
 
 ## Homework: Continue working on your framework
@@ -99,11 +99,12 @@ Continue working on your CSS framework.
 
 ## Minute-by-Minute [OPTIONAL]
 
-| **Elapsed** | **Time**  | **Activity**              |
+| **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:45      | In Class Activity I       |
-| 1:05        | 0:10      | BREAK                     |
-| 1:15        | 0:45      | In Class Activity II      |
-| TOTAL       | 2:00      |                           |
+| 0:00 | 0:05 | Objectives |
+| 0:05 | 0:15 | Overview |
+| 0:20 | 0:45 | In Class Activity I |
+| 1:05 | 0:10 | BREAK |
+| 1:15 | 0:45 | In Class Activity II |
+| TOTAL | 2:00 | |
+
