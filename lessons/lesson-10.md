@@ -10,3 +10,7 @@ Continue working on your CSS Framework. This class will be dedicated to completi
 1. Reflect properties and attributes 
 1. Use Web Component Lifecycle methods
 
+Continue the Web Component example challenges: 
+
+https://github.com/Make-School-Labs/simple-component
+

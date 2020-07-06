@@ -56,33 +56,32 @@ One of the problems with Web Components is creating elements and styling those e
 
 Web Components provides a solution: templates. 
 
-
-
-If the markup is complex make a template. You can add styles also. 
-
 You may not need this if the markup in your component is simple. 
 
 Think of a template as some markup you can use in your shadowroot. This can also contain styles in a style tag. 
+
+A template is an HTML element that is not displayed. The template is used as block of code you can duplicate when needed. 
 
 Best practice: define a template in a variable outside of your class inside the IFFE.
 
 ```JS 
 (function() {
-   const template = document.createElement('template')
+	// Create a template
+	const template = document.createElement('template')
+	// Set the content of the template
   template.innerHTML = `
     <style>
-      /* some styles */
+      /* some styles ... */
     </style>
     <div class="container">
-      <!-- some markup -->
+      <!-- some markup ... -->
     </div>
 	`
 	
   class MyComponent extends HTMLElement {
 		constructor() {
 			super() 
-			// This generates the HTML and styles in the template above 
-			// inside the shadowroot element
+			// Clone the template node and copy it's content into the shadowroot
 			this._shadowRoot.appendChild(template.content.cloneNode(true))
 		}
 	}
