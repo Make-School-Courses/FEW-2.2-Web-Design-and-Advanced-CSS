@@ -50,10 +50,10 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 | 13 |  Mon, June 29  | [Content Elements](lessons/lesson-07.md) | - |
 | 14 |  Wed, July 1   | [Web Component Intro](lessons/lesson-08.md) |  
 | -  |  Fri, July 3   | **NO CLASS - INDEPENDENCE DAY OBSERVED**|
-| 15 |  Mon, July 6   | [Web Components Part 1](lessons/lesson-10.md) |  |
-| 16 |  Wed, July 8   | [Web Components Part 2](lessons/lesson-11.md) |  |
-| 17 |  Fri, July 10  | [Web Components Lab |
-| 18 |  Mon, July 13  | [Final Assignment Lab] |
+| 15 |  Mon, July 6   | [Web Components Part 1](lessons/lesson-09.md) | - |
+| 16 |  Wed, July 8   | [Web Components Lab](lessons/lesson-10.md) | - |
+| 17 |  Fri, July 10  | [Web Components Part 2](lessons/lesson-11.md) | - |
+| 18 |  Mon, July 13  | [Final Assignment Lab] | - |
 | 19 |  Wed, July 15  | [Final Assessment](lessons/lesson-12.md) | - |
 | 20 |  Fri, July 17  | [Final Presentations](lessons/lesson-13.md) | - |
 
