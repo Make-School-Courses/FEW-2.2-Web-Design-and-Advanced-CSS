@@ -76,15 +76,7 @@ We will begin the term reviewing CSS concepts. Then move into new concepts that 
         - [ ] Used one other SASS feature loop, function etc. 
 1. Improve Your Typography
 1. CSS Framework
-    - [ ] Define some colors with Custom properties
-    - Type Styles 
-        - [ ] Base Font family on body element
-        - [ ] Set the base font size on body
-        - [ ] Style h1-6
-        - [ ] Style inline elements strong, em, mark, etc.
-        - [ ] Style controls button, input 
-        - [ ] Style navbar
-        - [ ] Style footer
+    - Use the checklist [here](Assignments/project-css-framework.md) to complete your CSS framework.
 1. Web Components 
     - [ ] Completed Web Component tutorial
     - [ ] Add web compomnent to your framework
