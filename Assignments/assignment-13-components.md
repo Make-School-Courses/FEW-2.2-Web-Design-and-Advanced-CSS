@@ -2,7 +2,7 @@
 
 ## Description 
 
-Your goal is to create a web component for your framework. The component can be anything you like. You can also build off the Google howto tabs or other tutorial for this assignment. 
+Your goal is to create a web component for your framework. The component can be anything you like. You can also build off the Google howto tabs or other tutorial for this assignment.
 
 ### Why this assignment?
 
