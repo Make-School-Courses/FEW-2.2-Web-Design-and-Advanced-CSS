@@ -37,3 +37,31 @@ If the name of your framework is long use the initials. For example, imagine the
 - `<ss-navbar></ss-navbar>`
 - `<ss-carousel><ss-carousel>` 
 
+## Web Components vs Custom Element
+
+Any time time you create a new custom element with `customElements.define()` define you are creating a new custom element. Your custom element may or may not use the Shadow root. 
+
+Let's call Custom Elements that use the shadow root "Web Components" and custom elements that don't use the shadow root "Custom elements". 
+
+What's the difference? 
+
+Using the Shadow root: 
+
+- Pros
+  - Encapsulation - elements and styles are totally separated from the DOM
+  - Can't be accidentally affected from outside
+- Cons 
+  - Can't share styles from outside
+  - It's a little more complex to program
+
+Without the Shadow Root: 
+
+- Pros
+  - Easier to program
+  - Can share styles from outside
+- Cons
+  - May not be as predictable 
+  - Can be accidentally affected by the outside
+
+It's up to you whether you use the shadowroot or not for this assignment. 
+
