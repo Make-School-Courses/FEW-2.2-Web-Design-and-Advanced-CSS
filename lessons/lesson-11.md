@@ -52,7 +52,7 @@ For the code to run you'll have to call that function. You could also call the f
 
 ### Templates
 
-One of the problems with Web Components is creating elements and styling those elements. The process is rather verbose compared to creating elements in an .html file and writing CSS in a .css file. 
+One of the problems with Web Components is creating elements and styling those elements. The process is rather verbose compared to creating elements in an .html file and writing CSS in a .css file.
 
 Web Components provides a solution: templates. 
 
@@ -81,19 +81,38 @@ Best practice: define a template in a variable outside of your class inside the 
   class MyComponent extends HTMLElement {
 		constructor() {
 			super() 
-			// Clone the template node and copy it's content into the shadowroot
-			this._shadowRoot.appendChild(template.content.cloneNode(true))
+			// Create a shadow root node
+			const tempNode = template.content.cloneNode(true)
+			this._shadowRoot = this.attachShadow({ mode: 'open' });
+			this._shadowRoot.appendChild(tempNode)
+			// Get a reference to an element from your template
+			this._container = this._shadowroot.queryselector('.container')
 		}
 	}
 
 })()
 ```
 
+What happened here? 
+
+- At the top you defined a template element. This inclduded a style tag and some markup.
+- In the constructor of MyComponent you cloned the template, created the shadow root, and appended the cloned node to the shadow root. This created the HTML markup that will be used by this component. 
+- The last line shows how to access elements in the shadow root create from a template. It's same methods you have used in the past. 
+
+You can see a live example of templates working with a web component here: 
+
+https://github.com/Make-School-Labs/simple-component/tree/master/simple-components-templates/01-counter-template
+
 ### Lifecycle methods 
 
-Use these to setup and take down your components. 
+Use these to setup and take down your components. Lifecycel methods are used to initialize resources, and free up resources when you're done using them. Like the name implies lifecycle methods are triggered over the life of a component.
 
-Use the contructor to initialize class properties and create the shadow root. 
+- `constructor()` - this is called when your component is initialized. 
+- `connectedCallback()` - this is called when the component is added to the DOM tree. 
+- `disconnectedCallback()` - this is called when the component is removed from the DOM tree. 
+- `attributeChangedCallback()` - this is invoked when an attribute on the element is changed. 
+
+Use the constructor to initialize class properties and create the shadow root. 
 
 Use `connectedCallback()` to handle things that should happen when the component is added to the DOM. For example adding a timer. 
 
@@ -102,145 +121,98 @@ Use `disconnectedCallback()` to clean up when a component is removed from the DO
 ```JS 
 ...
 class MyComponent extends HTMLElement {
-...
-    connectedCallback() {
-      // Create a timer and save a reference 
-      this._timer = setInterval(() => {
-        this._nextImg()
-      }, 3000)
-    }
+	...
+	connectedCallback() {
+		// Create a timer and save a reference 
+		this._timer = setInterval(() => {
+			this._nextImg()
+		}, 3000)
+	}
 
-    disconnectedCallback() {
-      // Clear your timer
-      clearInterval(this._timer)
-    }
-    ...
-```
-
-In some cases you may not be able to get at the content of a node in your custom tag. There are a couple things you can try. 
-
-Make sure to include your JS files at the bottom of the body tag. This gaurantees the custom tags are loaded before the code runs. 
-
-You can also use `customElements.whenDefined()`. This method returns a promise. 
-
-```JS 
-class MyComponent extends HTMLElement {
-...
-    connectedCallback() {
-      ...
-      customElements.whenDefined('simple-slides').then(() => {
-        // do stuff after elements are defined
-      })
-    }
-    ...
+	disconnectedCallback() {
+		// Clear your timer
+		clearInterval(this._timer)
+	}
+	...
+}
 ```
 
 ### Attributes 
 
-If you are using attributes to confgure your component. You'll need to list the attribute names that are being observed and listen for changes. 
+From outside you only have the tag itself to work with. It's not a good solution to edit source code if you need to make changes to a component. In other words you shouldn't expect developers to edit the .js file. 
+
+Developers using your components will use the tag and they can configure the tag with attributes. For example: 
+
+`<my-counter value="5" min="0" max="10" step="1"></my-counter>`
+
+Internally your component can access attribute values with `this.getAttribute(name)`. It's probably best to store these in properties rather than get them with `getAttribute()` each time they are needed. For example: 
+
+```JS 
+...
+class MyComponent extends HTMLElement {
+	constructor() {
+		this._value = this.getAttribute('value')
+		this._min = this.getAttribute('min')
+		this._max = this.getAttribute('max')
+		this._step = this.getAttribute('step')
+	}
+}
+```
+
+Attributes can change. They can be set from outside the component. Your component observe these changes with: `attributeChangedCallback(name, oldValue, newValue)`
+
+If you are using attributes to confgure your component. You'll need to list the attribute names that are being observed and listen for changes.
+
+```js
+static get observedAttributes() {
+	return ['value', 'min', 'max', 'step'];
+}  
+```
 
 Listening for changes and look at the name of the property that changed with `attributeChangedCallback(name, oldValue, newValue)`. 
 
 ```js
-class MyComponent extends HTMLElement {
+class MyCounter extends HTMLElement {
   ...
   static get observableAttibutes() {
-    return ['title', 'time']
+    return ['value', 'min', 'max', 'step']
   }
   ...
-  attributeChangedCallback(name, oldValue, newValue) {
-    console.log(name, oldValue, newValue)
-    if (name === 'title') {
-      this._title = newValue
-    } 
-    this.render()
+   attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'value') {
+			this._value = parseInt(newValue)
+			this._update()
+    } else if (name === 'min') {
+			this._min = parseInt(newValue)
+		} else if (name === 'max') {
+			this._max = parseInt(newValue)
+		} else if (name === 'step') {
+			this._step = newValue
+		}
   }
   ...
 ```
+
+You can see these methods at work in a live example here: 
+
+https://github.com/Make-School-Labs/simple-component/tree/master/simple-components-templates/01-counter-template
 
 ## Activity 
 
-Pair up with someone and try solving the problems below. Be prepared to present your solution to the class. 
+After solving the challenges in the web components examples: https://github.com/Make-School-Labs/simple-component move on to completing your your web component. 
 
-**Challenge 1** - Copyright component.
+Challenges: 
 
-This component should display a copyright message along with the current year. When a `year` attribute is present it should display the year set in the value. 
+- Define a template and use it your component. 
+- Define styles in the template. 
+- Use attributes to comfigure your component. 
 
-For example: 
-
-`<copyright></copyright>`
-
-Should display: &copy; 2019
-
-`<copyright year="1965"></copyright>`
-
-Should display: &copy; 1965 
-
-Stretch goal: Handle a second attribute: `title`. When this attribute is present the component shows the value to the left of the copyright. For example: 
-
-`<copyright title="Frango Mints" year="1965"></copyright>`
-
-Displays: Frango Mints &copy; 2019
-
-**Challenge 2** - Blink Component
-
-The bink tag has been sorely missed for many years it's time for it's return! 
-
-Make a new component that flashes a text message. The text should appear and disappear about once per second. 
-
-Hint: Use CSS styles to make the text blink. By alternating color of the text between `#000` and `transparent` the text will appear and disappear. Using transparent is better than removing the text since removing the text would change the size of the element. 
-
-Use the lifecycle methods. Use `connectedCallback()` to create an interval with `setInterval()` and `disconnectedCallback()` to remove the interval with `clearInterval()`. In this way your component can clean up resources it is using when it is removed. 
-
-Stretch Challenge: Use an attaribute to set the speed of the blinking. When this attribute is not present the default blink rate should be a resonable value. 
-
-Stretch Challenge: Make the text that appears inside your blink tag blink. For example: 
-
-`<my-blink>This text blinks</my-blink>`
-
-To do this you'll need to get the content text of the element and add it to the shadow root. 
-
-**Challenge 3** - Rainbow text 
-
-The goal is to make a component that colors all of it's in a rainbow of colors. Imagine each word is a different color. 
-
-Follow these steps:
-
-- Make a new custom element `rainbow-text`
-- Make a shadowroot
-- Get the text from the host element
-- Split the text on the space to get an array of words
-- Transform the array of words into an array of `<span>` tags
-- Append these spans to the shadow root
-- Assign each span a color style
-
-**Challenge 4** - Simple Slide Show 
-
-Make a simple slide show. Your slide show should cycle through a series of img tags that provided in the custom tag. For example: 
-
-```HTML
-<simple-slides>
-  <img src="image-0.jpeg">
-  <img src="image-1.jpeg">
-  <img src="image-2.jpeg">
-<simple-slides>
-```
-
-The slide show would display one img at a time in the shadow root and change images every 3 secs. 
-
-Stetch Challenge: Add an attribute that sets the time between slides. 
-
-Stretch Challenge: Display the number of the slide in the component. 
-
-Stretch Challenge: Make a cross fade between images. To do this you'll need two img tags. Make one fade out while the other fades in. Alternate these with each image change. 
-
-## Wrap Up
-
-- 
 
 ## Additional Resources
 
-1.  
+See the examples. These include starter code, and solutions. 
+
+https://github.com/Make-School-Labs/simple-component
 
 ## Minute-by-Minute [OPTIONAL]
 

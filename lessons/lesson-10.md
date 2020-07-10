@@ -65,3 +65,5 @@ Without the Shadow Root:
 
 It's up to you whether you use the shadowroot or not for this assignment. 
 
+Your web components/Custom elements don't have to be huge and complex. If you can make a useful element that has practical application that's goal. If you can make something fun and interesting that's okay also!
+
