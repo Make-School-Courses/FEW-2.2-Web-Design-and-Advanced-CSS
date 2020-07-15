@@ -33,6 +33,20 @@ There are 100 color swatches but there are no colors. You need to generate 100 u
 
 Note that all colors have an inline style set to a custom property named: --color-0 to --color-99. Generating 100 colors programatically might be a good solution. 
 
+Possible solutions for this problem would be to use JS or SASS. 
+
+1) JS solution would need to assign an inline color to each color swatch. 
+
+2) The SASS solution would require using a loop to generate style rules for all 100 color properties. The output should look like this: 
+
+```CSS
+--color-0: hsl(0, 100%, 50%);
+--color-1: hsl(3, 100%, 50%);
+--color-2: hsl(6, 100%, 50%);
+--color-3: hsl(9, 100%, 50%);
+...
+```
+
 ## 6 Shopping cart 
 
 Clicking a color swatch adds it to the shopping cart. The cart is a list and each row is made up of some text, buttons, and an input. You should style these. 
