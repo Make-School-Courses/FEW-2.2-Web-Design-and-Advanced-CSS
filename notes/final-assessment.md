@@ -33,6 +33,28 @@ Note that all colors have an inline style set to a custom property named: --colo
 
 Clicking a color swatch adds it to the shopping cart. The cart is a list and each row is made up of some text, buttons, and an input. You should style these. 
 
-## 6 Ticker Tape 
+## 7 Ticker Tape 
 
-Create a web component that animates the text inside with a ticker tape effect. Use the ticker tape component at the top of the page for the 
+Create a web component that animates the text inside with a ticker tape effect. Use the ticker tape component at the top of the page to animate the text: `<h1>...Color.com is awesome...</h1>`. 
+
+The ticker tape should moves the text across the screen. You can take one of two approaches. 
+
+1) Manipulate the string content. Use a timer to take the first character of the string and move it to the end of the string. Doing this over time you'll end up with: 
+
+- Hello
+- elloH
+- lloHe
+- loHel
+- oHell
+
+2) Create an inner element containing the the text. Transform this element from right to left. At the end of the animation Move it back to the right and start over again. 
+
+Taking this approach it would be easiest to use `@keyframes`. To do this in a web component you'll want to define this in a template. See the example [here](https://github.com/Make-School-Labs/simple-component/blob/master/simple-components-templates/01-counter-template/fancy-counter.js). Note the styles are in a string in a `<style>` tag. You could define your `@keyframes` block here along with other animation styles.
+
+Notice that all of the styles here are defined in a template and the template is used in the component. 
+
+```js
+const tempNode = template.content.cloneNode(true)
+this._shadowRoot = this.attachShadow({ mode: 'open' });
+this._shadowRoot.appendChild(tempNode)
+```
