@@ -64,6 +64,7 @@ The ticker tape should moves the text across the screen. You can take one of two
 - lloHe
 - loHel
 - oHell
+- Hello
 
 2) Create an inner element containing the the text. Transform this element from right to left. At the end of the animation Move it back to the right and start over again. 
 

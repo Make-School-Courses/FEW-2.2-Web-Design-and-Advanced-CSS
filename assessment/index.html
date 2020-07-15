@@ -138,6 +138,10 @@
 				flex-wrap: wrap;
 			}
 
+			.swatch {
+				background-color: red !important;
+			}
+
 			main {
 				width: 600px;
 				margin: auto
@@ -149,11 +153,21 @@
 			
 
 
+			// --color-sample-0 : red
+			// --color-sample-1 : green
+			// ...
+			// --color-sample-99 : blue
 
 			// make some swatches 
 			const swatchCount = 100
 			for (let i = 0; i < swatchCount; i += 1) {
-				const swatch = `<div class="swatch add-to-cart" style="background-color: var(--color-sample-${i});" data-color="Color ${i}" data-price="${(Math.random() * 10).toFixed(2)}"></div>`
+				const swatch = `
+				<div 
+					class="swatch add-to-cart" 
+					style="background-color: 
+					var(--color-sample-${i});" 
+					data-color="Color ${i}" 
+					data-price="${(Math.random() * 10).toFixed(2)}"></div>`
 				document.querySelector('.swatches').innerHTML += swatch
 			}
 
