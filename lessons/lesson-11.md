@@ -117,7 +117,6 @@ Use the constructor to initialize class properties and create the shadow root.
 Use `connectedCallback()` to handle things that should happen when the component is added to the DOM. For example adding a timer. 
 
 Use `disconnectedCallback()` to clean up when a component is removed from the DOM. For example remving a timer. 
-
 ```JS 
 ...
 class MyComponent extends HTMLElement {
@@ -206,7 +205,6 @@ Challenges:
 - Define a template and use it your component. 
 - Define styles in the template. 
 - Use attributes to comfigure your component. 
-
 
 ## Additional Resources
 

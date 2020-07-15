@@ -1,63 +1,38 @@
 # FEW 2.2 Final Assessment 
 
-Your goal is to use your CSS framework and CSS skills to recreate the general look this web site: 
+Your job is to style the color.com web site. It's lacking in style. Do your best. Use your CSS framework as starting point. 
 
-https://www.android.com/phones-tablets/
+Feeel free to modify the HTML markup on thepage in anyway that yu wish. You must not break the fucntionality! There are two things that happening here: 
 
-Download the sample 
+1. Color swatches are generated in `div.swatches`. 
+2. Clicking swatches adds colors to the cart. 
 
-## Challenge 1 - Apply your framework
+## 1 Type 
 
-Apply your framrwork to the sample document. 
+Set the font style for text and headings.
 
-## Challenge 2 - Navbar 
+## 2 Style The Navbar 
 
-Do your best to match the navbar on the Android site. The name Android is on the left and there are three links on the right. 
+Style the navbar and links.
 
-## Challenge 3 - Layout 
+## 3 Style cards 
 
-The page is divided into sections. Each section has a header containing an h2 and possibly an h3. The header is followed by some content. Then there might be a footer. 
+These cards have an image and text. **The cards should sit in a horizontal row.**
 
-Your goal is to put the H2 and h3 on the left with text content on the right. 
+## 4 Style Colors 
 
-If there is a list of of images these should be arranged horizontally with the image above the text. 
+To make the swatches visible I added width, height, and border. You should change these to fit your ideas. You need to present the colors in a rows or a grid. Remember we have to be able to click them and these divs so they need to be big enough to click. Each div also needs to keep the class name: add-to-cart and the data-color and data-price attributes.
 
-Use the Android site for reference. 
+### 5 Genereate 100 colors
 
-You should use your CSS framework as a starting point. 
+There are 100 color swatches but there are no colors. You need to generate 100 unique colors and display them in the swatches. You can do this anyway you like. 
 
-Adjust the headings to match the headings in 
+Note that all colors have an inline style set to a custom property named: --color-0 to --color-99. Generating 100 colors programatically might be a good solution. 
 
-## Challenge 4 - Headings 
+## 6 Shopping cart 
 
-The headings on the Android site have hieracrhy you should follow. 
+Clicking a color swatch adds it to the shopping cart. The cart is a list and each row is made up of some text, buttons, and an input. You should style these. 
 
-Look at the first section. The h2 "Phones & Tablets" is a lot smaller than the h3 "If you want it, Android powers it.". This is same for all of the sections. Try your best to match this throughout the page. 
+## 6 Ticker Tape 
 
-## Challenge 5 - Learn More button
-
-At the bottom of some sections, "Google Pixel 3a" for example, there is a "Learn More" Button. Style this to match what your see on the Android site. 
-
-Extra Credit: Include the hover effect where the text changes color. 
-
-## Challenge 6 - Hover effect
-
-The links below images, for example "Samsung Galaxy 10 5g" have a hover effect where a circle appears and expands. Try your best to implement this on all of the product links. 
-
-Extra Credit: Notice how the phone image bumps up a little on hover, include this also. 
-
-## Extra Credit - Web Component 
-
-Create a web component that makes each letter of a text string blink in order. 
-
-`<blinky-text>ABCDE</blinky-text>`
-
-Using the coponent above the letter A would blink then B, C etc. After E, A sould blink and the process would start over again. 
-
-## Extra Credit - Add one of your web components
-
-Use one of your Web Components in the web page. 
-
-## Extra Credit - Circle hover pop thing
-
-Make a Web Component that acts like a link but shows an expanding circle when you hover. 
+Create a web component that animates the text inside with a ticker tape effect. Use the ticker tape component at the top of the page for the 
