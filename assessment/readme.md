@@ -7,6 +7,10 @@ Feeel free to modify the HTML markup on thepage in anyway that yu wish. You must
 1. Color swatches are generated in `div.swatches`. 
 2. Clicking swatches adds colors to the cart. 
 
+Your framework styles should cover much of the problems here. You will have to write some CSS to fill in some details. 
+
+Problems 5 and 7 will not be covered by your framework. You'll need to solve these from scratch. 
+
 ## 1 Type 
 
 Set the font style for text and headings.
