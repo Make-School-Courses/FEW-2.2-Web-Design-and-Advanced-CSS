@@ -26,10 +26,16 @@ If you've solved these problems and want some more challenges try these.
   - Give the leaf shape a darker and light green on each half
   - Use a gradient to give the lemmon a shadow
   - Make Kirby look more round
+- Use React
+  - Create a React project
+  - Make a Component for each "drawing"
+  - Choose a system: 
+    - Link a stylesheet to your component
+    - Create a style object and and apply styles inline
 
 ### Deliverable
 
-A link to your code pen in the progress tracker.
+Submit your work to GradeScope. 
 
 ### Due date
 

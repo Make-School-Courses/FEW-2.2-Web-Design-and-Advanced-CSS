@@ -4,7 +4,7 @@ This introduction will review CSS concepts and introduce transform.
 
 ## Why you should know this?
 
-Great question! Having the ability to place an element anywhere on the screen is useful, has many applications, and opens up the range of the things you can make. When these ideas are applied to animations it opens even more options. 
+Great question! Having the ability to place an element anywhere on the screen is useful, there are many applications, and opens up the range of the things you can make. When these ideas are applied to animations it opens even more options. 
 
 While you might not be concerned with drawing and making pictures, it's quite possible someone will come to you with a visual idea and want you to recreate it. These are the tools you need. 
 
