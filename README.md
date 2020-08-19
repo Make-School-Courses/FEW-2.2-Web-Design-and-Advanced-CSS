@@ -39,9 +39,9 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  2 |  Wed, June 3   | [CSS Drawing Lab] | [CSS Drawing part 2](./Assignments/assignment-02-css-drawing.md) |
 |  3 |  Fri, June 5   | [Animation with CSS](lessons/lesson-02.md) | [Animation Challenges](./Assignments/assignment-03-Animation.md) |
 |  4 |  Mon, June 8   | [CSS Animation with Keyframes](lessons/lesson-02.md) | [Animate your Drawing](./Assignments/assignment-04-Animate-Logo.md) |
-|  5 |  Wed, June 10  | [SASS](lessons/lesson-03.md) | [Apply SASS to a past project](./Assignments/assignment-06-SASS.md) |
-|  6 |  Fri, June 12  | [SASS Lab] | - |
-|  7 |  Mon, June 15  | - | - |
+|  5 |  Wed, June 10  | [SASS](lessons/lesson-03.md) | [SASS Tutorial](./Assignments/assignment-06-SASS-part-1.md) |
+|  6 |  Fri, June 12  | [SASS Lab] | [Apply SASS to previous assignment](./Assignments/assignment-06-SASS-part-2.md) |
+|  7 |  Mon, June 15  | - | [Apply SASS to previous Project](./Assignments/assignment-06-SASS-part-3.md) |
 |  8 |  Wed, June 17  | - | - |
 |  9 |  Fri, June 19  | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-07-typography.md) |
 | 10 |  Mon, June 22  | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts](./Assignments/assignment-06-framework-fonts.md)  |

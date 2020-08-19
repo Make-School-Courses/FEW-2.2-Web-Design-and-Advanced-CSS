@@ -2,13 +2,9 @@
 
 ## Description 
 
-This assignment is made up of three short assignments. The goal of these is to learn and apply the SASS language to your style sheets. 
+The goal of this assignment is to apply SASS to one of your previous projects. 
 
-The three parts are: 
-
-1. Solve the challenges in the sample code: https://github.com/Make-School-Labs/few-2-2-lesson-04
-1. Apply SASS to your CSS animation created in the previous assignment. 
-1. Apply SASS to one of your previous web projects. This can be a class homework assignment, an intensive project, or a personal project.
+Apply SASS to one of your previous web projects. This can be a class homework assignment, an intensive project, or a personal project.
 
 ## Slides 
 
@@ -24,34 +20,11 @@ SASS is a common industry-standard tool, expect to see it in use at any place yo
 
 You'll turn in each of the three parts to this assignment to Gradescope.
 
-### Part 1 - Challenges 
+### Apply SASS to a past project 
 
-Install the SASS CLI and solve the challenges here: https://github.com/Make-School-Labs/few-2-2-lesson-04
+Choose a past project that has a style sheet. Rewrite that style sheet in SASS.
 
-Submit your work to GradeScope.
-
-### Part 2 - Apply SASS to your CSS Animation
-
-Apply SASS to your CSS animation (this is the assignment from the previous week.) You can start by changing the file extension of your style sheet to `.scss`.
-
-You should make use of the following elements in your code: 
-
-- variables
-- math operators
-- for loops
-- nested rules
-
-Stretch goals: 
-
-SASS has a few more features that you can make use of. Applying these your code: 
-
-- @import
-- @mixin
-- SASS Modules https://sass-lang.com/documentation/modules
-
-### Part 3 - Apply SASS to a past project 
-
-Choose a past project that has a style sheet. Rewrite that style sheet in SASS. 
+**Pro tip!** projects created with: Create React App can use SASS without anything added! 
 
 The project you choose can be any web project a past assignment, a past intensive project, or a personal project. 
 
@@ -59,11 +32,11 @@ Choose a project that has a reasonable scope. A large group project might not be
 
 ### Deliverable
 
-Each of the three parts of this assignment will be submitted via GradScope. 
+Post a link to your updated project to GradeScope.
 
 ### Due date
 
-Class 4
+Class 6
 
 ## Assessing the assignment
 
