@@ -4,7 +4,7 @@ Making things move.
 
 ## Why you should know this
 
-Engagment is important. Things that move are much more interesting. Adding motion adds another dimention to your content. All of your favorite apps probably have little bits of animation. 
+Engagment is important. Things that move are much more interesting. Adding motion adds another dimention to your content. All of your favorite apps probably have little bits of animation.
 
 ## Learning Objectives
 
@@ -16,11 +16,19 @@ Engagment is important. Things that move are much more interesting. Adding motio
 
 https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7FZI/edit?usp=sharing
 
+## Identify some Examples of motion
+
+Look for motion in software products that you use. 
+
+Pair and share these with your partner. 
+
 ## Initial Exercise
 
-Animation is everywhere on the computer. Even your code editor has some animation. 
+Animation is everywhere on the computer. Even your code editor has some animation. Small animations can be informative and engaging. 
 
-Explore some CSS animations
+When you see motion on the computer what is happening? Most often that motion is connected to the properties that set the position, scale, rotation, and opacity. 
+
+Explore some CSS animations and identify what properties are being animated.
 
 1. https://codepen.io/FabioG/full/QjLreK
 2. https://codepen.io/dsenneff/pen/2d338b0adf97472ebc5d473cf1fa910b
@@ -38,7 +46,7 @@ Explore some CSS animations
 14. https://codepen.io/oliviale/full/jxPgKv
 15. https://codepen.io/antho-fsy/pen/wJqWKj
 
-What is happening in these animations? Don't worry about the technical details just _identify what is moving_ and _the quality of its motion_.
+What is happening in these animations? Don't worry about the technical details just _identify which properties are changing_.
 
 ## Video lessons 
 
