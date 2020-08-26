@@ -37,8 +37,8 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |:------:|:------|:-------|:-----------|
 |  1 |  Mon, June 1   | [Drawing with CSS](lessons/lesson-01.md) | [CSS Drawing](./Assignments/assignment-01.md) |
 |  2 |  Wed, June 3   | [Animation with CSS](lessons/lesson-02.md) | [CSS Drawing part 2](./Assignments/assignment-02-css-drawing.md) |
-|  3 |  Fri, June 5   | [Animation with CSS](lessons/lesson-03.md) | [Animation Challenges](./Assignments/assignment-03-Animation.md) |
-|  4 |  Mon, June 8   | [CSS Animation with Keyframes](lessons/lesson-04.md) | - |
+|  3 |  Fri, June 5   | [CSS Animation with Keyframes](lessons/lesson-02.md) | [Animation Challenges](./Assignments/assignment-03-Animation.md) |
+|  4 |  Mon, June 8   | [SASS](lessons/lesson-03.md) | - |
 |  5 |  Wed, June 10  | - | [Animate your Drawing](./Assignments/assignment-04-Animate-Logo.md) |
 |  6 |  Fri, June 12  | [SASS](lessons/lesson-03.md) | [SASS Tutorial](./Assignments/assignment-06-SASS-part-1.md) |
 |  7 |  Mon, June 15  | [SASS Lab] | [Apply SASS to previous assignment](./Assignments/assignment-06-SASS-part-2.md) |
