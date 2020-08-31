@@ -240,9 +240,9 @@ To get an understanding of SASS you have to use it. Your goal is to apply SASS t
 
 See the description here for details and requirements for this assignment: 
 
-- [Apply SASS Part 1](Assignments/assignment-06-SASS-part-1.md)
-- [Apply SASS Part 2](Assignments/assignment-06-SASS-part-2.md)
-- [Apply SASS Part 3](Assignments/assignment-06-SASS-part-3.md)
+- [Apply SASS Part 1](../Assignments/assignment-06-SASS-part-1.md)
+- [Apply SASS Part 2](../Assignments/assignment-06-SASS-part-2.md)
+- [Apply SASS Part 3](../Assignments/assignment-06-SASS-part-3.md)
 
 ## Wrap Up
 
