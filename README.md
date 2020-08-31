@@ -38,12 +38,12 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  1 | Wed, August 19 | [Drawing with CSS](lessons/lesson-01.md) | [CSS Drawing](./Assignments/assignment-01.md) |
 |  2 | Mon, August 24 | [Animation with CSS](lessons/lesson-02.md) | [CSS Drawing part 2](./Assignments/assignment-02-css-drawing.md) |
 |  3 | Wed, August 26 | [CSS Animation with Keyframes](lessons/lesson-02.md) | [Animation Challenges](./Assignments/assignment-03-Animation.md) |
-|  4 | Mon, August 31 | [SASS](lessons/lesson-03.md) | [SASS Tutorial](./Assignments/assignment-06-SASS-part-1.md) |
-|  5 | Wed, September 2 | [Typography](lessons/lesson-04.md) | [Improve your Typography](./Assignments/assignment-07-typography.md) |
-|  6 | Mon, September 7 | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework: Fonts](./Assignments/assignment-06-framework-fonts.md)  |
-|  7 | Wed, September 9 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-07-controls.md) |
-|  8 | Mon, September 14 | [Styling Forms](lessons/lesson-06.md) | [Add form styles](./Assignments/assignment-09-controls.md) |
-|  9 | Wed, September 16 | [Content Elements](lessons/lesson-07.md) | - |
+|  4 | Mon, August 31 | [SASS](lessons/lesson-03.md) | [SASS Part 1](./Assignments/assignment-06-SASS-part-1.md) [SASS Part 2](./Assignments/assignment-06-SASS-part-2.md) |
+|  5 | Wed, September 2 | [Typography](lessons/lesson-04.md) | [SASS Part 3](./Assignments/assignment-06-SASS-part-3.md) |
+|  6 | Mon, September 7 | [CSS Custom Properties](lessons/lesson-05.md) | [Improve your Typography](./Assignments/assignment-07-typography.md) |
+|  7 | Wed, September 9 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Start your Framework: Fonts](./Assignments/assignment-06-framework-fonts.md) |
+|  8 | Mon, September 14 | [Styling Forms](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-07-controls.md) |
+|  9 | Wed, September 16 | [Content Elements](lessons/lesson-07.md) | [Add form styles](./Assignments/assignment-09-controls.md) |
 | 10 | Mon, September 21 | [Web Component Intro](lessons/lesson-08.md) |  
 | 11 | Wed, September 23 | [Web Components Part 1](lessons/lesson-09.md) | - |
 | 12 | Mon, September 28 | [Web Components Lab](lessons/lesson-10.md) | - |
