@@ -44,10 +44,10 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  7 | Wed, September 9 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Start your Framework: Fonts](./Assignments/assignment-06-framework-fonts.md) |
 |  8 | Mon, September 14 | [Styling Forms](lessons/lesson-06.md) | [Framework: Controls](./Assignments/assignment-07-controls.md) |
 |  9 | Wed, September 16 | [Content Elements](lessons/lesson-07.md) | [Add form styles](./Assignments/assignment-09-controls.md) |
-| 10 | Mon, September 21 | [Web Component Intro](lessons/lesson-08.md) |  
-| 11 | Wed, September 23 | [Web Components Part 1](lessons/lesson-09.md) | - |
-| 12 | Mon, September 28 | [Web Components Lab](lessons/lesson-10.md) | - |
-| 13 | Wed, September 30 | [Web Components Part 2](lessons/lesson-11.md) | - |
+| 10 | Mon, September 21 | [Web Component Intro](lessons/lesson-08.md) | Continue working on CSS Framework |
+| 11 | Wed, September 23 | [Web Components Part 1](lessons/lesson-09.md) | Continue working on CSS Framework |
+| 12 | Mon, September 28 | [Web Components Lab](lessons/lesson-10.md) | Continue working on CSS Framework |
+| 13 | Wed, September 30 | [Web Components Part 2](lessons/lesson-11.md) | Continue working on CSS Framework |
 | 14 | Mon, October 5 | [Final Assessment](lessons/lesson-12.md) | - |
 | 15 | Wed, October 7 | [Final Presentations](lessons/lesson-13.md) | - |
 
