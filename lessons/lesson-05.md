@@ -15,6 +15,35 @@ Besides making your CSS code skills up to date it will empower your projects wit
 3. Use Math operations in CSS with calc()
 4. Use Reset CSS to remove browser inconsistencies
 
+## Styling buttons 
+
+Before we start styling buttons we need to answer these questions:
+
+- What's a button? 
+- When do we use them? 
+- What do they look like? 
+
+Before you start to design your own buttons it's good to take a look at what other people are doing. Take a look at these: 
+
+- https://getbootstrap.com/docs/4.5/components/buttons/
+- https://get.foundation/sites/docs/button.html
+- https://material.io/components/buttons
+
+Now answer these questions:
+
+- What properties do you see here? 
+- What different styles are offered?
+
+### Making your buttons
+
+Let's start by emulating the ideas in Bootstrap, Foundation, and Material. Really these are part of a larger language of what people consider "buttons". 
+
+Start with this Repl. 
+
+https://repl.it/join/evglxucp-mitchellhudson
+
+Using the Repl above create a style for the button. 
+
 ## CSS Custom Properties
 
 CSS Custom Properties let you define variables in CSS. You're defining a new CSS property, hence the name. In use, it feels like variables that you are familiar with from other languages. 
@@ -123,6 +152,8 @@ For example, you might define some values in `:root` then use those values throu
 ```
 
 ### Design a Button 
+
+Using your button take the ideas below to use custom properties to make your button code more flexible. 
 
 The default button style is not very interesting it's also pretty small. Giving the button some color and making it a little larger will make it easier to use. 
 
