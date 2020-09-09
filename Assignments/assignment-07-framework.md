@@ -1,4 +1,4 @@
-# FEW 2.2 - Assignment 4 - Improve your Typography
+# FEW 2.2 - Assignment 4 - CSS Framework
 
 This is the first part of a larger assignment to create a CSS framework. 
 
