@@ -1,4 +1,4 @@
-# FEW 2.2 - Advanced CSS - Layout
+# FEW 2.2 - Advanced CSS - Nav Bars and Layout
 
 CSS Grid is amazing. It needs no abstraction! Flexbox is also amazing and needs no abstractions. This lesson will take a look at both of these and how they can be used in your CSS framework.
 
@@ -15,7 +15,7 @@ To create the layouts that you envision you'll need to use both of these tools.
 
 ## Slides
 
-https://docs.google.com/presentation/d/1F5sKKUNimgqiUn7YX8bQHo9VnQ_8kSk7AEVUrB5hUU0/edit?usp=sharing
+https://docs.google.com/presentation/d/1yItvH_ADMhnE4bEWmGb4jrb4xFDhs3Wh_e7EmO66gdY/edit?usp=sharing
 
 ## Framework Project 
 

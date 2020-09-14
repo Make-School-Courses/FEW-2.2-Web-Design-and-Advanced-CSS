@@ -46,9 +46,9 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  3 | Wed, August 26 | [CSS Animation with Keyframes](lessons/lesson-02.md) | [Animation Challenges](./Assignments/assignment-03-Animation.md) |
 |  4 | Mon, August 31 | [SASS](lessons/lesson-03.md) | [SASS Part 1](./Assignments/assignment-06-SASS-part-1.md) [SASS Part 2](./Assignments/assignment-06-SASS-part-2.md) |
 |  5 | Wed, September 2 | [Typography](lessons/lesson-04.md) | [SASS Part 3](./Assignments/assignment-06-SASS-part-3.md) |
-|  6 | Mon, September 7 | Labor Day - No class | - |s
+|  6 | Mon, September 7 | Labor Day - No class | - |
 |  7 | Wed, September 9 | [CSS Custom Properties](lessons/lesson-05.md) | [Starting your Framework](./Assignments/assignment-07-framework.md) |
-|  8 | Mon, September 14 | [CSS Custom Properties pt. 2](lessons/lesson-06.md) | [Start your Framework: Fonts](./Assignments/assignment-06-framework-fonts.md) |
+|  8 | Mon, September 14 | [Nav Bars](lessons/lesson-07.md) | [Continue your frmaework](./Assignments/project-css-framework.md) |
 |  9 | Wed, September 16 | [Content Elements](lessons/lesson-07.md) | [Add form styles](./Assignments/assignment-09-controls.md) |
 | 10 | Mon, September 21 | [Web Component Intro](lessons/lesson-08.md) | Continue working on CSS Framework |
 | 11 | Wed, September 23 | [Web Components Part 1](lessons/lesson-09.md) | Continue working on CSS Framework |
