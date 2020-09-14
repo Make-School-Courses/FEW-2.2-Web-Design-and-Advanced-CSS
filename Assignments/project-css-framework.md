@@ -9,8 +9,8 @@ These things don't need to be extensively styled. Some may not need a style. The
 Check off each item as you complete it. 
 
 - Setup name made a repo
-  - [ ] Named your framework
-  - [ ] Made a repo
+  - [x] Named your framework
+  - [x] Made a repo
   - [ ] Stretch: organize files in folders
   - Font styles styled basic text elements
   - [ ] Defined a font stack on the body 
