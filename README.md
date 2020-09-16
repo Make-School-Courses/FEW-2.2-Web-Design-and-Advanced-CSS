@@ -49,7 +49,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  6 | Mon, September 7 | Labor Day - No class | - |
 |  7 | Wed, September 9 | [CSS Custom Properties](lessons/lesson-05.md) | [Starting your Framework](./Assignments/assignment-07-framework.md) |
 |  8 | Mon, September 14 | [Nav Bars](lessons/lesson-07.md) | [Continue your framework](./Assignments/project-css-framework.md) |
-|  9 | Wed, September 16 | [Content Elements](lessons/lesson-07.md) | [Add form styles](./Assignments/assignment-09-controls.md) |
+|  9 | Wed, September 16 | [Pseudo Elements](lessons/lesson-08.md) | [Add form styles](./Assignments/assignment-09-controls.md) |
 | 10 | Mon, September 21 | [Web Component Intro](lessons/lesson-08.md) | Continue working on CSS Framework |
 | 11 | Wed, September 23 | [Web Components Part 1](lessons/lesson-09.md) | Continue working on CSS Framework |
 | 12 | Mon, September 28 | [Web Components Lab](lessons/lesson-10.md) | Continue working on CSS Framework |
