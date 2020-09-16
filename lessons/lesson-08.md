@@ -178,7 +178,99 @@ What are the elements needed for a checkbox or radio button?
 
 ![checkbox radio](images/checkbox-radio.png)
 
+The checkbox or radio button is usually made of two parts a container, a box or circle, and a mark, check or dot. The mark is sometimes visible and sometime not. 
 
+This can also be more complicated than what is presented here but these are the basic elements, or starting place to create checkboxes and radio buttons. 
+
+To make this possible we need to add a little more markup. The markup presented above doesn't allow us enough to control the checkbox with CSS alone. By adding one extra tag we cna do that. 
+
+```HTML
+<label>
+  <input type="checkbox">
+  <span>Pickles?</span>
+</label>
+
+<label>
+  <input type="radio" name="choice">
+  <span>Converse</span>
+</label>
+
+<label>
+  <input type="radio" name="choice">
+  <span>Vans</span>
+</label>
+```
+
+With the extra span you can use the + or ~ selectors to connect the span with the input. More on this below. 
+
+Since we are going to include this in our frameworks it's probably best to make it something that is opt in. Do this by adding a class name: 
+
+```HTML
+<label class="frmwrk-checkbox">
+  ...
+</label>
+
+<label class="frmwrk-radio">
+  ...
+</label>
+
+<label class="frmwrk-radio">
+  ...
+</label>
+```
+
+By inlcuding the class frmwork-checkbox or frmwrk-radio you'll get the fancy checkboxes and radio buttons. Without these classes you get the standard checkbox and radio buttons. 
+
+You'll need 5 selectors. Here they without their inner styles. Each of thess performs a different function. Read the comments below. 
+
+```CSS
+/* checkbox button base element */
+.frmwrk-checkbox > span {
+  ...
+}
+/* Selected "checkmark" styles */
+.frmwrk-checkbox > input[type=checkbox] + span::before {
+  ... 
+}
+/* Selected "mark" styles */
+.frmwrk-checkbox > input[type=checkbox]:checked + span::before {
+  ...
+}
+/* Outline */
+.frmwrk-checkbox > input[type=checkbox] + span::after {
+  ...
+}
+/* Hide the input */
+.frmwrk-checkbox input {
+  ...
+}
+```
+
+- base element - sets the style of the label and it's children
+  - .frmwrk-checkbox > span
+- Selected "checkmark" - Sets the style for the pseudo element that appears in the box or circle. The selector here selects the ::before element of the span that immediately follows the input with type=checkbox
+  - .frmwrk-checkbox > input[type=checkbox] + span::before
+  - https://www.w3schools.com/cssref/sel_element_pluss.asp
+- Selected "mark" - Sets the style for the checkmark when the mark is visible or selected. The selector here says: select the ::before pseudo element that belongs to the span that immediately follows an input with type=checkbox. 
+  - .frmwrk-checkbox > input[type=checkbox]:checked + span::before
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
+- Outline - Styles the box or circle that contains the mark. The selector here says select an input that has type=checkbox that is a child of an element with class frmwrk-checkbox. 
+  - .frmwrk-checkbox > input[type=checkbox] + span::after
+  - https://www.w3schools.com/css/css_attribute_selectors.asp
+
+With these seelctors you're ready to make some custom checkboxes or radio buttons. 
+
+You can see the full source code for the examples above here: 
+
+- Fancy Blockquote - [lesson-08-fancy-blockquote.html](lesson-08-fancy-blockquote.html)
+- Fancy Underline - [lesson-08-fancy-underline.html](lesson-08-fancy-underline.html)
+- Custom Checkboxes and Radio Buttons - [lesson-08-custom-checkboxes-radio-buttons.html](lesson-08-custom-checkboxes-radio-buttons.html)
+
+There are many articles here are a few that I picked out. You can follow these to help guide or inspire and provide direction. 
+
+- https://www.appitventures.com/blog/styling-checkbox-css-tips
+- https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+- https://codepen.io/Vestride/pen/dABHx
 
 ## The State of your CSS Framework 
 
@@ -188,11 +280,11 @@ Use this checklist to check the progress of your framework.
 
 ## Activity 
 
+Create your own custom checkboxes and radio buttons. Add these to your CSS framework. 
 
+## Homework: Framework 
 
-## Homework: Framework - Nav Bar and Footer
-
-Add a Navbar to your framework. See the description linked below for more details on this assignment: 
+Complete your CSS framework:
 
 [project-css-framework.md](../Assignments/project-css-framework.md)
 
