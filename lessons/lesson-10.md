@@ -1,69 +1,110 @@
-# FEW 2.2 - Web Component Lab
+# FEW 2.2 - Advanced CSS - Exploring Web Components
 
-Continue working on your CSS Framework. This class will be dedicated to completing the challenegs from class 9 and use any left over time to improving your CSS framework. 
+Continuing the discussion of Web Components from lesson 8. 
+
+## Why you should know this?
+
+Web Components are probably the most important new and emerging web technology. They will take some practice to master. They are also not complete and will evolve. Learning this now will give important background into this new realm. 
 
 ## Learning Objectives 
 
-1. Build simple web components
-1. Define custom tags that encapsulate functionality
-1. Use attributes to configure components
-1. Reflect properties and attributes 
-1. Use Web Component Lifecycle methods
+1. Identify major features of Web Components
+1. Create elements with JS
+1. Style elements with JS 
+1. Build Web Components
 
-Continue the Web Component example challenges: 
+## Getting Started with Web Components
 
-https://github.com/Make-School-Labs/simple-component
+Work through the challenges here: https://github.com/Make-School-Labs/simple-component
 
-When you complete the challenges above your job is to create a component that will be included in your framework. You can use one of the challenge examples as a starting point. 
+Follow this by studying the guide here:
 
-If you completed the challenges and you want to try something more challenging for your framework here are few ideas: 
+- https://javascript.info/webcomponents-intro
+- https://javascript.info/custom-elements
+- https://javascript.info/shadow-dom
 
-- Make a custom component for the navbar. 
-- Here are a couple tutorials that create a tab navigation component:
-  - https://developers.google.com/web/fundamentals/web-components/examples/howto-tabs
-  - https://piccalil.li/tutorial/solution-005-tabs/
+The goal is to create a custom element/web component that will be included 
+with your CSS framework.
 
-### Apply best practice
+Anyone using your web CSS framework would get a set of styles. Adding your JS they will also be able to use your custom elements.
 
-When making your components they must use a hyphen. Best practice would have you use a prefix any tag names with the name of your framework. For example if you framework was named Corgi custom tag names might: 
+These components are fairly simple. You'll be tackling more complex components next week.
 
-- `<corgi-tabs></corgi-tabs>
-- `<corgi-navbar></corgi-navbar>`
-- `<corgi-carousel><corgi-carousel>` 
+## Web Components Concepts
 
-If the name of your framework is long use the initials. For example, imagine the name of your framework was "Stylin Styles" You might abbreviate to:
+### Naming custom elements
 
-- `<ss-tabs></ss-tabs>`
-- `<ss-navbar></ss-navbar>`
-- `<ss-carousel><ss-carousel>` 
+When creating web components you are creating new tags. It's possible that the names can clash with existing names. For this reason, custom element names must use a hyphen. 
 
-## Web Components vs Custom Element
+- `my-component` good
+- `frmwork-blink` good
+- `mycomponent` bad
+- `blink` bad
 
-Any time time you create a new custom element with `customElements.define()` define you are creating a new custom element. Your custom element may or may not use the Shadow root. 
+When using custom tags you must use a closing tag, even if the tag is empty. 
 
-Let's call Custom Elements that use the shadow root "Web Components" and custom elements that don't use the shadow root "Custom elements". 
+- `<my-component></my-component>` good
+- `<frmwrk-blink></frmwrk-blink>` good
+- `<my-component />` bad
+- `<frmwrk-blink>` worse
 
-What's the difference? 
+### Extend HTMLElement and define a new tag
 
-Using the Shadow root: 
+Extend HTMLElement and call super in the constructor. 
 
-- Pros
-  - Encapsulation - elements and styles are totally separated from the DOM
-  - Can't be accidentally affected from outside
-- Cons 
-  - Can't share styles from outside
-  - It's a little more complex to program
+```JS 
+// Create a class that backs the new element
+class MyElement extends HTMLElement {
+  constructor() {
+    super()
+      ...
+    }
+  ...
+}
 
-Without the Shadow Root: 
+// Define the new element
+customElements.define('my-element', MyElement)
+```
 
-- Pros
-  - Easier to program
-  - Can share styles from outside
-- Cons
-  - May not be as predictable 
-  - Can be accidentally affected by the outside
+### Property names 
 
-It's up to you whether you use the shadowroot or not for this assignment. 
+Since you are extending HTMLElement you'll need to be careful about overriding properties that exist in HTMLElement. 
 
-Your web components/Custom elements don't have to be huge and complex. If you can make a useful element that has practical application that's goal. If you can make something fun and interesting that's okay also!
+Best practice: Use an underscore in front of all of the property names you define. 
+
+```JS 
+this._name = 'widget' // good
+this.name = 'wonky' // bad
+```
+
+### Shadow Root 
+
+Create a shadow root in your constructor. Probably a good idea to store this in a property. 
+
+This attaches a shadow root and stores it in a property: `_shadowRoot`
+
+```JS 
+...
+  constructor() {
+    super()
+    this._shadowRoot = this.attachShadow({ mode: 'open' })
+      ...
+    }
+ ...
+```
+
+## Homework: Continue working on your framework
+
+Continue working on your CSS framework. 
+
+## Minute-by-Minute [OPTIONAL]
+
+| **Elapsed** | **Time** | **Activity** |
+| ----------- | --------- | ------------------------- |
+| 0:00 | 0:05 | Objectives |
+| 0:05 | 0:15 | Overview |
+| 0:20 | 0:45 | In Class Activity I |
+| 1:05 | 0:10 | BREAK |
+| 1:15 | 0:45 | In Class Activity II |
+| TOTAL | 2:00 | |
 
