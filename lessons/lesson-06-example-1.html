@@ -2,7 +2,9 @@
   <head>
     <title>Form Playground</title>
 
+
     <style>
+      /* Style form elements */
       input[type=text], 
       input[type=email], 
       input[type=password], 
@@ -45,6 +47,105 @@
         margin: auto;
       }
 
+
+      /* -------------------------------------------------------------------- */
+      /* Check Box */
+
+      /* checkbox button base element */
+      .frmwrk-checkbox > span {
+        /* Padding on the left leaves room for checkbox */
+        padding: 0.5em 0 0.5em 3.5em; 
+        display: flex;
+        align-items: center;
+        /* Relative position allows checkbox elements to positioned absolute */
+        position: relative;
+      }
+
+      /* Create the checkbox checkmark - not selected */
+      .frmwrk-checkbox > input[type=checkbox] + span::before {
+        content: '';
+        display: block;
+        width: 1em;
+        height: 1em;
+        background-color: gray;
+        border: 2px solid gray;
+        border-radius: 50%;
+        position: absolute;
+        left: 0.5em;
+        top: 0.5em;
+        transition: 400ms;
+      }
+
+      /* Checkmark styles - selected state */
+      .frmwrk-checkbox > input[type=checkbox]:checked + span::before {
+        left: 1.5em;
+        background-color: tomato;
+        border-color: tomato;
+      }
+
+      /* Checkbox "box" */
+      .frmwrk-checkbox > input[type=checkbox] + span::after {
+        content: '';
+        display: inline-block;
+        border: 2px solid tomato;
+        border-radius: 1.5em;
+        width: 2.5em;
+        height: 1.5em;
+        margin: 0 0.5em 0 0;
+        position: absolute;
+        left: 0.25em;
+        top: 0.25em;
+      }
+
+      /* Hide the input! */
+      .frmwrk-checkbox input {
+        display: none;
+      }
+
+
+      /* -------------------------------------------------------------------- */
+      /* Radio Buttons */
+
+      /* Radio button base element */
+      .frmwrk-radio > span {
+        padding: 0.5em 0 0.5em 2.5em;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      /* Selected "dot" styles */
+      .frmwrk-radio > input[type=radio]:checked + span::before {
+        content: '';
+        display: block;
+        width: 0.5em;
+        height: 0.5em;
+        background-color: red;
+        border: 2px solid;
+        border-radius: 50%;
+        position: absolute;
+        left: 0.75em;
+        top: 0.75em;
+      }
+
+      /* Dot outline */
+      .frmwrk-radio > input[type=radio] + span::after {
+        content: '';
+        display: inline-block;
+        border: 2px solid;
+        border-radius: 50%;
+        width: 1.5em;
+        height: 1.5em;
+        margin: 0 0.5em 0 0;
+        position: absolute;
+        left: 0.25em;
+        top: 0.25em;
+      }
+
+      .frmwrk-radio input {
+        display: none;
+      }
+
     </style>
   </head>
   <body>
@@ -59,27 +160,97 @@
       <label>Notes</label>
       <textarea placeholder="enter notes"></textarea>
       
-      <label>
+      <label class="frmwrk-checkbox">
         <input type="checkbox">
-        Pickles?
+        <span>Pickles?</span>
       </label>
-      
-      <label>
-        <input type="radio" name="choice">
-        Converse
+
+      <label class="frmwrk-radio">
+        <input type="radio" name="choice" checked>
+        <span>Converse</span>
       </label>
-      
-      <label>
+
+      <label class="frmwrk-radio">
         <input type="radio" name="choice">
-        Vans
+        <span>Vans</span>
       </label>
-      
-      <label>
+
+      <label class="frmwrk-radio">
         <input type="radio" name="choice">
-        Nike
+        <span>Nike</span>
       </label>
       
       <input type="submit">
     </form>
+
+
+
+
+
+
+
+
+    <style>
+      blockquote::before {
+        content: open-quote;
+        font-size: 3em;
+        color: tomato;
+      }
+      blockquote::after {
+        content: close-quote;
+        font-size: 3em;
+        color: tomato;
+      }
+      blockquote {
+        /* Set the quote style */
+        quotes: "\201C""\201D""\2018""\2019";
+      }
+    </style>
+
+    <blockquote>
+      The way to get started is to quit talking and begin doing. 
+    </blockquote>
+    -Walt Disney
+
+
+
+
+
+
+
+    <style>
+      .add-box {
+        display: inline-block;
+        color: tomato;
+      }
+      .add-box::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: tomato;
+        transition: 400ms;
+      }
+      .add-box:hover::after {
+        width: 100%;
+      }
+    </style>
+
+    <blockquote>
+      If you set your goals <span class="add-box">ridiculously</span> high and it's a failure, you will fail above everyone else's <span class="add-box">success</span>. 
+      -James Cameron
+    </blockquote>
+
+
+
+    <form>
+      <p><input type="checkbox">Pickles</p>
+      <p><input type="checkbox">Onions</p>
+      <p><input type="radio">Vans</p>
+      <p><input type="radio">Converse</p>
+      <p><input type="radio">Nike</p>
+    </form>
+
+
   </body>
 </html>
