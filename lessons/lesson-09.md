@@ -215,7 +215,7 @@ Pair up and discuss what you find...
 
 Discuss the shadow DOM
 
-Shadow DOM use case 1: Modify elements that use the shadow DOM for consistency across browsers. 
+Shadow DOM use case 1: Modify elements that use the shadow DOM for consistency across browsers.
 
 For more information: https://css-tricks.com/sliding-nightmare-understanding-range-input/
 
@@ -223,12 +223,12 @@ For more information: https://css-tricks.com/sliding-nightmare-understanding-ran
 
 While modifying the existing shadow DOM is possible where Web Components shine is when you make your _own_ components. Take a look at the Hello World of the Shadow DOM and Web Components. 
 
-Open `example-02.html`. Take a close look at this file and discuss it with your partner. Look at these areas: 
+Open `lesson-09.html`. Take a close look at this file and discuss it with your partner. Look at these areas: 
 
 - Open the code in the browser
 - Inspect the DOM in the browser
 - Look at the source code. There are two files: 
-  - example-02.html
+  - lesson-09.html
   - hello-world.js
   - Read the comments 
   - Uncomment the code at the bottom of `example-02.html`
