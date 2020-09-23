@@ -34,7 +34,7 @@ These components are fairly simple. You'll be tackling more complex components n
 
 ### Naming custom elements
 
-When creating web components you are creating new tags. It's possible that the names can clash with existing names. For this reason, custom element names must use a hyphen. 
+When creating web components you are creating new tags. It's possible that the names can clash with existing names. For this reason, custom element names must use a hyphen (-). 
 
 - `my-component` good
 - `frmwork-blink` good
@@ -48,9 +48,17 @@ When using custom tags you must use a closing tag, even if the tag is empty.
 - `<my-component />` bad
 - `<frmwrk-blink>` worse
 
+It's a good idea to prefix all of your names with the name of your framework. For example, if Bootstrap used web components all of their tags could start with `bs-`:
+
+```html
+<bs-carousel></bs-carousel>
+```
+
 ### Extend HTMLElement and define a new tag
 
 Extend HTMLElement and call super in the constructor. 
+
+Call `customElements.define()` with the name of your new tag and the class that will provide the JS for the new tag.
 
 ```JS 
 // Create a class that backs the new element
@@ -91,6 +99,91 @@ This attaches a shadow root and stores it in a property: `_shadowRoot`
       ...
     }
  ...
+```
+
+## Lifecycle Methods 
+
+Use lifecycle methods to initialize and deinitialize your web component. 
+
+The **connectedCallback()** method is called when the component is added to the DOM. Use this to start timers set initial property values, measure the size the size of the component. 
+
+The **disconnectedCallback()** method is called when the component is removed from the DOM. Use this to clean up. Do things like stop timers, and free resources that you may be using. 
+
+```JS
+class BlinkText extends HTMLElement {
+  constructor() {
+    super();
+    ...
+  }
+
+  connectedCallback() {
+    // When the component is added to the DOM
+  }
+
+  disconnectedCallback() {
+    // When the component is removed from the DOM
+  }
+}
+
+customElements.define('blink-text', BlinkText);
+```
+
+## handling attributes 
+
+Attrbites appear in tags like this: 
+
+```html
+<my-element time="1000" min="0" max="5">
+  ...
+</my-element>
+```
+
+The attributes are: time, min, and mac above. 
+
+Attributes allow us to pass data into our custom elements. 
+
+Internally the custom element needs to define when attributes it observes. Some attributes don't need to be observed for example: class, and id. 
+
+```JS
+class BlinkText extends HTMLElement {
+  constructor() {
+    super();
+    ...
+  }
+
+
+  // Name the observed attribues 
+  static get observedAttributes() {
+    return ['time', 'min', 'max'];
+  }  
+
+  // Handle changes to observed attributes
+  attributeChangedCallback(name, oldValue, newValue) {
+    
+  }
+}
+
+customElements.define('blink-text', BlinkText);
+```
+
+Handle changes to attributes by looking at the name to see which attribute has changed, then compare the old and new values to decide how to change the attribute. 
+
+```JS
+attributeChangedCallback(name, oldValue, newValue) {
+  // If the attribute changed was named time
+  if (name === 'time') {
+    // parse the new value, we want a number
+    const time = parseInt(newValue)
+    if (isNanN(time)) {
+      // If it's not a number stop!
+      return
+    }
+    // If it is a number use that new value
+    this._time = time
+    this._clearTimer()
+    this._addTimer()
+  }
+}
 ```
 
 ## Homework: Continue working on your framework
