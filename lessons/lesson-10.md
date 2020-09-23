@@ -10,7 +10,7 @@ Web Components are probably the most important new and emerging web technology. 
 
 1. Identify major features of Web Components
 1. Create elements with JS
-1. Style elements with JS 
+1. Style elements with JS
 1. Build Web Components
 
 ## Getting Started with Web Components
