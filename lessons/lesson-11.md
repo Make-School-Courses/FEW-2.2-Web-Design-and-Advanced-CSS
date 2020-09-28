@@ -169,5 +169,16 @@ To share values across modules use the import and export directives.
 
 ```JS
 // cat.js
+const purrs = 999
 
+export { purrs }
+```
+
+In another "module" import the value exported like this: 
+
+```JS
+// script.js
+import { purrs } from './cat.js'
+
+console.log(purrs) // 999
 ```
