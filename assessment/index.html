@@ -25,7 +25,7 @@
 
 			<!-- banner -->
 			<section>
-				<h1>...Color.com is awesome...</h1>
+				<ticker-tape><h1>...Color.com is awesome...</h1></ticker-tape>
 			</section>
 
 
@@ -98,19 +98,40 @@
 							name
 							<input type="text">
 						</label>
+
 						<label>
 							Subject
 							<input type="text">
 						</label>
+
 						<label>
 							Message
 							<textarea></textarea>
+						</label>
+
+						<label>
+							Sign up for the newsletter
+							<input type="checkbox">
+						</label>
+
+						<label>
+							<input type="radio" name="Mr.">
+							Mr.
+						</label>
+
+						<label>
+							<input type="radio" name="Mrs.">
+							Mrs.
+						</label>
+
+						<label>
+							<input type="radio" name="Ms.">
+							Ms.
 						</label>
 						<button>Submit</button>
 					</form>
 				</div>
 			</section>
-
 
 
 			<!-- Footer -->
@@ -128,18 +149,12 @@
 			.swatch {
 				width: 100px;
 				height: 100px;
-				background-color: antiquewhite;
-				margin: 2px;
-				border: 1px solid;
-			}
-
-			.swatches {
-				display: flex;
-				flex-wrap: wrap;
 			}
 
 			.swatch {
+				/* Remove this rule when you set your colors! */
 				background-color: red !important;
+				margin: 1px;
 			}
 
 			main {
@@ -152,6 +167,8 @@
 		<script>
 			
 
+			// All 100 color swatches has a CSS custom property assigne to it. 
+			// You can use this color each swatch with a unique color. 
 
 			// --color-sample-0 : red
 			// --color-sample-1 : green
