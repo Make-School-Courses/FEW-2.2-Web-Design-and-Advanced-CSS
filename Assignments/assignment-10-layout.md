@@ -23,14 +23,16 @@ Your Nav Bar should:
 - Display a title 
 - Display a list of links
 - Arrange all elements with Flexbox
+  - https://yoksel.github.io/flex-cheatsheet/
 - Arrange all of the elements from left to right
 - Has some color or style that sets it apart from the rest of page
-- Stretch goals
+### Stretch goals
   - Has an option to arrange links on the left and right
   - Has an option for a dropdown menu. You can create a drop down menu with only css. Here is some info: 
     - https://www.w3schools.com/howto/howto_css_dropdown.asp
     - https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
     - https://css-tricks.com/solved-with-css-dropdown-menus/
+  - Make your navbar mobile-friendly with a hamburger menu
 
 **You should also document the navbar styles in your framework documentation.**
 

@@ -8,13 +8,13 @@ The default check box and radio button offer very few options for customization.
 
 ## Learning Objectives
 
-1. Describe the relationship between an input and it's label
+1. Describe the relationship between an input and its label
 1. Define a label and input that are asscoiated 
-1. Use pseudo classes ::before and ::after
+1. Use pseudo classes `::before` and `::after`
 1. Create custom check boxes and radio buttons
 1. Use ridiculously complicated CSS selectors
 
-## Slides
+### Slides
 
 https://docs.google.com/presentation/d/1bVVX2ELbGEPktG6Cv_DiA2I4uxYyEGALr7WUAga0RLw/edit?usp=sharing
 
@@ -98,11 +98,11 @@ Making fancy blockquote styles is a possible application. Imagine you want to ad
 
 ![block quote](images/fancy-quotes.png)
 
-Here the ::defore and ::after elements have content that is an open and closing quote. They also have styles that set the font-size and color of their elements. 
+Here the `::before` and `::after` elements have content that is an open and closing quote. They also have styles that set the `font-size` and `color` of their elements. 
 
 https://css-tricks.com/almanac/properties/q/quotes/
 
-### Fancy Undline
+### Fancy Underline
 
 The goal here is to make a line that draws itself under a word. To do this we need another new element to appear. This would be a difficult addition to existing markup and as a visual effect should not really part of that markup, remember the separation of concerns. 
 
@@ -302,4 +302,3 @@ Complete your CSS framework:
 | 1:05 | 0:10 | BREAK |
 | 1:15 | 0:45 | In Class Activity II |
 | TOTAL | 2:00 | |
-

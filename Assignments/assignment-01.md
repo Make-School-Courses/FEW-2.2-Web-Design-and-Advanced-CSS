@@ -2,9 +2,9 @@
 
 ## Description 
 
-For this assignment you need top recreate all of the drawings that in the sample document. The answers are in the document but you should try and do them on your own. You can peek at the source code if you get stuck. It' simportant to understand the CSS concepts used here. 
+The goal of this assignment is to recreate all 16 drawings from the example file ([assignment-01.html](assignment-01.html)) but resized from  `50px by 50px` to `100px by 100px` (twice their size).
 
-There are 16 small images in the grid. You should reacreate each image in the grid as close as possible. 
+It's important to understand the CSS concepts used here. You should try and do these on your own but can peek at the source code if you get stuck. 
 
 ### Why this assignment?
 
@@ -14,9 +14,9 @@ Creating the drawings in this assignment will giev you an opportunity to practic
 
 ## Project requirements
 
-Recreate each of the the 16 drawings in the example file. Each of the drawings is in a 50px by 50px box. You're going to recreate each at twice that size 100px by 100px. Otherwise try to make your drawings look the same as what is shown. 
+- Recreate each drawing but resized to `100px by 100px` 
+- Make them look as identical as possible
 
-[assignment-01.html](assignment-01.html)
 
 ### Stretch Goals 
 
@@ -26,12 +26,8 @@ If you've solved these problems and want some more challenges try these.
   - Give the leaf shape a darker and light green on each half
   - Use a gradient to give the lemmon a shadow
   - Make Kirby look more round
-- Use React
-  - Create a React project
-  - Make a Component for each "drawing"
-  - Choose a system: 
-    - Link a stylesheet to your component
-    - Create a style object and and apply styles inline
+- Get started on your custom CSS drawing [assignment-2](assignment-02-css-drawing.md)
+  
 
 ### Deliverable
 
@@ -53,4 +49,3 @@ Class 3 - JUN 05 AT 7:00PM
 ## Resources 
 
 - https://www.youtube.com/watch?v=QZdj42liTtU
-

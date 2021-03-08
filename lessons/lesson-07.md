@@ -13,7 +13,7 @@ To create the layouts that you envision you'll need to use both of these tools.
 1. Create a navbar
 1. Create a footer
 
-## Slides
+### Slides
 
 https://docs.google.com/presentation/d/1yItvH_ADMhnE4bEWmGb4jrb4xFDhs3Wh_e7EmO66gdY/edit?usp=sharing
 
@@ -285,11 +285,12 @@ We will remove all of these at the break to get comments from your peers. After 
 
 Add a Navbar to your framework. See the description linked below for more details on this assignment: 
 
-[project-css-framework.md](../Assignments/project-css-framework.md)
+[assignment-10-layout.md](../Assignments/assignment-10-layout.md)
 
 ## Additional Resources
 
 1. https://cssreference.io/flexbox/
+1. https://yoksel.github.io/flex-cheatsheet/
 
 ## Minute-by-Minute [OPTIONAL]
 
@@ -301,4 +302,3 @@ Add a Navbar to your framework. See the description linked below for more detail
 | 1:05 | 0:10 | BREAK |
 | 1:15 | 0:45 | In Class Activity II |
 | TOTAL | 2:00 | |
-

@@ -10,28 +10,28 @@ Great looking forms set sites apart. The default styles for form elements leave 
 
 ## Project Requirements
 
-Add styles to your CSS frame that create reasonable styles for form controls. You shoul style these elements:
+Add styles to your CSS frame that create reasonable styles for form controls. You should style these elements:
 
-- button
-- input[text], input[email], input[password]
-- input[radio], input[checkbox]
-- textarea
+- `button`
+- `input[text]`, `input[email]`, `input[password]`
+- `input[radio]`, `input[checkbox]`
+- `textarea`
 
 Decide on how you will use SASS. Remember SASS will need to be compiled. 
 
 Definitely use CSS Custom Properties apply common values and calculate related values where possible. 
 
-**Stretch goals**
+### Stretch Goals
 
 There are more input types than: text, email, and password. These also appear differently than a standard text field and will appear different across browsers. 
 
 When styling these be sure to use the label to your advantage where appropriate. For example input[file] might best be _handled with the label while the input itself is hidden_.
 
-- input[file]
-- input[search]
-- input[color]
-- input[date]
-- input[image]
+- `input[file]`
+- `input[search]`
+- `input[color]`
+- `input[date]`
+- `input[image]`
 
 You may want to search examples of these in the wild and look at how other frameworks handle these to inform your choices. 
 

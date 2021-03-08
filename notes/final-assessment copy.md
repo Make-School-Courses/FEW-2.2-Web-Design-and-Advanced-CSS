@@ -8,7 +8,7 @@ Download the sample
 
 ## Challenge 1 - Apply your framework
 
-Apply your framrwork to the sample document. 
+Apply your framework to the sample document. 
 
 ## Challenge 2 - Navbar 
 

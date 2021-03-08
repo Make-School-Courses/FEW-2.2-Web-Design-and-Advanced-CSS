@@ -16,6 +16,11 @@ Starting with the previous assignment, where you drew a logo or icon with CSS, a
 
 You must **animate at least three properties**. For example: `background-color`, `tranform: scale() rotate()`. Animate more if you dare! 
 
+### Stretch Goals
+- Make your animation cross-browser compatible if not already
+  - [caniuse.com](https://caniuse.com/)
+  - https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+
 ### Deliverable
 
 Add your completed assignment to Gradescope 

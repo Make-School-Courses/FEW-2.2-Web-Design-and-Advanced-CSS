@@ -6,19 +6,14 @@ CSS Drawing. The goal of this assignment is to improve your skill and understand
 
 You can draw anything, but challenge yourself to draw something that tests your skills. Here are a few ideas: 
 
-- Logo - Recreate an exisitng logo in CSS
-- Invent your own logo - Create a logo for one of your own projects or products in CSS. 
-- Self porttrait Draw yourself in CSS
+- Logo - Recreate an existing logo in CSS
+- Custom Logo - Create a logo for one of your own projects or products in CSS. 
+- Self portrait - Draw yourself in CSS
+  - While CSS has limitations, you can still do some amazingly detailed images: https://diana-adrianne.com/purecss-francine/
 
-CSS has some limitation, while you can do some amazingly detailed images: 
-
-https://diana-adrianne.com/purecss-francine/
-
-It's probably best, and I would prefer, that you stick with bold and graphic shapes using solid fills and strokes. 
-
-http://www.bchanx.com/logos-in-pure-css
-
-https://www.inwebson.com/css3/pure-css3-icons-logos-graphics/
+It's probably best, and I would prefer, that you stick with bold and graphic shapes using solid fills and strokes.  
+  - http://www.bchanx.com/logos-in-pure-css
+  - https://www.inwebson.com/css3/pure-css3-icons-logos-graphics/
 
 ### Why this assignment?
 
@@ -29,6 +24,16 @@ If you can drawing something amazing with CSS you'll be able to figure out how s
 ## Project requirements
 
 You will create one drawing using only CSS. 
+
+### Stretch Goals
+
+- Make a dark (or light) mode version of your drawing
+  
+- Use React
+  - Choose a system: 
+    - Link a stylesheet to your component
+    - Create a style object and and apply styles inline
+  - Make a Component for your "drawing"
 
 ### Deliverable
 
@@ -53,6 +58,3 @@ Class 4 - JUN 08 AT 8:00AM
 - https://www.youtube.com/playlist?list=PL5e68lK9hEzequwkyGb2iwHJUYOrLwH1q
 - https://www.youtube.com/watch?v=0wE1anxCUXA
 - https://www.inwebson.com/css3/pure-css3-icons-logos-graphics/
-
-
-
