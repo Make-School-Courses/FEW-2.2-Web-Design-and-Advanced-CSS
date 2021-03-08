@@ -105,7 +105,7 @@ https://github.com/Make-School-Labs/simple-component/tree/master/simple-componen
 
 ### Lifecycle methods 
 
-Use these to setup and take down your components. Lifecycel methods are used to initialize resources, and free up resources when you're done using them. Like the name implies lifecycle methods are triggered over the life of a component.
+Use these to setup and take down your components. Lifecycle methods are used to initialize resources, and free up resources when you're done using them. Like the name implies lifecycle methods are triggered over the life of a component.
 
 - `constructor()` - this is called when your component is initialized. 
 - `connectedCallback()` - this is called when the component is added to the DOM tree. 

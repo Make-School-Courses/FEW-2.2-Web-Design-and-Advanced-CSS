@@ -36,7 +36,7 @@ Look through the code in the frameworks above. Look particularly
 
 - What the components and features of the framework look like?
 - How they implement the features 
-  - These frameworks use class names combined with an html structure to create many of the standard UI elements you might find on any website. Exmine these closely you will be implementing your own set of UI elements. 
+  - These frameworks use class names combined with an html structure to create many of the standard UI elements you might find on any website. Examine these closely you will be implementing your own set of UI elements. 
 
 ## Project requirements
 

@@ -1,8 +1,8 @@
-# FEW 2.2 - Apply SASS to a previous Homework
+# FEW 2.2 - Intro to SASS - Part 2
 
 ## Description 
 
-The goal of this assignment is to apply SASS to your previous assignment where you created a CSS drawing. 
+The goal of this assignment is to apply SASS to your previous assignment where you created a CSS Animation. 
 
 Look for areas where you can use all of the various features of SASS. 
 
@@ -22,13 +22,13 @@ Look for areas where you can use all of the various features of SASS.
 	- Map
 	- Math
 
-## Slides 
+### Slides 
 
 This slide show has a quick intro to SASS.
 
 https://docs.google.com/presentation/d/1ptueI32nTL6P_pMXoQMeV6k-JLmpUJ3YQFpxUGE5PkY/edit#slide=id.g4cf79cf4e3_0_202
 
-### Why this assignment?
+## Why this assignment?
 
 SASS is a common industry-standard tool, expect to see it in use at any place you may work. You should know what it is and how it works. By implementing SASS in your work you will get a close-up view of what it does and how to work with it.
 
@@ -47,17 +47,17 @@ You should make use of the following elements in your code:
 - for loops
 - nested rules
 
-Stretch goals: 
+### Stretch goals: 
 
-SASS has a few more features that you can make use of. Applying these your code: 
-
-- @import
-- @mixin
-- SASS Modules https://sass-lang.com/documentation/modules
+- SASS has a few more features that you can make use of. Apply these your code: 
+	- @import
+	- @mixin
+	- SASS Modules https://sass-lang.com/documentation/modules
+- Get started on Part 3 of SASS challenges: [Part 3](./assignment-06-SASS-part-3.md)
 
 ### Deliverable
 
-Each of the three parts of this assignment will be submitted via GradScope. 
+Each of the three parts of this assignment will be submitted via GradeScope. 
 
 ### Due date
 
@@ -71,6 +71,3 @@ Class 5
 | Quality | The code is poorly written, only you would understand it | Your code is well written. Names are well-chosen and descriptive. | Even you are impressed with your code. The comments rival what you see on very popular repos. |
 | Comprehension| Can't explain concepts covered | Can explain the concepts covered | Could apply these concepts to new and future projects with ease |
 | Work ethic | few massive commits | Commits outline progress | Clearly show the progression of the work, with descriptive commit messages |
-
-
-

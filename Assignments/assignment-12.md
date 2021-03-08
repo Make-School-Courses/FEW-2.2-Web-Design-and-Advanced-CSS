@@ -1,4 +1,4 @@
-# FEW 2.2 - Advanced CSS - Framework 
+# FEW 2.2 - Advanced CSS - Framework Components 
 
 ## Description 
 
@@ -28,7 +28,7 @@ Keep it simple. Don't over think these. Get the minimum features working to wher
   - Samples - Take a look at the sample and pay attention to the html structure and the class names. Usually there is a parent element with a class name and the children style themselves to look like a group. In both Foundation and Bootstrap the parent is a `div` and the children are `a` tags. Styles can be display inline-block, background color, color. Bootstrap styles the border radius of the first and last children.
     - https://foundation.zurb.com/sites/docs/button-group.html
     - https://getbootstrap.com/docs/4.3/components/button-group/
-- **Card** Cards are content conmtainers. They are usually set apart from other elements with a border. A card might have a text, and a picture, and a button, or might only be some of these. 
+- **Card** Cards are content containers. They are usually set apart from other elements with a border. A card might have a text, and a picture, and a button, or might only be some of these. 
   - Samples - Look at the mark up in the samples. Usually it's just a div with a class name. Styles might be border, display:flex, flex direction column, and maybe a background color. Card's might want overflow hidden also. 
     - https://getbootstrap.com/docs/4.3/components/card/
     - https://foundation.zurb.com/sites/docs/card.html

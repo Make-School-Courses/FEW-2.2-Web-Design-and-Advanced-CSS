@@ -1,10 +1,8 @@
-# FEW-2.2: Advanced CSS and Visual Design
+# FEW 2.2: Advanced CSS and Visual Design
 
 ## Course Description
 
 This course is a deep exploration of CSS. Students take a close look at rendering web pages with CSS, using CSS for motion and interaction, optimizing CSS for use with CSS variables and working with modern CSS frameworks.
-
-Explain why students should care to learn the material presented in this class.
 
 ### Why Learn advanced CSS? 
 
@@ -44,14 +42,14 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  1 | Wed, August 19 | [Drawing with CSS](lessons/lesson-01.md) | [CSS Drawing](./Assignments/assignment-01.md) |
 |  2 | Mon, August 24 | [Animation with CSS](lessons/lesson-02.md) | [CSS Drawing part 2](./Assignments/assignment-02-css-drawing.md) |
 |  3 | Wed, August 26 | [CSS Animation with Keyframes](lessons/lesson-02.md) | [Animation Challenges](./Assignments/assignment-03-Animation.md) |
-|  4 | Mon, August 31 | [SASS](lessons/lesson-03.md) | [SASS Part 1](./Assignments/assignment-06-SASS-part-1.md) [SASS Part 2](./Assignments/assignment-06-SASS-part-2.md) |
+|  4 | Mon, August 31 | [SASS](lessons/lesson-03.md) | [SASS Part 1](./Assignments/assignment-06-SASS-part-1.md) \| [SASS Part 2](./Assignments/assignment-06-SASS-part-2.md) |
 |  5 | Wed, September 2 | [Typography](lessons/lesson-04.md) | [SASS Part 3](./Assignments/assignment-06-SASS-part-3.md) |
 |  6 | Mon, September 7 | Labor Day - No class | - |
-|  7 | Wed, September 9 | [CSS Custom Properties](lessons/lesson-05.md) | [Starting your Framework](./Assignments/assignment-07-framework.md) |
-|  8 | Mon, September 14 | [Nav Bars](lessons/lesson-07.md) | [Continue your framework](./Assignments/project-css-framework.md) |
-|  9 | Wed, September 16 | [Pseudo Elements](lessons/lesson-08.md) | [Add form styles](./Assignments/assignment-09-controls.md) |
-| 10 | Mon, September 21 | [Web Component Intro](lessons/lesson-08.md) | Continue working on CSS Framework |
-| 11 | Wed, September 23 | [Web Components Part 1](lessons/lesson-09.md) | Continue working on CSS Framework |
+|  7 | Wed, September 9 | [CSS Custom Properties](lessons/lesson-05.md) | [Start your Framework - Type](./Assignments/assignment-07-framework-fonts.md) |
+|  8 | Mon, September 14 | [Nav Bars](lessons/lesson-07.md) | [Custom Framework - Layout](./Assignments/assignment-10-layout.md) |
+|  9 | Wed, September 16 | [Pseudo Elements](lessons/lesson-08.md) | [Custom Framework - Form](./Assignments/assignment-09-controls.md) |
+| 10 | Mon, September 21 | [Web Component Intro](lessons/lesson-08.md) | [Custom Framework - Additional Elements](./Assignments/assignment-12.md) |
+| 11 | Wed, September 23 | [Web Components Part 1](lessons/lesson-09.md) | [Custom Framework - Web Component](./Assignments/assignment-13-components.md) |
 | 12 | Mon, September 28 | [Web Components Lab](lessons/lesson-10.md) | Continue working on CSS Framework |
 | 13 | Wed, September 30 | [Web Components Part 2](lessons/lesson-11.md) | Continue working on CSS Framework |
 | 14 | Mon, October 5 | [Final Assessment](lessons/lesson-12.md) | - |
@@ -74,11 +72,11 @@ We will begin the term reviewing CSS concepts. Then move into new concepts that 
         - [ ] Used at least three variables 
         - [ ] Used one mixin
         - [ ] Used one other SASS feature loop, function etc. 
-1. Improve Your Typography
-1. CSS Framework
+1. [ ] Custom CSS Framework
+    - Improve Your Typography
     - Use the checklist [here](Assignments/project-css-framework.md) to complete your CSS framework.
 1. Web Components 
-    - [ ] Completed Web Component tutorial
+    - [ ] Completed Web Component tutorial 
     - [ ] Add web compomnent to your framework
 
 ### Custom CSS Framework

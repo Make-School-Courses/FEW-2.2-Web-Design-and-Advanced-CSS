@@ -16,6 +16,7 @@ https://github.com/Make-School-Labs/simple-component
 
 When you complete the challenges above your job is to create a component that will be included in your framework. You can use one of the challenge examples as a starting point. 
 
+### Stretch Challenges
 If you completed the challenges and you want to try something more challenging for your framework here are few ideas: 
 
 - Make a custom component for the navbar. 
@@ -186,6 +187,3 @@ console.log(purrs) // 999
 ## After Class 
 
 Finish up your CSS Framework. Be sure to get some feedback on your work from your peers! 
-
-
-

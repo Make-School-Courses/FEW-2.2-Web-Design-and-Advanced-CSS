@@ -1,4 +1,4 @@
-# FEW 2.2 - Apply SASS to your work
+# FEW 2.2 - Intro to SASS - Part 1
 
 ## Description 
 
@@ -8,7 +8,7 @@ Your goal is to solve the challenges in this short tutorial.
 
 - Solve the challenges in the sample code: https://github.com/Make-School-Labs/few-2-2-lesson-04 
 
-## Slides 
+### Slides 
 
 This slide show has a quick intro to SASS.
 
@@ -20,7 +20,12 @@ SASS is a common industry-standard tool, expect to see it in use at any place yo
 
 ## Project requirements
 
-Submi your completed project to GradeScope. 
+Submit your completed project to GradeScope. 
+
+- Solve the challenges in the sample code: https://github.com/Make-School-Labs/few-2-2-lesson-04 
+  
+### Stretch Goals
+- Get started on Part 2 of the SASS assignments
 
 ### Deliverable
 
@@ -38,6 +43,3 @@ Class 4
 | Quality | The code is poorly written, only you would understand it | Your code is well written. Names are well-chosen and descriptive. | Even you are impressed with your code. The comments rival what you see on very popular repos. |
 | Comprehension| Can't explain concepts covered | Can explain the concepts covered | Could apply these concepts to new and future projects with ease |
 | Work ethic | few massive commits | Commits outline progress | Clearly show the progression of the work, with descriptive commit messages |
-
-
-

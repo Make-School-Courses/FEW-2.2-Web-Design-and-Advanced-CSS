@@ -4,9 +4,7 @@
 
 The goal of this assignment is to recreate the animations in the demo file. 
 
-Recreate the animations in the demo file here: 
-
-[Animation Challenges](assignment-03-Animation.html)
+Recreate the animations in the demo file here: [Animation Challenges](assignment-03-Animation.html)
 
 Open this file in your browser. Your job is to recreate what you see. If you need a hint use the browser's inspector. 
 
@@ -16,7 +14,10 @@ Animation adds spice and interest to your work. It can also improve user experie
 
 ## Project requirements
 
-Recreate the animations in the demo file on your own. Some of these animations use CSS Animation with Key frames and other use CSS transitions. Do youe best to do these on your own. You can peek at the source code of the demo file for a hint if you get stuck, 
+Recreate the animations in the demo file on your own. Some of these animations use CSS Animation with Key frames and other use CSS transitions. Do your best to do these on your own. You can peek at the source code of the demo file for a hint if you get stuck.
+
+### Stretch Goals
+- Get started on your custom CSS animation: [assignment-4](assignment-04-Animate-Logo.md)
 
 ### Deliverable
 
@@ -34,4 +35,3 @@ Class 6 - Class 6 - JUN 12 AT 12:00PM
 | Quality      | Animations are noticably different from the originals | Animations are very close to the originals | Your animations look better than the originals |
 | Comprehension| Can't explain concepts covered | Can explain the concepts covered | Could apply these concepts to new and future projects with ease |
 | Work ethic | few massive commits | Commits outline progress | Clearly show progression of the work |
-
