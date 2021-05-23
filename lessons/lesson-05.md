@@ -149,8 +149,8 @@ These elements represent the areas of the page and will mapped to the grid.
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas:  "h h h h" 
                         "s m m m" 
-												"s m m m"
-												"f f f f";
+                        "s m m m"
+                        "f f f f";
 ```
 
 This time we have 4 columns each one fraction. 
