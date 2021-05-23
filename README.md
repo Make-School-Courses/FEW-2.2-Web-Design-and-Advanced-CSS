@@ -35,6 +35,94 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 
 ## Schedule
 
+
+
+
+
+**Course Dates:** Monday, May 31 – Friday, July 16, 2021 (7 weeks)
+
+**Class Times:** Monday, Wednesday, Friday at 2:15 PM – 4 PM (19 class sessions)
+
+| Class |          Date          |                 Topics                  |
+|:-----:|:----------------------:|:---------------------------------------:|
+|  - |  Mon, May 31         | **No Class - Memorial Day** |
+|  1 |  Wed, June 2         | [Lesson 1 CSS Review] |
+|  2 |  Fri, June 4         | [Lesson 2 Typography] |
+|  3 |  Mon, June 7         | [Lesson 3 Box Model Flex] |
+|  4 |  Wed, June 9         | [Lesson 4 Background Images] |
+|  5 |  Fri, June 11        | [Lesson 5 CSS Grid] |
+|  6 |  Mon, June 14        | [Lesson 6] |
+|  7 |  Wed, June 16        | [Lesson 7] |
+|  8 |  Fri, June 18        | [Lesson 8] |
+|  9 |  Mon, June 21        | [Lesson 9] |
+| 10 |  Wed, June 23        | [Lesson 10] |
+| 11 |  Fri, June 25        | [Lesson 11] |
+| 12 |  Mon, June 28        | [Lesson 12] |
+| 13 |  Wed, June 30        | [Lesson 13] |
+| 14 |  Fri, July 2         | [Lesson 14] |
+| -  |  Mon, July 5         | **No Class - Independence Day Observed** |
+| 15 |  Wed, July 7         | [Lesson 15] |
+| 16 |  Fri, July 9         | [Lesson 16] |
+| 17 |  Mon, July 12        | [Lesson 17] |
+| 18 |  Wed, July 14        | [Lesson 18] |
+| 19 |  Fri, July 16        | Final Exam/Presentations |
+
+
+---------------------------------------------------------
+
+New Outline
+
+1. Type CSS language and selectors - [W][topic]
+  - pre assessment How much CSS do you know?
+  - CSS Language 
+    - Linking to a style sheet 
+    - Style tag
+    - Using inline styles 
+  - HW style the sample doc
+2. Type, CSS - [F][Lab][1. Type]
+3. Objects box model - [M][topic]
+4. Float inline vs block - [W]
+5. What is a grid? - [F][Lab][2. Cards and Buttons]
+6. Layout flex box - [M]
+7. Layout flex box - [W]
+8. Layout Grid - [F][Lab][* Menu]
+9. Layout Grid - [M]
+10. Animation transition - [W]
+11. Animation transition - [F][Lab][* Layout Practice]
+12. Preprocessors SCSS - [M]
+13. Preprocessors SCSS - [W]
+14. CSS Custom Properties - [F][Lab][* Preprocessed Framework]
+15. CSS Custom Properties - [W]
+16.  - [F][Lab][* Use Custom Properties]
+17.  - [M]
+18. Final Presentation - [W]
+19. Final Assessment - [F][Lab][*]
+
+Assignments 
+
+1. Type - Add typographic styles to your framework - Style the sample documents
+2. Cards - Add card style to your framework - Styles in the sample docs
+3.  
+
+---------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **Course Dates:** Monday, June 1 – Friday, July 17, 2020 (7 weeks)
 
 **Class Times:** Monday, Wednesday, and Friday at 9:30–11:20am (20 class sessions)

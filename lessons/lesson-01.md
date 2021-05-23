@@ -1,235 +1,366 @@
-# FEW 2.2 - Advanced CSS - Drawing with CSS
+# FEW 2.2 Lesson 1 - CSS Review
 
-This introduction will review CSS concepts and introduce transform.  
+CSS Review 
 
-## Why you should know this?
+## Why you should know this 
 
-Great question! Having the ability to place an element anywhere on the screen is useful, there are many applications, and opens up the range of the things you can make. When these ideas are applied to animations it opens even more options. 
+Understanding the basics of CSS the language and the syntax is the gateway to using CSS. CSS is a powerful tool that let's you determine the appearacne of anything in the browser. 
 
-While you might not be concerned with drawing and making pictures, it's quite possible someone will come to you with a visual idea and want you to recreate it. These are the tools you need. 
+## Review 
 
-Let's be honest your CSS skills are rusty you just need some practice!
+How much CSS do you know?
 
-## Lesson Slides 
+## Using CSS
 
-https://docs.google.com/presentation/d/1PrmtOPuSov0XPkSCYwM24rHeZ4GPFM1IWDQeyv5wH6U/edit?usp=sharing
+### Where can put CSS?
 
-## Learning Objectives
+- CSS can be written in external files with the .css file extension.
+- CSS can be written in the style tag anywhere in an html document. 
+- CSS styles can be applied to any HTML element using the style attribute 
 
-1. Transforming elements with CSS
-  - Rotate
-  - Translate
-  - Skew
-  - Scale
-1. Using CSS to draw basic shapes 
-  - Rectangles 
-  - Circles 
-  - Triangles
-1. Use and define CSS selectors to select anything on the DOM
-1. Apply styles to elements with selectors 
-1. Use styles to control the appearance of everything! 
+#### Using CSS files 
 
-## Quick review your knowledge of CSS
+Link to a file using the link tag. 
 
-CSS is the presentation layer. It defines the appearance of the structure layer (HTML).
+```HTML
+<!-- index.html -->
+<!-- Link to an external stylesheet with the link tag -->
+<link rel="stylesheet" href="style.css">
+```
 
-You'll use selectors to target elements. 
+```CSS 
+/* style.css */
+/* Your CSS code here... */
+```
 
-Quick review your selectors! Pair up, using a single computer work through as many of the problems here as you can in 10mins.  https://flukeout.github.io
+#### Using the Style tag
 
-Q: How far did you get? 
-Q: What did you learn?
+Anywhere in an HTML document. 
 
-## Can you draw with CSS? 
+```HTML
+<style>
+	/* Everything here is written in the CSS language */
+	/* ...  */
+</style>
+```
 
-Sure you can! But it's not easy. Of course limitation opens creativity!
+#### Using Inline styles 
 
-<blockquote>
-  <p><q>Limitations breed creativity.<br>
-  Limitations breed freedom.<q></p>
-  <cite>- Taylor Gahm</cite>
-</blockquote>
+Inline styles are added to the any tag, these styles style that tag. 
 
-<blockquote>
-  <p><q>The enemy of art is the absence of limitations.<q></p>
-  <cite>- Orson Welles</cite>
-</blockquote>
+```HTML
+<h1 style="color: red">Inline Styles</h1>
+<p style="color:maroon; font-size:1.2em">Separate each style rule with a semicolon!</p>
+```
 
-<blockquote>
-  <p><q>Creativity is intelligence having fun.<q></p>
-  <cite>- ?</cite>
-</blockquote>
+### Writing CSS
 
-### Ideas
+The CSS language is written blocks we call **Rules**. Each Rule begins with a selector and contains a list of properties and values. 
 
-With CSS you can draw basic shapes like rectangles and circles. Each shape can have a fill and a border. 
+The properties and values are the styles applied to the element identified by the selector.
 
-To make a circle round the corners of a square using `border-radius`. 
+```CSS
+h1 {
+	font-size: 32px;  
+	color: red;
+}
+```
 
-The `border-radius` can be applied to each of the four corners separately. You can use this to create leaf and drop shapes. 
+The rule above selects all h1 tags and make them 32px and red. 
 
-You can create more complex drawings by combining shapes. 
+#### Selectors
 
-With CSS you can draw a few shapes using: 
+Selectors are important! If you can't define a selector for something you can't style it! 
 
-- width
-- height
-- border
-- background-color
-- border-radius
+If you understand selectors you can generate a selector that can identify any element or group of elements in a document. 
 
-Position and transform elements using: 
+The selector language is powerful. Think of it as a language that allows you to traverse the document tree and identify elements within that tree. 
 
-- position: absolute and relative
-- transform: translate, rotate, scale, skew 
+Besides being used for CSS styles the selector language is also useful with JavaScript to give your code access to elements on the page. 
 
-Use `position: relative` on the parent element. This will define the coordinate context for descendants that are position relative. 
+There are a lot of selectors. Too many to cover them all here. Here are a few that you should know: 
 
-Use `position: absolute` on elements when you want to place an element at an exact location. 
+Name selector - uses the tag
 
-Use `transform` to apply a CSS transform to an element. There are several transforms: 
+```CSS
+h1 { /* selects all h1 tags */ }
+p { /* selects all p tags */ }
+div { /* selects all div tags */ }
+```
 
-- translate(x, y) - moves/positions an element 
-- rotate(angle) - rotates an element (units are `deg` or `rad`)
-- scale(mult) - scales an element
-- skew(angle) - skews an element (units are `deg` or `rad`)
+Class selector - begins with a dot `.` followed by the class name.
 
-**Transforms should be combined on a single line!** The transform property should only appear once but it can have as many values assigned as needed. For example:
+```HTML
+<!-- index.html -->
+<div class="container"></div>
+<p class="card dark"></p>
+<p class="card"></p>
+<p class="card"></p>
+```
 
-`transform: translate(100px, 30px) rotate(45deg) scale(1.5) skew(-30deg)`
+```CSS
+.container { /* selects all elements with the class name contianer */ }
+.card { /* selects all elements with the class name card */ }
+.dark { /* selects all elements with the class name dark */ }
+.
+```
+
+id selector = begins with `#` followed by the id name. id names should be unique and only appear once per page! 
+
+```HTML
+<!-- index.html -->
+<div id="main"></div>
+<p id="display"></p>
+<div id="alert"></div>
+```
+
+```CSS
+#main { /* selects all elements with the id name main */ }
+#display { /* selects all elements with the id name display */ }
+#alert { /* selects all elements with the id name alert */ }
+.
+```
+
+Wild card - Selects all elements use the `*`. 
+
+```CSS 
+* { /* Selects every tag on the page! */ }
+```
 
-Here the element these rules apply to would be moved 100px to the right, 30px down, rotated 45deg clockwise, scale 150%, and skewed -30 degrees. 
+This seelctor gets more useful when combined with the selectors below! 
 
-`transform: translate(100px, 30px)` - moves this element 100px to the right and 30px down
+Compound selectors: 
 
-`transform: translate(-50px, 0)` - moves this element 50px to the left
+Child selector - Selects the child element of another selector use the `>`.
 
-### Cartesian Coordinates 
+```HTML
+<p>Not selected</p>
+<div>
+	<p>Selected!</p>
+</div>
+<div>
+	<aside>
+		<p>Not selected</p>
+	</aside>
+</div>
+```
 
-Cartesian coordinates are like graph paper. The x position is measured along the horizontal axis and the y position is measured along the vertical axis.
+```CSS
+div > p { /* Selects only p tags that are children of div tags */ }
+```
 
-x = 0 and y = 0 would place an element in the upper left corner. **Where that upper left corner is depends on which element has `position: relative`.** When using position absolute it's the relative ancestor that defines the coordinate space. 
+Descendent selector - Select all descendents of another selector use the space ` `.
 
-## Drawing Shapes
+```HTML
+<p>Not selected</p>
+<div>
+	<p>Selected!</p>
+</div>
+<div>
+	<aside>
+		<p>Selected!</p>
+	</aside>
+</div>
+```
 
-What can you draw?
+```CSS
+div p { /* Selects only p tags that are descedents of div tags */ }
+```
 
-Pair up with someone you haven't paired with before. Look at the examples below and identify the shapes used to make the drawing. Discuss a strategy to create that shape. 
+Psuedo selectors: There are lots of pseudo selectors they all begin with a colon `:`.
 
-- https://css-tricks.com/the-shapes-of-css/
-- https://blog.prototypr.io/how-i-started-drawing-css-images-3fd878675c89
+`:nth-child()` selector - Selects an element by it's index use: `:nth-child(1)`. This selector has several different ways it can be used!
 
-### Border Radius
+```HTML
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+```
 
-Use border radius to round the corners of elements. You can round all the corners or choose the corners and round each seprately. 
+```CSS
+li:nth-child(1) { /* Selects the first li tag */ }
+li:nth-child(3) { /* Selects the third li tag */ }
+li:nth-child(2n) { /* Selects every second element */ }
+li:nth-child(4n) { /* Selects every fourth element */ }
+li:nth-child(3n+1) { /* Selects every third element offset by 1 */ }
+li:nth-child(even) { /* Selects all even indexed elements */ }
+li:nth-child(odd) { /* Selects all odd indexed elements */ }
+```
 
-`border-radius: 50%` makes a circle if the height and width are equal
+Did you get all that? This has a more than a few options!
 
-`border-radius: 12px` all corners have a radius of 12px
+### Exercise: CSS Selectors
 
-`border-bottom-left-radius: 50%` rounds the bottom left corner. 
+practice with your CSS selectors. You need to master these. You may have done this exercise before, you need to do it again until you can breeze through it without stopping to think or using trial and error to get the answers! 
 
-Alternately you can round set the radius for each of the four corners on the same line: 
+Seriously you need to master selectors! 
 
-`border-radius: 12px 23px 34px 45px` here the upper left corner is 12px, the upper right is 23px, lower right is 34px, and the lower left is 45px. Remember this by starting in the upper left and moving clockwise. 
+https://flukeout.github.io
 
-### Borders
+You'll submit this by adding the answers to GradScope!
 
-To apply a border you need to include the width and style. 
+#### Properties
 
-`border: 1px solid` creates a 1px wide solid border (uses the font color since no color was included)
+properties are always written in the form:
 
-You can also the color:
+```CSS
+name: value;
+```
 
-`border: 1px solid red` the border is red. 
+You need to have the semicolor before starting a new property! Missing the semicolon is probably the most common CSS synatx error ever!
 
-You can apply a border to each of the four sides of an element: 
+```CSS
+name: value;
+name: value;
+name: value;
+etc.
+```
 
-`border-left: 3px solid green` sets the border on the left to 3px solid and green. 
+## CSS Zen Garden
 
-## CSS Transform
+The CSS Zen Garden is a website developed for the sole purpose of showing off what can be done with CSS. 
 
-People make the the most amazing drawings with only CSS. The goal is to get back into CSS and learn a few new features. 
+Visit the site and click through some of the designs. 
 
-- CSS Transform https://developer.mozilla.org/en-US/docs/Web/CSS/transform
-  - rotate()
-  - scale()
-  - skew()
-  - translate()
+http://www.csszengarden.com
 
-## Quick draw a logo for your new product! 
+What is this? Everyone of these pages is using exactly the same markup. The only thing that changes from page to page is the CSS. You're not allowed to change the markup! 
 
-Use a whiteboard and draw a logo. **Keep it simple with basic shapes**. 
+How are these pages looking so different if you can't change the markup? That's the power of CSS!  
 
-- Circles 
-- Squares 
-- Triangles
+## Typography
+
+One of the most powerful modes of communication is the written word. Typography gives form to the message. Beyond the words you use the shape and style of the characters becomes part of the message. 
+
+CSS provides a wide range of control over the character on a page. Let's look at a few of the properties available to us: 
+
+- color 
+- font-size
+- font-family
+- font-weight
+- line-height
+
+## Style the Zen Garden Page
+
+Your Goal style the CSS ZenGarden Markup. You can not change the markup! You can only add a stylesheet. 
 
-If you're not sure what to draw try one of these: 
+- Download the CSS Zen Garden markup here: http://www.csszengarden.com/examples/index
+- Create a new file named: `style.css` put this file in the same folder as your html file. 
+- Add your styles!
 
-- tree
-- face
-- home 
-- bee 
-- leaf 
-- candle 
+Look at the mark up closely. You can use the tag names, class names and other features along with the selectors covered in the CSS Diner to apply your styles. 
 
-Simplify your logo as much as possible. Erase it and draw it again.
+What to syle? For this first assignment focus on the typography. Use these properties: 
 
-Draw your logo with Codepen. Vote on best pen. Use these properties: 
+- font-family
+- font-size
+- font-weight
+- color
+- line-height
 
-- Position 
-  - absolute
-- width, height
-- background-color
-- border, border-radius
-- transform
-  - rotate
-  - scale
-  - skew 
-  - transform
+**What to do?**
 
-Post your pen to Class Slack. Rate the logos with emojis. The winning logo receives a prize. 
+- Style the Zen Garden page focussing typography. 
+- Use all of the properties listed above. 
+- Submit your work to Gradescope.
 
-## Advanced
+### Challenges: 
 
-If all of that was too easy try using CSS Clipping path.
+Use the Selectors covered earlier. You can't change the Zen Garden markup. You must use selectors creatively to target elements on the page. 
 
-https://bennettfeely.com/clippy/
+For some elements: `body` and `h1` these taga appear only once on the page you can use select them using the their names. 
 
-## Logos with CSS
+```CSS
+/* Properties applied ot the body */
+body { ... }
+/* Properties appied to the h1 */
+h1 { ... }
+```
 
-It's surprosing what you can create with pure CSS. 
+The page is divided into sections and each section has a class name. Using you can use these class names to provide a blanket style for everything in the section. 
 
-https://freefrontend.com/css-logos/
+```CSS
+/* Applies to the element with class intro */
+.intro { ... }
+/* Applies to the element with class summary */
+.summary { ... }
+/* Applies to the element with class preamble */
+.preamble { ... }
+```
 
-Take a look at these. Realize that they are all built around basic shapes and use features like border-radius, opacity, and transform creatively.
+To call out individual items in a section use the child or descendent selectors. 
 
-## Homework 
+```CSS 
+/* Applies to the h2 that is immediate child of class intro */
+.intro > h2 { ... }
+/* Applies to p tags that are immediate children of class summary */
+.summary > p { ... }
+/* Applies to the a tags inside a class preamble */
+.preamble a { ... }
+/* Applies to all a tags in the class design-selection */
+.design-selection a { ... }
+```
 
-The goal of this assignment is to create a drawing with only CSS. See the assignment description linked below for more details. 
+Combining the ideas above you can add the `:nth-child()` selector to access individual elements that don't appear to have any other way to select them. 
 
-[CSS Drawing](../Assignments/assignment-1-css-drawing.md)
+```CSS
+/* Selects the first paragraph in summary */
+div > p:nth-child(1) { ... }
+/* Selects the second p in each div */
+div > p:nth-child(2) { ... }
+/* Selects every other a tag that is a child of a list */
+ul > li:nth-child(even) > a { ...}
+```
 
-## Wrap Up (5 min)
+Solve these challenges: 
 
-- What's a selector?
-- What's your favorite selector? 
-- What's the weirdest selector? 
+- Use the following CSS properties: 
+	- `font-family`
+	- `font-size`
+	- `font-weight`
+	- `color`
+	- `line-height`
+- Set a font family for all elements. Use the `body`
+	- Set the color and background color for the page. Use the `body`
+- Style the headings in each section. 
+	- The page has a heading: "CSS Zen Garden" Give this a unique style. 
+	- Under the page heading is a sub heading: "The Beauty of CSS Design". Style this so it compliments the page heading. 
+	- Each section has it's own heading, these are: "The Road to Enlightenment", "So What is This About?", "Participation", "Benefits", "Requirements", and "Select a Design" style these. 
+- Style the links
+- Give the links in the lists: Select a Design, Archives, and Resources a different style from the links in the body of the text. 
+- Style the links in the footer
+- Use your selectors! Be sure to use the following selectors in some way: 
+	- name/tag selector
+	- class name selector
+	- child selector
+	- descendent selector
+	- `:nth-child()`
 
-## Additional Resources
+### What are these properties good for? 
 
-- https://medium.com/coding-artist/a-beginners-guide-to-pure-css-images-ef9a5d069dd2
-- https://a.singlediv.com
-- https://medium.com/coding-artist/how-pure-css-images-helped-me-understand-react-components-3ad7b05051b0
+The font face adds character and set the tone for your message. Your sites are seen on the screen making the type easy to read facilitiates your message. 
 
-## Minute-by-Minute [OPTIONAL]
+The default font: Times New Roman not very good. You can do better! 
 
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:45      | In Class Activity I       |
-| 1:05        | 0:10      | BREAK                     |
-| 1:15        | 0:45      | In Class Activity II      |
-| TOTAL       | 2:00      |                           |
+The size of the text has a large effect on legibility. It also controls the order the message is delivered and points out what is important on the page. 
+
+The font weight adds weight to the message. Points out what is important, and empahsizes what is said. 
+
+Color and constrast are important to legibility. 
+
+Dense blocks of type are hard to read. Adding space between lines makes them easier to read. The longer a line is the more space between lines is needed. 
+
+## After Class
+
+- Solve the CSS Diner problems and submit to GradeScope
+- Style the CSS Zen Garden page submit to GradeScope
+
+## Resources 
+
+- [Typography for Developers](https://css-tricks.com/typography-for-developers/)
+- [CSS Typography](https://www.webfx.com/blog/web-design/css-typography-01/)
+- [CSS Reference Typography](https://cssreference.io/typography/)
+- [Web Typography](https://www.internetingishard.com/html-and-css/web-typography/)

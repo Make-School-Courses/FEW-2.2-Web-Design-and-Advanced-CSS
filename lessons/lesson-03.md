@@ -1,259 +1,315 @@
-# FEW 2.2 - Advanced CSS - SASS
+# FEW 2.2 Lesson 3 - Box Model Flex
 
-CSS Preprocessors: SASS - Syntactically Awesome StyleSheets. 
+## Review 
 
-## Why you should know this?
+- What is: `-apple-system`
+- What is: `BlinkMacSystemFont`
+- What is: `em`
+- What is: `rem`
 
-CSS preprocessors are common in the industry and provide some valuable functionality. Expect to see them in the workflow of companies large and small.
-
-## Learning Objectives
-
-1. Define CSS preprocessor functionality and uses cases
-1. Write code in the SCSS language
-1. Compile code written in SCSS to vanilla CSS
-
-### Slides 
-
-https://docs.google.com/presentation/d/1ptueI32nTL6P_pMXoQMeV6k-JLmpUJ3YQFpxUGE5PkY/edit#slide=id.g4cf79cf4e3_0_202
-
-### Video Lesson
-
-https://www.youtube.com/playlist?list=PLoN_ejT35AEh1a0ZUVu0JaFHGPN9yffWR
-
-## What is SASS? 
-
-**Q:** What is SASS? 
-**A:** SASS is a language that compiles to vanilla CSS. 
-
-**Q:** Why use SASS? 
-**A:** SASS provides a way to generate CSS from higher-level code that includes variables, conditional statements, loops, and more. These are things that _don't exist in vanilla CSS_. 
-
-**Q:** Can I use the SASS language in the browser?
-**A:** No, you must compile SCSS to CSS first. 
-
-**Q:** How do you compile SASS? 
-**A:** Use a preprocessor, there are a few to choose from. Both command-line tools and desktop applications. 
-
-## Install SASS
-
-There are several tools you can use to compile SASS.
-
-- http://koala-app.com
-- http://compass-style.org
-- SASS CLI
-
-You will use Node JS version since you have been using Node for other projects. 
-
-Install Node SASS.
-
-`npm install -g sass`
-
-## Compiling SASS
-
-Compile SASS.
-
-1. Make a new folder
-1. Create `index.html`
- - add a link to `styles.css` - `<link rel="stylesheet" href="styles.css">`
-1. Create `style.scss`
-1. Run SASS from the command line: `sass --watch style.scss style.css`
-
-The last line above runs SASS. The `--watch` flag tells SASS to watch for changes and update when it sees them. The last two parameters: `style.scss style.css` define the input (`style.scss`) and output (`style.css`) files.
-
-The setup above will watch for changes in `styles.scss` and upon seeing them compile the SCSS code there into regular CSS in `style.css`.
-
-Try it. 
-
-## Getting started with SASS
-
-SASS supports variables. Use it to: 
-
-- Share values for DRY code
-- Calculate relative values for DRY code 
-- Create mixins (like functions) for DRY code
-- Use utility functions to help your work
-
-The main use of SASS is to more maintainable CSS code. 
-
-**Variables** in SASS always begin with the `$`
-
-<small style="color: #999">SCSS code</small>
-```SCSS
-$bg-color: #eee;
-$font-color: #333;
-$font-size: 16px;
-$typical-margin: 0 0 1em 0;
-```
-
-Notice variables always begin with the `$`. You can assign any value. This includes any value that is legal CSS. 
-
-Use a variable where any value might appear: 
-
-<small style="color: #999">SCSS code</small>
-```SCSS
-body {
- background-color: $bg-color;
- color: $font-color;
- font-size: $font-size;
-}
-```
-
-The code above would compile into: 
-
-<small style="color: #999">CSS code</small>
-```CSS
-body {
- background-color: #eee;
- color: #333;
- font-size: 16px;
-}
-```
-
-Use all of those math operators! 
-
-<small style="color: #999">SCSS code</small>
-```SCSS
-$margin: 16px;
-$cols: 4;
-$width: 800px;
-$col-width: $width / $cols + $margin * 2;
-```
-
-**Loops** are directives that begin with `@`. 
-
-<small style="color: #999">SCSS code</small>
-```SCSS
-@for $i from 1 to 4 {
- .h#{$i} {
- font-size: #{(5 - $i) * 0.85}em;
- }
-}
-```
-
-<small style="color: #999">CSS code</small>
-```CSS
-.h1 {
- font-size: 3.4em;
-}
-
-.h2 {
- font-size: 2.55em;
-}
-
-.h3 {
- font-size: 1.7em;
-}
-```
-
-Define a list and use an each loop: 
-
-<small style="color: #999">SCSS code</small>
-```SCSS
-$list: github, twitter, facebook;
-
-@each $icon in $list {
- .photo-#{$icon} {
- background: image-url("images/#{$icon}.png") no-repeat;
- }
-}
-```
-
-<small style="color: #999">CSS code</small>
-```CSS
-.photo-github {
-  background: image-url("images/github.png") no-repeat;
-}
-
-.photo-twitter {
-  background: image-url("images/twitter.png") no-repeat;
-}
-
-.photo-facebook {
-  background: image-url("images/facebook.png") no-repeat;
-}
-```
-
-There is a lot you can do with this it extends CSS in new ways. _Keep in mind that SASS is always rendered to vanilla CSS!_
-
-## In-Class Activity 
-
-Pair up with someone you haven't paired with before. You'll be assigned a topic from the list below. You and your pair are responsible for studying and **making an example that explains the concept**. Do your best to think of practical use for your topic and code sample.
-
-https://sass-lang.com/documentation
-
-- [Variables](https://sass-lang.com/documentation/variables)
-- [Nested Rules](https://sass-lang.com/documentation/style-rules#nesting)
-- [Mixins](https://sass-lang.com/documentation/at-rules/mixin)
-- [Functions](https://sass-lang.com/documentation/functions)
-- [If else](https://sass-lang.com/documentation/at-rules/control/if)
-- [For](https://sass-lang.com/documentation/at-rules/control/for)
-- [Extend](https://sass-lang.com/documentation/at-rules/extend)
-
-## Typography on Web
-
-CSS provides a few properties to control the appearance of text on the screen. 
-
-- `font-family` - The font face to display
-- `font-size` - the size of characters
-- `color` - The color of the text
-- `line-height` - The of a line of text
-
-Here are strategies for each of these properties. 
-
-**`font-family`** sets the font to use. You're limited to fonts available on any given computer unless you import a custom font. 
-
-Since `font-family` is inherited it's best to set the font-family on body or HTML tag and all children will share it. 
-
-Usually, you'll provide a font stack. This is a list of fonts, the browser will use the first available font on the list. Here is a list of modern font stacks. 
-
-https://gist.github.com/don1138/5761014
-
-**`font-size`** sets the size of the characters. This property is inherited, which means all children will get the `font-size` of their parent element. For this reason, it's best to set a base font size on the `body` or `html` element. 
-
-Use `em` to set a relative font size of the base font size. 
+Read the CSS below:
 
 ```CSS
 body {
- font-size: 18px;
+	font-size: 14px;
 }
 
-h1 {
- font-size: 2em; /* 36px */
+body > div {
+	font-size: 2em;
+}
+
+body > div > h1 {
+	font-size: 2.5rem;
+}
+
+body > div > p {
+	font-size: 1em;
 }
 ```
 
-**`color`** it's color of the text, do we need to say more? Maybe... 
+- How big is the h1?
+- How big is the p?
 
-Contrast is important. Low contrast makes things hard to read, especially for people with bad vision. There is a rule you can follow. 
+## The Box Model
 
-https://webaim.org/resources/contrastchecker/
+The box model describes how everything is sized on the CSS. 
 
-**`line-height`** the height of a line of text. This doesn't affect the size of the characters. Why is `line-height` a thing? Lines that are too close together are harder to read. Usually, the default value for `line-height` is too small! 
+The Box Model applies to all **block** eleemnts. Looking at any element on a page it will either display as inline or block. 
 
-How do you know what a good line height is? Use your best judgment. Longer lines need larger `line-height`. 
+Think of inline elements like words in a block of text. They flow left to right and wrap when they reach the extent of their container. 
 
-Your goal this week is to apply the ideas above to a project of your own. We will talk more about type in the next class. 
+Block elements stack one on top of the previous. You can set thew width and height of a block element. 
 
-## Homework 
+Block elements should always contain inline elements. Not the other way around!
 
-To get an understanding of SASS you have to use it. Your goal is to apply SASS to one of your past projects. 
+Try this on the Zen Garden Page. The following sets a style for all anchor tags on a page. The anchor tag displays as inline be default! 
 
-See the description here for details and requirements for this assignment: 
+```CSS
+a {
+	width: 100px;
+	height: 100px;
+	border: 1px solid;
+	margin: 1em;
+	padding: 1em;
+}
+```
 
-- [Apply SASS Part 1](../Assignments/assignment-06-SASS-part-1.md)
-- [Apply SASS Part 2](../Assignments/assignment-06-SASS-part-2.md)
-- [Apply SASS Part 3](../Assignments/assignment-06-SASS-part-3.md)
+Notice the results. While all of the elements show the border and the border is pushed away by the padding the size of the element doesn't affect the surrounding elements! **This is because this is an inline element!**
 
-## Wrap Up
+Add this: 
 
-- Review class 
- - What is SASS?
- - What is good for? 
- - Do you think you would use this? 
+```CSS
+a {
+	...
+	display: block;
+}
+```
 
-## Additional Resources
+Now every anchor is a block and creates a box that stacks with the other boxes. 
 
-1. https://sass-lang.com
-1. https://sass-lang.com/documentation/variables
-1. https://sass-lang.com/documentation/at-rules/control/for
-1. https://sass-lang.com/guide#topic-3
+The following are all block elements:
+
+- `div`
+- `p`
+- `h1` - `h6`
+- `section`
+
+### Width and height
+
+Set the width and height of an element. 
+
+### Padding
+
+Sets the space between the content and the border. 
+
+### Border
+
+Sets the border around an element. 
+
+The border has many styles. At the minimum you need to set the border style! 
+
+```CSS
+div {
+	border-style: solid;
+}
+```
+
+The default border color is the fore ground color.
+
+### Challenge:
+
+Turn each link into a button. Use the padding border and margin. You can set the display of these elements to `block` or `inline-block`.
+
+```CSS
+a {
+	display: inline-block;
+	padding: 0.5em 1em;
+	margin: 0.5em;
+	border: 3px solid #5599f3;
+	border-radius: 0.5em;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #7bb1f6;
+}
+```
+
+Challenge: make all of the anchor tags in the footer display as buttons. 
+
+### Button Formula
+
+Buttons can vary widely in design and solutions can be very creative. What is presented here is a good starting place for a wide variety of buttons:
+
+- Display block or inline block - buttons will almost alwasy display as a block
+- Padding - Add space around the text content of the button. This usually better than setting the width and height but you might do that if you wanted your buttons to be a specific size. 
+- Border - Buttons often have a border, but not always! You can also set the border on any of the sides. For example you migth have a border only on the left or bottom, or have borders on the left and rightor top and bottom. 
+- Background color - Give the button a background color to make it pop out and look clickable!
+
+## Float 
+
+Float is a property used to wrap text around an image. A floated element moves all the way to the left or the right and everything else tries to wrap a around it. 
+
+Try this, here image each of the links on the Zen Garden page were an image. 
+
+```CSS
+a {
+	width: 100px;
+	height: 100px;
+	border: solid;
+	margin: 1em;
+	padding: 1em;
+	display: block;
+	float: left;
+}
+```
+
+Challenge: float every other a tag to the right. 
+
+## Flex
+
+Flex is a tool that arranges elements along an axis. The axis can be horizontal or vertical. 
+
+Flex is a property that arrange the elements children. This is the core concept! All of the other flex properties apply to the the children and determine how the children are arranged. 
+
+Solve the problems here: https://flexboxfroggy.com
+
+Submit your answers to GradeScope!
+
+## Creating Cards
+
+The ideas of a "Card" in web design is a box with information. Usually this box has something to delineate it from the area around it. This might be a border or a shadow.
+
+A card often contains text content and might also contain an image. 
+
+A card presents one complete idea. OYu could think of this like a paragraph. Examples might be a product, a personal profile, a reminder, a review, a single post or comment. 
+
+Card example:
+
+- https://www.awwwards.com/play-your-cards-right-exploring-the-cards-trend-in-web-design.html
+
+Some ideas to try: 
+
+### Some Cards ideas
+
+Here some ideas to get you started designing your own cards. These ideas were applied to the Zen Garden page so they are limited in that they work without changing the mark up found there. 
+
+**Turning the footer into a card**
+
+Here I styled the links in the footer like a card. This element doesn't give us much to work with there is only the link. 
+
+```CSS
+footer > a {
+	display: block;
+	border: 1px solid;
+	flex: 1;
+	height: 200px;
+	margin: 10px;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.392);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	text-decoration: none;
+}
+```
+
+Arrange all of the footer "Cards" in a row with flex. 
+
+```CSS
+footer {
+	display: flex;
+	justify-content: space-around;
+}
+```
+
+**Turn each list item in Select a Design into a card**
+
+Here is an example styling each list item in the `div.design-selection` section as a card. 
+
+Start with the `li` this will be the card container:
+
+```CSS
+.design-selection ul > li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid;
+	padding: 10px;
+	font-size: 40px;
+	margin: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.317);
+}
+```
+
+Here we have a couple items to play with. There are two links and some text, the word "by" inside each `li`. Let's put the first link at the top, the second link at the bottom, and put the word "by" near the center. 
+
+The style above made all of the text large, so here we will make the links smaller so only the word "by" is larger. 
+
+First style both anchors:
+
+```CSS
+.design-selection ul > li > a {
+	font-size: 1rem;
+	text-decoration: none;
+	margin-bottom: 1em;
+	height: 3em;
+}
+```
+
+Then style the last child, which is the second anchor. 
+
+```CSS
+.design-selection ul > li > a:last-child {
+	align-self: flex-end;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+```
+
+You could also have used the class names: `a.design-name` and `a.designer-name`.
+
+**Turn the Resources section into a Card**
+
+Start with container. Use flex here to arrange the contents in a column. 
+
+```CSS
+.zen-resources {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid;
+	width: 200px;
+}
+```
+
+Next add a header to the card. 
+
+```CSS
+.zen-resources h3 {
+	margin: 0;
+	text-align: center;
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: #000;
+	color: #fff;
+}
+```
+
+Now style the list. Notice I remove the bullet points from the ul.
+
+```CSS
+.zen-resources ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+}
+```
+
+Last style the anchors. 
+
+```CSS
+.zen-resources a {
+	text-decoration: none;
+	padding: 0.25em 1em;
+	display: block;
+}
+```
+
+## Challenges
+
+Use the box model and flex to style your Zen Garden page. Do the following things: 
+
+- Create a card of one of more of the sections in the Zen Garden page. Take a look at some of the Zen Garden pages for ideas. Look for "cards" there to see what others have done. Here are a few ideas: 
+	- Any of the sub sections under: `section.intro` or `div.main` would be good candidates for Cards. Making three cards for: `div.explanation`, `div.participation`, and `div.benfits`. You can arranges these in a row using flex.
+	- The lists of links at the bottom of the page, `div.design-selection`, `div.design-archives`, and `div.zen-resources`, could also be good candidates for cards.
+	- The `div.design-selection` contains a list with each list item containing two links, one the link to the design and the a link to the designer. Each of these list items could be a card!
+- Create a button style and use it somewhere on your page. The style of your buttons is up to you but it's importatn that the style you give makes stand out something that invites user interaction! Here are few ideas: 
+	- Style the links in the `footer` like buttons. You can use flex box here. 
+	-  The `div.design-archives` section contains two links that more designs. These two links would be great candidates for buttons! 
+	- The `div.zen-resources` section contains 5 links that would also be good candidates for button!
+
+## Resources 
+
+- [Guide to Flex Box](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Card Design](https://www.awwwards.com/)play-your-cards-right-exploring-the-cards-trend-in-web-design.html
+- [Styling Links](https://css-tricks.com/css-basics-styling-links-like-boss/)
+- [Flex Box Froggy](https://flexboxfroggy.com)

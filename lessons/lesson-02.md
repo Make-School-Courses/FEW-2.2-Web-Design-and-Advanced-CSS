@@ -1,193 +1,352 @@
-# FEW 2.2 - Advanced CSS - Animation
+# FEW 2.2 Lesson 2 - Typography
 
-Making things move.
+## Review 
 
-## Why you should know this
+Look at the CSS Zen Garden markup. Find the nav tag with role="navigation". The list here contains li tags each with two anchors and the wor "by". Imagine you need to style each of these differently.
 
-Engagment is important. Things that move are much more interesting. Adding motion adds another dimention to your content. All of your favorite apps probably have little bits of animation.
+The simplified markup looks like this: 
 
-## Learning Objectives
-
-1. Describe easing
-1. Use CSS transition and keyframes to make things move
-1. Control and define the time and easing for elements that move
-
-## Slides
-
-https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7FZI/edit?usp=sharing
-
-## Identify some Examples of motion
-
-Look for motion in software products that you use. 
-
-Pair and share these with your partner. 
-
-## Initial Exercise
-
-Animation is everywhere on the computer. Even your code editor has some animation. Small animations can be informative and engaging. 
-
-When you see motion on the computer what is happening? Most often that motion is connected to the properties that set the position, scale, rotation, and opacity. 
-
-Explore some CSS animations and identify what properties are being animated.
-
-1. https://codepen.io/FabioG/full/QjLreK
-2. https://codepen.io/dsenneff/pen/2d338b0adf97472ebc5d473cf1fa910b
-3. https://codepen.io/donovanh/full/pvMeeB
-4. https://codepen.io/yoannhel/full/sJpDj
-5. https://codepen.io/Manoz/full/pydxK
-6. https://codepen.io/Venerons/full/BvHbK
-7. https://codepen.io/MarioDesigns/full/woJgeo
-8. https://codepen.io/u1tralord/full/pvXwza
-9. https://codepen.io/Zaku/full/YjRqzB
-10. https://codepen.io/pcameron/pen/rVmera
-11. https://codepen.io/valhead/full/rfump
-12. https://codepen.io/stefcharle/full/Gydvbx
-13. https://codepen.io/nathantaylor/full/PJGqdE
-14. https://codepen.io/oliviale/full/jxPgKv
-15. https://codepen.io/antho-fsy/pen/wJqWKj
-
-What is happening in these animations? Don't worry about the technical details just _identify which properties are changing_.
-
-## Video lessons 
-
-- https://www.youtube.com/playlist?list=PLoN_ejT35AEg-xKnTgIjE5VU-3IHO2N6i
-
-## Making things move
-
-There are a couple ways to make things move with CSS. 
-
-- `transition`
-- `@keyframe`
-
-In a nutshell `transition` causes changes to CSS properties to change over time instead of changing instantly, `@keyframe` defines changes that are mapped out over time. Transition animates a change to a property keyframes map out changes that are then applied to properties. 
-
-### Transition
-
-```CSS
-.a {
-  width: 100px;
-  height: 100px;
-  background-color: #f00;
-  /* Sets the time to apply changes to this element */
-  transition: 400ms;
-  /* s = secs ms = milliseconds  */
-}
-
-.a:hover {
-  /* These changes occur over the transition time set above */
-  transform: scale(1.25) rotate(12deg);
-}
+```HTML
+<nav role="navigation">
+	<ul>
+	<li>
+		<a class="design-name">Mid Century Modern</a> by
+		<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
+	</li>		
+	</ul>
+</nav>
 ```
 
-The base rule declares a transition of 400 milliseconds. The hover rule changes the scale and rotation. Rather than happening immediately the change takes 400 milliseconds.
+Write a selector for each of these.
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
-
-### Keyframes
-
-To create keyframe animations define some keyframes. A key frame describes the values for CSS properties at a point in time. 
-
-Assign keyframe animation a name, `scaleAndRotate` in the example below. 
-
-Define the value for properties along the length of the animation. Here `transform: scale(0.5) rotate(0)` happens at the beginning `0%`, `background-color: blue` happens at the half way point `50%`, and `transform: scale(1.0) rotate(23deg)` happens at the end of the animation `100%`.
 ```CSS
-@keyframes scaleAndRotate {
-  0% { transform: scale(0.5) rotate(0); }
-  50% { background-color: blue; }
-  100% { transform: scale(1.0) rotate(23deg); }
-}
+/* Style the design name */
+
+/* Style the deigner name */
+
+/* Style the word "by" */
+
 ```
 
-The code above defines the animation. Below the animation is applied to an element. 
+## Fonts
 
-The `animation` property applies an animation to an element. The line: `animation: scaleAndRotate 5s infinite` sets the animation to `scaleAndRotate` (matches the name above), sets the length of the animation 5 secs (`5s`), and repeat infinitely (`infinite`).
+Fonts come in a wide variety. Fonts give form and visual style to the ideas and message. 
+
+A big part of choosing fonts is understanding your brand. While brand includes lots of things beyond just type it will help to understand what a brand. Luckily I found a 3 min video and a page describing what a brand identity is: 
+
+https://venngage.com/blog/brand-fonts/
+
+### Serif vs San Serif
+
+Fonts can be classified into broad groups. The two most popular fonts used for web design fall in these groups: Serif and Sans Serif.  
+
+![Serif vs San Serif](images/Serif-vs-San Serif.png)
+
+What's the differnence? Serif fonts have a serif, which are the little details at the extents of the letter shapes. Sans Serif fonts don't have serifs! 
+
+What's the significance? Sans Serif fonts are generally easier to read on the screen.
+
+- Serif 
+  - Look better and read better in print
+  - Tend look "old school", repectable, and formal
+  - Tend to be easier to read at small point sizes
+- San Serif
+  - Clean, stable, and reliable
+  - Looks modern and youthful
+
+### How to choose a font? 
+
+Without a brand as a guide you can think of choosing a font in more general terms. Ask yourself what fonts are available? You can only dipslay fonts that are installed on any computer. 
+
+What fonts are installed?
+
+In the old days we had these: 
+
+- Arial
+- Helvetica
+- Verdana
+- Times
+- Times New Roman
+- Courier New
+- Courier
+- Georgia
+- Palatino
+- Garamond
+- BookmanComic Sans
+- Trebuchet MS
+- Arial Black
+- Impact
+
+These didn't exist on all systems: Linux, Mac, and Windows. Here is a list that is common to all systems: 
+
+- Arial
+- Courier New
+- Georgia
+- Times New Roman
+- Trebuchet MS
+- Verdana
+
+You can split these fonts between serif and sans serif:
+
+- Serif - Courier New, Georgia, Times New Roman
+- San Serif - Arial, Verdana, Trebuchet MS
+
+It's hard to choose a font that works on every system. 
+
+#### Font Stack
+
+The font stack is a list of fonts from which the browser will choose the first it from the list is available. 
+
+For example, you might want to use Helvetica but it's not available on Windows in which case you'll settle for Arial. Your font stack might look like this: 
 
 ```CSS
-div {
-  width: 100px;
-  height: 100px;
-  background: red;
-  position :relative;
-  /*         name     duration iteration-count */
-  animation: scaleAndRotate 5s infinite;
+body {
+	font-family: Helvetica, Arial;
 }
 ```
 
-The animation property is the shorthand property for: 
+The system also provides a couple extra font options named: `serif` and `sans-serif`. These options choose the default system serif or San serif font. 
 
-- animation-delay
-- animation-duration
-- animation-fill-mode
-- animation-iteration-count
-- animation-name
-- animation-play-state
-- animation-timing-function
-
-The code above could be broken into three lines: 
+For example, if you wanted to use the default system sans serif font if Helvetica and Arial were not avaiable, your font stack might become: 
 
 ```CSS
-animation-name: scaleAndRotate;
-animation-duration: 5s;
-animation-iteration-count: infinite;
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
 ```
 
-## Easing 
+But wait, there's more! 
 
-Easing describes the change in rate of motion. When things speed up, think a car starting from a stop sign, we say they are easing in. When things slow down, think a car slowing as it reaches a stop sign, we say they are easing out. 
+#### UI System Fonts 
 
-Everythin in the real world eases in or eases out. You should always apply easing. This will give your motion character and make it more realistic and interesting to watch. 
+These UI specific fonts are newer and more up to date than the standard system fonts. These work especially good for mobile since mobile devices tend not to use the same fonts available on the desktop. 
 
-Play around with: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function
+Here is a chart current systems, the version and the default font. 
 
-## Making things move with CSS
+| OS       | Version                  | Font name      |
+|:---------|:-------------------------|:---------------|
+| Mac OS X | El Capitan	10.11         | San Francisco  |
+| Mac OS X | Yosemite 10.10           | Helvetica Neue |
+| Mac OS X | Mavericks 10.9           | Lucida Grande  |
+| Windows  | Vista                    | Segoe UI       |
+| Windows  | XP                       | Tahoma         | 
+| Windows  | 3.1 to ME                | Microsoft Sans Serif |
+| Android  | Ice Cream Sandwich (4.0)+ | Roboto |
+| Android  | Cupcake (1.5) to Honeycomb (3.2.6) | Droid Sans |
+| Ubuntu   | All versions             | Ubuntu |
 
-Pair up with someone you haven't paired with in class before and take a look at these tutorials. The idea is to find some things you can incorporate into your logo/icon. 
+Along with this comes a few new keywords for these new system fonts. 
 
-- https://css-tricks.com/almanac/properties/a/animation/
-- https://thoughtbot.com/blog/css-animation-for-beginners
+| Font                               | Device Targeted                         |
+|:-----------------------------------|:----------------------------------------|
+| -apple-system (San Francisco)      | iOS Safari, macOS Safari, macOS Firefox |
+| BlinkMacSystemFont (San Francisco) | macOS Chrome                            |
+| sans-serif                         | Any                                     |
 
-## Quick look at some sample code
+#### What are common font Stacks? 
 
-See the [example](lesson-02-example.html)
+Let's take a look at common font stacks used by profesional projects. 
 
-## Homework: Animation
+GitHub
 
-Follow these videos tutorials. These videos walk through how to solve all of the challenegs in the homework. These also cover ideas that go beyond what's in the homework. 
+```CSS
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+```
 
-https://www.youtube.com/watch?v=9UeVeH5ZzP0&list=PLoN_ejT35AEg-xKnTgIjE5VU-3IHO2N6i
+Medium and Wordpress
 
-Recreate the animations here using CSS transitions. 
+```CSS
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+```
 
-- [CSS Animation Challenges](../Assignments/assignment-03-Animation.md)
+Explore some more font stacks: 
 
-Add some motion to your CSS drawing/logo:
+- https://css-tricks.com/snippets/css/font-stacks/
+- https://www.cssfontstack.com
 
-- [Animate your Drawing](../Assignments/assignment-04-Animate-Logo.md)
+### Custom fonts
 
-It's easiest to use `transition` for interactive animations on hover or click and `@keyframes` for a cycling animations or complex animations. See the link below for a detailed description of the homework:
+You can also use fonts that are not available on users computer but you'll need to load the fonts first! 
 
-## Wrap Up
+This also brings up issues of copyright. Sharing a font means you need to have the right to share it. 
 
-- Review 
-  - CSS `transition`
-  - CSS `@keyframes`
+Without going to far into the issue of fonts and copyright, let's start with Google fonts. Google privides hundereds of fonts and allows us to share them. 
 
-## Additional Resources
+https://fonts.google.com
 
-1. https://www.youtube.com/watch?v=9UeVeH5ZzP0&list=PLoN_ejT35AEg-xKnTgIjE5VU-3IHO2N6i
-1. https://css-tricks.com/almanac/properties/a/animation/
-1. https://www.mockplus.com/blog/post/css-animation-examples
-1. https://uicookies.com/css-animation-examples/
-1. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
-1. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+Looks like Google has a library of 1052 fonts! That's a lot to wade through. Google Fonts has a great search feature. You can search by categories and other features. 
 
-## Minute-by-Minute [OPTIONAL]
+Here is a site that has curated their top 40 Google Fonts: 
 
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:45      | In Class Activity I       |
-| 1:05        | 0:10      | BREAK                     |
-| 1:15        | 0:45      | In Class Activity II      |
-| TOTAL       | 2:00      |                           |
+https://www.typewolf.com/google-fonts
+
+#### How to load a custom font?
+
+Use: `@font-face`. 
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+
+```CSS
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+       url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+
+body {
+	font-family: "Open Sans";
+}
+```
+
+When using Google Fonts rules like these are inlcuded in the stylesheet you link to. 
+
+### Pairing Fonts
+
+The creative process of using type has a lot to do with putting two fonts side by side usually with ont font as headings titles and the other body text. 
+
+Here are a coupe strategies for pairing fonts:
+
+- Use Font weight: Heavy vs Light font
+- Serif against Sans Serif
+- Styles use a display font for headings
+- Pair a font with itself. This works when the font family has range of weights to choose from. 
+
+Explore this site for font pairs. Look for combinations described above:
+
+https://www.fontpair.co/al
+
+## Type Hierarchy
+
+**A majority of your content is text.** Your text needs to look good and read well. An important part of communication is the order in which you say things.
+
+**Design your type to control the order in which your content is read**.
+
+This image explains it all.
+
+- http://visual.ly/10-building-blocks-visual-hierarchy
+
+You can use these design elements to create hierarchy in your type:
+
+- Color
+- Position
+- Size
+- Type Contrast 
+- Weight
+
+### Identify Hierarchy in the wild
+
+Take a look at web sites that you use every day and ask yourself what you read first and why you see that item first?
+
+Since we're just working with type for now concentrate on the following properties: 
+
+- `font-size`
+- `font-weight` (be sure to experiment with `font-weight: lighter`)
+	- Note: You can use a value with `font-weight` from 100-900 but this only works if the font supports these weights. Look at: [Roboto](https://fonts.google.com/specimen/Roboto)
+- `color`
+- `font-family`
+
+ ### CSS Units 
+
+ CSS has the amzing ability to use a wide variety of units. To be a master of CSS you must understand these units!
+
+**Absolute Units**
+
+| Unit | Name                | Equivalent to        |
+|:-----|:--------------------|:---------------------|
+| cm   | Centimeters         | 1cm = 38px = 25/64in |
+| mm   | Millimeters         | 1mm = 1/10th of 1cm  |
+| Q    | Quarter-millimeters | 1Q = 1/40th of 1cm   |
+| in   | Inches              | 1in = 2.54cm = 96px  |
+| pc   | Picas               | 1pc = 1/6th of 1in   |
+| pt   | Points              | 1pt = 1/72th of 1in  |
+| px   | Pixels              | 1px = 1/96th of 1in  |
+
+These units are always the same size on any screen! 
+
+**Relative Units**
+
+| Unit | Relative to |
+|: ----|:------------|
+| em   | Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width. |
+| ex   | x-height of the element's font. |
+| ch   | The advance measure (width) of the glyph "0" of the element's font. |
+| rem  | Font size of the root element.  |
+| lh   | Line height of the element.     |
+| vw   | 1% of the viewport's width.     |
+| vh   | 1% of the viewport's height.    |
+| vmin | 1% of the viewport's smaller dimension. |
+| vmax | 1% of the viewport's larger dimension. |
+
+These units change! They are relative to something else. 
+
+While we're on the dicussion fonts and typography let's focus on em and rem. These two units relate directly fonts. Sizing elements on the page based on the size of your type makes your pages work more harmoniously! 
+
+#### em and rem
+
+An em is equal to the font size of the parent element, while a rem is equal to the font size of the root element. 
+
+Here is an example from the ZenGarden page.
+
+```CSS
+<body id="css-zen-garden">
+<div class="page-wrapper">
+
+	<section class="intro" id="zen-intro">
+		<header role="banner">
+			<h1>CSS Zen Garden</h1>
+			<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+		</header>
+
+		<div class="summary" id="zen-summary" role="article">
+			<p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
+			<p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
+		</div>
+		...
+	</div>
+	...
+</body>
+```
+
+Imagine this CSS:
+
+```CSS
+body {
+	font-size: 22px; /* Sets base font size for everything! */
+} 
+
+/* Everything in summary will be 33px */
+.summary {
+	font-size: 1.5em; 
+}
+
+/* The first p tag is 44px. If this was an em it would be 66px */
+.summary > p: nth-child(1) {
+	font-size: 2rem; 
+}
+```
+
+## Challenges 
+
+Continue the CSS Zen Garden challenges from Lesson 01. Incorporate the ideas from this module into your work. 
+
+- Either use the system font stock or a use some custom fonts
+	- Try pairing the font using a different font for headlines and body copy
+	- Try Using a single font family and use different weights for headlies and copy
+- Pay attention to type hierarchy
+
+## After Class 
+
+- Comnplete the challenges from Lesson 1
+	- Answer the CSS Diner questions 
+	- Set the font styles for the CSS Zen Garden page
+
+## Resources
+
+- [CSS Values and Units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+- [Visual Hierarchy](https://visual.ly/community/Infographics/business/10-building-blocks-visual-hierarchy)
+- [Brand](https://www.youtube.com/watch?v=Z3JR6mEWEEo)
+

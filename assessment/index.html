@@ -161,6 +161,7 @@
 				width: 600px;
 				margin: auto
 			}
+
 		</style>
 
 
@@ -180,7 +181,7 @@
 			for (let i = 0; i < swatchCount; i += 1) {
 				const swatch = `
 				<div 
-					class="swatch add-to-cart" 
+					class="swatch add-to-cart color-${i}" 
 					style="background-color: 
 					var(--color-sample-${i});" 
 					data-color="Color ${i}" 

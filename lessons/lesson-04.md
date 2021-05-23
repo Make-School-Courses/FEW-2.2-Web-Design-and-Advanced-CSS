@@ -1,310 +1,252 @@
-# FEW 2.2 - Advanced CSS - Typography
+# FEW 2.2 Lesson 4 - Background Images
 
-This lesson will take a look at Typography and CSS. 
+## Review 
 
-## Why you should know this or industry application
 
-A majority of the content on the internet is text. Making good looking text that is easy to read will make your websites stand apart from the rest. 
 
-## Learning Objectives
+## Background Images
 
-1. Identify features of typography
-1. Use CSS styles to style text
-1. Implement custom fonts
+Images that appear in your web pages are either part of the content or part of the design. 
 
-## What is Typography? 
+Content images are things like: the picture of a product, the picture of a person like a user. Content images are picture that the content of the page talks about. 
 
-Discuss...
+Images that are part of the design are juts that part of the design. These images enhance the visual look and feel of the site but are not actual content. 
 
-## What typography do you like? 
+Why make the distinction? Content images should be displayed using the `<img>` tag. This allows them to be indexed, searched for and dowloaded and treated like information. 
 
-Find some typography that you like on the web.
+As part of the content for a page they will always be part of the content. 
 
-Pair up and find three examples of type on the web that looks good. 
+Images that are part of the design need to avoid being indexed, searched, and saved. Design can change so these images should be separate from the content of the page. 
 
-Compare it to the type in the [example document](lesson-04.html). You can view this live on the web [here](https://make-school-courses.github.io/FEW-2.2-Web-Design-And-Advanced-CSS/lessons/lesson-04.html).
+Images that are handled with the background image property in CSS are part of the design. 
 
-## What is type on the web?
+### CSS Zen Garden Examples
 
-https://webstyleguide.com/9-typography.html
+The CSS Zen Garden uses background images exclusively. All of the images here are added via the background image property. The page doesn't have any content images.
 
-## Features of typography
+Take a look at the CSS Zen Garden examples. 
 
-- Kearning
-- Leading
-- Baseline
+### background-image
 
-## Font types
+A background image appears on top of the background color but underneath the content. 
 
-- Serif
-- San Serif
-- fixed width (code)
+A background image fills a box out to the border, this includes the padding but doesn't fill the margin. 
 
-## Styling type
+Any element can have multiple backgrounds! This is a very powerful idea. Just separate each property with a comma to add a new element. 
 
-In CSS we use the following properties to style type.
+The background-image property has the following proprties:
 
-- font-family
-- font-size
-- font-weight
-- color
-- line-height
+- `background-image` - sets an image
+- `background-repeat` - determines how the image repeats or tiles, can be on the x, y, or both axis
+- `background-position` - sets the position of the image. You can set this with a keyword: left, top, right, bottom, or center. Or with a measurement like: 100px 50px. 
+- `background-size` - Determines how an image fills the space. You can use a value to set the size, or you can use the keywords: cover or contain to determine how an image fills the space. 
+- `background-attachment` - Determines how the image scrolls. An image can be fixed or it can scroll with the page. 
 
-### Activity
+https://developer.mozilla.org/en-US/docs/Web/CSS/background
 
-Apply some styles to the sample html document. Set the `font-size` and `line-height` on the body element.
+### background-color 
 
-Q: What happened? 
-A: Could these be used to make the page look better than the default? 
+Any element can have a background color. This can be a solid color or a gradient. 
 
-## Native Fonts 
+Colors can be set as:
 
-In the old days there was: 
+- #ff4433 - hex color 
+- rgb(255, 123, 45) - rgb color
+- hsl(360, 100%, 50%) - hsl color
+- rgba(255, 0, 0, 0.8) - rgba (like rgb but includes alpha!)
+- hsla(360, 100%, 50%) - hsla color (like hsl but includes alpha!)
+- red - keyword color
 
-- Arial
-- Helvetica
-- Verdana
-- Times
-- Times New Roman
-- Courier New
-- Courier
-- Georgia
-- Palatino
-- Garamond
-- BookmanComic Sans
-- Trebuchet MS
-- Arial Black
-- Impact
+- https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl()
+- https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba()
 
-These don't work on all systems. The Mac includes some of these and Windows includes others. Linux has it's own subset. 
+### Gradients 
 
-The list of fonts that are very likely to exist across all operating systems is shorter: 
+Any element can have a gradient fill. This replaces the color or can be combined with the color. 
 
-- Arial
-- Courier New
-- Georgia
-- Times New Roman
-- Trebuchet MS
-- Verdana
+Gradients can be linear or radial. 
 
-Looking at the list these fonts fall into two categories:
+- https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
+- https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient()
 
-- Serif - Courier New, Georgia, Times New Roman
-- San Serif - Arial, Verdana, Trebuchet MS
 
-In simple terms you are probably going to choose serif or a san serif font for your web projects based on how you want to present a product or a message. 
+## Formulas
 
-- Serif 
-  - Look better and read better in print
-  - Tend look "old school", repectable, and formal
-  - Tend to be easier to read at small point sizes
-- San Serif
-  - Clean, stable, and reliable
-  - Looks modern and youthful
+**Add a background image that covers the page.**
 
-## UI System Fonts 
-
-These UI specific fonts are newer and more up to date than the standard system fonts. These work especially good for mobile since mobile devices tend to not use the same fonts available on the desktop. 
-
-You should include these in your font stack. 
-
-| OS       | Version      | Font name     |
-|:---------|:-------------|:--------------|
-| Mac OS X | El Capitan	  | San Francisco |
-| Mac OS X | Yosemite     | Helvetica Neue |
-| Mac OS X | Mavericks    | Lucida Grande  |
-| Windows  | Vista        | Segoe UI       |
-| Windows  | XP |         | Tahoma         | 
-| Windows  | 3.1 to ME    | Microsoft Sans Serif |
-| Android  | Ice Cream Sandwich (4.0)+ | Roboto |
-| Android  | Cupcake (1.5) to Honeycomb (3.2.6) | Droid Sans |
-| Ubuntu   | All versions | Ubuntu |
-
-It's hard to support everyone, and you never know which system is viewing your site. You'll need a large font stack. 
-
-So that's pretty complicated. What is your font stack across all the desktop and mobile devices out there? 
-
-Here are the font stacks used by large companies with products that you use every day. 
-
-**GitHub**
-
-```CSS
-/* System Fonts as used by GitHub */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-```
-
-**Medium** and **Wordpress**
-
-```CSS
-/* System Fonts as used by Medium and WordPress */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-```
-
-There are a couple strange key words in there. I'm looking at you: `BlinkMacSystemFont`. What is this? Rather than naming a font these keywords target devices which know what font to use when they see the word. 
-
-| Font | Device Targeted |
-|:-----|:----------------|
-| -apple-system (San Francisco) | iOS Safari, macOS Safari, macOS Firefox |
-| BlinkMacSystemFont (San Francisco) | macOS Chrome |
-| Segoe UI | Windows |
-| Roboto | Android, Chrome OS |
-| Oxygen / Oxygen-Sans | KDE |
-| Fira Sans | Firefox OS |
-| Droid Sans | Older versions of Android |
-| Ubuntu | Ubuntu |
-| Cantarell | GNOME |
-| Helvetica Neue | macOS versions < 10.11 |
-| Arial | Any |
-| sans-serif | Any |
-
-Here you can see `BlinkMacSystemFont` translates to "San Francisco" (the font) on macOS and Chrome. This allows the font to change in the future if the Apple came up with a new font to replace "San Francisco". 
-
-https://bitsofco.de/the-new-system-font-stack/
-
-For performance consider this: 
-
-Using the the methods above is quick and easy but forces the system to check the font stack each time fonts are applied. Alternatively you can use `@font-face` to declare a font in advance and reference that choice by name. 
-
-```CSS
-/* Define the "system" font family */
-@font-face {
-  font-family: system; /* Name of your font family */
-  font-style: normal;
-  font-weight: 300;
-  /* Font stack: Uses the first available font in this list */
-  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-}
-
-/* Now, let's apply it on an element */
-body {
-  font-family: "system"; /* Use your named family here */
-}
-```
-
-Read more about this here: https://css-tricks.com/snippets/css/system-font-stack/
-
-Which should you use? For now your choice. The first is easier to manage. The second might have better performance.  
-
-### Activity
-
-Apply one of the font stacks above to the sample html document. 
-
-Q: What happened? 
-Q: Does it look better? 
-
-## Custom Fonts 
-
-Speaking of `@font-face` what does this do?
-
-Load a custom font using `@font-face`. You'll need to host your font files and have license to the serve them. 
-
-[Yes you must have a license to use a font on your website](https://designshack.net/articles/typography/what-is-a-font-license-and-do-i-need-one/)
-
-Google provides a wide range of free fonts, and they serve them from the google servers. We will use these for this class. 
-
-Google Fonts has hundereds of fonts. You can borwse them all at the link below. 
-
-[Google Fonts](https://fonts.google.com)
-
-Custom fonts have the downside that they take longer load. System fonts are already installed. 
-
-### Activity
-
-Choose a custom font from Google Fonts and apply it to the sample HTML document. Be sure to adjust the `font-size` and `line-height`. 
-
-Q: Does it look better? 
-Q: What font did you choose? 
-
-## Choosing Fonts 
-
-Choose a font for your project. It should probably be a san-serif unless you have a good reason to use a serif. 
-
-If you are making software or a web site that is less concerned about brand identity the default system font should come first: 
+Use a repeating patterning and set it as the background: 
 
 ```CSS
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background: url(./images/material-patterns/mp-01.png);
+	background-size: 100px;
 }
 ```
 
-Why? Using system fonts will give your work a native feel. This is probably the right choice most often. Making your site look native on the device that is viewing it makes it comfortable for everyone to view, and look best in that environment, it also increases performance. 
+Notice I'm controlling the size of the pattern image with `backgroun-size`!
 
-If you're making something that has strong brand identity and it's important to have a custom font but that font first on the list and default to serif or san-serif native fonts. 
-
-https://blog.logrocket.com/how-to-use-web-fonts-in-css-a0326f4d6a4d/
-
-- Pick a family 
-- Set the base font style for all tags by setting styles on the html tag
-  - Set the font size on the html tag
-  - Set the line height
-
-### Activity 
-
-Try one of the font stacks above on the sample html. 
-
-## Defining your Font Stack
-
-There is room for optimism. When defining `font-family` you can provide a list of fonts. The browser picks the first available font in the list.
+This may make your text hard to read. Give text blocks a background color, something like: 
 
 ```CSS
-html {
-  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+body > div {
+	margin: 2em;
+	padding: 2em;
+	background-color: rgba(255, 255, 255, 0.735);
 }
 ```
 
-## Take a look at how fonts are used
+**Use a single non-repeating image to fill page.**
 
-Explore some good font styles.
+Here the background image is set in the body. Repeat is none, and the background size is set to cover. 
 
-Medium: https://fontsinuse.com/uses/18899/medium-com-2017
+```CSS
+body {
+	background-image: url(./images/md-backgrounds/mb-bg-fb-05.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+```
 
-Bootstrap: https://getbootstrap.com/docs/4.0/content/typography/
+**Add a background image behind a section.**
 
-Why Do font choices matter: https://themeisle.com/blog/wordpress-fonts/
+Same idea as above but apply the background behind a div, section or any block. 
 
-## Font Units: em vs rem
+```CSS
+body section > div, .main > div {
+	background-image: url(./images/md-backgrounds/mb-bg-fb-05.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 
-The **`em`** is a unit that represents a multiple of the inherited font size. Think of this as a number that multiplies the font size an element would inherit. 
+	margin: 2em;
+	padding: 2em;
+}
+```
 
-The **`rem`** is root em. It represents a multiple of the root font size. This is the font size set on the html element, or body if you haven't set the font size on html. 
+This idea would work with repeating patterns also. Here I changed the image and let it repeat. I also controlled the size of the pattern with `background-size`.
 
-### Activity 
+```CSS
+body section > div, .main > div {
+	background-image: url(./images/patterns-2-2/aztec.png);
+	background-size: 100px;
+	
+	margin: 2em;
+	padding: 2em;
+}
+```
 
-- Open the sample file [lesson-04.html](lesson-04.html)
-- Find the `<div id="ems-and-rems">`
-- Look at each `<p>` in the `<div id="ems-and-rems">`
-- Inspect the elements and examine the font size of each
-  - Use the inpsector 
-  - Using the "Computed" pane to see the actual value
+You could also this idea only for a heading: 
 
-## Homework: Improve your Typography
+```CSS
+h1 {
+	background-image: url(./images/patterns-2-2/aztec.png);
+	background-size: 100px;
+	
+	margin: 2em;
+	padding: 2em;
+}
+```
 
-The goal of this assignment is to improve the typography of a past project. See the homework description for details and requirements of this assignment. 
+**Make a pattern that runs along the edge of a heading**
 
-- [Improve your Typography](../Assignments/assignment-04-typography.md)
+Here the background image is set to repeat only on the x and positioned on the y. Use padding to give your element some extra space to show the image.
 
-## Wrap Up 
+```CSS
+h1 {
+	background-image: url(./images/patterns-2-2/spartans.png);
+	background-size: 100px;
+	background-repeat: repeat-x;
+	background-position-y: 100px;
+	
+	margin: 2em;
+	padding: 2em;
+}
+```
 
-- Review objectives 
+**Add an icon next to a heading**
 
-## Additional Resources
+Here we have an image with no repeat. Set the background size to control the size of the image. I wanted to place the image on the left so I added padding on the left and positioned the image on the left and center vertical. 
 
-1. https://webstyleguide.com/9-typography.html
-1. https://blog.prototypr.io/top-10-ui-fonts-for-web-mobile-a8488e561ce3
-1. https://uxplanet.org/5-universal-fonts-for-web-mobile-design-7b491df0ea16
-1. https://css-tricks.com/snippets/css/system-font-stack/
+```CSS
+h1 {
+	background-image: url(./images/animal-attributes-icons/ant-tenacity-colored.png);
+	background-size: 100px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 100px;
+}
+```
 
-## Minute-by-Minute [OPTIONAL]
+**Add a "divider" above or below a section**
 
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:45      | In Class Activity I       |
-| 1:05        | 0:10      | BREAK                     |
-| 1:15        | 0:45      | In Class Activity II      |
-| TOTAL       | 2:00      |                           |
+Add a background image. Use no repeat, and position center bottom. Add some padding to leave space below your content to show the image. 
+
+```CSS
+.main > div {
+	background-image: url(./images/decorative-elements/decoration-1.png);
+	background-size: 300px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-left: 2em;
+	padding-top: 2em;
+	padding-right: 2em;
+	padding-bottom: 100px;
+}
+```
+
+Use the multiple images to add an image along the top edge also. See the notes below on adding multiple images. 
+
+**Place an image to the left and/or right of a heading**
+
+Here I used two images as the background for the same element! The background properties allow for multiple backgrounds separate the properties by a comma. 
+
+Notice below the cat and dog images are each separated by a comma. The sizes are also. The position is the same but the first image is set to `left center`, and the second is set to `right center`. 
+
+I added padding on the left and right to leave room for the images. 
+
+I position the text I used text align to center the text on the horizontal axis and set the `line-height` to center the text vertically.
+
+```CSS
+h1 {
+	background-image: url(./images/animal-attributes-icons/cat-agility-colored.png), 
+	url(./images/animal-attributes-icons/cat-agility-colored.png);
+	background-size: 100px, 100px;
+	background-position: left center, right center;
+	background-repeat: no-repeat, no-repeat;
+
+	padding-left: 100px;
+	padding-right: 100px;
+
+	height: 100px;
+	
+	line-height: 100px;
+	text-align: center;
+}
+```
+
+## Challenges
+
+Add some background images to your Zen Garden page. 
+
+## After Class
+
+Continue working on your CSS Zen Garden Page. use the concepts from class to solve these problems: 
+
+- Use background images in your page. Tyr these ideas: 
+	- Use a single image or a repeating pattern to fill the background. 
+	- Use an image as a background for a heading, card, or section. 
+	- Use an image to add an icon for next to a heading link or button. 
+- Use a Gradient
+	- Use a gradient to fill the background of the page. 
+	- Use a gradient as a background to a heading or section.
+	- Use a gradient as a background to a button.
+
+## Resources 
+
+- [Image Resources](https://www.oxygenna.com)
+- [CSS Background](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+- [Linear Gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient())
+- [Radial Gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient())
+- [HSLA Color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl())
+- [RGBA Color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba())
