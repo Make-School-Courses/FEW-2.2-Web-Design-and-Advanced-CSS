@@ -41,6 +41,40 @@ CSS Grid works similar to Flex, when you set an elements display property to gri
 
 Grid is also different from Flex. It's got two axis and allows you to define cells that make up the grid. It's more complex than Flex. 
 
+Vocabulary
+
+**Columns**
+
+Columbs are the horzontal divisions of the grid. Picture these as vertical bars that define the horizontal space. These are the most important measurement! 
+
+![Columns](./images/01-columns.png)
+
+**Gap/Gutter**
+
+The grid gap or gutter is the space between the the columns. 
+
+**Rows**
+
+These are the vertical divisions. Picture these as the horizontal bars that are stacked vertically. 
+
+![Rows](./images/02-rows.png)
+
+When you put the two gether you get a **grid**,
+
+![Grid](./images/03-grids.png)
+
+**Grid Cell**
+
+A grid cell is rectangular area that maps across any number of rows and columns. It has to be a rectangle! The edges must stop at the borders defined by the rows and columns. Notice that a cell doesn't fall into the gap between rows and columns! 
+
+![Cells](./images/04-cells.png)
+
+
+
+
+
+
+
 
 
 Make a basic grid 
@@ -82,3 +116,4 @@ Recreate the example grids
 - [Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [CSS Grid Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 - [Grid Systems](https://www.designsystems.com/space-grids-and-layouts/)
+- [CSS Grid in 5 mins](https://www.freecodecamp.org/news/learn-css-grid-in-5-minutes-f582e87b1228/)
