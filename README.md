@@ -176,11 +176,11 @@ You will be building a CSS framework to use for the frontend of any web project.
 You'll build this framework throughout the course, with a midterm check-in to show progress and get feedback, as well as a final presentation in front of the class, where you show an example of your framework in use on a web app (previous project, sample static page used for the demo, etc.)
 
 ## Evaluation
-
 To pass this course you must meet the following requirements:
 
-- Complete all required assignments 
-- Achieve a passing score on the final assessment
+- Pass 70% projects according to the associated project rubric
+- Pass the final summative assessment according to the rubric as specified in this class
+    - This will be further explained in the [study guide](study-guide.md)
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 
