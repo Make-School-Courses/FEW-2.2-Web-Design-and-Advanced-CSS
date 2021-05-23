@@ -148,7 +148,7 @@ These elements represent the areas of the page and will mapped to the grid.
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas:  "h h h h" 
-												"s m m m" 
+                        "s m m m" 
 												"s m m m"
 												"f f f f";
 ```
