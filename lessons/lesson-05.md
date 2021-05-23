@@ -159,6 +159,9 @@ The `grid-areas` property is where you will define your grid areas. The letters 
 
 ![Grid Areas](./images/Grid-Areas.png)
 
+The cells will map like this. Imagine `h` represents the header, `s` is the sidebar, `m` is the main content, and `f` is the footer. 
+
+![Grid Areas](./images/Grid-Areas-2.png)
 
 
 
