@@ -147,6 +147,7 @@ These elements represent the areas of the page and will mapped to the grid.
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1em;
 	grid-template-areas:  "h h h h" 
                         "s m m m" 
                         "s m m m"
@@ -163,42 +164,64 @@ The cells will map like this. Imagine `h` represents the header, `s` is the side
 
 ![Grid Areas](./images/Grid-Areas-2.png)
 
+```
+"h h h h" 
+"s m m m" 
+"s m m m"
+"f f f f";
+```
 
+This arrangement creates four rows and four columns. Notice the syntax. You must use quotes on each line and end the last line with a semicolon. 
 
+**Mapping Elements to Grid Areas**
 
+Notice above that we have given each element a class name: `header`, `side`, `main`, and `footer`. Map each of these elements to one of the defined grid areas like this: 
 
+```CSS
+.header {
+	grid-area: h;
+}
 
+.side {
+	grid-area: s;
+}
 
+.main {
+	grid-area: m;
+}
 
+.footer {
+	grid-area: f;
+}
+```
 
-Make a basic grid 
+Notice each element is assigned to a grid area by the the letter assigned in the template. 
 
+In other words `div.header` maps to the area defined by the `h`.
 
-Make a complex grid with different size cells 
+## Practice with CSS Grid
 
-Map elements to cells
+Above I showed two ways to use CSS Grid. These examples work with only three properties: `grid-template-columns`, `grid-template-areas`, `grid-gap`, and `grid-area`. CSS Grid has a few more properties. 
 
-Add some responsive layout
+Explore some more features of CSS Grid here: 
 
+-  https://cssgridgarden.com
 
+## Challenges 
 
-Challenges 
+Solve these puzzles and post your answers to gradescope.
 
-Recreate the example grids
+- https://cssgridgarden.com
 
+Apply CSS grid to your Zen Garden page. You can use Grid anywhere you like as long as you have it incorporated somewhere. Here are a few ideas: 
 
-
-
-
-
-
-
-
-
-
-
-
-
+- Use Grid to arrange the page
+- Use Grid to arrange just a section
+	- `footer` - There are four links here. 
+	- `div.design-selection` - The list of links for designs and designers might look good in a grid?
+	- `div.main` - has four subsection these might be interesting in a grid.
+	- `div.zen-resources` - This section has a list with 5 items, it could be a candidate for a grid.
+	- At the bottom of the page there are some extra divs. These were put there for creative purposes you could you arrange these in a grid and give each a background image?
 
 ## After Class 
 
