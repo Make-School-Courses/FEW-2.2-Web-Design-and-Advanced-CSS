@@ -233,7 +233,7 @@ Add some background images to your Zen Garden page.
 
 Continue working on your CSS Zen Garden Page. use the concepts from class to solve these problems: 
 
-- Use background images in your page. Tyr these ideas: 
+- Use background images in your page. Try these ideas: 
 	- Use a single image or a repeating pattern to fill the background. 
 	- Use an image as a background for a heading, card, or section. 
 	- Use an image to add an icon for next to a heading link or button. 
