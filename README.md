@@ -47,7 +47,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  3 |  Mon, June 7         | [Lesson 3 Box Model Flex] |
 |  4 |  Wed, June 9         | [Lesson 4 Background Images] |
 |  5 |  Fri, June 11        | [Lesson 5 CSS Grid] |
-|  6 |  Mon, June 14        | [Lesson 6] |
+|  6 |  Mon, June 14        | [Lesson 6 CSS Framework] |
 |  7 |  Wed, June 16        | [Lesson 7] |
 |  8 |  Fri, June 18        | [Lesson 8] |
 |  9 |  Mon, June 21        | [Lesson 9] |
@@ -64,7 +64,11 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 | 19 |  Fri, July 16        | Final Exam/Presentations |
 
 [Lesson 1 CSS Review]: lessons/lesson-01.md
-
+[Lesson 2 Typography]: lessons/lesson-02.md
+[Lesson 3 Box Model Flex]: lessons/lesson-03.md
+[Lesson 4 Background Images]: lessons/lesson-04.md
+[Lesson 5 CSS Grid]: lessons/lesson-05.md
+[Lesson 6 CSS Framework]: lessons/lesson-06.md
 
 
 ---------------------------------------------------------

@@ -1,276 +1,273 @@
-# FEW 2.2 - Advanced CSS - Custom Controls
+# FEW 2.2 - Advanced CSS - Nav Bars and Layout
 
-Add custom controls with pseudo elements. 
+CSS Grid is amazing. It needs no abstraction! Flexbox is also amazing and needs no abstractions. This lesson will take a look at both of these and how they can be used in your CSS framework.
 
 ## Why you should know this?
 
-The default check box and radio button offer very few options for customization. Using pseudo elements opens up a lot of options. 
+To create the layouts that you envision you'll need to use both of these tools. 
 
 ## Learning Objectives
 
-1. Describe the relationship between an input and it's label
-1. Define a label and input that are asscoiated 
-1. Use pseudo classes ::before and ::after
-1. Create custom check boxes and radio buttons
-1. Use ridiculously complicated CSS selectors
+1. Create one-dimensional layouts with flexbox
+1. Arrange elements on an axis
+1. Create a navbar
+1. Create a footer
 
 ## Slides
 
-https://docs.google.com/presentation/d/1bVVX2ELbGEPktG6Cv_DiA2I4uxYyEGALr7WUAga0RLw/edit?usp=sharing
+https://docs.google.com/presentation/d/1yItvH_ADMhnE4bEWmGb4jrb4xFDhs3Wh_e7EmO66gdY/edit?usp=sharing
 
-## Pseudo Elements
+## Framework Project 
 
-`::before` and `::after` are pseudo classes. These create new elements via CSS that don't exist in the DOM. 
+Check your CSS framework against the checklist here: 
 
-Imagine you have: 
+[project-css-framework.md](../Assignments/project-css-framework.md)
 
-`<div> * </div>`
+## Elements with Class 
 
-With this style:
+Your framework uses selectors to apply styles to elements. Using the tag name allows selectors to apply broadly with little effort. In this way, all of the links and headings will look the same. 
+
+Some times you'll want a link or a heading or a div to look different than others. In these cases use a class name. 
+
+Take a look at how [Boostrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) and [Foundation](https://get.foundation/sites/docs/) use class names. 
+
+Headings, display, and muted text Bootstrap use a few classes to provide alternative typographical styles. In the cases of headings, no class is needed. 
+
+- [Display](https://getbootstrap.com/docs/4.5/content/typography/#display-headings)
 
 ```CSS
-div::before {
-  content: "Hello";
-}
-
-div::after {
-  content: "World";
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 ```
 
-Your div would appear as: 
+- [Muted](https://getbootstrap.com/docs/4.5/utilities/colors/#color)
 
-`Hello * World`
+```CSS
+.text-muted {
+  color: #6c757d!important;
+}
+```
 
-The before element goes before the existing content and the after element goes after. 
+[Foundation](https://get.foundation/sites/docs/) (an alternative CSS framework) similarly uses class names. 
 
-You can think of DOM like this: 
+- [Text align](https://get.foundation/sites/docs/typography-helpers.html#text-alignment)
+
+```CSS
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+```
+
+- [Subheader](https://get.foundation/sites/docs/typography-helpers.html#subheader)
+
+```CSS
+.subheader {
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #8a8a8a;
+}
+```
+
+- [Lead Paragraph](https://get.foundation/sites/docs/typography-helpers.html#lead-paragraph)
+
+```CSS
+.lead {
+  font-size: 125%;
+  line-height: 1.6;
+}
+```
+
+These classes modify the existing styles and give us new ways to express our selves with muted aligned display and subheadings! 
+
+## Nav Bars
+
+Navbars are common on all web pages. What makes a good nav bar? 
+
+Look at some navbars. 
+
+- Bootstrap - https://getbootstrap.com/docs/4.0/components/navbar/
+- Foundation - https://foundation.zurb.com/sites/docs/v/5.5.3/components/topbar.html
+
+A Navbar is made of a set of several elements that work together. A good approach here is to use a parent element declared with a class name and apply styles to this element's descendants with child and descendant selectors. 
+
+The formula is roughly: 
+
+```CSS
+.navbar {
+  /* styles for the navbar container */
+}
+
+.navbar > ul {
+  /* Group elements in a list */
+}
+
+.navbar a {
+  /* All links in the navbar should have a special style */
+}
+```
+
+## Markup
+
+The first step is to define some markup that will represent a navbar. The navbar will share markup with other elements to separate it and identify it as unique use a class name. 
 
 ```HTML
-<div>
-  <span>Hello</span>
-  *
-  <span>World</span>
+<div class="navbar">
+  ...
 </div>
 ```
 
-Though the inspector will show: 
+Links items on the bar should probably be grouped. A list makes a lot of sense. 
 
 ```HTML
-<div>
-  ::before
-  *
-  ::after
+<div class="navbar">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
 </div>
 ```
 
-## What can you do with pseudo elements?
-
-Using ::before and ::after you can add elements to the DOM that don't actually exist in your mark up, and you can style these new elements. 
-
-### Fancy Blockquote
-
-Making fancy blockquote styles is a possible application. Imagine you want to add a fancy quotation mark before and after the text in a block quote. 
+The bar is used for navigation so each list item should contain an anchor.
 
 ```HTML
-<style>
-  blockquote::before {
-    content: open-quote;
-    font-size: 3em;
-    color: tomato;
-  }
-  blockquote::after {
-    content: close-quote;
-    font-size: 3em;
-    color: tomato;
-  }
-  blockquote {
-    /* Set the quote style */
-    quotes: "\201C""\201D""\2018""\2019";
-  }
-</style>
-
-<blockquote>
-  The way to get started is to quit talking and begin doing. 
-</blockquote>
--Walt Disney
+<div class="navbar">
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+  </ul>
+</div>
 ```
 
-![block quote](images/fancy-quotes.png)
+### Title 
 
-Here the ::defore and ::after elements have content that is an open and closing quote. They also have styles that set the font-size and color of their elements. 
+Almost always you'll have a title in the navbar. You need to single this out as unique to give it a style that works with the navbar. 
 
-https://css-tricks.com/almanac/properties/q/quotes/
-
-### Fancy Undline
-
-The goal here is to make a line that draws itself under a word. To do this we need another new element to appear. This would be a difficult addition to existing markup and as a visual effect should not really part of that markup, remember the separation of concerns. 
-
-The solution is to generate the extra element with ::after. 
+Use a class name. 
 
 ```HTML
-<style>
-  .add-box {
-    display: inline-block;
-    color: tomato;
-  }
-  .add-box::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    background-color: tomato;
-    transition: 400ms;
-  }
-  .add-box:hover::after {
-    width: 100%;
-  }
-</style>
-
-<blockquote>
-  If you set your goals <span class="add-box">ridiculously</span> high and it's a failure, you will fail above everyone else's <span class="add-box">success</span>. 
-  -James Cameron
-</blockquote>
+<div class="navbar">
+  <ul>
+    <li><h1 class="title">TITLE</h1></li>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+  </ul>
+</div>
 ```
 
-![fancy hover](images/hover-effecft.gif)
+## Styles 
 
-Here the class .add-box adds a new pseudo element with ::after. That element is styled with display: block, width, height, and a background color. It also has a transition, so changes to these properties will be animated. 
+The navbar will need some styles to make it look like a navbar. The colors will be different from what is on the main part of the page but should use colors from your palette of colors. 
 
-Notice the last rule: .add-box:hover::after. This selector applies to the ::after element when it's parent is in the :hover state. Changing the width here starts the animation. 
-
-## Research Pseudo elements
-
-Read this article. It talks about the uses for ::before and ::after. 
-
-https://css-tricks.com/pseudo-element-roundup/
-
-## Custom Check boxes and radio buttons
-
-The checkbox and radio button are limited in what the browser allows you to style. With Pseudo elements we open up the possiblity to customize these elements. 
-
-### How are checkboxes and radio buttons marked up?
-
-Usually you will want to markup up checkboxes and radio buttons like this: 
-
-```HTML
-<label>
-  <input type="checkbox">
-  Pickles?
-</label>
-
-<label>
-  <input type="radio" name="choice" checked>
-  Converse
-</label>
-
-<label>
-  <input type="radio" name="choice">
-  Vans
-</label>
-```
-
-The label is an important element here. Besides providing a label that can be read, the label provides an element that can be interacted with. 
-
-**With the label wrapped around the input clicking the label is the same as clicking the input.**
-
-What are the elements needed for a checkbox or radio button? 
-
-![checkbox radio](images/checkbox-radio.png)
-
-The checkbox or radio button is usually made of two parts a container, a box or circle, and a mark, check or dot. The mark is sometimes visible and sometime not. 
-
-This can also be more complicated than what is presented here but these are the basic elements, or starting place to create checkboxes and radio buttons. 
-
-To make this possible we need to add a little more markup. The markup presented above doesn't allow us enough to control the checkbox with CSS alone. By adding one extra tag we cna do that. 
-
-```HTML
-<label>
-  <input type="checkbox">
-  <span>Pickles?</span>
-</label>
-
-<label>
-  <input type="radio" name="choice">
-  <span>Converse</span>
-</label>
-
-<label>
-  <input type="radio" name="choice">
-  <span>Vans</span>
-</label>
-```
-
-With the extra span you can use the + or ~ selectors to connect the span with the input. More on this below. 
-
-Since we are going to include this in our frameworks it's probably best to make it something that is opt in. Do this by adding a class name: 
-
-```HTML
-<label class="frmwrk-checkbox">
-  ...
-</label>
-
-<label class="frmwrk-radio">
-  ...
-</label>
-
-<label class="frmwrk-radio">
-  ...
-</label>
-```
-
-By inlcuding the class frmwork-checkbox or frmwrk-radio you'll get the fancy checkboxes and radio buttons. Without these classes you get the standard checkbox and radio buttons. 
-
-You'll need 5 selectors. Here they without their inner styles. Each of thess performs a different function. Read the comments below. 
+Document your code showing the expected structure of the navbar. You can use the child and descendant selectors to your advantage. 
 
 ```CSS
-/* checkbox button base element */
-.frmwrk-checkbox > span {
-  ...
-}
-/* Selected "checkmark" styles */
-.frmwrk-checkbox > input[type=checkbox] + span::before {
-  ... 
-}
-/* Selected "mark" styles */
-.frmwrk-checkbox > input[type=checkbox]:checked + span::before {
-  ...
-}
-/* Outline */
-.frmwrk-checkbox > input[type=checkbox] + span::after {
-  ...
-}
-/* Hide the input */
-.frmwrk-checkbox input {
-  ...
+.navbar { /* styles for navbar */ }
+.navbar > ul { /* style lists in a navbar */ }
+.navbar a { /* style anchor in a navbar */ }
+```
+
+The navbar links should have interactions. The styles applied to these will interact with styles applied to your general link style. You may need to override some of the styles you defined earlier. 
+
+```CSS
+.navbar a:link { /* navbar link */ }
+.navbar a:visited { /* navbar vidsited */ }
+.navbar a:hover { /* navbar hover */ }
+.navbar a:active { /* navbar active */ }
+```
+
+You may not have to style some of these. 
+
+### Removing base styles 
+
+The ul and li come with a lot of base styles. Your reset styles may remove some or all of these, you'll need to take care of anything that wasn't covered by reset. 
+
+The ul has the following default styles: 
+
+- padding 
+- margin
+- list-style
+
+```CSS
+.navbar > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 ```
 
-- base element - sets the style of the label and it's children
-  - .frmwrk-checkbox > span
-- Selected "checkmark" - Sets the style for the pseudo element that appears in the box or circle. The selector here selects the ::before element of the span that immediately follows the input with type=checkbox
-  - .frmwrk-checkbox > input[type=checkbox] + span::before
-  - https://www.w3schools.com/cssref/sel_element_pluss.asp
-- Selected "mark" - Sets the style for the checkmark when the mark is visible or selected. The selector here says: select the ::before pseudo element that belongs to the span that immediately follows an input with type=checkbox. 
-  - .frmwrk-checkbox > input[type=checkbox]:checked + span::before
-  - https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
-- Outline - Styles the box or circle that contains the mark. The selector here says select an input that has type=checkbox that is a child of an element with class frmwrk-checkbox. 
-  - .frmwrk-checkbox > input[type=checkbox] + span::after
-  - https://www.w3schools.com/css/css_attribute_selectors.asp
+## Flexbox 
 
-With these seelctors you're ready to make some custom checkboxes or radio buttons. 
+Use flexbox to arrange things in the navbar. At the top level, you'll want to arrange groups of links on the left and right. 
 
-You can see the full source code for the examples above here: 
+```CSS
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
+}
+```
 
-- Fancy Blockquote - [lesson-08-fancy-blockquote.html](lesson-08-fancy-blockquote.html)
-- Fancy Underline - [lesson-08-fancy-underline.html](lesson-08-fancy-underline.html)
-- Custom Checkboxes and Radio Buttons - [lesson-08-custom-checkboxes-radio-buttons.html](lesson-08-custom-checkboxes-radio-buttons.html)
+Use `space-between` and `row`. This should place the first list on the left. If there is a second list it should appear on the right. 
 
-There are many articles here are a few that I picked out. You can follow these to help guide or inspire and provide direction. 
+Within a ul, you'll also want to arrange elements in a row. 
 
-- https://www.appitventures.com/blog/styling-checkbox-css-tips
-- https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
-- https://codepen.io/Vestride/pen/dABHx
+```CSS
+.navbar > ul {
+  /* Remove the default styles */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /* Arrange all of the links in a row */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+```
+
+https://cssreference.io/flexbox/
+
+Set the color and background colors for your navbar. 
+
+```CSS
+.navbar {
+  ...
+  background-color: #222;
+  color: #eee;
+}
+```
+
+### Style links on the navbar
+
+Links on the navbar should be styled. Be sure to include a hover style.
+
+```CSS
+.navbar a {
+  color: rgb(130, 242, 231);
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5em;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+```
 
 ## The State of your CSS Framework 
 
@@ -280,11 +277,13 @@ Use this checklist to check the progress of your framework.
 
 ## Activity 
 
-Create your own custom checkboxes and radio buttons. Add these to your CSS framework. 
+Follow the guide above to get your navbar started. Build from there and style the navbar to make it fit the design and theme of your framework. 
 
-## Homework: Framework 
+We will remove all of these at the break to get comments from your peers. After the break, we will work to improve the navbars and review a second time. 
 
-Complete your CSS framework:
+## Homework: Framework - Nav Bar and Footer
+
+Add a Navbar to your framework. See the description linked below for more details on this assignment: 
 
 [project-css-framework.md](../Assignments/project-css-framework.md)
 

@@ -1,295 +1,241 @@
-# FEW 2.2 - Advanced CSS - Nav Bars and Layout
+# FEW 2.2 - Advanced CSS - Styling form Controls
 
-CSS Grid is amazing. It needs no abstraction! Flexbox is also amazing and needs no abstractions. This lesson will take a look at both of these and how they can be used in your CSS framework.
+Styling controls like buttons and form elements provide some extra challenges and opportunities.
 
 ## Why you should know this?
 
-To create the layouts that you envision you'll need to use both of these tools. 
+Form elements and controls are points of interaction in your applications. These need to be extra engaging. Hard to use and confusing forms risk losing potential users for application and customers for your business. 
 
 ## Learning Objectives
 
-1. Create one-dimensional layouts with flexbox
-1. Arrange elements on an axis
-1. Create a navbar
-1. Create a footer
+1. Style form elements
+1. Style elements according to state
+1. Use attribute selector
+1. Use parent element to control the layout of children
 
-## Slides
+### Form elements 
 
-https://docs.google.com/presentation/d/1yItvH_ADMhnE4bEWmGb4jrb4xFDhs3Wh_e7EmO66gdY/edit?usp=sharing
+Form elements are input, textarea, radio button, and checkbox. Your goal today is to style these elements. 
 
-## Framework Project 
-
-Check your CSS framework against the checklist here: 
-
-[project-css-framework.md](../Assignments/project-css-framework.md)
-
-## Elements with Class 
-
-Your framework uses selectors to apply styles to elements. Using the tag name allows selectors to apply broadly with little effort. In this way, all of the links and headings will look the same. 
-
-Some times you'll want a link or a heading or a div to look different than others. In these cases use a class name. 
-
-Take a look at how [Boostrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) and [Foundation](https://get.foundation/sites/docs/) use class names. 
-
-Headings, display, and muted text Bootstrap use a few classes to provide alternative typographical styles. In the cases of headings, no class is needed. 
-
-- [Display](https://getbootstrap.com/docs/4.5/content/typography/#display-headings)
-
-```CSS
-.display-1 {
-  font-size: 6rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-```
-
-- [Muted](https://getbootstrap.com/docs/4.5/utilities/colors/#color)
-
-```CSS
-.text-muted {
-  color: #6c757d!important;
-}
-```
-
-[Foundation](https://get.foundation/sites/docs/) (an alternative CSS framework) similarly uses class names. 
-
-- [Text align](https://get.foundation/sites/docs/typography-helpers.html#text-alignment)
-
-```CSS
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-```
-
-- [Subheader](https://get.foundation/sites/docs/typography-helpers.html#subheader)
-
-```CSS
-.subheader {
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
-  font-weight: normal;
-  line-height: 1.4;
-  color: #8a8a8a;
-}
-```
-
-- [Lead Paragraph](https://get.foundation/sites/docs/typography-helpers.html#lead-paragraph)
-
-```CSS
-.lead {
-  font-size: 125%;
-  line-height: 1.6;
-}
-```
-
-These classes modify the existing styles and give us new ways to express our selves with muted aligned display and subheadings! 
-
-## Nav Bars
-
-Navbars are common on all web pages. What makes a good nav bar? 
-
-Look at some navbars. 
-
-- Bootstrap - https://getbootstrap.com/docs/4.0/components/navbar/
-- Foundation - https://foundation.zurb.com/sites/docs/v/5.5.3/components/topbar.html
-
-A Navbar is made of a set of several elements that work together. A good approach here is to use a parent element declared with a class name and apply styles to this element's descendants with child and descendant selectors. 
-
-The formula is roughly: 
-
-```CSS
-.navbar {
-  /* styles for the navbar container */
-}
-
-.navbar > ul {
-  /* Group elements in a list */
-}
-
-.navbar a {
-  /* All links in the navbar should have a special style */
-}
-```
-
-## Markup
-
-The first step is to define some markup that will represent a navbar. The navbar will share markup with other elements to separate it and identify it as unique use a class name. 
+Add the markup below to your style example: 
 
 ```HTML
-<div class="navbar">
-  ...
-</div>
+<form>
+  <label>Name</label>
+  <input type="text" placeholder="enter name" />
+  <label>email</label>
+  <input type="email" placeholder="enter email" />
+  <label>password</label>
+  <input type="password" placeholder="enter password" />
+  <label>Notes</label>
+  <textarea placeholder="enter notes"></textarea>
+  <input type="submit">
+</form>
 ```
 
-Links items on the bar should probably be grouped. A list makes a lot of sense. 
+This is only a few of the input types. There are also input types for: 
 
-```HTML
-<div class="navbar">
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-</div>
-```
+- number
+- date
+- color
+- and more...
 
-The bar is used for navigation so each list item should contain an anchor.
+You'll just style these for now. 
 
-```HTML
-<div class="navbar">
-  <ul>
-    <li><a href="#">Link 1</a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">Link 3</a></li>
-    <li><a href="#">Link 4</a></li>
-  </ul>
-</div>
-```
+## Styling Inputs
 
-### Title 
-
-Almost always you'll have a title in the navbar. You need to single this out as unique to give it a style that works with the navbar. 
-
-Use a class name. 
-
-```HTML
-<div class="navbar">
-  <ul>
-    <li><h1 class="title">TITLE</h1></li>
-    <li><a href="#">Link 1</a></li>
-    <li><a href="#">Link 2</a></li>
-    <li><a href="#">Link 3</a></li>
-    <li><a href="#">Link 4</a></li>
-  </ul>
-</div>
-```
-
-## Styles 
-
-The navbar will need some styles to make it look like a navbar. The colors will be different from what is on the main part of the page but should use colors from your palette of colors. 
-
-Document your code showing the expected structure of the navbar. You can use the child and descendant selectors to your advantage. 
+Selectors: 
 
 ```CSS
-.navbar { /* styles for navbar */ }
-.navbar > ul { /* style lists in a navbar */ }
-.navbar a { /* style anchor in a navbar */ }
-```
-
-The navbar links should have interactions. The styles applied to these will interact with styles applied to your general link style. You may need to override some of the styles you defined earlier. 
-
-```CSS
-.navbar a:link { /* navbar link */ }
-.navbar a:visited { /* navbar vidsited */ }
-.navbar a:hover { /* navbar hover */ }
-.navbar a:active { /* navbar active */ }
-```
-
-You may not have to style some of these. 
-
-### Removing base styles 
-
-The ul and li come with a lot of base styles. Your reset styles may remove some or all of these, you'll need to take care of anything that wasn't covered by reset. 
-
-The ul has the following default styles: 
-
-- padding 
-- margin
-- list-style
-
-```CSS
-.navbar > ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+input[type=text], 
+input[type=email], 
+input[type=password], 
+textarea {
+  /* Your styles here */
 }
 ```
 
-## Flexbox 
+Use these properties: 
 
-Use flexbox to arrange things in the navbar. At the top level, you'll want to arrange groups of links on the left and right. 
+- Typography
+  - `font-size`
+  - `font-weight` 
+  - `color`
+- Box 
+  - `border-style`
+  - `border-width`
+  - `border-radius`
+  - `border-color`
+  - `background-color`
+  - `padding`
+  - `margin`
+  - `box-shadow` (can have multiple, can be inset)
+
+Let's talk about focus. An input has focus when the keyboard is able to enter text. You can style the input in it's focussed state. 
 
 ```CSS
-.navbar {
+input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=password]:focus, 
+textarea:focus {
+  /* Your styles here */
+}
+```
+
+What about that outline? The accessibility outline is very important. 
+
+https://a11yproject.com/posts/never-remove-css-outlines/
+
+`outline: none !important;`
+
+If you don't like this replace it with your own style. Don't remove it!
+
+## Challenge 
+
+Style the form inputs and textarea. Use the properties listed above to make good looking form inputs. 
+
+Think about readability by looking closely at padding and font-size. 
+
+Use the :focus pseudo selector to style form elements in their forcussed state.
+
+Here are a few ideas: 
+
+- Set a consistant border for all elements 
+- Use padding to give some space around the text and the border
+- Set the font size, the default font is too small
+
+```CSS
+input[type=text], 
+input[type=email], 
+input[type=password], 
+textarea {
+  padding: 1em;
+  font-size: 1em;
+  border: 3px solid var(--dark-gray); /* use a custom property! */
+  /* Removing the outline! */
+  outline: none !important;
+  /* Animate changes */
+  transition: 300ms;
+}
+```
+
+If you've removed the outline be sure to Style the :focus state for these elements!
+
+```CSS
+input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=password]:focus, 
+textarea:focus {
+  border-color: var(--selected-color); /* Use a custom property! */
+}
+```
+
+## Labels and Selectors
+
+Form elements should always have labels. It's important that a label be associated with it's form input. Why? 
+
+- Used by screen readers and accessibility helpers
+- Clicking a label activates the form element
+
+A label can be associated with a form element in one of two ways: 
+
+Using an `id` and `for` attributes:
+
+```HTML
+<label for="name">Your name</label>
+<input id="name">
+```
+Or wrap the input in the label: 
+
+```HTML
+<label for="name">
+  Your name
+  <input id="name">
+</label>
+```
+
+Each of these methods has it's pros and cons. You should choose one style to use for your framework. This is how developers using your framework will need to write markup when using for elements. 
+
+## Challenge 
+
+Style your labels. 
+
+## Forms 
+
+Forms are groups of inputs. Forms are important to your applications. If people aren't willing to enter their information your web sites are not going to go very far. Good looking easy to use forms encourage people to use them. 
+
+By default form elements are inline. This means they line up like words in a paragraph. More often you'll want forms to arrange it self in a column. 
+
+The form element can arrange it's children using flex. Using flex-direction. Here are some styles to get you started: 
+
+```CSS
+form {
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
 }
 ```
 
-Use `space-between` and `row`. This should place the first list on the left. If there is a second list it should appear on the right. 
-
-Within a ul, you'll also want to arrange elements in a row. 
+Style the labels. They might look better with a little margin: 
 
 ```CSS
-.navbar > ul {
-  /* Remove the default styles */
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  /* Arrange all of the links in a row */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
+label {
+  margin: 1em
 }
 ```
 
-https://cssreference.io/flexbox/
-
-Set the color and background colors for your navbar. 
+Usually the the submit button will be at the bottom and often on the left. 
 
 ```CSS
-.navbar {
-  ...
-  background-color: #222;
-  color: #eee;
+input[type=submit], button[type=submit] {
+  align-self: flex-end;
 }
 ```
 
-### Style links on the navbar
+## Challenge 
 
-Links on the navbar should be styled. Be sure to include a hover style.
+Style your form. You want to set the basic layout without doing everything. The goal is to get enough style to make things look good while not doing so much that your forms can't be customized. 
 
-```CSS
-.navbar a {
-  color: rgb(130, 242, 231);
-  text-decoration: none;
-  display: inline-block;
-  margin: 0.5em;
-}
+## Check boxes and radio buttons
 
-.navbar a:hover {
-  color: #fff;
-}
-```
+Check boxes and radio buttons are special inputs. These do not provide much that you can style. They also appear different in different browsers. 
 
-## The State of your CSS Framework 
+What can you do? You can style the label! Remember that clicking on the label is the same as clicking on the input it is associated with! 
 
-Use this checklist to check the progress of your framework. 
+The label can be styled extensively. 
 
-[project-css-framework.md](../Assignments/project-css-framework.md)
+Follow the example here and create a customized check box and radio button. 
 
-## Activity 
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
 
-Follow the guide above to get your navbar started. Build from there and style the navbar to make it fit the design and theme of your framework. 
+With only the label element to work there is a limit to what you can draw. Luckily CSS provides to special elements: 
 
-We will remove all of these at the break to get comments from your peers. After the break, we will work to improve the navbars and review a second time. 
+- `:before` (adds a first child element)
+- `:after` (add a last child element)
+- `:checked` (is active when the element is selected)
 
-## Homework: Framework - Nav Bar and Footer
+These can be used to add elements that don't exist in your source markup. You can use them with the check box to add the check mark. 
 
-Add a Navbar to your framework. See the description linked below for more details on this assignment: 
+Use the content property to set what the content of the new pseudo element. 
 
-[project-css-framework.md](../Assignments/project-css-framework.md)
+Follow the custom checkbox example. Here :after is use to add the checkmark. This checkmark is box with a border on two sides, that has been rotated 45 degrees. 
+
+The `:checked` pseudo class applies when a check box or a radio button is currently selected. 
+
+## Homework: Framework - Controls
+
+Define some styles for controls in your CSS Framework. See the home description linked below for more details:
+
+- [Framework: Controls](../Assignments/assignment-09-controls.md)
+
+## Wrap Up (5 min)
+
+- Continue working on your current tutorial
+- Complete reading
+- Complete challenges
 
 ## Additional Resources
 
-1. https://cssreference.io/flexbox/
+1. https://css-tricks.com/the-checkbox-hack/
 
 ## Minute-by-Minute [OPTIONAL]
 
