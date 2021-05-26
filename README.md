@@ -35,10 +35,6 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 
 ## Schedule
 
-
-
-
-
 **Course Dates:** Monday, May 31 – Friday, July 16, 2021 (7 weeks)
 
 **Class Times:** Monday, Wednesday, Friday at 2:15 PM – 4 PM (19 class sessions)
@@ -66,6 +62,9 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 | 17 |  Mon, July 12        | [Lesson 17] |
 | 18 |  Wed, July 14        | [Lesson 18] |
 | 19 |  Fri, July 16        | Final Exam/Presentations |
+
+[Lesson 1 CSS Review]: lessons/lesson-01.md
+
 
 
 ---------------------------------------------------------
