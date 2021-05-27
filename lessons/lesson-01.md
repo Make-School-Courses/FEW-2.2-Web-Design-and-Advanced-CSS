@@ -356,10 +356,15 @@ Dense blocks of type are hard to read. Adding space between lines makes them eas
 ## After Class
 
 - Solve the CSS Diner problems and submit them to GradeScope
+	- https://flukeout.github.io
 - Style the CSS Zen Garden page submit it to GradeScope
+	- http://www.csszengarden.com
+	- [CSS Zen Garden HTML Source](http://www.csszengarden.com/examples/index)
 
 ## Resources 
 
+- [CSS Diner](https://flukeout.github.io)
+- [CSS Zen Garden](http://www.csszengarden.com)
 - [Typography for Developers](https://css-tricks.com/typography-for-developers/)
 - [CSS Typography](https://www.webfx.com/blog/web-design/css-typography-01/)
 - [CSS Reference Typography](https://cssreference.io/typography/)
