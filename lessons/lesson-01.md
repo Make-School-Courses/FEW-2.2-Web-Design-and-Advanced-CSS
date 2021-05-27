@@ -4,7 +4,7 @@ CSS Review
 
 ## Why you should know this 
 
-Understanding the basics of CSS the language and the syntax is the gateway to using CSS. CSS is a powerful tool that let's you determine the appearacne of anything in the browser. 
+Understanding the basics of CSS the language and the syntax is the gateway to using CSS. CSS is a powerful tool that lets you determine the appearance of anything in the browser. 
 
 ## Review 
 
@@ -15,7 +15,7 @@ How much CSS do you know?
 ### Where can put CSS?
 
 - CSS can be written in external files with the .css file extension.
-- CSS can be written in the style tag anywhere in an html document. 
+- CSS can be written in the style tag anywhere in an HTML document. 
 - CSS styles can be applied to any HTML element using the style attribute 
 
 #### Using CSS files 
@@ -40,13 +40,13 @@ Anywhere in an HTML document.
 ```HTML
 <style>
 	/* Everything here is written in the CSS language */
-	/* ...  */
+	/* ... */
 </style>
 ```
 
 #### Using Inline styles 
 
-Inline styles are added to the any tag, these styles style that tag. 
+Inline styles are added to any tag, these styles style that tag. 
 
 ```HTML
 <h1 style="color: red">Inline Styles</h1>
@@ -55,18 +55,18 @@ Inline styles are added to the any tag, these styles style that tag.
 
 ### Writing CSS
 
-The CSS language is written blocks we call **Rules**. Each Rule begins with a selector and contains a list of properties and values. 
+The CSS language is written blocks we call **Rules**. Each rule begins with a selector and contains a list of properties and values. 
 
 The properties and values are the styles applied to the element identified by the selector.
 
 ```CSS
 h1 {
-	font-size: 32px;  
+	font-size: 32px; 
 	color: red;
 }
 ```
 
-The rule above selects all h1 tags and make them 32px and red. 
+The rule above selects all h1 tags and makes them 32px and red. 
 
 #### Selectors
 
@@ -127,7 +127,7 @@ Wild card - Selects all elements use the `*`.
 * { /* Selects every tag on the page! */ }
 ```
 
-This seelctor gets more useful when combined with the selectors below! 
+This selector gets more useful when combined with the selectors below! 
 
 Compound selectors: 
 
@@ -149,7 +149,7 @@ Child selector - Selects the child element of another selector use the `>`.
 div > p { /* Selects only p tags that are children of div tags */ }
 ```
 
-Descendent selector - Select all descendents of another selector use the space ` `.
+Descendant selector - Select all descendants of another selector use the space ` `.
 
 ```HTML
 <p>Not selected</p>
@@ -167,7 +167,7 @@ Descendent selector - Select all descendents of another selector use the space `
 div p { /* Selects only p tags that are descedents of div tags */ }
 ```
 
-Psuedo selectors: There are lots of pseudo selectors they all begin with a colon `:`.
+Pseudo selectors: There are lots of pseudo-selectors they all begin with a colon `:`.
 
 `:nth-child()` selector - Selects an element by it's index use: `:nth-child(1)`. This selector has several different ways it can be used!
 
@@ -190,7 +190,7 @@ li:nth-child(even) { /* Selects all even indexed elements */ }
 li:nth-child(odd) { /* Selects all odd indexed elements */ }
 ```
 
-Did you get all that? This has a more than a few options!
+Did you get all that? This has more than a few options!
 
 ### Exercise: CSS Selectors
 
@@ -210,7 +210,7 @@ properties are always written in the form:
 name: value;
 ```
 
-You need to have the semicolor before starting a new property! Missing the semicolon is probably the most common CSS synatx error ever!
+You need to have the semicolon before starting a new property! Missing the semicolon is probably the most common CSS syntax error ever!
 
 ```CSS
 name: value;
@@ -227,13 +227,13 @@ Visit the site and click through some of the designs.
 
 http://www.csszengarden.com
 
-What is this? Everyone of these pages is using exactly the same markup. The only thing that changes from page to page is the CSS. You're not allowed to change the markup! 
+What is this? Every one of these pages is using the same markup. The only thing that changes from page to page is the CSS. You're not allowed to change the markup! 
 
-How are these pages looking so different if you can't change the markup? That's the power of CSS!  
+How are these pages looking so different if you can't change the markup? That's the power of CSS! 
 
 ## Typography
 
-One of the most powerful modes of communication is the written word. Typography gives form to the message. Beyond the words you use the shape and style of the characters becomes part of the message. 
+One of the most powerful modes of communication is the written word. Typography gives form to the message. Beyond the words, you use the shape and style of the characters to become part of the message. 
 
 CSS provides a wide range of control over the character on a page. Let's look at a few of the properties available to us: 
 
@@ -248,12 +248,12 @@ CSS provides a wide range of control over the character on a page. Let's look at
 Your Goal style the CSS ZenGarden Markup. You can not change the markup! You can only add a stylesheet. 
 
 - Download the CSS Zen Garden markup here: http://www.csszengarden.com/examples/index
-- Create a new file named: `style.css` put this file in the same folder as your html file. 
+- Create a new file named: `style.css` put this file in the same folder as your HTML file. 
 - Add your styles!
 
-Look at the mark up closely. You can use the tag names, class names and other features along with the selectors covered in the CSS Diner to apply your styles. 
+Look at the mark-up closely. You can use the tag names, class names, and other features along with the selectors covered in the CSS Diner to apply your styles. 
 
-What to syle? For this first assignment focus on the typography. Use these properties: 
+What to syle? This first assignment focus on typography. Use these properties: 
 
 - font-family
 - font-size
@@ -263,7 +263,7 @@ What to syle? For this first assignment focus on the typography. Use these prope
 
 **What to do?**
 
-- Style the Zen Garden page focussing typography. 
+- Style the Zen Garden page focussing on typography. 
 - Use all of the properties listed above. 
 - Submit your work to Gradescope.
 
@@ -271,7 +271,7 @@ What to syle? For this first assignment focus on the typography. Use these prope
 
 Use the Selectors covered earlier. You can't change the Zen Garden markup. You must use selectors creatively to target elements on the page. 
 
-For some elements: `body` and `h1` these taga appear only once on the page you can use select them using the their names. 
+For some elements: `body` and `h1` these tags appear only once on the page you can use select them using their names. 
 
 ```CSS
 /* Properties applied ot the body */
@@ -327,8 +327,8 @@ Solve these challenges:
 	- Set the color and background color for the page. Use the `body`
 - Style the headings in each section. 
 	- The page has a heading: "CSS Zen Garden" Give this a unique style. 
-	- Under the page heading is a sub heading: "The Beauty of CSS Design". Style this so it compliments the page heading. 
-	- Each section has it's own heading, these are: "The Road to Enlightenment", "So What is This About?", "Participation", "Benefits", "Requirements", and "Select a Design" style these. 
+	- Under the page heading is a subheading: "The Beauty of CSS Design". Style this so it compliments the page heading. 
+	- Each section has its heading, these are: "The Road to Enlightenment", "So What is This About?", "Participation", "Benefits", "Requirements", and "Select a Design" style these. 
 - Style the links
 - Give the links in the lists: Select a Design, Archives, and Resources a different style from the links in the body of the text. 
 - Style the links in the footer
@@ -341,22 +341,22 @@ Solve these challenges:
 
 ### What are these properties good for? 
 
-The font face adds character and set the tone for your message. Your sites are seen on the screen making the type easy to read facilitiates your message. 
+The font face adds character and sets the tone for your message. Your sites are seen on the screen making the type easy to read facilitates your message. 
 
 The default font: Times New Roman not very good. You can do better! 
 
 The size of the text has a large effect on legibility. It also controls the order the message is delivered and points out what is important on the page. 
 
-The font weight adds weight to the message. Points out what is important, and empahsizes what is said. 
+The `font-weight` adds weight to the message. Points out what is important, and emphasizes what is said. 
 
-Color and constrast are important to legibility. 
+Color and contrast are important to legibility. 
 
 Dense blocks of type are hard to read. Adding space between lines makes them easier to read. The longer a line is the more space between lines is needed. 
 
 ## After Class
 
-- Solve the CSS Diner problems and submit to GradeScope
-- Style the CSS Zen Garden page submit to GradeScope
+- Solve the CSS Diner problems and submit them to GradeScope
+- Style the CSS Zen Garden page submit it to GradeScope
 
 ## Resources 
 
@@ -364,3 +364,4 @@ Dense blocks of type are hard to read. Adding space between lines makes them eas
 - [CSS Typography](https://www.webfx.com/blog/web-design/css-typography-01/)
 - [CSS Reference Typography](https://cssreference.io/typography/)
 - [Web Typography](https://www.internetingishard.com/html-and-css/web-typography/)
+

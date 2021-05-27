@@ -307,6 +307,8 @@ Use the box model and flex to style your Zen Garden page. Do the following thing
 	-  The `div.design-archives` section contains two links that more designs. These two links would be great candidates for buttons! 
 	- The `div.zen-resources` section contains 5 links that would also be good candidates for button!
 
+Submit your work to GradeScope! 
+
 ## Resources 
 
 - [Guide to Flex Box](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

@@ -6,7 +6,7 @@
 
 ## Background Images
 
-Images that appear in your web pages are either part of the content or part of the design. 
+Images that appear in your web pages are either part of the content or part of the design.
 
 Content images are things like: the picture of a product, the picture of a person like a user. Content images are picture that the content of the page talks about. 
 
@@ -231,7 +231,7 @@ Add some background images to your Zen Garden page.
 
 ## After Class
 
-Continue working on your CSS Zen Garden Page. use the concepts from class to solve these problems: 
+Continue working on your CSS Zen Garden Page. Use the concepts from class to solve these problems: 
 
 - Use background images in your page. Try these ideas: 
 	- Use a single image or a repeating pattern to fill the background. 
@@ -239,8 +239,9 @@ Continue working on your CSS Zen Garden Page. use the concepts from class to sol
 	- Use an image to add an icon for next to a heading link or button. 
 - Use a Gradient
 	- Use a gradient to fill the background of the page. 
-	- Use a gradient as a background to a heading or section.
-	- Use a gradient as a background to a button.
+	- Use a gradient as a background to a heading or section
+
+Submit your work to GradeScope! 
 
 ## Resources 
 

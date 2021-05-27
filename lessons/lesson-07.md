@@ -1,250 +1,385 @@
-# FEW 2.2 - Advanced CSS - Styling form Controls
+# FEW 2.2 - Advanced CSS - Frameworks
 
-Styling controls like buttons and form elements provide some extra challenges and opportunities.
+## Review
 
 ## Why you should know this?
 
-Form elements and controls are points of interaction in your applications. These need to be extra engaging. Hard to use and confusing forms risk losing potential users for application and customers for your business. 
+You shhould be able to write CSS that could be used in anywhere. This is where you would start if you were working on a large project building a library that covers a wide range of situations rather than each individula element! 
 
-## Learning Objectives
+## Learning Objectives 
 
-1. Style form elements
-1. Style elements according to state
-1. Use attribute selector
-1. Use parent element to control the layout of children
+1. Write CSS that covers a wide range of elements
+1. Use CSS Selectors 
+1. Use CSS to define typographical styles
 
-### Form elements 
+## Rember those CSS frameworks?
 
-Form elements are input, textarea, radio button, and checkbox. Your goal today is to style these elements. 
+Take another look at these CSS frameworks. Look for the things that you can implement in your framework!
 
-Add the markup below to your style example: 
+- https://getbootstrap.com
+- https://get.foundation
+- https://bulma.io
+- https://tailwindcss.com
+- https://getuikit.com
+- https://milligram.io
+- https://purecss.io
 
-```HTML
-<form>
-  <label>Name</label>
-  <input type="text" placeholder="enter name" />
-  <label>email</label>
-  <input type="email" placeholder="enter email" />
-  <label>password</label>
-  <input type="password" placeholder="enter password" />
-  <label>Notes</label>
-  <textarea placeholder="enter notes"></textarea>
-  <input type="submit">
-</form>
-```
+## Make your own Framework
 
-This is only a few of the input types. There are also input types for: 
+The goal for you is to make your own framework. It won't be as extensive as thee frameworks. Your framework needs to define some base styles that might be useful in any project.
 
-- number
-- date
-- color
-- and more...
+## Start Your Framework
 
-You'll just style these for now. 
+Give your framework a name. 
 
-## Styling Inputs
+Create a repo for your framework. 
 
-Selectors: 
+Defines some base typographic styles. Style the following: 
+
+- Base font style. Use a website like GitHub or Medium as a guide. 
+- Adjust the font sizes for the headings h1-6
+- Style the anchors 
+- Style: blockquote, code, small, ???
+- Style buttons and input
+
+What to turn in? Create a sample page that shows off the styles of your framework.
+
+## Challenge: Create your frameowrk and add some base styles
+
+Define some base styles for your framework. Link it to the CSS Zen Garden HTML. This way you'll be able to see the font styles as they are applied to the page. 
+
+Do the following: 
 
 ```CSS
-input[type=text], 
-input[type=email], 
-input[type=password], 
-textarea {
-  /* Your styles here */
+body {
+	font-family: /* Define the font stack */;
+	line-height: /* Adjust the line height */;
 }
 ```
 
-Use these properties: 
+## CSS Custom Properties
 
-- Typography
-  - `font-size`
-  - `font-weight` 
-  - `color`
-- Box 
-  - `border-style`
-  - `border-width`
-  - `border-radius`
-  - `border-color`
-  - `background-color`
-  - `padding`
-  - `margin`
-  - `box-shadow` (can have multiple, can be inset)
+CSS Custom Properties let you define variables in CSS. You're defining a new CSS property, hence the name. In use, it feels like variables that you are familiar with from other languages. 
 
-Let's talk about focus. An input has focus when the keyboard is able to enter text. You can style the input in it's focussed state. 
+### Defining a custom property
+
+Properties names must begin with `--`, rest of the name can be anything that would normally work in CSS (think: kabob-case). 
+
+CSS Custom properties must be defined in a block. 
 
 ```CSS
-input[type=text]:focus, 
-input[type=email]:focus, 
-input[type=password]:focus, 
-textarea:focus {
-  /* Your styles here */
+--color_primary: rgba(123, 37, 44, 1.0); /* BAD! */
+
+
+body {
+  --color_primary: rgba(123, 37, 44, 1.0); /* Good! */
 }
 ```
 
-What about that outline? The accessibility outline is very important. 
+The block where a custom property is defined determines the scope of that property. 
 
-https://a11yproject.com/posts/never-remove-css-outlines/
+```CSS 
+body {
+  /* Accessible to body and it's descendants */
+  --color-primary: rgba(123, 37, 44, 1.0); 
+  --font-size: 18px;
+}
 
-`outline: none !important;`
+h1 {
+  /* Available to all h1 and their descendants */
+  --font-size: 2em;
+}
+```
 
-If you don't like this replace it with your own style. Don't remove it!
-
-## Challenge 
-
-Style the form inputs and textarea. Use the properties listed above to make good looking form inputs. 
-
-Think about readability by looking closely at padding and font-size. 
-
-Use the :focus pseudo selector to style form elements in their forcussed state.
-
-Here are a few ideas: 
-
-- Set a consistant border for all elements 
-- Use padding to give some space around the text and the border
-- Set the font size, the default font is too small
+Assigning a value is like setting the value of a property in CSS.`:root` is a special selector that represents the root of your CSS scope. All other elements descendants `:root`. Defining variables here make them accessible to all other elements. Think of this as global scope. 
 
 ```CSS
-input[type=text], 
-input[type=email], 
-input[type=password], 
-textarea {
-  padding: 1em;
-  font-size: 1em;
-  border: 3px solid var(--dark-gray); /* use a custom property! */
-  /* Removing the outline! */
-  outline: none !important;
-  /* Animate changes */
+:root {
+  --color: red;
+  --primary-color: rgba(123, 37, 44, 0.7);
+  --size: 121px;
+  --base-font-size: 16px;
+  --large-font-size: 1.85em;
+  --number-of-columns: 4;
+  --golden-ratio: 1.618;
+}
+```
+
+### Values 
+
+Any value that would work in CSS can be assigned to a property. 
+
+```CSS
+:root { /* Define custom properties on :root */
+  --golden-ratio: 1.618; /* number no unit */
+  --base-font-size: 16px; /* number with a unit */
+  --bg-color: #333; /* Color */
+  --base-font: Helvetica; /* Name or string */
+}
+```
+
+## What's `:root`?
+
+`:root` is a pseudo-element that matches the root element of the document tree. This is identical to the `<html>` element. `:root` has a higher [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/:root).
+
+By declaring custom properties on `:root` they become global and available everywhere. 
+
+Otherwise declaring a custom property on an element makes it available to that element and inherited by the element's descendants, but unavailable to it's ancestors. 
+
+### Accessing custom property values
+
+To access the value of a custom property use the `var()` function.
+
+```CSS
+.some-class {
+  width: var(--size);
+  color: var(--color);
+  background-color: var(--bg-color);
+}
+```
+
+For example, you might define some values in `:root` then use those values throughout the rest of your stylesheet. 
+
+```CSS
+:root {
+  --golden-ratio: 1.618;
+  --base-font-size: 16px;
+  --large-font-size: 1.85em;
+  ...
+}
+
+.main {
+  --number-of-columns: 4;
+  ...
+  grid-template-columns: repeat(var(--number-of-columns), 1fr);
+}
+
+.alert {
+  --color: red;
+  --size: 121px;
+  ...
+  color: var(--color);
+  width: var(--size);
+  ...
+}
+```
+
+### Use Custom Properties in your framework
+
+These custom properties are amazing. You should use a few right now! 
+
+Move the `font-family` to a custom property. 
+
+```CSS 
+:root {
+	--font-family: /* Your font family here */;
+}
+
+body {
+	font-family: var(--font-family);
+}
+```
+
+Define a style for the anchor tag. Your links need a dcent style and that default blue is kinda ugly. We'll do this by creating definitions for a couple useful colors: 
+
+```CSS 
+:root {
+	--font-family: /* Your font family here */;
+	--bg-color: /* your background color */;
+	--fg-color: /* Your foreground color */;
+}
+
+body {
+	font-family: var(--font-family);
+	color: var(--fg-color);
+	background-color: var(--bg-color)
+}
+```
+
+### What colors to other frameworks use? 
+
+Take a look at Bootstrap, what colors are they using: https://getbootstrap.com/docs/4.0/utilities/colors/
+
+This is a pretty good idea. They have a list of common colors that all look good together.
+
+These colors include colors for important things, light text and dark text. 
+
+You should define a few of these you will store them in CSS custom properties. This will make them easier to use! 
+
+You can add or modify this list. You can use any colors you like. If your not sure what to use for colors take a clue from Bootstrap or one of the other frameworks we looked at in class. 
+
+```CSS
+:root {
+	--font-family: /* Your font family here */;
+	--bg-color: /* your background color */;
+	--fg-color: /* Your foreground color */;
+	--color-primary: /* */;
+	--color-success: /* */;
+	--color-danger: /* */;
+	--color-primary: /* */;
+	--color-dark: /* */;
+	--color-light: /* */;
+}
+```
+
+Let's use the primary color for links: 
+
+```CSS
+a {
+	color: /* primary color here */;
+}
+```
+
+## Design some buttons 
+
+Your framework needs a good button design: 
+
+### Design a Button s
+
+The default button style is not very interesting it's also pretty small. Giving the button some color and making it a little larger will make it easier to use. 
+
+```css
+button {
+  padding: 0.5rem 0.75rem;
+  background-color: #fff;
+  border: 1px solid;
+  color: cornflowerblue;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   transition: 300ms;
 }
-```
 
-If you've removed the outline be sure to Style the :focus state for these elements!
-
-```CSS
-input[type=text]:focus, 
-input[type=email]:focus, 
-input[type=password]:focus, 
-textarea:focus {
-  border-color: var(--selected-color); /* Use a custom property! */
+button:hover {
+  background-color: cornflowerblue;
+  color: #fff;
 }
 ```
 
-## Labels and Selectors
+Here you have a button with a base style and a simple hover. 
 
-Form elements should always have labels. It's important that a label be associated with it's form input. Why? 
-
-- Used by screen readers and accessibility helpers
-- Clicking a label activates the form element
-
-A label can be associated with a form element in one of two ways: 
-
-Using an `id` and `for` attributes:
-
-```HTML
-<label for="name">Your name</label>
-<input id="name">
-```
-Or wrap the input in the label: 
-
-```HTML
-<label for="name">
-  Your name
-  <input id="name">
-</label>
+```html
+<button>Hello World</button>
 ```
 
-Each of these methods has it's pros and cons. You should choose one style to use for your framework. This is how developers using your framework will need to write markup when using for elements. 
+Some custom properties will make this easier to manage. The button uses the same color for the background and foreground but switches these on hover.
 
-## Challenge 
+```css
+button {
+  --bg-color: #fff;
+  --fg-color: cornflowerblue;
 
-Style your labels. 
+  padding: 0.5rem 0.75rem;
+  background-color: var(--bg-color);
+  border: 1px solid;
+  color: var(--fg-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: 300ms;
+}
 
-## Forms 
-
-Forms are groups of inputs. Forms are important to your applications. If people aren't willing to enter their information your web sites are not going to go very far. Good looking easy to use forms encourage people to use them. 
-
-By default form elements are inline. This means they line up like words in a paragraph. More often you'll want forms to arrange it self in a column. 
-
-The form element can arrange it's children using flex. Using flex-direction. Here are some styles to get you started: 
-
-```CSS
-form {
-  display: flex;
-  flex-direction: column;
+button:hover {
+  background-color: var(--fg-color);
+  color: var(--bg-color);
 }
 ```
 
-Style the labels. They might look better with a little margin: 
+Now the colors can be edited in one location. 
 
-```CSS
-label {
-  margin: 1em
+You'll often want buttons with different colors for different purposes. Look at the button styles in Bootstrap. Your goal is to emulate some of these. 
+
+To change the colors and other styles of buttons using custom properties become very flexible. 
+
+Using a class name: 
+
+```css
+button.warning {
+  --fg-color: tomato; /* Red button */
+}
+
+button.action {
+  --fg-color: yellowgreen; /* Green button */
 }
 ```
 
-Usually the the submit button will be at the bottom and often on the left. 
+```html
+<button>Login</button>
+<button class="warning">Delete</button>
+<button class="action">Buy Now!</button>
+```
 
-```CSS
-input[type=submit], button[type=submit] {
-  align-self: flex-end;
+**In your button example create classes for:**
+
+- Success 
+- Alert 
+- Dark
+
+What if you want to have an inverted style for your buttons? Using custom properties you can add a class that switches where the colors are applied. 
+
+Here the `.invert` class just sets the `color` and `background-color` properties but swaps which color is used where. **These rules override the other since a selector with the class is more specific.**
+
+```css
+button.invert {
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+}
+
+button.invert:hover {
+  background-color:var(--bg-color);
+  color: var(--fg-color);
 }
 ```
 
-## Challenge 
+```html
+<button class="warning invert">Delete</button>
+```
 
-Style your form. You want to set the basic layout without doing everything. The goal is to get enough style to make things look good while not doing so much that your forms can't be customized. 
+**Add an inverted style to your button styles**
 
-## Check boxes and radio buttons
+What if you want to customize the color of the button? You could write another class or you could set color properties inline.
 
-Check boxes and radio buttons are special inputs. These do not provide much that you can style. They also appear different in different browsers. 
+```html
+<button style="--bg-color: violet; --fg-color: #fff">Use Locaton</button>
+```
 
-What can you do? You can style the label! Remember that clicking on the label is the same as clicking on the input it is associated with! 
+If your code defines colors as a theme you can use those inside your buttons by assigning their value to the properties used by the button. 
 
-The label can be styled extensively. 
+```css
+:root {
+  --primary-color: cornflowerblue;
+  --foreground-color: #fff;
+}
 
-Follow the example here and create a customized check box and radio button. 
+button {
+  --bg-color: var(--foreground-color);
+  --fg-color: var(--primary-color);
 
-https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+  ...
+}
+```
 
-With only the label element to work there is a limit to what you can draw. Luckily CSS provides to special elements: 
+Now you can change the colors of all buttons and other elements that use the `--primary-color`, or change the color of any button by changing it's `--bg-color`. 
 
-- `:before` (adds a first child element)
-- `:after` (add a last child element)
-- `:checked` (is active when the element is selected)
+## After Class
 
-These can be used to add elements that don't exist in your source markup. You can use them with the check box to add the check mark. 
-
-Use the content property to set what the content of the new pseudo element. 
-
-Follow the custom checkbox example. Here :after is use to add the checkmark. This checkmark is box with a border on two sides, that has been rotated 45 degrees. 
-
-The `:checked` pseudo class applies when a check box or a radio button is currently selected. 
-
-## Homework: Framework - Controls
-
-Define some styles for controls in your CSS Framework. See the home description linked below for more details:
-
-- [Framework: Controls](../Assignments/assignment-09-controls.md)
-
-## Wrap Up (5 min)
-
-- Continue working on your current tutorial
-- Complete reading
-- Complete challenges
+- Work on your CSS Framework. It should support these features: 
+	- Has a base font and typographical styles this includes line-height, font-family, and font-size
+	- defines colors. 
+	- styles the link or (anchor tag: a)
+	- styles the button
+	- Uses CSS custom properties
 
 ## Additional Resources
 
-1. https://css-tricks.com/the-checkbox-hack/
+- https://css-tricks.com/a-complete-guide-to-custom-properties/
 
 ## Minute-by-Minute [OPTIONAL]
 
-| **Elapsed** | **Time** | **Activity** |
+| **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
-| 0:00 | 0:05 | Objectives |
-| 0:05 | 0:15 | Overview |
-| 0:20 | 0:45 | In Class Activity I |
-| 1:05 | 0:10 | BREAK |
-| 1:15 | 0:45 | In Class Activity II |
-| TOTAL | 2:00 | |
-
+| 0:00        | 0:05      | Objectives                |
+| 0:05        | 0:15      | Overview                  |
+| 0:20        | 0:45      | In Class Activity I       |
+| 1:05        | 0:10      | BREAK                     |
+| 1:15        | 0:45      | In Class Activity II      |
+| TOTAL       | 2:00      |                           |
+s

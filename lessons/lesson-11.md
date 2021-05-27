@@ -1,194 +1,296 @@
-# FEW 2.2 - Advanced CSS - Exploring Web Components
+# FEW 2.2 - Advanced CSS - ::before and ::after
 
-Continuing the discussion of Web Components from lesson 8. 
+Add custom controls with pseudo elements. 
 
 ## Why you should know this?
 
-Web Components are probably the most important new and emerging web technology. They will take some practice to master. They are also not complete and will evolve. Learning this now will give important background into this new realm. 
+The default check box and radio button offer very few options for customization. Using pseudo elements opens up a lot of options. 
 
-## Learning Objectives 
+## Learning Objectives
 
-1. Identify major features of Web Components
-1. Create elements with JS
-1. Style elements with JS
-1. Build Web Components
+1. Describe the relationship between an input and it's label
+1. Define a label and input that are asscoiated 
+1. Use pseudo classes ::before and ::after
+1. Create custom check boxes and radio buttons
+1. Use ridiculously complicated CSS selectors
 
-## Getting Started with Web Components
+## Slides
 
-Work through the challenges here: https://github.com/Make-School-Labs/simple-component
+https://docs.google.com/presentation/d/1bVVX2ELbGEPktG6Cv_DiA2I4uxYyEGALr7WUAga0RLw/edit?usp=sharing
 
-Follow this by studying the guide here:
+## Pseudo Elements
 
-- https://javascript.info/webcomponents-intro
-- https://javascript.info/custom-elements
-- https://javascript.info/shadow-dom
+`::before` and `::after` are pseudo classes. These create new elements via CSS that don't exist in the DOM. 
 
-The goal is to create a custom element/web component that will be included 
-with your CSS framework.
+Imagine you have: 
 
-Anyone using your web CSS framework would get a set of styles. Adding your JS they will also be able to use your custom elements.
+`<div> * </div>`
 
-These components are fairly simple. You'll be tackling more complex components next week.
+With this style:
 
-## Web Components Concepts
+```CSS
+div::before {
+  content: "Hello";
+}
 
-### Naming custom elements
-
-When creating web components you are creating new tags. It's possible that the names can clash with existing names. For this reason, custom element names must use a hyphen (-). 
-
-- `my-component` good
-- `frmwork-blink` good
-- `mycomponent` bad
-- `blink` bad
-
-When using custom tags you must use a closing tag, even if the tag is empty. 
-
-- `<my-component></my-component>` good
-- `<frmwrk-blink></frmwrk-blink>` good
-- `<my-component />` bad
-- `<frmwrk-blink>` worse
-
-It's a good idea to prefix all of your names with the name of your framework. For example, if Bootstrap used web components all of their tags could start with `bs-`:
-
-```html
-<bs-carousel></bs-carousel>
+div::after {
+  content: "World";
+}
 ```
 
-### Extend HTMLElement and define a new tag
+Your div would appear as: 
 
-Extend HTMLElement and call super in the constructor. 
+`Hello * World`
 
-Call `customElements.define()` with the name of your new tag and the class that will provide the JS for the new tag.
+The before element goes before the existing content and the after element goes after. 
 
-```JS 
-// Create a class that backs the new element
-class MyElement extends HTMLElement {
-  constructor() {
-    super()
-      ...
-    }
+You can think of DOM like this: 
+
+```HTML
+<div>
+  <span>Hello</span>
+  *
+  <span>World</span>
+</div>
+```
+
+Though the inspector will show: 
+
+```HTML
+<div>
+  ::before
+  *
+  ::after
+</div>
+```
+
+## What can you do with pseudo elements?
+
+Using ::before and ::after you can add elements to the DOM that don't actually exist in your mark up, and you can style these new elements. 
+
+### Fancy Blockquote
+
+Making fancy blockquote styles is a possible application. Imagine you want to add a fancy quotation mark before and after the text in a block quote. 
+
+```HTML
+<style>
+  blockquote::before {
+    content: open-quote;
+    font-size: 3em;
+    color: tomato;
+  }
+  blockquote::after {
+    content: close-quote;
+    font-size: 3em;
+    color: tomato;
+  }
+  blockquote {
+    /* Set the quote style */
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+</style>
+
+<blockquote>
+  The way to get started is to quit talking and begin doing. 
+</blockquote>
+-Walt Disney
+```
+
+![block quote](images/fancy-quotes.png)
+
+Here the ::defore and ::after elements have content that is an open and closing quote. They also have styles that set the font-size and color of their elements. 
+
+https://css-tricks.com/almanac/properties/q/quotes/
+
+### Fancy Undline
+
+The goal here is to make a line that draws itself under a word. To do this we need another new element to appear. This would be a difficult addition to existing markup and as a visual effect should not really part of that markup, remember the separation of concerns. 
+
+The solution is to generate the extra element with ::after. 
+
+```HTML
+<style>
+  .add-box {
+    display: inline-block;
+    color: tomato;
+  }
+  .add-box::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: tomato;
+    transition: 400ms;
+  }
+  .add-box:hover::after {
+    width: 100%;
+  }
+</style>
+
+<blockquote>
+  If you set your goals <span class="add-box">ridiculously</span> high and it's a failure, you will fail above everyone else's <span class="add-box">success</span>. 
+  -James Cameron
+</blockquote>
+```
+
+![fancy hover](images/hover-effecft.gif)
+
+Here the class .add-box adds a new pseudo element with ::after. That element is styled with display: block, width, height, and a background color. It also has a transition, so changes to these properties will be animated. 
+
+Notice the last rule: .add-box:hover::after. This selector applies to the ::after element when it's parent is in the :hover state. Changing the width here starts the animation. 
+
+## Research Pseudo elements
+
+Read this article. It talks about the uses for ::before and ::after. 
+
+https://css-tricks.com/pseudo-element-roundup/
+
+## Custom Check boxes and radio buttons
+
+The checkbox and radio button are limited in what the browser allows you to style. With Pseudo elements we open up the possiblity to customize these elements. 
+
+### How are checkboxes and radio buttons marked up?
+
+Usually you will want to markup up checkboxes and radio buttons like this: 
+
+```HTML
+<label>
+  <input type="checkbox">
+  Pickles?
+</label>
+
+<label>
+  <input type="radio" name="choice" checked>
+  Converse
+</label>
+
+<label>
+  <input type="radio" name="choice">
+  Vans
+</label>
+```
+
+The label is an important element here. Besides providing a label that can be read, the label provides an element that can be interacted with. 
+
+**With the label wrapped around the input clicking the label is the same as clicking the input.**
+
+What are the elements needed for a checkbox or radio button? 
+
+![checkbox radio](images/checkbox-radio.png)
+
+The checkbox or radio button is usually made of two parts a container, a box or circle, and a mark, check or dot. The mark is sometimes visible and sometime not. 
+
+This can also be more complicated than what is presented here but these are the basic elements, or starting place to create checkboxes and radio buttons. 
+
+To make this possible we need to add a little more markup. The markup presented above doesn't allow us enough to control the checkbox with CSS alone. By adding one extra tag we cna do that. 
+
+```HTML
+<label>
+  <input type="checkbox">
+  <span>Pickles?</span>
+</label>
+
+<label>
+  <input type="radio" name="choice">
+  <span>Converse</span>
+</label>
+
+<label>
+  <input type="radio" name="choice">
+  <span>Vans</span>
+</label>
+```
+
+With the extra span you can use the + or ~ selectors to connect the span with the input. More on this below. 
+
+Since we are going to include this in our frameworks it's probably best to make it something that is opt in. Do this by adding a class name: 
+
+```HTML
+<label class="frmwrk-checkbox">
+  ...
+</label>
+
+<label class="frmwrk-radio">
+  ...
+</label>
+
+<label class="frmwrk-radio">
+  ...
+</label>
+```
+
+By inlcuding the class frmwork-checkbox or frmwrk-radio you'll get the fancy checkboxes and radio buttons. Without these classes you get the standard checkbox and radio buttons. 
+
+You'll need 5 selectors. Here they without their inner styles. Each of thess performs a different function. Read the comments below. 
+
+```CSS
+/* checkbox button base element */
+.frmwrk-checkbox > span {
   ...
 }
-
-// Define the new element
-customElements.define('my-element', MyElement)
-```
-
-### Property names 
-
-Since you are extending HTMLElement you'll need to be careful about overriding properties that exist in HTMLElement. 
-
-Best practice: Use an underscore in front of all of the property names you define. 
-
-```JS 
-this._name = 'widget' // good
-this.name = 'wonky' // bad
-```
-
-### Shadow Root 
-
-Create a shadow root in your constructor. Probably a good idea to store this in a property. 
-
-This attaches a shadow root and stores it in a property: `_shadowRoot`
-
-```JS 
-...
-  constructor() {
-    super()
-    this._shadowRoot = this.attachShadow({ mode: 'open' })
-      ...
-    }
- ...
-```
-
-## Lifecycle Methods 
-
-Use lifecycle methods to initialize and deinitialize your web component. 
-
-The **connectedCallback()** method is called when the component is added to the DOM. Use this to start timers set initial property values, measure the size the size of the component. 
-
-The **disconnectedCallback()** method is called when the component is removed from the DOM. Use this to clean up. Do things like stop timers, and free resources that you may be using. 
-
-```JS
-class BlinkText extends HTMLElement {
-  constructor() {
-    super();
-    ...
-  }
-
-  connectedCallback() {
-    // When the component is added to the DOM
-  }
-
-  disconnectedCallback() {
-    // When the component is removed from the DOM
-  }
+/* Selected "checkmark" styles */
+.frmwrk-checkbox > input[type=checkbox] + span::before {
+  ... 
 }
-
-customElements.define('blink-text', BlinkText);
-```
-
-## handling attributes 
-
-Attrbites appear in tags like this: 
-
-```html
-<my-element time="1000" min="0" max="5">
+/* Selected "mark" styles */
+.frmwrk-checkbox > input[type=checkbox]:checked + span::before {
   ...
-</my-element>
-```
-
-The attributes are: time, min, and mac above. 
-
-Attributes allow us to pass data into our custom elements. 
-
-Internally the custom element needs to define when attributes it observes. Some attributes don't need to be observed for example: class, and id. 
-
-```JS
-class BlinkText extends HTMLElement {
-  constructor() {
-    super();
-    ...
-  }
-
-
-  // Name the observed attribues 
-  static get observedAttributes() {
-    return ['time', 'min', 'max'];
-  }  
-
-  // Handle changes to observed attributes
-  attributeChangedCallback(name, oldValue, newValue) {
-    
-  }
 }
-
-customElements.define('blink-text', BlinkText);
-```
-
-Handle changes to attributes by looking at the name to see which attribute has changed, then compare the old and new values to decide how to change the attribute. 
-
-```JS
-attributeChangedCallback(name, oldValue, newValue) {
-  // If the attribute changed was named time
-  if (name === 'time') {
-    // parse the new value, we want a number
-    const time = parseInt(newValue)
-    if (isNanN(time)) {
-      // If it's not a number stop!
-      return
-    }
-    // If it is a number use that new value
-    this._time = time
-    this._clearTimer()
-    this._addTimer()
-  }
+/* Outline */
+.frmwrk-checkbox > input[type=checkbox] + span::after {
+  ...
+}
+/* Hide the input */
+.frmwrk-checkbox input {
+  ...
 }
 ```
 
-## Homework: Continue working on your framework
+- base element - sets the style of the label and it's children
+  - .frmwrk-checkbox > span
+- Selected "checkmark" - Sets the style for the pseudo element that appears in the box or circle. The selector here selects the ::before element of the span that immediately follows the input with type=checkbox
+  - .frmwrk-checkbox > input[type=checkbox] + span::before
+  - https://www.w3schools.com/cssref/sel_element_pluss.asp
+- Selected "mark" - Sets the style for the checkmark when the mark is visible or selected. The selector here says: select the ::before pseudo element that belongs to the span that immediately follows an input with type=checkbox. 
+  - .frmwrk-checkbox > input[type=checkbox]:checked + span::before
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
+- Outline - Styles the box or circle that contains the mark. The selector here says select an input that has type=checkbox that is a child of an element with class frmwrk-checkbox. 
+  - .frmwrk-checkbox > input[type=checkbox] + span::after
+  - https://www.w3schools.com/css/css_attribute_selectors.asp
 
-Continue working on your CSS framework. 
+With these seelctors you're ready to make some custom checkboxes or radio buttons. 
+
+You can see the full source code for the examples above here: 
+
+- Fancy Blockquote - [lesson-08-fancy-blockquote.html](lesson-08-fancy-blockquote.html)
+- Fancy Underline - [lesson-08-fancy-underline.html](lesson-08-fancy-underline.html)
+- Custom Checkboxes and Radio Buttons - [lesson-08-custom-checkboxes-radio-buttons.html](lesson-08-custom-checkboxes-radio-buttons.html)
+
+There are many articles here are a few that I picked out. You can follow these to help guide or inspire and provide direction. 
+
+- https://www.appitventures.com/blog/styling-checkbox-css-tips
+- https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+- https://codepen.io/Vestride/pen/dABHx
+
+## The State of your CSS Framework 
+
+Use this checklist to check the progress of your framework. 
+
+[project-css-framework.md](../Assignments/project-css-framework.md)
+
+## Activity 
+
+Create your own custom checkboxes and radio buttons. Add these to your CSS framework. 
+
+## Homework: Framework 
+
+Complete your CSS framework:
+
+[project-css-framework.md](../Assignments/project-css-framework.md)
+
+## Additional Resources
+
+1. https://cssreference.io/flexbox/
 
 ## Minute-by-Minute [OPTIONAL]
 

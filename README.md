@@ -47,21 +47,21 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  3 |  Mon, June 7  | [Lesson 3 Box Model Flex]    | Flexbox Froggy + CSS Zen Garden Flex |
 |  4 |  Wed, June 9  | [Lesson 4 Background Images] | - |
 |  5 |  Fri, June 11 | [Lesson 5 CSS Grid]          | CSS Grid Garden + CSS Zen Garden Grid |
-|  6 |  Mon, June 14 | [Lesson 6 CSS Framework]     | - |
-|  7 |  Wed, June 16 | [Lesson 7] | - |
-|  8 |  Fri, June 18 | [Lesson 8] | - |
-|  9 |  Mon, June 21 | [Lesson 9] | - |
-| 10 |  Wed, June 23 | [Lesson 10] | - |
-| 11 |  Fri, June 25 | [Lesson 11] | - |
-| 12 |  Mon, June 28 | [Lesson 12] | - |
+|  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]     | CSS Zen Garden + CSS Framework |
+|  7 |  Wed, June 16 | [Lesson 7] | CSS Framework |
+|  8 |  Fri, June 18 | [Lesson 8] | Navbars |
+|  9 |  Mon, June 21 | [Lesson 9] | CSS Preprocessors |
+| 10 |  Wed, June 23 | [Lesson 10] | Animation |
+| 11 |  Fri, June 25 | [Lesson 11] | Before and after |
+| 12 |  Mon, June 28 | [Lesson 12] | Controls |
 | 13 |  Wed, June 30 | [Lesson 13] | - |
 | 14 |  Fri, July 2  | [Lesson 14] | - |
 | -  |  Mon, July 5  | **No Class - Independence Day Observed** | - |
-| 15 |  Wed, July 7  | [Lesson 15] | - |
-| 16 |  Fri, July 9  | [Lesson 16] | - |
+| 15 |  Wed, July 7  | [Lesson 15] | Web Components 1 |
+| 16 |  Fri, July 9  | [Lesson 16] | Web Components 2 |
 | 17 |  Mon, July 12 | [Lesson 17] | - |
-| 18 |  Wed, July 14 | [Lesson 18] | - |
-| 19 |  Fri, July 16 | Final Exam/Presentations | - |
+| 18 |  Wed, July 14 | Present your work | - |
+| 19 |  Fri, July 16 | Final Assessment | - |
 
 [Lesson 1 CSS Review]: lessons/lesson-01.md
 [Lesson 2 Typography]: lessons/lesson-02.md

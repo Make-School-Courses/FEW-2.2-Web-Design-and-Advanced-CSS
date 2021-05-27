@@ -225,8 +225,8 @@ Apply CSS grid to your Zen Garden page. You can use Grid anywhere you like as lo
 
 ## After Class 
 
-- Use CSS Grid in your Zen Garden Page
-- Complete the challenegs from this week
+- Use CSS Grid in your Zen Garden Page. This is an open ended challenge. You 
+- Complete the challenges from this week
 
 ## Resources 
 
