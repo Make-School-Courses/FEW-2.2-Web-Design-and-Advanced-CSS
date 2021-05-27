@@ -24,6 +24,7 @@ CSS is a language that is responsible for the appearance of you web apps. To mak
 
 Students by the end of the course will be able to:
 
+1. Write CSS in the CSS language
 1. Use grid systems for layout
 1. Use CSS preprocessors
 1. Implement CSS variables to make more modular stylesheets
@@ -42,16 +43,16 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 | Class |    Date    |             Topics           | Assignment |
 |:-----:|:----------:|:----------------------------:|:----------:|
 |  - |  Mon, May 31  | **No Class - Memorial Day**  | - |
-|  1 |  Wed, June 2  | [Lesson 1 CSS Review]        | CSS Diner + CSS ZenGarden Type |
+|  1 |  Wed, June 2  | [Lesson 1 CSS Review]        | 1.1 CSS Diner 1.2 CSS ZenGarden Type |
 |  2 |  Fri, June 4  | [Lesson 2 Typography]        | - |
-|  3 |  Mon, June 7  | [Lesson 3 Box Model Flex]    | Flexbox Froggy + CSS Zen Garden Flex |
+|  3 |  Mon, June 7  | [Lesson 3 Box Model Flex]    | 2.1 Flexbox Froggy 2.2 CSS Zen Garden Flex |
 |  4 |  Wed, June 9  | [Lesson 4 Background Images] | - |
-|  5 |  Fri, June 11 | [Lesson 5 CSS Grid]          | CSS Grid Garden + CSS Zen Garden Grid |
-|  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]     | CSS Zen Garden + CSS Framework |
-|  7 |  Wed, June 16 | [Lesson 7] | CSS Framework |
+|  5 |  Fri, June 11 | [Lesson 5 CSS Grid]          | 3.1 CSS Grid Garden 3.2 CSS Zen Garden Grid |
+|  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]    | CSS Zen Garden + CSS Framework |
+|  7 |  Wed, June 16 | [Lesson 7] | 4.2 CSS Framework 4.1 Custom properties |
 |  8 |  Fri, June 18 | [Lesson 8] | Navbars |
-|  9 |  Mon, June 21 | [Lesson 9] | CSS Preprocessors |
-| 10 |  Wed, June 23 | [Lesson 10] | Animation |
+|  9 |  Mon, June 21 | [Lesson 9] | 5.1 CSS Preprocessors |
+| 10 |  Wed, June 23 | [Lesson 10] | 5.2 Animation |
 | 11 |  Fri, June 25 | [Lesson 11] | Before and after |
 | 12 |  Mon, June 28 | [Lesson 12] | Controls |
 | 13 |  Wed, June 30 | [Lesson 13] | - |

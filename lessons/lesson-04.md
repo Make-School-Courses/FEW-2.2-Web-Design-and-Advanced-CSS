@@ -2,11 +2,21 @@
 
 ## Review 
 
-Quick you need to arrange all of the list items (li tags) in a column: 
-
 ```HTML
-
+<div class="container"> 
+	<ul>
+		<li><span>Apples</span></li>
+		<li><span>Oranges</span></li>
+		<li><span>Bananas</span></li>
+	</ul>
+</div>
 ```
+
+Consider the HTML block above. Add styles that do the following: 
+
+- Each li tag should have `1rem` padding. 
+- 
+
 
 ## Background Images
 
