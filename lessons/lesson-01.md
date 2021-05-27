@@ -361,7 +361,7 @@ Dense blocks of type are hard to read. Adding space between lines makes them eas
 	- http://www.csszengarden.com
 	- [CSS Zen Garden HTML Source](http://www.csszengarden.com/examples/index)
 
-## Resources 
+## Resources
 
 - [CSS Diner](https://flukeout.github.io)
 - [CSS Zen Garden](http://www.csszengarden.com)
@@ -369,4 +369,3 @@ Dense blocks of type are hard to read. Adding space between lines makes them eas
 - [CSS Typography](https://www.webfx.com/blog/web-design/css-typography-01/)
 - [CSS Reference Typography](https://cssreference.io/typography/)
 - [Web Typography](https://www.internetingishard.com/html-and-css/web-typography/)
-
