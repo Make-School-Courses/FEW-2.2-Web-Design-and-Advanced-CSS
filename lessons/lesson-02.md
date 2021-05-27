@@ -342,9 +342,7 @@ Continue the CSS Zen Garden challenges from Lesson 01. Incorporate the ideas fro
 
 Submit your work to GradeScope! 
 
-- Complete the challenges from Lesson 1
-	- Answer the CSS Diner questions 
-	- Set the font styles for the CSS Zen Garden page
+- Complete the challenges from lesson 1: [1.1 CSS Diner 1.2 CSS ZenGarden Type](lesson-01.md#after-class)
 
 ## Resources
 
