@@ -6,9 +6,9 @@
 
 ## What is a Grid? 
 
-In design a a grid is used to create a system that arranges things on a page.
+In design, a grid is used to create a system that arranges things on a page.
 
-The first thing that comes to mind when you talk about a grid is a graph paper. A grid in design looks a little different. Vertically the grid the space between each line is based on the font size. Horizontally the grid is based on the column width. 
+The first thing that comes to mind when you talk about a grid is graph paper. A grid in design looks a little different. A vertical grid is the space between each line and is based on the font size. Horizontally the grid is based on the column width. 
 
 Here is a good article describing grid systems: 
 
@@ -16,42 +16,42 @@ https://www.oozlemedia.com/advantages-of-grid-systems-in-web-design/
 
 ## CSS Grid 
 
-In the past the deveoper community provided CSS frameworks that had grid built in. You have probably used one of these. 
+In the past, the developer community provided CSS frameworks that had grids built-in. You have probably used one of these. 
 
 - https://getbootstrap.com/docs/4.0/layout/grid/
 - https://material-ui.com/components/grid/
 
-These systems were built before CSS supported a built in grid system. The CSS grid now makes these grid systems obsolete (in my opinion, I'm sure there is an argument to keep them.)
+These systems were built before CSS supported a built-in grid system. The CSS grid now makes these grid systems obsolete (in my opinion, I'm sure there is an argument to keep them.)
 
-- Q: What does CSS grid do? 
-- A: CSS Grid arranges element in rows and columns.
+- Q: What does the CSS grid do? 
+- A: CSS Grid arranges elements in rows and columns.
 
 - Q: How is this different from Flex? 
-- A: Flex is a on dimensional arrangement. When using flex you choose an axis either horizontal or vertical. CSS grid on the other hand arranges element on both the horizontal and vertical axis. 
+- A: Flex is a one-dimensional arrangement. When using flex you choose an axis either horizontal or vertical. CSS grid on the other hand arranges elements on both the horizontal and vertical axis. 
 
 - Q: Why use CSS grid over one of the CSS grid systems like Bootstrap?
 - A: CSS Grid is simple enough it doesn't need an abstraction. It's more flexible and doesn't require all of the extra markup needed by a grid system like the one used in Bootstrap. 
 
 - Q: Can you use CSS Grid and Flex together? 
-- A: Yes! They both work together. You can use flex to arrange elements on a grid cell or use grid inside an element arranged with flex. 
+- A: Yes! They both work together. You can use flex to arrange elements on a grid cell or use a grid inside an element arranged with flex. 
 
 ### Using CSS Grid
 
-CSS Grid works similar to Flex, when you set an elements display property to grid all of that element's children will be arranged in a grid. 
+CSS Grid works similar to Flex, when you set an element's display property to `grid` all of the element's children will be arranged in a grid. 
 
-Grid is also different from Flex. It's got two axis and allows you to define cells that make up the grid. It's more complex than Flex. 
+Grid is also different from Flex. It's got two axes and allows you to define cells that make up the grid. It's more complex than Flex. 
 
 Vocabulary
 
 **Columns**
 
-Columbs are the horzontal divisions of the grid. Picture these as vertical bars that define the horizontal space. These are the most important measurement! 
+Columns are the horizontal divisions of the grid. Picture these as vertical bars that define the horizontal space. These are the most important measurement! 
 
 ![Columns](./images/01-columns.png)
 
 **Gap/Gutter**
 
-The grid gap or gutter is the space between the the columns. 
+The grid gap or gutter is the space between the columns. 
 
 **Rows**
 
@@ -59,17 +59,17 @@ These are the vertical divisions. Picture these as the horizontal bars that are 
 
 ![Rows](./images/02-rows.png)
 
-When you put the two gether you get a **grid**,
+When you put them together you get a **grid**,
 
 ![Grid](./images/03-grids.png)
 
 **Grid Cell**
 
-A grid cell is rectangular area that maps across any number of rows and columns. It has to be a rectangle! The edges must stop at the borders defined by the rows and columns. Notice that a cell doesn't fall into the gap between rows and columns! 
+A grid cell is a rectangular area that maps across any number of rows and columns. It has to be a rectangle! The edges must stop at the borders defined by the rows and columns. Notice that a cell doesn't fall into the gap between rows and columns! 
 
 ![Cells](./images/04-cells.png)
 
-Generally speaking you can ignore the height of rows since the row height will be set by the height of the content, though sometimes you will set this. 
+Generally speaking, you can ignore the height of rows since the row height will be set by the height of the content, though sometimes you will set this. 
 
 ### Making a Grid with CSS
 
@@ -85,11 +85,10 @@ Imagine you have the following markup:
 	<div class="box b">Six</div>
 	<div class="box c">Seven</div>
 	<div class="box d">Eight</div>
-
 </div>
 ```
 
-With this arrangement you can use `div.container` to arrange all of the `div.box` in a grid. The following would arrange these elements into three columns with a `1em` gap. 
+With this arrangement, you can use `div.container` to arrange all of the `div.box` in a grid. The following would arrange these elements into three columns with a `1em` gap. 
 
 ```CSS
 .container {
@@ -122,13 +121,13 @@ The `fr` is a unit that is one fraction. A fractional unit takes up a fraction o
 
 If you had `1fr 1fr 1fr 1fr` each fraction would be 1/4 or 25%. 
 
-You can mix and match fraction for example: `1fr 1fr 2fr` is a total of 4 fractions and would give us: 1/4, 1/4, and 1/2 or 25%, 25%, and 50%.
+You can mix and match fractions for example: `1fr 1fr 2fr` is a total of 4 fractions and would give us: 1/4, 1/4, and 1/2 or 25%, 25%, and 50%.
 
 The code above is all you need for a simple grid where each cell is the same size. 
 
 ### Creating complex grids
 
-CSS Grid provides more tools for creating more complex grids. One of the best tools is `grid-areas`. This property allows you to define cells that span rows and columns and map elements to those cells. 
+CSS Grid provides more tools for creating more-complex grids. One of the best tools is `grid-areas`. This property allows you to define cells that span rows and columns and map elements to those cells. 
 
 This time start with four divs. 
 
@@ -141,17 +140,18 @@ This time start with four divs.
 </div>
 ```
 
-These elements represent the areas of the page and will mapped to the grid. 
+These elements represent the areas of the page and will be mapped to the grid. 
 
 ```CSS
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 1em;
-	grid-template-areas:  "h h h h" 
-                        "s m m m" 
-                        "s m m m"
-                        "f f f f";
+	grid-template-areas: 
+	"h h h h" 
+	"s m m m" 
+	"s m m m"
+	"f f f f";
 ```
 
 This time we have 4 columns each one fraction. 
@@ -195,7 +195,7 @@ Notice above that we have given each element a class name: `header`, `side`, `ma
 }
 ```
 
-Notice each element is assigned to a grid area by the the letter assigned in the template. 
+Notice each element is assigned to a grid area by the letter assigned in the template. 
 
 In other words `div.header` maps to the area defined by the `h`.
 
@@ -205,11 +205,11 @@ Above I showed two ways to use CSS Grid. These examples work with only three pro
 
 Explore some more features of CSS Grid here: 
 
--  https://cssgridgarden.com
+- https://cssgridgarden.com
 
-## Challenges 
+## After Class 
 
-Solve these puzzles and post your answers to gradescope.
+Solve these puzzles and post your answers to Gradescope.
 
 - https://cssgridgarden.com
 
@@ -222,11 +222,6 @@ Apply CSS grid to your Zen Garden page. You can use Grid anywhere you like as lo
 	- `div.main` - has four subsection these might be interesting in a grid.
 	- `div.zen-resources` - This section has a list with 5 items, it could be a candidate for a grid.
 	- At the bottom of the page there are some extra divs. These were put there for creative purposes you could you arrange these in a grid and give each a background image?
-
-## After Class 
-
-- Use CSS Grid in your Zen Garden Page. This is an open ended challenge. You 
-- Complete the challenges from this week
 
 ## Resources 
 

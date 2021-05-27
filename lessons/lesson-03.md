@@ -294,16 +294,16 @@ Last style the anchors.
 }
 ```
 
-## Challenges
+## After Class
 
 Use the box model and flex to style your Zen Garden page. Do the following things: 
 
-- Create a card of one or more of the sections on the Zen Garden page. Take a look at some of the Zen Garden pages for ideas. Look for "cards" there to see what others have done. Here are a few ideas: 
+- Create a card of one or more of the sections on the Zen Garden page. Take a look at some of the Zen Garden pages for ideas. Look for "cards" there to see what others have done. Here are a few ideas:
 	- Any of the sub-sections under: `section.intro` or `div.main` would be good candidates for Cards. Making three cards for: `div.explanation`, `div.participation`, and `div.benfits`. You can arrange these in a row using flex.
 	- The lists of links at the bottom of the page, `div.design-selection`, `div.design-archives`, and `div.zen-resources`, could also be good candidates for cards.
 	- The `div.design-selection` contains a list with each list item containing two links, one the link to the design and a link to the designer. Each of these list items could be a card!
 - Create a button style and use it somewhere on your page. The style of your buttons is up to you but the style you give must make stand out something that invites user interaction! Here are few ideas: 
-	- Style the links in the `footer` like buttons. You can use the flexbox here. 
+	- Style the links in the `footer` like buttons. You can use the flexbox here.
 	- The `div.design-archives` section contains two links that more designs. These two links would be great candidates for buttons! 
 	- The `div.zen-resources` section contains 5 links that would also be good candidates for a button!
 
@@ -312,7 +312,7 @@ Submit your work to GradeScope!
 ## Resources 
 
 - [Guide to Flex Box](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [Card Design](https://www.awwwards.com/)play-your-cards-right-exploring-the-cards-trend-in-web-design.html
+- [Card Design](https://www.awwwards.com/play-your-cards-right-exploring-the-cards-trend-in-web-design.html)
 - [Styling Links](https://css-tricks.com/css-basics-styling-links-like-boss/)
 - [Flex Box Froggy](https://flexboxfroggy.com)
 

@@ -256,7 +256,7 @@ Continue working on your CSS Zen Garden Page. Use the concepts from class to sol
 	- Use a gradient to fill the background of the page. 
 	- Use a gradient as a background to a heading or section
 
-Submit your work to GradeScope! 
+Submit your work to GradeScope!
 
 ## Resources 
 
