@@ -2,7 +2,11 @@
 
 ## Review 
 
+Quick you need to arrange all of the list items (li tags) in a column: 
 
+```HTML
+
+```
 
 ## Background Images
 
