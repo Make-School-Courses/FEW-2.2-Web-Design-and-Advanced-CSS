@@ -34,15 +34,15 @@ body > div > p {
 
 The box model describes how everything is sized on the CSS. 
 
-The Box Model applies to all **block** eleemnts. Looking at any element on a page it will either display as inline or block. 
+The Box Model applies to all **block** elements. Looking at any element on a page it will either display as inline or block. 
 
-Think of inline elements like words in a block of text. They flow left to right and wrap when they reach the extent of their container. 
+Think of inline elements like words in a block of text. The flow is left to right and wrap when they reach the extent of their container. 
 
-Block elements stack one on top of the previous. You can set thew width and height of a block element. 
+Block elements stack one on top of the previous. You can set the width and height of a block element. 
 
 Block elements should always contain inline elements. Not the other way around!
 
-Try this on the Zen Garden Page. The following sets a style for all anchor tags on a page. The anchor tag displays as inline be default! 
+Try this on the Zen Garden Page. The following sets a style for all anchor tags on a page. The anchor tag displays as inline by default! 
 
 ```CSS
 a {
@@ -86,7 +86,7 @@ Sets the space between the content and the border.
 
 Sets the border around an element. 
 
-The border has many styles. At the minimum you need to set the border style! 
+The border has many styles. At the minimum, you need to set the border style! 
 
 ```CSS
 div {
@@ -94,7 +94,7 @@ div {
 }
 ```
 
-The default border color is the fore ground color.
+The default border color is the foreground color.
 
 ### Challenge:
 
@@ -119,16 +119,16 @@ Challenge: make all of the anchor tags in the footer display as buttons.
 
 Buttons can vary widely in design and solutions can be very creative. What is presented here is a good starting place for a wide variety of buttons:
 
-- Display block or inline block - buttons will almost alwasy display as a block
+- Display block or inline-block - buttons will almost always display as a block
 - Padding - Add space around the text content of the button. This usually better than setting the width and height but you might do that if you wanted your buttons to be a specific size. 
-- Border - Buttons often have a border, but not always! You can also set the border on any of the sides. For example you migth have a border only on the left or bottom, or have borders on the left and rightor top and bottom. 
-- Background color - Give the button a background color to make it pop out and look clickable!
+- Border - Buttons often have a border, but not always! You can also set the border on any of the sides. For example, you might have a border only on the left or bottom, or have borders on the left and right or top and bottom. 
+- Background color - Give the button background color to make it pop out and look clickable!
 
 ## Float 
 
-Float is a property used to wrap text around an image. A floated element moves all the way to the left or the right and everything else tries to wrap a around it. 
+Float is a property used to wrap text around an image. A floated element moves to the left or the right and everything else tries to wrap around it. 
 
-Try this, here image each of the links on the Zen Garden page were an image. 
+Try this, here image each of the links on the Zen Garden page was an image. 
 
 ```CSS
 a {
@@ -142,13 +142,13 @@ a {
 }
 ```
 
-Challenge: float every other a tag to the right. 
+Challenge: float every other tag to the right. 
 
 ## Flex
 
 Flex is a tool that arranges elements along an axis. The axis can be horizontal or vertical. 
 
-Flex is a property that arrange the elements children. This is the core concept! All of the other flex properties apply to the the children and determine how the children are arranged. 
+Flex is a property that arranges the child elements. This is the core concept! All of the other flex properties apply to the children and determine how the children are arranged. 
 
 Solve the problems here: https://flexboxfroggy.com
 
@@ -156,11 +156,11 @@ Submit your answers to GradeScope!
 
 ## Creating Cards
 
-The ideas of a "Card" in web design is a box with information. Usually this box has something to delineate it from the area around it. This might be a border or a shadow.
+The idea of a "Card" in web design is a box with information. Usually, this box has something to delineate it from the area around it. This might be a border or a shadow.
 
 A card often contains text content and might also contain an image. 
 
-A card presents one complete idea. OYu could think of this like a paragraph. Examples might be a product, a personal profile, a reminder, a review, a single post or comment. 
+A card presents one complete idea. you could think of this as a paragraph. Examples might be a product, a personal profile, a reminder, a review, a single post or comment. 
 
 Card example:
 
@@ -170,7 +170,7 @@ Some ideas to try:
 
 ### Some Cards ideas
 
-Here some ideas to get you started designing your own cards. These ideas were applied to the Zen Garden page so they are limited in that they work without changing the mark up found there. 
+Here some ideas to get you started designing your cards. These ideas were applied to the Zen Garden page so they are limited in that they work without changing the mark up found there. 
 
 **Turning the footer into a card**
 
@@ -203,7 +203,7 @@ footer {
 
 **Turn each list item in Select a Design into a card**
 
-Here is an example styling each list item in the `div.design-selection` section as a card. 
+Here is an example of styling each list item in the `div.design-selection` section as a card. 
 
 Start with the `li` this will be the card container:
 
@@ -220,7 +220,7 @@ Start with the `li` this will be the card container:
 }
 ```
 
-Here we have a couple items to play with. There are two links and some text, the word "by" inside each `li`. Let's put the first link at the top, the second link at the bottom, and put the word "by" near the center. 
+Here we have a couple of items to play with. There are two links and some text, the word "by" inside each `li`. Let's put the first link at the top, the second link at the bottom, and put the word "by" near the center. 
 
 The style above made all of the text large, so here we will make the links smaller so only the word "by" is larger. 
 
@@ -249,7 +249,7 @@ You could also have used the class names: `a.design-name` and `a.designer-name`.
 
 **Turn the Resources section into a Card**
 
-Start with container. Use flex here to arrange the contents in a column. 
+Start with a container. Use flex here to arrange the contents in a column. 
 
 ```CSS
 .zen-resources {
@@ -260,7 +260,7 @@ Start with container. Use flex here to arrange the contents in a column.
 }
 ```
 
-Next add a header to the card. 
+Next, add a header to the card. 
 
 ```CSS
 .zen-resources h3 {
@@ -298,14 +298,14 @@ Last style the anchors.
 
 Use the box model and flex to style your Zen Garden page. Do the following things: 
 
-- Create a card of one of more of the sections in the Zen Garden page. Take a look at some of the Zen Garden pages for ideas. Look for "cards" there to see what others have done. Here are a few ideas: 
-	- Any of the sub sections under: `section.intro` or `div.main` would be good candidates for Cards. Making three cards for: `div.explanation`, `div.participation`, and `div.benfits`. You can arranges these in a row using flex.
+- Create a card of one or more of the sections on the Zen Garden page. Take a look at some of the Zen Garden pages for ideas. Look for "cards" there to see what others have done. Here are a few ideas: 
+	- Any of the sub-sections under: `section.intro` or `div.main` would be good candidates for Cards. Making three cards for: `div.explanation`, `div.participation`, and `div.benfits`. You can arrange these in a row using flex.
 	- The lists of links at the bottom of the page, `div.design-selection`, `div.design-archives`, and `div.zen-resources`, could also be good candidates for cards.
-	- The `div.design-selection` contains a list with each list item containing two links, one the link to the design and the a link to the designer. Each of these list items could be a card!
-- Create a button style and use it somewhere on your page. The style of your buttons is up to you but it's importatn that the style you give makes stand out something that invites user interaction! Here are few ideas: 
-	- Style the links in the `footer` like buttons. You can use flex box here. 
-	-  The `div.design-archives` section contains two links that more designs. These two links would be great candidates for buttons! 
-	- The `div.zen-resources` section contains 5 links that would also be good candidates for button!
+	- The `div.design-selection` contains a list with each list item containing two links, one the link to the design and a link to the designer. Each of these list items could be a card!
+- Create a button style and use it somewhere on your page. The style of your buttons is up to you but the style you give must make stand out something that invites user interaction! Here are few ideas: 
+	- Style the links in the `footer` like buttons. You can use the flexbox here. 
+	- The `div.design-archives` section contains two links that more designs. These two links would be great candidates for buttons! 
+	- The `div.zen-resources` section contains 5 links that would also be good candidates for a button!
 
 Submit your work to GradeScope! 
 
@@ -315,3 +315,4 @@ Submit your work to GradeScope!
 - [Card Design](https://www.awwwards.com/)play-your-cards-right-exploring-the-cards-trend-in-web-design.html
 - [Styling Links](https://css-tricks.com/css-basics-styling-links-like-boss/)
 - [Flex Box Froggy](https://flexboxfroggy.com)
+
