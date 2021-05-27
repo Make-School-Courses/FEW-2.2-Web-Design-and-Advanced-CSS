@@ -8,13 +8,13 @@
 
 Images that appear in your web pages are either part of the content or part of the design.
 
-Content images are things like: the picture of a product, the picture of a person like a user. Content images are picture that the content of the page talks about. 
+Content images are things like: the picture of a product, the picture of a person like a user. Content images are a picture that the content of the page talks about. 
 
-Images that are part of the design are juts that part of the design. These images enhance the visual look and feel of the site but are not actual content. 
+Images that are part of the design are just that part of the design. These images enhance the visual look and feel of the site but are not the actual content. 
 
-Why make the distinction? Content images should be displayed using the `<img>` tag. This allows them to be indexed, searched for and dowloaded and treated like information. 
+Why make the distinction? Content images should be displayed using the `<img>` tag. This allows them to be indexed, searched for, and downloaded, and treated like information. 
 
-As part of the content for a page they will always be part of the content. 
+As part of the content for a page, they will always be part of the content. 
 
 Images that are part of the design need to avoid being indexed, searched, and saved. Design can change so these images should be separate from the content of the page. 
 
@@ -34,7 +34,7 @@ A background image fills a box out to the border, this includes the padding but 
 
 Any element can have multiple backgrounds! This is a very powerful idea. Just separate each property with a comma to add a new element. 
 
-The background-image property has the following proprties:
+The background-image property has the following properties:
 
 - `background-image` - sets an image
 - `background-repeat` - determines how the image repeats or tiles, can be on the x, y, or both axis
@@ -50,12 +50,12 @@ Any element can have a background color. This can be a solid color or a gradient
 
 Colors can be set as:
 
-- #ff4433 - hex color 
-- rgb(255, 123, 45) - rgb color
-- hsl(360, 100%, 50%) - hsl color
-- rgba(255, 0, 0, 0.8) - rgba (like rgb but includes alpha!)
-- hsla(360, 100%, 50%) - hsla color (like hsl but includes alpha!)
-- red - keyword color
+- `#ff4433` - hex color 
+- `rgb(255, 123, 45)` - rgb color
+- `hsl(360, 100%, 50%)` - hsl color
+- `rgba(255, 0, 0, 0.8)` - rgba (like rgb but includes alpha!)
+- `hsla(360, 100%, 50%)` - hsla color (like hsl but includes alpha!)
+- `red` - keyword color
 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl()
 - https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba()
@@ -83,7 +83,7 @@ body {
 }
 ```
 
-Notice I'm controlling the size of the pattern image with `backgroun-size`!
+Notice I'm controlling the size of the pattern image with `background-size`!
 
 This may make your text hard to read. Give text blocks a background color, something like: 
 
@@ -95,9 +95,9 @@ body > div {
 }
 ```
 
-**Use a single non-repeating image to fill page.**
+**Use a single non-repeating image to fill a page.**
 
-Here the background image is set in the body. Repeat is none, and the background size is set to cover. 
+Here the background image is set in the body. Repeat is none, and the background-size is set to cover. 
 
 ```CSS
 body {
@@ -110,7 +110,7 @@ body {
 
 **Add a background image behind a section.**
 
-Same idea as above but apply the background behind a div, section or any block. 
+Same idea as above but apply the background behind a div, section, or any block. 
 
 ```CSS
 body section > div, .main > div {
@@ -130,7 +130,7 @@ This idea would work with repeating patterns also. Here I changed the image and 
 body section > div, .main > div {
 	background-image: url(./images/patterns-2-2/aztec.png);
 	background-size: 100px;
-	
+
 	margin: 2em;
 	padding: 2em;
 }
@@ -142,7 +142,7 @@ You could also this idea only for a heading:
 h1 {
 	background-image: url(./images/patterns-2-2/aztec.png);
 	background-size: 100px;
-	
+
 	margin: 2em;
 	padding: 2em;
 }
@@ -158,7 +158,7 @@ h1 {
 	background-size: 100px;
 	background-repeat: repeat-x;
 	background-position-y: 100px;
-	
+
 	margin: 2em;
 	padding: 2em;
 }
@@ -166,7 +166,7 @@ h1 {
 
 **Add an icon next to a heading**
 
-Here we have an image with no repeat. Set the background size to control the size of the image. I wanted to place the image on the left so I added padding on the left and positioned the image on the left and center vertical. 
+Here we have an image with no repeat. Set the background-size to control the size of the image. I wanted to place the image on the left so I added padding on the left and positioned the image on the left and center vertical. 
 
 ```CSS
 h1 {
@@ -180,7 +180,7 @@ h1 {
 
 **Add a "divider" above or below a section**
 
-Add a background image. Use no repeat, and position center bottom. Add some padding to leave space below your content to show the image. 
+Add a background image. Use no-repeat, and position center bottom. Add some padding to leave space below your content to show the image. 
 
 ```CSS
 .main > div {
@@ -205,12 +205,13 @@ Notice below the cat and dog images are each separated by a comma. The sizes are
 
 I added padding on the left and right to leave room for the images. 
 
-I position the text I used text align to center the text on the horizontal axis and set the `line-height` to center the text vertically.
+I position the text I used text-align to center the text on the horizontal axis and set the `line-height` to center the text vertically.
 
 ```CSS
 h1 {
-	background-image: url(./images/animal-attributes-icons/cat-agility-colored.png), 
-	url(./images/animal-attributes-icons/cat-agility-colored.png);
+	background-image: 
+		url(./images/animal-attributes-icons/cat-agility-colored.png), 
+		url(./images/animal-attributes-icons/cat-agility-colored.png);
 	background-size: 100px, 100px;
 	background-position: left center, right center;
 	background-repeat: no-repeat, no-repeat;
@@ -219,7 +220,7 @@ h1 {
 	padding-right: 100px;
 
 	height: 100px;
-	
+
 	line-height: 100px;
 	text-align: center;
 }
@@ -233,10 +234,10 @@ Add some background images to your Zen Garden page.
 
 Continue working on your CSS Zen Garden Page. Use the concepts from class to solve these problems: 
 
-- Use background images in your page. Try these ideas: 
+- Use background images on your page. Try these ideas: 
 	- Use a single image or a repeating pattern to fill the background. 
 	- Use an image as a background for a heading, card, or section. 
-	- Use an image to add an icon for next to a heading link or button. 
+	- Use an image to add an icon next to a heading link or button. 
 - Use a Gradient
 	- Use a gradient to fill the background of the page. 
 	- Use a gradient as a background to a heading or section
