@@ -72,7 +72,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 6 CSS Framework]: lessons/lesson-06.md
 
 [CSS Diner CSS ZenGarden Type]: lessons/lesson-01.md#after-class
-[Zen Garden Card and Button]: lessons/lesson-03.md#after-class
+[CSS Zen Garden Card and Button]: lessons/lesson-03.md#after-class
 [CSS Zen Garden Background Images]: lessons/lesson-04.md#after-class
 [CSS Zen Garden Grid]: lessons/lesson-05.md#after-class
 [CSS Zen Garden + CSS Framework]: lessons/lesson-06.md#after-class
