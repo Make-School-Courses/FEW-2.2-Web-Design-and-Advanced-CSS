@@ -50,7 +50,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  5 |  Fri, June 11 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
 |  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
 |  7 |  Wed, June 16 | [Lesson 7] | [Your CSS Framework] |
-|  8 |  Fri, June 18 | [Lesson 8] | Navbars |
+|  8 |  Fri, June 18 | [Lesson 8] | [Navbars] |
 |  9 |  Mon, June 21 | [Lesson 9] | 5.1 CSS Preprocessors |
 | 10 |  Wed, June 23 | [Lesson 10] | 5.2 Animation |
 | 11 |  Fri, June 25 | [Lesson 11] | Before and after |
@@ -77,6 +77,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [CSS Zen Garden Grid]: lessons/lesson-05.md#after-class
 [CSS Zen Garden + CSS Framework]: lessons/lesson-06.md#after-class
 [Your CSS Framework]: lessons/lesson-07.md#after-class
+[Navbars]: lessons/lesson-08.md#after-class
 
 ## Evaluation
 To pass this course you must meet the following requirements:
