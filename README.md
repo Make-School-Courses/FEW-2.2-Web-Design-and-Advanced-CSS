@@ -49,8 +49,8 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  4 |  Wed, June 9  | [Lesson 4 Background Images] | [CSS Zen Garden Background Images] |
 |  5 |  Fri, June 11 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
 |  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
-|  7 |  Wed, June 16 | [Lesson 7] | [Your CSS Framework] |
-|  8 |  Fri, June 18 | [Lesson 8] | [Navbars] |
+|  7 |  Wed, June 16 | [Lesson 7 Make a CSS Framework] | [Your CSS Framework] |
+|  8 |  Fri, June 18 | [Lesson 8 Styling Navbars] | [Navbars] |
 |  9 |  Mon, June 21 | [Lesson 9] | 5.1 CSS Preprocessors |
 | 10 |  Wed, June 23 | [Lesson 10] | 5.2 Animation |
 | 11 |  Fri, June 25 | [Lesson 11] | Before and after |
@@ -69,7 +69,9 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 3 Box Model Flex]: lessons/lesson-03.md
 [Lesson 4 Background Images]: lessons/lesson-04.md
 [Lesson 5 CSS Grid]: lessons/lesson-05.md
-[Lesson 6 CSS Framework]: lessons/lesson-06.md
+[Lesson 6 CSS Frameworks]: lessons/lesson-06.md
+[Lesson 7 Make a CSS Framework]: lessons/lesson-07.md
+[Lesson 8 Styling Navbars]: lessons/lesson-08.md
 
 [CSS Diner CSS ZenGarden Type]: lessons/lesson-01.md#after-class
 [CSS Zen Garden Card and Button]: lessons/lesson-03.md#after-class
