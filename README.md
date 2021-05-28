@@ -50,11 +50,11 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  5 |  Fri, June 11 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
 |  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
 |  7 |  Wed, June 16 | [Lesson 7 Make a CSS Framework] | [Your CSS Framework] |
-|  8 |  Fri, June 18 | [Lesson 8 Styling Navbars] | [Navbars] |
-|  9 |  Mon, June 21 | [Lesson 9] | 5.1 CSS Preprocessors |
+|  8 |  Fri, June 18 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
+|  9 |  Mon, June 21 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
 | 10 |  Wed, June 23 | [Lesson 10] | 5.2 Animation |
 | 11 |  Fri, June 25 | [Lesson 11] | Before and after |
-| 12 |  Mon, June 28 | [Lesson 12] | Controls |
+| 12 |  Mon, June 28 | [Lesson 12] | - |
 | 13 |  Wed, June 30 | [Lesson 13] | - |
 | 14 |  Fri, July 2  | [Lesson 14] | - |
 | -  |  Mon, July 5  | **No Class - Independence Day Observed** | - |
@@ -72,6 +72,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 6 CSS Frameworks]: lessons/lesson-06.md
 [Lesson 7 Make a CSS Framework]: lessons/lesson-07.md
 [Lesson 8 Styling Navbars]: lessons/lesson-08.md
+[Lesson 9 Form Controls]: lessons/lesson-09.md
 
 [CSS Diner CSS ZenGarden Type]: lessons/lesson-01.md#after-class
 [CSS Zen Garden Card and Button]: lessons/lesson-03.md#after-class
@@ -79,7 +80,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [CSS Zen Garden Grid]: lessons/lesson-05.md#after-class
 [CSS Zen Garden + CSS Framework]: lessons/lesson-06.md#after-class
 [Your CSS Framework]: lessons/lesson-07.md#after-class
-[Navbars]: lessons/lesson-08.md#after-class
+[Your framework Navbars]: lessons/lesson-08.md#after-class
 
 ## Evaluation
 To pass this course you must meet the following requirements:
