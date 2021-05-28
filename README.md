@@ -43,7 +43,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 | Class |    Date    |             Topics           | Assignment |
 |:-----:|:----------:|:----------------------------:|:----------:|
 |  - |  Mon, May 31  | **No Class - Memorial Day**  | - |
-|  1 |  Wed, June 2  | [Lesson 1 CSS Review]        | [1.1 CSS Diner 1.2 CSS ZenGarden Type] |
+|  1 |  Wed, June 2  | [Lesson 1 CSS Review]        | [CSS Diner CSS ZenGarden Type] |
 |  2 |  Fri, June 4  | [Lesson 2 Typography]        | - |
 |  3 |  Mon, June 7  | [Lesson 3 Box Model Flex]    | [CSS Zen Garden Card and Button] |
 |  4 |  Wed, June 9  | [Lesson 4 Background Images] | [CSS Zen Garden Background Images] |
@@ -71,7 +71,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 5 CSS Grid]: lessons/lesson-05.md
 [Lesson 6 CSS Framework]: lessons/lesson-06.md
 
-[1.1 CSS Diner 1.2 CSS ZenGarden Type]: lessons/lesson-01.md#after-class
+[CSS Diner CSS ZenGarden Type]: lessons/lesson-01.md#after-class
 [Zen Garden Card and Button]: lessons/lesson-03.md#after-class
 [CSS Zen Garden Background Images]: lessons/lesson-04.md#after-class
 [CSS Zen Garden Grid]: lessons/lesson-05.md#after-class
