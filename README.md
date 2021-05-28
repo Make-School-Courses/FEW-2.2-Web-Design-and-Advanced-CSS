@@ -48,7 +48,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  3 |  Mon, June 7  | [Lesson 3 Box Model Flex]    | [CSS Zen Garden Card and Button] |
 |  4 |  Wed, June 9  | [Lesson 4 Background Images] | [CSS Zen Garden Background Images] |
 |  5 |  Fri, June 11 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
-|  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]    | CSS Zen Garden + CSS Framework |
+|  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
 |  7 |  Wed, June 16 | [Lesson 7] | 4.2 CSS Framework 4.1 Custom properties |
 |  8 |  Fri, June 18 | [Lesson 8] | Navbars |
 |  9 |  Mon, June 21 | [Lesson 9] | 5.1 CSS Preprocessors |
@@ -75,6 +75,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Zen Garden Card and Button]: lessons/lesson-03.md#after-class
 [CSS Zen Garden Background Images]: lessons/lesson-04.md#after-class
 [CSS Zen Garden Grid]: lessons/lesson-05.md#after-class
+[CSS Zen Garden + CSS Framework]: lessons/lesson-06.md#after-class
 
 ## Evaluation
 To pass this course you must meet the following requirements:
