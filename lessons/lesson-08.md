@@ -1,4 +1,4 @@
-# FEW 2.2 - Advanced CSS - Nav Bars and Layout
+# FEW 2.2 - Advanced CSS - NavBars and Layout
 
 CSS Grid is amazing. It needs no abstraction! Flexbox is also amazing and needs no abstractions. This lesson will take a look at both of these and how they can be used in your CSS framework.
 
@@ -17,17 +17,11 @@ To create the layouts that you envision you'll need to use both of these tools.
 
 https://docs.google.com/presentation/d/1yItvH_ADMhnE4bEWmGb4jrb4xFDhs3Wh_e7EmO66gdY/edit?usp=sharing
 
-## Framework Project 
-
-Check your CSS framework against the checklist here: 
-
-[project-css-framework.md](../Assignments/project-css-framework.md)
-
 ## Elements with Class 
 
 Your framework uses selectors to apply styles to elements. Using the tag name allows selectors to apply broadly with little effort. In this way, all of the links and headings will look the same. 
 
-Some times you'll want a link or a heading or a div to look different than others. In these cases use a class name. 
+Sometimes you'll want a link or a heading or a div to look different than others. In these cases use a class name. 
 
 Take a look at how [Boostrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) and [Foundation](https://get.foundation/sites/docs/) use class names. 
 
@@ -86,7 +80,20 @@ Headings, display, and muted text Bootstrap use a few classes to provide alterna
 }
 ```
 
-These classes modify the existing styles and give us new ways to express our selves with muted aligned display and subheadings! 
+These classes modify the existing styles and give us new ways to express ourselves with muted aligned displays and subheadings! 
+
+## Challenge: Typographic styles
+
+Add some classes to your framework CSS that support these styles: 
+
+- Display headings. Define 6 styles. Use the [Bootstrap display headings](https://getbootstrap.com/docs/5.0/content/typography/#display-headings) as a guide. 
+- Test align classes. Again you can use [Bootstrap text-align](https://getbootstrap.com/docs/5.0/utilities/text/#text-alignment) as a guide. Make a class for text-align right and center. 
+- Make a "lead" style. This a style for the first paragraph in a story or article. Usually, the text is a little larger and might be a different color. Could also use some other styles, it's up to you. Use [Bootstrap lead](https://getbootstrap.com/docs/5.0/content/typography/#lead) as a guide. 
+- Use CSS Custom properties where you can here! Here are a few places where you might use a custom property:
+  - `font-family`
+  - `line-height`
+  - `color`
+  - `margin` and `padding`
 
 ## Nav Bars
 
@@ -269,28 +276,34 @@ Links on the navbar should be styled. Be sure to include a hover style.
 }
 ```
 
-## The State of your CSS Framework 
+## Challenge: Navbar
 
-Use this checklist to check the progress of your framework. 
+Define a navbar style. Use the example code above as a starting point. Feel free to customize this as much as you like! 
 
-[project-css-framework.md](../Assignments/project-css-framework.md)
+- Use a class name for the navbar. `navbar` might be a good choice since anyone can guess this! 
+- Be sure to use flex for the layout. 
+- Think about the background color and the text color. 
+- Navbars will have links. Think about these will appear in the navbar. 
+- Include a title style. 
 
-## Activity 
+## After Class
 
-Follow the guide above to get your navbar started. Build from there and style the navbar to make it fit the design and theme of your framework. 
+This class will be adding new styles to your CSS framework. Submit your framework with the new styles added. 
 
-We will remove all of these at the break to get comments from your peers. After the break, we will work to improve the navbars and review a second time. 
+Check the work on your CSS framework. So far your framework should have the following: 
 
-## Homework: Framework - Nav Bar and Footer
-
-Add a Navbar to your framework. See the description linked below for more details on this assignment: 
-
-[project-css-framework.md](../Assignments/project-css-framework.md)
+- Base font styles 
+- Use custom properties
+- Button styles 
+- Card style 
+- Typographic styles covered in the [challenges here](#challenge-typographic-styles)
+- Navbar style [covered in the challenges here](#challenge-navbar)
 
 ## Additional Resources
 
 1. https://cssreference.io/flexbox/
 
+<!-- 
 ## Minute-by-Minute [OPTIONAL]
 
 | **Elapsed** | **Time** | **Activity** |
@@ -300,5 +313,5 @@ Add a Navbar to your framework. See the description linked below for more detail
 | 0:20 | 0:45 | In Class Activity I |
 | 1:05 | 0:10 | BREAK |
 | 1:15 | 0:45 | In Class Activity II |
-| TOTAL | 2:00 | |
+| TOTAL | 2:00 | | -->
 
