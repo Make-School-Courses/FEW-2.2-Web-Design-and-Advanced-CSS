@@ -53,7 +53,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  8 |  Fri, June 18 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
 |  9 |  Mon, June 21 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
 | 10 |  Wed, June 23 | [Lesson 10 Animation] | Animation |
-| 11 |  Fri, June 25 | [Lesson 11 Before and after] |  |
+| 11 |  Fri, June 25 | [Lesson 11 Before and after] | - |
 | 12 |  Mon, June 28 | [Lesson 12] | - |
 | 13 |  Wed, June 30 | [Lesson 13] | - |
 | 14 |  Fri, July 2  | [Lesson 14] | - |
