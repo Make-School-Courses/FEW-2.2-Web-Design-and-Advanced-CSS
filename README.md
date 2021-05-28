@@ -81,6 +81,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [CSS Zen Garden + CSS Framework]: lessons/lesson-06.md#after-class
 [Your CSS Framework]: lessons/lesson-07.md#after-class
 [Your framework Navbars]: lessons/lesson-08.md#after-class
+[Lesson 9 Form Controls]: lessons/lesson-09.md#after-class
 
 ## Evaluation
 To pass this course you must meet the following requirements:
