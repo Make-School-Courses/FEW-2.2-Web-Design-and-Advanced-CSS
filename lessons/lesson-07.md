@@ -4,7 +4,7 @@
 
 ## Why you should know this?
 
-You shhould be able to write CSS that could be used in anywhere. This is where you would start if you were working on a large project building a library that covers a wide range of situations rather than each individula element! 
+You should be able to write CSS that could be used anywhere. This is where you would start if you were working on a large project building a library that covers a wide range of situations rather than each element! 
 
 ## Learning Objectives 
 
@@ -24,9 +24,9 @@ Take another look at these CSS frameworks. Look for the things that you can impl
 - https://milligram.io
 - https://purecss.io
 
-## Make your own Framework
+## Make your Framework
 
-The goal for you is to make your own framework. It won't be as extensive as thee frameworks. Your framework needs to define some base styles that might be useful in any project.
+The goal for you is to make your framework. It won't be as extensive as the frameworks we looked at earlier. Your framework needs to define some base styles that might be useful in any project.
 
 ## Start Your Framework
 
@@ -44,7 +44,7 @@ Defines some base typographic styles. Style the following:
 
 What to turn in? Create a sample page that shows off the styles of your framework.
 
-## Challenge: Create your frameowrk and add some base styles
+## Challenge: Create your framework and add some base styles
 
 Define some base styles for your framework. Link it to the CSS Zen Garden HTML. This way you'll be able to see the font styles as they are applied to the page. 
 
@@ -52,8 +52,8 @@ Do the following:
 
 ```CSS
 body {
-	font-family: /* Define the font stack */;
-	line-height: /* Adjust the line height */;
+  font-family: /* Define the font stack */;
+  line-height: /* Adjust the line height */;
 }
 ```
 
@@ -91,7 +91,7 @@ h1 {
 }
 ```
 
-Assigning a value is like setting the value of a property in CSS.`:root` is a special selector that represents the root of your CSS scope. All other elements descendants `:root`. Defining variables here make them accessible to all other elements. Think of this as global scope. 
+Assigning a value is like setting the value of a property in CSS.`:root` is a special selector that represents the root of your CSS scope. All other elements descendants `:root`. Defining variables here make them accessible to all other elements. Think of this as a global scope. 
 
 ```CSS
 :root {
@@ -124,7 +124,7 @@ Any value that would work in CSS can be assigned to a property.
 
 By declaring custom properties on `:root` they become global and available everywhere. 
 
-Otherwise declaring a custom property on an element makes it available to that element and inherited by the element's descendants, but unavailable to it's ancestors. 
+Otherwise declaring a custom property on an element makes it available to that element and inherited by the element's descendants, but unavailable to its ancestors. 
 
 ### Accessing custom property values
 
@@ -172,11 +172,11 @@ Move the `font-family` to a custom property.
 
 ```CSS 
 :root {
-	--font-family: /* Your font family here */;
+  --font-family: /* Your font family here */;
 }
 
 body {
-	font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 ```
 
@@ -184,41 +184,41 @@ Define a style for the anchor tag. Your links need a dcent style and that defaul
 
 ```CSS 
 :root {
-	--font-family: /* Your font family here */;
-	--bg-color: /* your background color */;
-	--fg-color: /* Your foreground color */;
+  --font-family: /* Your font family here */;
+  --bg-color: /* your background color */;
+  --fg-color: /* Your foreground color */;
 }
 
 body {
-	font-family: var(--font-family);
-	color: var(--fg-color);
-	background-color: var(--bg-color)
+  font-family: var(--font-family);
+  color: var(--fg-color);
+  background-color: var(--bg-color)
 }
 ```
 
-### What colors to other frameworks use? 
+### What colors do other frameworks use? 
 
 Take a look at Bootstrap, what colors are they using: https://getbootstrap.com/docs/4.0/utilities/colors/
 
 This is a pretty good idea. They have a list of common colors that all look good together.
 
-These colors include colors for important things, light text and dark text. 
+These colors include colors for important things, light text, and dark text. 
 
 You should define a few of these you will store them in CSS custom properties. This will make them easier to use! 
 
-You can add or modify this list. You can use any colors you like. If your not sure what to use for colors take a clue from Bootstrap or one of the other frameworks we looked at in class. 
+You can add or modify this list. You can use any colors you like. If you're not sure what to use for colors take a clue from Bootstrap or one of the other frameworks we looked at in class. 
 
 ```CSS
 :root {
-	--font-family: /* Your font family here */;
-	--bg-color: /* your background color */;
-	--fg-color: /* Your foreground color */;
-	--color-primary: /* */;
-	--color-success: /* */;
-	--color-danger: /* */;
-	--color-primary: /* */;
-	--color-dark: /* */;
-	--color-light: /* */;
+  --font-family: /* Your font family here */;
+  --bg-color: /* your background color */;
+  --fg-color: /* Your foreground color */;
+  --color-primary: /* */;
+  --color-success: /* */;
+  --color-danger: /* */;
+  --color-primary: /* */;
+  --color-dark: /* */;
+  --color-light: /* */;
 }
 ```
 
@@ -226,7 +226,7 @@ Let's use the primary color for links:
 
 ```CSS
 a {
-	color: /* primary color here */;
+ color: /* primary color here */;
 }
 ```
 
@@ -353,33 +353,21 @@ button {
   --bg-color: var(--foreground-color);
   --fg-color: var(--primary-color);
 
-  ...
+ ...
 }
 ```
 
-Now you can change the colors of all buttons and other elements that use the `--primary-color`, or change the color of any button by changing it's `--bg-color`. 
+Now you can change the colors of all buttons and other elements that use the `--primary-color`, or change the color of any button by changing its `--bg-color`. 
 
 ## After Class
 
 - Work on your CSS Framework. It should support these features: 
-	- Has a base font and typographical styles this includes line-height, font-family, and font-size
-	- defines colors. 
-	- styles the link or (anchor tag: a)
-	- styles the button
-	- Uses CSS custom properties
+  - Has a base font and typographical styles this includes line-height, font-family, and font-size
+  - defines colors. 
+  - styles the link or (anchor tag: a)
+  - styles the button
+  - Uses CSS custom properties
 
 ## Additional Resources
 
 - https://css-tricks.com/a-complete-guide-to-custom-properties/
-
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time**  | **Activity**              |
-| ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:45      | In Class Activity I       |
-| 1:05        | 0:10      | BREAK                     |
-| 1:15        | 0:45      | In Class Activity II      |
-| TOTAL       | 2:00      |                           |
-s
