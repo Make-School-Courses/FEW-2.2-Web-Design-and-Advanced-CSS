@@ -52,7 +52,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  7 |  Wed, June 16 | [Lesson 7 Make a CSS Framework] | [Your CSS Framework] |
 |  8 |  Fri, June 18 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
 |  9 |  Mon, June 21 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
-| 10 |  Wed, June 23 | [Lesson 10] | 5.2 Animation |
+| 10 |  Wed, June 23 | [Lesson 10 Animation] | Animation |
 | 11 |  Fri, June 25 | [Lesson 11] | Before and after |
 | 12 |  Mon, June 28 | [Lesson 12] | - |
 | 13 |  Wed, June 30 | [Lesson 13] | - |
@@ -73,6 +73,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 7 Make a CSS Framework]: lessons/lesson-07.md
 [Lesson 8 Styling Navbars]: lessons/lesson-08.md
 [Lesson 9 Form Controls]: lessons/lesson-09.md
+[Lesson 10 Animation]: lessons/lesson-10.md
 
 [CSS Diner CSS ZenGarden Type]: lessons/lesson-01.md#after-class
 [CSS Zen Garden Card and Button]: lessons/lesson-03.md#after-class
