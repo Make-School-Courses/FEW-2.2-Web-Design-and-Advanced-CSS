@@ -361,12 +361,21 @@ Now you can change the colors of all buttons and other elements that use the `--
 
 ## After Class
 
-- Work on your CSS Framework. It should support these features: 
-  - Has a base font and typographical styles this includes line-height, font-family, and font-size
-  - defines colors. 
-  - styles the link or (anchor tag: a)
-  - styles the button
-  - Uses CSS custom properties
+Work on your CSS Framework. be sure to use as many ideas from the class discussion above as you can! This includes CSS Custom properties, the ideas around styling buttons. Fonts and typographical styles. 
+
+Your framework should support these features:
+
+- Use CSS Custom properties! Any value that might need to be customized should use a custom property! 
+- Has a base font and typographical styles this includes line-height, font-family, and font-size
+- Defines heading styles: h1-6
+- Defines colors. 
+  - primary
+  - success
+  - danger
+  - dark
+  - light
+- styles the link (anchor tag: `<a>`)
+- styles the button
 
 ## Additional Resources
 
