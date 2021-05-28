@@ -272,34 +272,16 @@ There are many articles here are a few that I picked out. You can follow these t
 - https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
 - https://codepen.io/Vestride/pen/dABHx
 
-## The State of your CSS Framework 
-
-Use this checklist to check the progress of your framework. 
-
-[project-css-framework.md](../Assignments/project-css-framework.md)
 
 ## Activity 
 
 Create your own custom checkboxes and radio buttons. Add these to your CSS framework. 
 
-## Homework: Framework 
+## After Class 
 
-Complete your CSS framework:
 
-[project-css-framework.md](../Assignments/project-css-framework.md)
 
 ## Additional Resources
 
 1. https://cssreference.io/flexbox/
-
-## Minute-by-Minute [OPTIONAL]
-
-| **Elapsed** | **Time** | **Activity** |
-| ----------- | --------- | ------------------------- |
-| 0:00 | 0:05 | Objectives |
-| 0:05 | 0:15 | Overview |
-| 0:20 | 0:45 | In Class Activity I |
-| 1:05 | 0:10 | BREAK |
-| 1:15 | 0:45 | In Class Activity II |
-| TOTAL | 2:00 | |
 
