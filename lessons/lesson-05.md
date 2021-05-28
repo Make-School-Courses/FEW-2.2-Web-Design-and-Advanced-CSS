@@ -207,7 +207,7 @@ Explore some more features of CSS Grid here:
 
 - https://cssgridgarden.com
 
-## After Class 
+## After Class
 
 Solve these puzzles and post your answers to Gradescope.
 
