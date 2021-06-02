@@ -102,7 +102,6 @@ Class selector - begins with a dot `.` followed by the class name.
 .container { /* selects all elements with the class name contianer */ }
 .card { /* selects all elements with the class name card */ }
 .dark { /* selects all elements with the class name dark */ }
-.
 ```
 
 id selector = begins with `#` followed by the id name. id names should be unique and only appear once per page! 
@@ -118,7 +117,6 @@ id selector = begins with `#` followed by the id name. id names should be unique
 #main { /* selects all elements with the id name main */ }
 #display { /* selects all elements with the id name display */ }
 #alert { /* selects all elements with the id name alert */ }
-.
 ```
 
 Wild card - Selects all elements use the `*`. 
@@ -147,6 +145,8 @@ Child selector - Selects the child element of another selector use the `>`.
 
 ```CSS
 div > p { /* Selects only p tags that are children of div tags */ }
+.card > * { /* Selects all of the children in something with class 'card' */ }
+.container > #main { /* Selects the element with id 'main' in a thing with class name 'container' */ }
 ```
 
 Descendant selector - Select all descendants of another selector use the space ` `.
@@ -165,6 +165,7 @@ Descendant selector - Select all descendants of another selector use the space `
 
 ```CSS
 div p { /* Selects only p tags that are descedents of div tags */ }
+#main * { /* Selects ALL descendants of #main */ }
 ```
 
 Pseudo selectors: There are lots of pseudo-selectors they all begin with a colon `:`.
