@@ -141,6 +141,13 @@ Child selector - Selects the child element of another selector use the `>`.
 		<p>Not selected</p>
 	</aside>
 </div>
+<div class="card">
+	<h3>Selected</h3>
+	<p>Selected</p>
+	<div> <!-- selected -->
+		<button>Not selected</button>
+	</div>
+</div>
 ```
 
 ```CSS
@@ -166,6 +173,9 @@ Descendant selector - Select all descendants of another selector use the space `
 ```CSS
 div p { /* Selects only p tags that are descedents of div tags */ }
 #main * { /* Selects ALL descendants of #main */ }
+.card div > img {}
+div#main {/* div with the ID main */}
+div.card { /* div with class card */ }
 ```
 
 Pseudo selectors: There are lots of pseudo-selectors they all begin with a colon `:`.
@@ -173,7 +183,10 @@ Pseudo selectors: There are lots of pseudo-selectors they all begin with a colon
 `:nth-child()` selector - Selects an element by it's index use: `:nth-child(1)`. This selector has several different ways it can be used!
 
 ```HTML
-<ul>
+<ul class="menu">
+	<li><ul><li></li></ul></li>
+</ul>
+<ul class="options">
 	<li></li>
 	<li></li>
 	<li></li>
@@ -182,8 +195,8 @@ Pseudo selectors: There are lots of pseudo-selectors they all begin with a colon
 ```
 
 ```CSS
-li:nth-child(1) { /* Selects the first li tag */ }
-li:nth-child(3) { /* Selects the third li tag */ }
+.options li:nth-child(1) { /* Selects the first li tag */ }
+ul.menu > li:nth-child(3) { /* Selects the third li tag */ }
 li:nth-child(2n) { /* Selects every second element */ }
 li:nth-child(4n) { /* Selects every fourth element */ }
 li:nth-child(3n+1) { /* Selects every third element offset by 1 */ }
