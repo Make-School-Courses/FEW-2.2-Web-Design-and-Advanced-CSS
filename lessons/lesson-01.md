@@ -214,7 +214,7 @@ Seriously you need to master selectors!
 
 https://flukeout.github.io
 
-You'll submit this by adding the answers to GradScope!
+You'll submit this by adding the answers to GradeScope!
 
 #### Properties
 
