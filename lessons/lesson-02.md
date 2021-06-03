@@ -47,12 +47,12 @@ What's the difference? Serif fonts have a serif, which are the little details at
 What's the significance? Sans Serif fonts are generally easier to read on the screen.
 
 - Serif 
- - Look better and read better in print
- - Tend to look "old school", respectable, and formal
- - Tend to be easier to read at small point sizes
+	- Looks better and reads better in print
+	- Tends to look "old school", respectable, and formal
+	- Tend to be easier to read at small point sizes
 - San Serif
- - Clean, stable, and reliable
- - Looks modern and youthful
+	- Clean, stable, and reliable
+	- Looks modern and youthful
 
 ### How to choose a font? 
 
