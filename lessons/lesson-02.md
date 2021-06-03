@@ -40,7 +40,7 @@ https://venngage.com/blog/brand-fonts/
 
 Fonts can be classified into broad groups. The two most popular fonts used for web design fall into these groups: Serif and Sans Serif. 
 
-![Serif vs San Serif](images/Serif-vs-San Serif.png)
+![Serif vs San Serif](images/Serif-vs-San-Serif.png)
 
 What's the difference? Serif fonts have a serif, which are the little details at the extents of the letter shapes. Sans Serif fonts don't have serifs! 
 
