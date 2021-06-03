@@ -217,7 +217,7 @@ Here are a couple of strategies for pairing fonts:
 
 Explore this site for font pairs. Look for combinations described above:
 
-https://www.fontpair.co/al
+https://www.fontpair.co
 
 ## Type Hierarchy
 
