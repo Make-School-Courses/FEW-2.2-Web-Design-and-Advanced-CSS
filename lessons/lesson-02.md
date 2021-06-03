@@ -270,7 +270,7 @@ These units are always the same size on any screen!
 **Relative Units**
 
 | Unit | Relative to |
-|: ----|:------------|
+|:----|:------------|
 | em | Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width. |
 | `ex` | x-height of the element's font. |
 | `ch` | The advance measure (width) of the glyph "0" of the element's font. |
