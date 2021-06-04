@@ -17,7 +17,11 @@ The simplified markup looks like this:
 </nav>
 ```
 
-Write a selector for each of these.
+Style the design name color: tomato, font-size: 2rem, text-transform: uppercase. 
+
+Style the word "by" as color: #333, font-size: 1.5rem
+
+Style the designer name as color: cornflowerblue, font-size: 1rem, text-transform: capitalize
 
 ```CSS
 /* Style the design name */
@@ -27,6 +31,12 @@ Write a selector for each of these.
 /* Style the word "by" */
 
 ```
+
+## Video Lecture: 
+
+https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
+
+Follow the videos for Lesson 2
 
 ## Fonts
 
