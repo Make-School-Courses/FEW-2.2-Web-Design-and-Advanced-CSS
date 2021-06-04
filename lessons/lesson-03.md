@@ -27,8 +27,8 @@ body > div > p {
 }
 ```
 
-- How big is the h1?
-- How big is the p?
+- How big is the h1 in px?
+- How big is the p in px?
 
 ## The Box Model
 
