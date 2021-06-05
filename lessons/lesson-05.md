@@ -2,7 +2,21 @@
 
 ## Review 
 
+Quick answer these questions: 
 
+Give me a transparent orange color. Write the CSS value that make a transparent orange. 
+
+```HTML
+<button class="next-button">Next</button>
+```
+
+With the HTML above write the CSS that will add `arrow.png` to the right of the button text. The image should be same size as the text. 
+
+```HTML
+<h1>Company name</h1>
+```
+
+USing the markup above add an the image `pattern.png` along the bottom edge. The image should be 10px and repeat on the x axis. 
 
 ## What is a Grid? 
 
