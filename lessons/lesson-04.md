@@ -2,20 +2,39 @@
 
 ## Review 
 
+Try these problems to assess your skills: 
+
 ```HTML
-<div class="container"> 
-	<ul>
-		<li><span>Apples</span></li>
-		<li><span>Oranges</span></li>
-		<li><span>Bananas</span></li>
-	</ul>
+<ul>
+	<li>Apples</li>
+	<li>Oranges</li>
+	<li>Bananas</li>
+</ul>
+```
+
+- Use flex to arrange the elements in the list above in a row. 
+- Align them in the center on the cross axis. 
+
+```HTML
+<div>
+	<a>Messages: 99</a>
+	<a>Login</a>
+	<a>Settings</a>
 </div>
 ```
 
-Consider the HTML block above. Add styles that do the following: 
+- Use flex to arrange the a tags above in a column
+- Align them to the right on the cross axis
 
-- Each li tag should have `1rem` padding. 
-- 
+```HTML
+<div>
+	<div></div>
+</div>
+```
+
+- The outer div needs to be 500px wide by 500px tall
+- The inner div needs to be 20px wide and 20px tall
+- Use flex to place the inner div in the viertical and horizontal center of it's parent.
 
 
 ## Background Images
