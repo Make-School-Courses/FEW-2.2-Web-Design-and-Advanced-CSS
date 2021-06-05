@@ -102,6 +102,10 @@ Gradients can be linear or radial.
 - https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()
 - https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient()
 
+Experiment with Gradient Generator: 
+
+https://www.colorzilla.com/gradient-editor/
+
 
 ## Formulas
 
