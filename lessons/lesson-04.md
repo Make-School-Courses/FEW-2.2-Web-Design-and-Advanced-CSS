@@ -109,6 +109,10 @@ https://www.colorzilla.com/gradient-editor/
 
 ## Formulas
 
+Find some images to use for this section. You can use your own images or search this site for free image resources: 
+
+https://www.oxygenna.com
+
 **Add a background image that covers the page.**
 
 Use a repeating patterning and set it as the background: 
