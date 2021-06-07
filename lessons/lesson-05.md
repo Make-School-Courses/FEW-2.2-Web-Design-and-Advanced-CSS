@@ -18,6 +18,12 @@ With the HTML above write the CSS that will add `arrow.png` to the right of the 
 
 USing the markup above add an the image `pattern.png` along the bottom edge. The image should be 10px and repeat on the x axis. 
 
+## Video Lessons
+
+https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
+
+Watch videos: lesson 05 1-5
+
 ## What is a Grid? 
 
 In design, a grid is used to create a system that arranges things on a page.

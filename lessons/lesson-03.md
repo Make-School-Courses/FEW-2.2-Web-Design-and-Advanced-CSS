@@ -30,6 +30,12 @@ body > div > p {
 - How big is the h1 in px?
 - How big is the p in px?
 
+## Video Lessons
+
+https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
+
+Watch videos: lesson 03 1-6
+
 ## The Box Model
 
 The box model describes how everything is sized on the CSS. 

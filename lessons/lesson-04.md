@@ -36,6 +36,11 @@ Try these problems to assess your skills:
 - The inner div needs to be 20px wide and 20px tall
 - Use flex to place the inner div in the viertical and horizontal center of it's parent.
 
+## Video Lessons
+
+https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
+
+Watch videos: lesson 04 1-6
 
 ## Background Images
 
