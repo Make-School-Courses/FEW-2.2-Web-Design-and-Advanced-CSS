@@ -18,6 +18,12 @@ With the HTML above write the CSS that will add `arrow.png` to the right of the 
 
 USing the markup above add an the image `pattern.png` along the bottom edge. The image should be 10px and repeat on the x axis. 
 
+## Learning Objectives 
+
+- Use CSS Grid
+- Define grid with columns and rows
+- Map elements to grid cells
+
 ## Video Lessons
 
 https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX

@@ -30,6 +30,12 @@ body > div > p {
 - How big is the h1 in px?
 - How big is the p in px?
 
+## Learning Objectives 
+
+- Use the box model
+- Calculate the size of a box 
+- Use padding, border, and margin
+
 ## Video Lessons
 
 https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
