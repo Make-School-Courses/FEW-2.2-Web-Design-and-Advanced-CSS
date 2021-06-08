@@ -71,5 +71,5 @@ All frameworks provide common components. See home many of these you can incorpo
 ## Additional Resources
 
 - [9 CSS Frameworks](https://athemes.com/collections/best-css-frameworks/)
-- [Beinners Guide to CSS Frameworks](https://blog.zipboard.co/a-beginners-guide-to-css-front-end-frameworks-8045a499456b)
+- [Beginners Guide to CSS Frameworks](https://blog.zipboard.co/a-beginners-guide-to-css-front-end-frameworks-8045a499456b)
 
