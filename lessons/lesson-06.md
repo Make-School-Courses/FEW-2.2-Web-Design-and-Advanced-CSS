@@ -48,25 +48,39 @@ The framework will offer more styles and custom elements that are created by usi
 - cards
 - other features...
 
+## Making your Own Framework
+
+Study the frameworks above. Look at what they offer. You will make your own framework! 
+
 ## After Class
 
-There are two assignments this week:
+Your goal is to create your own CSS Framework. This will be a stylesheet that has all of the base styles that you might use in any project. 
 
-Your goal with this assignment is to use one of the CSS frameworks above to style the CSS Zen Garden Page. For this assignment, you can modify the CSS Zen Garden HTML file. 
+You can emulate the features in the frameworks above. Look at the ideas these contain, implement them in yout framework with your own ideas. 
 
-Download a new copy of the [CSS Zen Garden HTML source code](http://www.csszengarden.com/examples/index) to start this project.
+Get started by downloading the starter code:
 
-All frameworks provide common components. See home many of these you can incorporate into your work. Include at least the items listed below:
+https://github.com/Make-School-Labs/css-framework-starter). 
 
-- Type/Text styles. These include: 
-	- Font styles 
+Copy this repo above. It contains a single html file. You will add a stylesheet that styles contents of this file. 
+
+The HTML file contains a range of typeical elements that you will see in any web site. The stylesheet you create should style these things so they look better than the default styles! 
+
+What's in the markup? 
+
+- Type - This inlcudes: 
 	- Headings
-	- Lead
-	- Quotes
-- Cards
+	- paragraphs
+	- links
 - Buttons
-- Navbar
-- Header/footer
+- Forms - This inlcudes: 
+	- Forms
+	- Inputs
+	- Check Boxes
+- Colors - Color swatches showing the colors used by your framework
+- Nav Bar
+
+Your job is to create a default stylesheet that you could add to any project that will make it look better than the default HTML styles. 
 
 ## Additional Resources
 
