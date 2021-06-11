@@ -2,6 +2,21 @@
 
 ## Review
 
+```HTML
+<div class="container">
+	<div class="a">
+	<div class="b">
+	<div class="c">
+	<div class="d">
+</div>
+```
+
+- Using the markup above arrange child divs in two columns of equal size
+
+- Using the markup above arrange the child divs in four columns where the first column is 100px, the second is 50px, the third is 4rems, and the last is 120px
+
+- Use grid-template-areas to define 4 grid cells. Map the divs .a, .b, .c, and .d each to a different cell.
+
 ## Why you should know this?
 
 A frontend developer should have an understanding of CSS frameworks. There is a lot to choose from they all have their pros and cons you should be able to get in and use any of these. 
@@ -48,23 +63,23 @@ The framework will offer more styles and custom elements that are created by usi
 - cards
 - other features...
 
-## Making your Own Framework
+## Making your Framework
 
-Study the frameworks above. Look at what they offer. You will make your own framework! 
+Study the frameworks above. Look at what they offer. You will make your framework! 
 
 ## After Class
 
-Your goal is to create your own CSS Framework. This will be a stylesheet that has all of the base styles that you might use in any project. 
+Your goal is to create your CSS Framework. This will be a stylesheet that has all of the base styles that you might use in any project. 
 
-You can emulate the features in the frameworks above. Look at the ideas these contain, implement them in yout framework with your own ideas. 
+You can emulate the features in the frameworks above. Look at the ideas these contain, implement them in your framework with your ideas. 
 
 Get started by downloading the starter code:
 
 https://github.com/Make-School-Labs/css-framework-starter). 
 
-Copy this repo above. It contains a single html file. You will add a stylesheet that styles contents of this file. 
+Copy this repo above. It contains a single HTML file. You will add a stylesheet that styles the contents of this file. 
 
-The HTML file contains a range of typeical elements that you will see in any web site. The stylesheet you create should style these things so they look better than the default styles! 
+The HTML file contains a range of typical elements that you will see on any web site. The stylesheet you create should style these things so they look better than the default styles! 
 
 What's in the markup? 
 
