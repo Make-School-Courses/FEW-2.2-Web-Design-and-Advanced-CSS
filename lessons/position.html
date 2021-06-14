@@ -109,9 +109,11 @@
 
 		<div class="code-zone">
 <pre><code><span class="selector"></span> .demo {
-	display: <select id="display">
-		<option>block</option>
-		<option>flex</option>
+	position: <select id="position">
+		<option>static</option>
+		<option>relative</option>
+		<option>absolute</option>
+		<option>fixed</option>
 	</select>;
 	justify-content: <select id="justifyContent">
 		<option>flex-start</option>
@@ -159,7 +161,6 @@
 			boxesArray.push(el)
 			el.innerHTML = boxesArray.length
 		})
-
 
 		const styleOutput = document.querySelector('#style-output')
 

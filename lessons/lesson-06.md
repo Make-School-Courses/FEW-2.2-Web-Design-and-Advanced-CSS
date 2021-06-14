@@ -1,5 +1,13 @@
 # FEW 2.2 - Advanced CSS - Frameworks
 
+## Lesson Video
+
+Follow this lesson lecture in video form: 
+
+https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
+
+Watch Lesson 06 1 - 3
+
 ## Review
 
 ```HTML
@@ -13,7 +21,7 @@
 
 - Using the markup above arrange child divs in two columns of equal size
 
-- Using the markup above arrange the child divs in four columns where the first column is 100px, the second is 50px, the third is 4rems, and the last is 120px
+- Using the markup above arrange the child divs in four columns where the first column is 100px, the second is 50px, the third is 4rems, and the last takes up the rest of the available space
 
 - Use grid-template-areas to define 4 grid cells. Map the divs .a, .b, .c, and .d each to a different cell.
 
