@@ -4,7 +4,7 @@
 
 Follow this lesson lecture in video form: 
 
-https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
+https://youtube.com/playlist?list=PLoN_ejT35AEhE6SyoGzrLHPISssRaM-a4
 
 Watch Lesson 06 1 - 3
 
