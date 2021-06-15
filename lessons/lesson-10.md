@@ -59,6 +59,8 @@ There are a couple of ways to make things move with CSS.
 - `transition`
 - `@keyframe` and `animation`
 
+In a nutsheel animation is the changing of property values over time. 
+
 In a nutshell `transition` causes changes to CSS properties to change over time instead of changing instantly, `@keyframe` defines changes that are mapped out over time. Transition animates a change to a property, keyframes map out changes that are then applied to properties. 
 
 ### Transition

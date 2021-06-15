@@ -57,12 +57,12 @@ Each framework has its systems and paradigms. For the most part, they will work 
 
 - You will link to a stylesheet you may also have the option to include a JS file. 
 - Linking to the stylesheet will add a set of default styles that cover the common tags like:
-	- Base font and typography
-	- Headings
-	- Links
-	- Lists 
-	- Tables 
-	- form elements
+ - Base font and typography
+ - Headings
+ - Links
+ - Lists 
+ - Tables 
+ - form elements
 
 The framework will offer more styles and custom elements that are created by using a combination of markup/HTML and class names. 
 
@@ -77,7 +77,7 @@ Study the frameworks above. Look at what they offer. You will make your framewor
 
 ## After Class
 
-There are two assignment for this week. 
+There is two assignment for this week. 
 
 Assignment 1 - Create a version of the CSS Zen Garden page using a CSS Framework. You can choose your favorite framework, it's up to you. With this assignment you are allowed to make any changes you like to zen garden HTML markup. 
 
@@ -99,7 +99,7 @@ https://github.com/Make-School-Labs/css-framework-starter).
 
 Copy this repo above. It contains a single HTML file. You will add a stylesheet that styles the contents of this file. 
 
-The HTML file contains a range of typical elements that you will see on any web site. The stylesheet you create should style these things so they look better than the default styles! 
+The HTML file contains a range of typical elements that you will see on any website. The stylesheet you create should style these things so they look better than the default styles! 
 
 What's in the markup? 
 

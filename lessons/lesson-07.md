@@ -228,7 +228,7 @@ Let's use the primary color for links:
 
 ```CSS
 a {
- color: /* primary color here */;
+  color: /* primary color here */;
 }
 ```
 
@@ -353,7 +353,7 @@ button {
   --bg-color: var(--foreground-color);
   --fg-color: var(--primary-color);
 
- ...
+  ...
 }
 ```
 
@@ -382,3 +382,4 @@ Your framework should support these features:
 ## Additional Resources
 
 - https://css-tricks.com/a-complete-guide-to-custom-properties/
+
