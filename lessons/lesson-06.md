@@ -77,6 +77,18 @@ Study the frameworks above. Look at what they offer. You will make your framewor
 
 ## After Class
 
+There are two assignment for this week. 
+
+Assignment 1 - Create a version of the CSS Zen Garden page using a CSS Framework. You can choose your favorite framework, it's up to you. With this assignment you are allowed to make any changes you like to zen garden HTML markup. 
+
+Study the way the framework operates. Ask yourself these questions:
+
+- What tags does it style? No need for a class name? 
+- What markup is required? Sometimes to get something to work you need to combine certain tags and may have to include a class name. 
+- How are class names used? 
+
+Aaaignment 2 - 
+
 Your goal is to create your CSS Framework. This will be a stylesheet that has all of the base styles that you might use in any project. 
 
 You can emulate the features in the frameworks above. Look at the ideas these contain, implement them in your framework with your ideas. 
@@ -103,7 +115,7 @@ What's in the markup?
 - Colors - Color swatches showing the colors used by your framework
 - Nav Bar
 
-Your job is to create a default stylesheet that you could add to any project that will make it look better than the default HTML styles. 
+Your job is to create a default stylesheet that you could add to any project that will make it look better than the default HTML styles.
 
 ## Additional Resources
 
