@@ -278,6 +278,8 @@ Links on the navbar should be styled. Be sure to include a hover style.
 
 ## Challenge: Navbar
 
+The goal of this assignment is to add a navbar to your CSS Framework. 
+
 Define a navbar style. Use the example code above as a starting point. Feel free to customize this as much as you like! 
 
 - Use a class name for the navbar. `navbar` might be a good choice since anyone can guess this! 
@@ -285,6 +287,8 @@ Define a navbar style. Use the example code above as a starting point. Feel free
 - Think about the background color and the text color. 
 - Navbars will have links. Think about these will appear in the navbar. 
 - Include a title style. 
+
+Submit your CSS Framework to GradeScope. 
 
 ## After Class
 

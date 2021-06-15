@@ -232,11 +232,9 @@ a {
 }
 ```
 
-## Design some buttons 
+## Design a Button
 
-Your framework needs a good button design: 
-
-### Design a Button s
+Your framework needs some buttons. 
 
 The default button style is not very interesting it's also pretty small. Giving the button some color and making it a little larger will make it easier to use. 
 
@@ -363,7 +361,9 @@ Now you can change the colors of all buttons and other elements that use the `--
 
 ## After Class
 
-Work on your CSS Framework. be sure to use as many ideas from the class discussion above as you can! This includes CSS Custom properties, the ideas around styling buttons. Fonts and typographical styles. 
+Continue working on your CSS Framework. Use the ideas from this lesson to add some button styles! 
+
+Work on your CSS Framework. be sure to use as many ideas from the class discussion above as you can! 
 
 Your framework should support these features:
 

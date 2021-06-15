@@ -4,7 +4,7 @@ Styling controls like buttons and form elements provide some extra challenges an
 
 ## Why you should know this?
 
-Form elements and controls are points of interaction in your applications. These need to be extra engaging. Hard to use and confusing forms risk losing potential users for application and customers for your business. 
+Form elements and controls are points of interaction in your applications. These need to be extra engaging. Hard to use and confusing forms risk losing potential users for application and customers for your business.
 
 ## Learning Objectives
 
@@ -50,12 +50,15 @@ Selectors:
 input[type=text], 
 input[type=email], 
 input[type=password], 
+input[type=number], 
 textarea {
   /* Your styles here */
 }
 ```
 
-Use these properties: 
+Why these form elements? `<input type="button">` is a thing, it creates a button. Also `<input type="radio">` and `<input type="checkbox">` exist. The inputs listed above all create a single line text input. Though these act differently they all appear as a single line of text entry. 
+
+When styling your inputs use these properties: 
 
 - Typography
   - `font-size`
@@ -77,6 +80,7 @@ Let's talk about focus. An input has focus when the keyboard can enter text. You
 input[type=text]:focus, 
 input[type=email]:focus, 
 input[type=password]:focus, 
+input[type=number]:focus,
 textarea:focus {
   /* Your styles here */
 }
@@ -88,7 +92,7 @@ https://a11yproject.com/posts/never-remove-css-outlines/
 
 `outline: none !important;`
 
-If you don't like this replace it with your style. Don't remove it!
+Many people don't like the outline. If you don't like this replace it with your own style. Don't remove it!
 
 ## Challenge 
 
@@ -242,6 +246,8 @@ Follow the custom checkbox example. Here `:after` is used to add the checkmark. 
 The `:checked` pseudo-class applies when a check box or a radio button is currently selected. 
 
 ## After Class
+
+Wrap up your CSS Framework styles by styling the form elements. Submit your completed framework to GradeScope. 
 
 - Add styles for input elements to your framework. See [Challenges: Input](#challenge-inputs)
 - Add form layout styles. See [Challenges: Forms](#challenge-forms)

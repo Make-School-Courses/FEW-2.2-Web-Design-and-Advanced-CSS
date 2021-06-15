@@ -87,7 +87,7 @@ Study the way the framework operates. Ask yourself these questions:
 - What markup is required? Sometimes to get something to work you need to combine certain tags and may have to include a class name. 
 - How are class names used? 
 
-Aaaignment 2 - 
+Assignment 2 - 
 
 Your goal is to create your CSS Framework. This will be a stylesheet that has all of the base styles that you might use in any project. 
 
