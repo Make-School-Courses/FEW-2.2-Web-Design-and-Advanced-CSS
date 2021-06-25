@@ -13,6 +13,10 @@ Form elements and controls are points of interaction in your applications. These
 1. Use attribute selector
 1. Use parent element to control the layout of children
 
+## Review 
+
+- 
+
 ### Form elements 
 
 Form elements are `input`, `textarea`, radio button, and checkbox. Your goal today is to style these elements. 

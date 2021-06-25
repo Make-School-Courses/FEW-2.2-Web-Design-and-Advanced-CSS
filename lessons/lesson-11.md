@@ -30,11 +30,11 @@ With this style:
 
 ```CSS
 div::before {
- content: "Hello";
+	content: "Hello";
 }
 
 div::after {
- content: "World";
+	content: "World";
 }
 ```
 
@@ -48,9 +48,9 @@ You can think of DOM like this:
 
 ```HTML
 <div>
- <span>Hello</span>
- *
- <span>World</span>
+	<span>Hello</span>
+	*
+	<span>World</span>
 </div>
 ```
 
@@ -58,9 +58,9 @@ Though the inspector will show:
 
 ```HTML
 <div>
- ::before
- *
- ::after
+	::before
+	*
+	::after
 </div>
 ```
 
@@ -74,24 +74,24 @@ Making fancy blockquote styles is a possible application. Imagine you want to ad
 
 ```HTML
 <style>
- blockquote::before {
- content: open-quote;
- font-size: 3em;
- color: tomato;
- }
- blockquote::after {
- content: close-quote;
- font-size: 3em;
- color: tomato;
- }
- blockquote {
- /* Set the quote style */
- quotes: "\201C""\201D""\2018""\2019";
- }
+	blockquote::before {
+		content: open-quote;
+		font-size: 3em;
+		color: tomato;
+	}
+	blockquote::after {
+		content: close-quote;
+		font-size: 3em;
+		color: tomato;
+	}
+	blockquote {
+		/* Set the quote style */
+		quotes: "\201C""\201D""\2018""\2019";
+	}
 </style>
 
 <blockquote>
- The way to get started is to quit talking and begin doing. 
+	The way to get started is to quit talking and begin doing. 
 </blockquote>
 -Walt Disney
 ```
@@ -110,27 +110,27 @@ The solution is to generate the extra element with ::after.
 
 ```HTML
 <style>
- .add-box {
- display: inline-block;
- color: tomato;
- }
- .add-box::after {
- content: "";
- display: block;
- width: 0;
- height: 3px;
- background-color: tomato;
- transition: 400ms;
- }
- .add-box:hover::after {
- width: 100%;
- }
+	.add-box {
+		display: inline-block;
+		color: tomato;
+	}
+	.add-box::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 3px;
+		background-color: tomato;
+		transition: 400ms;
+	}
+	.add-box:hover::after {
+		width: 100%;
+	}
 </style>
 
 <blockquote>
- If you set your goals <span class="add-box">ridiculously</span> high and it's a failure, you will fail above everyone else's <span class="add-box">success</span>. 
- -James Cameron
+	If you set your goals <span class="add-box">ridiculously</span> high and it's a failure, you will fail above everyone else's <span class="add-box">success</span>. 
 </blockquote>
+-James Cameron
 ```
 
 ![fancy hover](images/hover-effecft.gif)
@@ -155,18 +155,18 @@ Usually you will want to markup up checkboxes and radio buttons like this:
 
 ```HTML
 <label>
- <input type="checkbox">
- Pickles?
+	<input type="checkbox">
+	Pickles?
 </label>
 
 <label>
- <input type="radio" name="choice" checked>
- Converse
+	<input type="radio" name="choice" checked>
+	Converse
 </label>
 
 <label>
- <input type="radio" name="choice">
- Vans
+	<input type="radio" name="choice">
+	Vans
 </label>
 ```
 
@@ -186,18 +186,18 @@ To make this possible we need to add a little more markup. The markup presented 
 
 ```HTML
 <label>
- <input type="checkbox">
- <span>Pickles?</span>
+	<input type="checkbox">
+	<span>Pickles?</span>
 </label>
 
 <label>
- <input type="radio" name="choice">
- <span>Converse</span>
+	<input type="radio" name="choice">
+	<span>Converse</span>
 </label>
 
 <label>
- <input type="radio" name="choice">
- <span>Vans</span>
+	<input type="radio" name="choice">
+	<span>Vans</span>
 </label>
 ```
 
@@ -207,15 +207,15 @@ Since we are going to include this in our frameworks it's probably best to make 
 
 ```HTML
 <label class="frmwrk-checkbox">
- ...
+	...
 </label>
 
 <label class="frmwrk-radio">
- ...
+	...
 </label>
 
 <label class="frmwrk-radio">
- ...
+	...
 </label>
 ```
 
@@ -226,37 +226,37 @@ You'll need 5 selectors. Here they without their inner styles. Each of these per
 ```CSS
 /* checkbox button base element */
 .frmwrk-checkbox > span {
- ...
+	...
 }
 /* Selected "checkmark" styles */
 .frmwrk-checkbox > input[type=checkbox] + span::before {
- ... 
+	... 
 }
 /* Selected "mark" styles */
 .frmwrk-checkbox > input[type=checkbox]:checked + span::before {
- ...
+	...
 }
 /* Outline */
 .frmwrk-checkbox > input[type=checkbox] + span::after {
- ...
+	...
 }
 /* Hide the input */
 .frmwrk-checkbox input {
- ...
+	...
 }
 ```
 
 - base element - sets the style of the label and its children
- - .frmwrk-checkbox > span
+	- .frmwrk-checkbox > span
 - Selected "checkmark" - Sets the style for the pseudo-element that appears in the box or circle. The selector here selects the ::before an element of the span that immediately follows the input with type=checkbox
- - .frmwrk-checkbox > input[type=checkbox] + span::before
- - https://www.w3schools.com/cssref/sel_element_pluss.asp
+	- .frmwrk-checkbox > input[type=checkbox] + span::before
+	- https://www.w3schools.com/cssref/sel_element_pluss.asp
 - Selected "mark" - Sets the style for the checkmark when the mark is visible or selected. The selector here says: select the ::before the pseudo-element that belongs to the span that immediately follows an input with type=checkbox. 
- - .frmwrk-checkbox > input[type=checkbox]:checked + span::before
- - https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
+	- .frmwrk-checkbox > input[type=checkbox]:checked + span::before
+	- https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
 - Outline - Styles the box or circle that contains the mark. The selector here says to select an input that has type=checkbox that is a child of an element with class frmwrk-checkbox. 
- - .frmwrk-checkbox > input[type=checkbox] + span::after
- - https://www.w3schools.com/css/css_attribute_selectors.asp
+	- .frmwrk-checkbox > input[type=checkbox] + span::after
+	- https://www.w3schools.com/css/css_attribute_selectors.asp
 
 With these selectors, you're ready to make some custom checkboxes or radio buttons. 
 
@@ -279,7 +279,7 @@ Create your custom checkboxes and radio buttons. Add these to your CSS framework
 
 ## After Class 
 
-Use the ideas above and add styles for "fancy" block quotes to your CSS framework. 
+Use the ideas above and add styles for "fancy" block quotes to your CSS framework.
 
 ## Additional Resources
 

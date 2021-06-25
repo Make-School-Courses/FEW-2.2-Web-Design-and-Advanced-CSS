@@ -18,7 +18,7 @@ https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7
 
 ## Identify some Examples of motion
 
-Look for motion in software products that you use. 
+Look for motion in apps and website that you use. 
 
 Pair and share these with your partner. 
 
@@ -59,7 +59,7 @@ There are a couple of ways to make things move with CSS.
 - `transition`
 - `@keyframe` and `animation`
 
-In a nutsheel animation is the changing of property values over time. 
+In a nutshell animation is the changing of property values over time. 
 
 In a nutshell `transition` causes changes to CSS properties to change over time instead of changing instantly, `@keyframe` defines changes that are mapped out over time. Transition animates a change to a property, keyframes map out changes that are then applied to properties. 
 
@@ -133,7 +133,7 @@ animation-duration: 5s;
 animation-iteration-count: infinite;
 ```
 
-## Easing 
+## Easing - Timing Function
 
 Easing describes the change in the rate of motion. When things speed up, think of a car starting from a stop sign, we say they are easing in. When things slow down, think of a car slowing as it reaches a stop sign, we say they are easing out. 
 
@@ -152,7 +152,7 @@ Pair up with someone you haven't paired with in-class before and take a look at 
 
 See the [example](lesson-02-example.html)
 
-## Homework: Animation
+## After Clss
 
 Follow these video tutorials. These videos walk through how to solve all of the challenges in the homework. These also cover ideas that go beyond what's in the homework. 
 
@@ -167,12 +167,6 @@ Add some motion to your CSS drawing/logo:
 - [Animate your Drawing](../Assignments/assignment-04-Animate-Logo.md)
 
 It's easiest to use `transition` for interactive animations on hover or click and `@keyframes` for cycling animations or complex animations. See the link below for a detailed description of the homework:
-
-## Wrap Up
-
-- Review 
-	- CSS `transition`
-	- CSS `@keyframes`
 
 ## Additional Resources
 
