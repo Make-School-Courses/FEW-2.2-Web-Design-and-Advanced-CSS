@@ -1,224 +1,203 @@
-# FEW 2.2 - Advanced CSS - Web Components part 2
+# FEW 2.2 - Advanced CSS - Exploring Web Components
 
-Getting started building your own components. 
+Continuing the discussion of Web Components from lesson 8. 
 
 ## Why you should know this?
 
-Web Components are new and possibly game changing web technology. They sit in the center of frontend development. If you want to be a frontend developer experience with Web Components will be useful. 
+Web Components are probably the most important new and emerging web technology. They will take some practice to master. They are also not complete and will evolve. Learning this now will give important background into this new realm. 
 
 ## Learning Objectives 
 
-1. Build simple web components
-1. Define custom tags that encapsulate functionality
-1. Use attributes to configure components
-1. Reflect properties and attributes 
-1. Use Web Component Lifecycle methods
+1. Identify major features of Web Components
+1. Create elements with JS
+1. Style elements with JS
+1. Build Web Components
 
-## Web Components
+## Getting Started with Web Components
 
-Web Components allow you to define new tags with encapsulated functionality. The goal of this class is to begin exploring web components by creating your own.
+Work through the challenges here: https://github.com/Make-School-Labs/simple-component
 
-A good start to getting a handle on what Web Components are and how they work is to make a few simple components for yourself!
+Follow this by studying the guide here:
 
-### Isolating your Code
+- https://javascript.info/webcomponents-intro
+- https://javascript.info/custom-elements
+- https://javascript.info/shadow-dom
 
-Since all elements in JS are global it's possible that code from other files might interfere with the code you have written. This problem can be prevented by wrapping your code in an anonymous function. 
+The goal is to create a custom element/web component that will be included 
+with your CSS framework.
+
+Anyone using your web CSS framework would get a set of styles. Adding your JS they will also be able to use your custom elements.
+
+These components are fairly simple. You'll be tackling more complex components next week.
+
+## Web Components Concepts
+
+### Naming custom elements
+
+When creating web components you are creating new tags. It's possible that the names can clash with existing names. For this reason, custom element names must use a hyphen (-). 
+
+- `my-component` good
+- `frmwork-blink` good
+- `mycomponent` bad
+- `blink` bad
+
+When using custom tags you must use a closing tag, even if the tag is empty. 
+
+- `<my-component></my-component>` good
+- `<frmwrk-blink></frmwrk-blink>` good
+- `<my-component />` bad
+- `<frmwrk-blink>` worse
+
+It's a good idea to prefix all of your names with the name of your framework. For example, if Bootstrap used web components all of their tags could start with `bs-`:
+
+```html
+<bs-carousel></bs-carousel>
+```
+
+### Extend HTMLElement and define a new tag
+
+Extend HTMLElement and call super in the constructor. 
+
+Call `customElements.define()` with the name of your new tag and the class that will provide the JS for the new tag.
+
+```JS 
+// Create a class that backs the new element
+class MyElement extends HTMLElement {
+  constructor() {
+    super()
+      ...
+    }
+  ...
+}
+
+// Define the new element
+customElements.define('my-element', MyElement)
+```
+
+### Property names 
+
+Since you are extending HTMLElement you'll need to be careful about overriding properties that exist in HTMLElement. 
+
+Best practice: Use an underscore in front of all of the property names you define. 
+
+```JS 
+this._name = 'widget' // good
+this.name = 'wonky' // bad
+```
+
+### Shadow Root 
+
+Create a shadow root in your constructor. Probably a good idea to store this in a property. 
+
+This attaches a shadow root and stores it in a property: `_shadowRoot`
+
+```JS 
+...
+  constructor() {
+    super()
+    this._shadowRoot = this.attachShadow({ mode: 'open' })
+      ...
+    }
+ ...
+```
+
+## Lifecycle Methods 
+
+Use lifecycle methods to initialize and deinitialize your web component. 
+
+The **connectedCallback()** method is called when the component is added to the DOM. Use this to start timers set initial property values, measure the size the size of the component. 
+
+The **disconnectedCallback()** method is called when the component is removed from the DOM. Use this to clean up. Do things like stop timers, and free resources that you may be using. 
 
 ```JS
-function myCode() {
-	// Your code here
-	const x = 99
-	// Variables defined here are scoped to this function
-	function otherFunction() {
-		// Other functions can be defined in other other functions
-	}
-	// ...
-}
-
-myCode() // Must call this function!
-```
-
-For the code to run you'll have to call that function. You could also call the function more than once, which might cause problems. Solve these issues with a Immediately Invoked Function Expression. 
-
-```JS 
-// Start with two sets of parenthesis
-()() 
-
-// Put a function in the first 
-(function() { 
-	// ... Code here ... 
-})()
-```
-
-### Templates
-
-One of the problems with Web Components is creating elements and styling those elements. The process is rather verbose compared to creating elements in an .html file and writing CSS in a .css file.
-
-Web Components provides a solution: templates. 
-
-You may not need this if the markup in your component is simple. 
-
-Think of a template as some markup you can use in your shadowroot. This can also contain styles in a style tag. 
-
-A template is an HTML element that is not displayed. The template is used as block of code you can duplicate when needed. 
-
-Best practice: define a template in a variable outside of your class inside the IFFE.
-
-```JS 
-(function() {
-	// Create a template
-	const template = document.createElement('template')
-	// Set the content of the template
-  template.innerHTML = `
-    <style>
-      /* some styles ... */
-    </style>
-    <div class="container">
-      <!-- some markup ... -->
-    </div>
-	`
-	
-  class MyComponent extends HTMLElement {
-		constructor() {
-			super() 
-			// Create a shadow root node
-			const tempNode = template.content.cloneNode(true)
-			this._shadowRoot = this.attachShadow({ mode: 'open' });
-			this._shadowRoot.appendChild(tempNode)
-			// Get a reference to an element from your template
-			this._container = this._shadowroot.queryselector('.container')
-		}
-	}
-
-})()
-```
-
-What happened here? 
-
-- At the top you defined a template element. This inclduded a style tag and some markup.
-- In the constructor of MyComponent you cloned the template, created the shadow root, and appended the cloned node to the shadow root. This created the HTML markup that will be used by this component. 
-- The last line shows how to access elements in the shadow root create from a template. It's same methods you have used in the past. 
-
-You can see a live example of templates working with a web component here: 
-
-https://github.com/Make-School-Labs/simple-component/tree/master/simple-components-templates/01-counter-template
-
-### Lifecycle methods 
-
-Use these to setup and take down your components. Lifecycel methods are used to initialize resources, and free up resources when you're done using them. Like the name implies lifecycle methods are triggered over the life of a component.
-
-- `constructor()` - this is called when your component is initialized. 
-- `connectedCallback()` - this is called when the component is added to the DOM tree. 
-- `disconnectedCallback()` - this is called when the component is removed from the DOM tree. 
-- `attributeChangedCallback()` - this is invoked when an attribute on the element is changed. 
-
-Use the constructor to initialize class properties and create the shadow root. 
-
-Use `connectedCallback()` to handle things that should happen when the component is added to the DOM. For example adding a timer. 
-
-Use `disconnectedCallback()` to clean up when a component is removed from the DOM. For example remving a timer. 
-```JS 
-...
-class MyComponent extends HTMLElement {
-	...
-	connectedCallback() {
-		// Create a timer and save a reference 
-		this._timer = setInterval(() => {
-			this._nextImg()
-		}, 3000)
-	}
-
-	disconnectedCallback() {
-		// Clear your timer
-		clearInterval(this._timer)
-	}
-	...
-}
-```
-
-### Attributes 
-
-From outside you only have the tag itself to work with. It's not a good solution to edit source code if you need to make changes to a component. In other words you shouldn't expect developers to edit the .js file. 
-
-Developers using your components will use the tag and they can configure the tag with attributes. For example: 
-
-`<my-counter value="5" min="0" max="10" step="1"></my-counter>`
-
-Internally your component can access attribute values with `this.getAttribute(name)`. It's probably best to store these in properties rather than get them with `getAttribute()` each time they are needed. For example: 
-
-```JS 
-...
-class MyComponent extends HTMLElement {
-	constructor() {
-		this._value = this.getAttribute('value')
-		this._min = this.getAttribute('min')
-		this._max = this.getAttribute('max')
-		this._step = this.getAttribute('step')
-	}
-}
-```
-
-Attributes can change. They can be set from outside the component. Your component observe these changes with: `attributeChangedCallback(name, oldValue, newValue)`
-
-If you are using attributes to confgure your component. You'll need to list the attribute names that are being observed and listen for changes.
-
-```js
-static get observedAttributes() {
-	return ['value', 'min', 'max', 'step'];
-}  
-```
-
-Listening for changes and look at the name of the property that changed with `attributeChangedCallback(name, oldValue, newValue)`. 
-
-```js
-class MyCounter extends HTMLElement {
-  ...
-  static get observableAttibutes() {
-    return ['value', 'min', 'max', 'step']
+class BlinkText extends HTMLElement {
+  constructor() {
+    super();
+    ...
   }
-  ...
-   attributeChangedCallback(name, oldValue, newValue) {
-    if (name === 'value') {
-			this._value = parseInt(newValue)
-			this._update()
-    } else if (name === 'min') {
-			this._min = parseInt(newValue)
-		} else if (name === 'max') {
-			this._max = parseInt(newValue)
-		} else if (name === 'step') {
-			this._step = newValue
-		}
+
+  connectedCallback() {
+    // When the component is added to the DOM
   }
-  ...
+
+  disconnectedCallback() {
+    // When the component is removed from the DOM
+  }
+}
+
+customElements.define('blink-text', BlinkText);
 ```
 
-You can see these methods at work in a live example here: 
+## handling attributes 
 
-https://github.com/Make-School-Labs/simple-component/tree/master/simple-components-templates/01-counter-template
+Attrbites appear in tags like this: 
 
-## Activity 
+```html
+<my-element time="1000" min="0" max="5">
+  ...
+</my-element>
+```
 
-After solving the challenges in the web components examples: https://github.com/Make-School-Labs/simple-component move on to completing your your web component. 
+The attributes are: time, min, and mac above. 
 
-Challenges: 
+Attributes allow us to pass data into our custom elements. 
 
-- Define a template and use it your component. 
-- Define styles in the template. 
-- Use attributes to comfigure your component. 
+Internally the custom element needs to define when attributes it observes. Some attributes don't need to be observed for example: class, and id. 
 
-## Additional Resources
+```JS
+class BlinkText extends HTMLElement {
+  constructor() {
+    super();
+    ...
+  }
 
-See the examples. These include starter code, and solutions. 
 
-https://github.com/Make-School-Labs/simple-component
+  // Name the observed attribues 
+  static get observedAttributes() {
+    return ['time', 'min', 'max'];
+  }  
+
+  // Handle changes to observed attributes
+  attributeChangedCallback(name, oldValue, newValue) {
+    
+  }
+}
+
+customElements.define('blink-text', BlinkText);
+```
+
+Handle changes to attributes by looking at the name to see which attribute has changed, then compare the old and new values to decide how to change the attribute. 
+
+```JS
+attributeChangedCallback(name, oldValue, newValue) {
+  // If the attribute changed was named time
+  if (name === 'time') {
+    // parse the new value, we want a number
+    const time = parseInt(newValue)
+    if (isNanN(time)) {
+      // If it's not a number stop!
+      return
+    }
+    // If it is a number use that new value
+    this._time = time
+    this._clearTimer()
+    this._addTimer()
+  }
+}
+```
+
+## Homework: Continue working on your framework
+
+Continue working on your CSS framework. 
 
 ## Minute-by-Minute [OPTIONAL]
 
-| **Elapsed** | **Time**  | **Activity**              |
+| **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------------------- |
-| 0:00        | 0:05      | Objectives                |
-| 0:05        | 0:15      | Overview                  |
-| 0:20        | 0:45      | In Class Activity I       |
-| 1:05        | 0:10      | BREAK                     |
-| 1:15        | 0:45      | In Class Activity II      |
-| TOTAL       | 2:00      |                           |
+| 0:00 | 0:05 | Objectives |
+| 0:05 | 0:15 | Overview |
+| 0:20 | 0:45 | In Class Activity I |
+| 1:05 | 0:10 | BREAK |
+| 1:15 | 0:45 | In Class Activity II |
+| TOTAL | 2:00 | |
+

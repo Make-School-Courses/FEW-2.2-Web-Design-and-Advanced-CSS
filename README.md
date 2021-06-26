@@ -76,6 +76,15 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 10 Animation]: lessons/lesson-10.md
 [Lesson 11 Before and after]: lessons/lesson-11.md
 
+[Lesson 12]: lessons/lesson-12.md
+[Lesson 13]: lessons/lesson-13.md
+[Lesson 14]: lessons/lesson-14.md
+[Lesson 15]: lessons/lesson-15.md
+[Lesson 16]: lessons/lesson-16.md
+[Lesson 17]: lessons/lesson-17.md
+[Lesson 18]: lessons/lesson-18.md
+[Lesson 19]: lessons/lesson-19.md
+
 [CSS Diner CSS ZenGarden Type]: lessons/lesson-01.md#after-class
 [CSS Zen Garden Card and Button]: lessons/lesson-03.md#after-class
 [CSS Zen Garden Background Images]: lessons/lesson-04.md#after-class
