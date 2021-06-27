@@ -19,7 +19,7 @@ Hints:
 - The box is `100px` by `100px`
 - The circle is `30px` by `30px`;
 - Use `relative` and `absolute` position to position the circle
-- Use ::before to add the `$`
+- Use `::before` to add the `$`
 
 ## What are preprocessors?
 
@@ -120,7 +120,17 @@ SASS also supports flow control. These are features you find in other languages 
 
 ## After Class
 
+Assignment 1: 
 
+Follow the videos here for lessons 11 and 12. Complete the example created there, it looks like an animated flower. Soleve the SASS problems. Feel free to apply your own ideas to this exercise, Submit it to GradeScope. 
+
+Assignment 2: 
+
+Find a past project and apply SASS to that project. Rewrite and compile the stylesheet with SASS. Use the following: 
+
+- SASS Variables
+- Use SASS operators
+- Use @for
 
 ## Additional Resources
 
