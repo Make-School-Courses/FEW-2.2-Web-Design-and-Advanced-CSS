@@ -2,7 +2,7 @@
 
 Preprocessors intro
 
-## Review 
+## Review
 
 ```HTML
 <div class="product">
