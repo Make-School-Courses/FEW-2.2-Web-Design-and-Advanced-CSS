@@ -65,7 +65,7 @@ Along the way be sure to use the following SASS features:
 	- sizes
 - Use a @for loop - Use a loop to caluclate values or styles that are repeated in code. 
 - Use a list - Create a SASS list. 
-- Look through the list SASS functions and see if you can incorporate any of these into your work
+- Look through the list SASS functions and see if you can incorporate any of these into your work.
 
 ## Additional Resources
 

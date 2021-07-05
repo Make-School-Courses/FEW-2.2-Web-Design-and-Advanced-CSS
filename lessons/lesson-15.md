@@ -30,7 +30,22 @@ Anyone using your web CSS framework would get a set of styles. Adding your JS th
 
 These components are fairly simple. You'll be tackling more complex components next week.
 
+Read about how GitHub is using web components: https://github.blog/2021-05-04-how-we-use-web-components-at-github/
+
 ## Web Components Concepts
+
+The Shadow DOM is a another DOM that is hidden from rest of your HTML document. Often you will need to add extra markup to support complex elements and interactions. The shadow DOM allows you to create these elements and hide them from the rest of the HTML document. 
+
+The shadow DOM is in use by many existing HTML elements like the `<input>`. Inspect this for yourself. Create an HTML document with:
+
+```HTML
+<input type="text" />
+<input type="checkbox" />
+<input type="range" />
+<input type="color" />
+```
+
+Using the inspector find the `shadow content` or `Shadow-Root`. You will need to make the this visible by checking `Show user agent Shadow DOM` in Chrome under settinging in the inspector. 
 
 ### Naming custom elements
 
