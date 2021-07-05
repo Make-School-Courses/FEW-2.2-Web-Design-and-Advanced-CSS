@@ -13,6 +13,75 @@ Web Components are probably the most important new and emerging web technology. 
 1. Style elements with JS
 1. Build Web Components
 
+## What are web components?
+
+Just like all a lot of household objects web pages are made up of component parts. For example a chair might be made up of some wheels, a frame, and a cushion. A web page might be made up of text blocks, navbars, buttons, and images. 
+
+We handle all of these things with HTML elements/tags. Some of these elements are very specialized and come with built in functionality.
+
+For example, think about the `<input>` element. This can appear in many different forms and each form comes with special functions. Try these: 
+
+```HTML
+<input type="text" />
+<input type="checkbox" />
+<input type="range" />
+<input type="color" />
+```
+
+Some functionality doesn't exist in an HTML document. We have to make it work by creating a hierarchy of elements, styling those elements, and applying JavaScript to thos elements. 
+
+For an example think about the carousel in BootStrap. The markup looks like this: 
+
+```HTML
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+```
+
+What does this have to do with web components? In a nutshell web components are new tags that you define and encapsulate with in built functionality. 
+
+Imagine creating carousel above with a custom carousel tag like this: 
+
+```HTML
+<frmwrk-slides time="5000">
+	<img src="./images/kitten-0.jpeg" width="259" height="194">
+	<img src="./images/kitten-1.jpeg" width="257" height="196">
+	<img src="./images/kitten-2.jpeg" width="259" height="194">
+	<img src="./images/kitten-3.jpeg" width="275" height="183">
+	<img src="./images/kitten-4.jpeg" width="275" height="183">
+	<img src="./images/kitten-5.jpeg" width="275" height="183">
+</frmwrk-slides>
+```
+
+Here the tag `<frmwrk-slides>` defines the carousel, and all of the children become a carousel item. The `time` attribute determines the time between slides. 
+
+While the two examples are similar the second has less required markup and doesn't require that you add the correct class names in the correct places through out. 
+
+## Shadow DOM
+
+A core feature of web components is the Shadow DOM. The Shadow DOM is a another DOM that is hidden from rest of your HTML document. Often you will need to add extra markup to support complex elements and interactions. The shadow DOM allows you to create these elements and hide them from the rest of the HTML document. 
+
+The shadow DOM is in use by many existing HTML elements like the `<input>`. Inspect this for yourself. Create an HTML document with:
+
+```HTML
+<input type="text" />
+<input type="checkbox" />
+<input type="range" />
+<input type="color" />
+```
+
+Using the inspector find the `shadow content` or `Shadow-Root`. You will need to make the this visible by checking `Show user agent Shadow DOM` in Chrome under settinging in the inspector. 
+
 ## Getting Started with Web Components
 
 Work through the challenges here: https://github.com/Make-School-Labs/simple-component
@@ -31,21 +100,6 @@ Anyone using your web CSS framework would get a set of styles. Adding your JS th
 These components are fairly simple. You'll be tackling more complex components next week.
 
 Read about how GitHub is using web components: https://github.blog/2021-05-04-how-we-use-web-components-at-github/
-
-## Web Components Concepts
-
-The Shadow DOM is a another DOM that is hidden from rest of your HTML document. Often you will need to add extra markup to support complex elements and interactions. The shadow DOM allows you to create these elements and hide them from the rest of the HTML document. 
-
-The shadow DOM is in use by many existing HTML elements like the `<input>`. Inspect this for yourself. Create an HTML document with:
-
-```HTML
-<input type="text" />
-<input type="checkbox" />
-<input type="range" />
-<input type="color" />
-```
-
-Using the inspector find the `shadow content` or `Shadow-Root`. You will need to make the this visible by checking `Show user agent Shadow DOM` in Chrome under settinging in the inspector. 
 
 ### Naming custom elements
 
