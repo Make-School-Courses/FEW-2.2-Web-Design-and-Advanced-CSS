@@ -33,7 +33,9 @@ These cards have an image and text. **The cards should sit in a horizontal row.*
 
 ## 4 Style Colors
 
-To make the swatches visible I added width, height, and border. You should change these to fit your ideas. You need to present the colors in a grid. We have to be able to click these divs so they need to be big enough to click. Each div also needs to keep the class name: add-to-cart and the data-color and data-price attributes.
+The color swatches don't have any color at the moment. Your goal is to style them. Give them a background color and/or a border. You should arrange these with CSS grid. The size and number of columns and rows is up to you. 
+
+**What to do:** Arrange the color divs in the #swatches section in a grid. 
 
 ### 5 Genereate 100 colors
 
@@ -55,17 +57,25 @@ Possible solutions for this problem would be to use JS or SASS.
 ...
 ```
 
+**What to do:** Generate 100 colors. Make sure each color swatch has a unqiue color. 
+
 ## 6 Shopping cart 
 
 Clicking a color swatch adds it to the shopping cart. The cart is a list and each row is made up of some text, buttons, and an input. **You should style these.**
 
 In this step your goal is to style the form elements that show up in the shopping cart. 
 
+The cart displays when you click a swatch. You won't see it unless you click a swatch to add a swatch to the cart! 
+
+**What to do:** Style the shopping cart. There is text, an input and three buttons here. All three of these things should have a style! 
+
 ## 7 Style the contact form
 
 At the bottom of the page is a contact form. Your goal is style this. 
 
 None of the elemenets should use the default styles and all element should look the same. 
+
+**What to do:** Style the form elements. There are several inputs and a button, style all of these. 
 
 ## 8 Ticker Tape 
 
@@ -94,8 +104,6 @@ this._shadowRoot = this.attachShadow({ mode: 'open' });
 this._shadowRoot.appendChild(tempNode)
 ```
 
-## Thanks! 
+## Submit your work
 
-Thanks for class please fill out the course evaluation if you haven't already: 
-
-https://make.sc/few_2.2_survey
+Submit your work on GradeScope. 
