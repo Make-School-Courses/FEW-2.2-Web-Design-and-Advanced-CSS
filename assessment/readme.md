@@ -1,6 +1,6 @@
 # FEW 2.2 Final Assessment 
 
-Your job is to style the color.com web site. It's lacking in style. Do your best. Use your CSS framework as starting point. 
+Your job is to style the color.com web site. Do your best. Use your CSS framework as starting point. You don't have to write all of the styles from scratch! 
 
 Feel free to modify the HTML markup on the page in anyway that you wish. You must not break the fucntionality! There are two things that happening here: 
 
@@ -11,23 +11,29 @@ Use your CSS framework! Your framework styles should cover much of the problems 
 
 Problems 5 and 7 will not be covered by your framework. You'll need to solve these from scratch. 
 
-## 1 Type 
+## 1 Typography
 
 Set the font style for text and headings. All fonts on the page should styled. I should not see the default Times New Roman anywhere! 
+
+**What do to:** Style the text including the headings. 
 
 ## 2 Style The Navbar 
 
 Style the navbar and links. The navbar should include the links and the page title.
 
-Extra credit: Make the navbar sticky.
+**What to do:** Create a navbar along the top of the page. It should be a horizontal bar with containng the links in `section#nav`
+
+**Extra credit:** Make the navbar sticky. A sticky navbar always stays at the top of the page even when the page scrolls. 
 
 ## 3 Style cards 
 
-These cards have an image and text. **The cards should sit in a horizontal row.**
+These cards have an image and text. **The cards should sit in a horizontal row.** 
+
+**What to do:** In `section#popular` there are three divs each containing an image and a paragraph. Style these so that look like cards. The cards should be arranged in a horizontal row, use flex. 
 
 ## 4 Style Colors
 
-To make the swatches visible I added width, height, and border. You should change these to fit your ideas. You need to present the colors in rows or a grid. Remember we have to be able to click them and these divs so they need to be big enough to click. Each div also needs to keep the class name: add-to-cart and the data-color and data-price attributes.
+To make the swatches visible I added width, height, and border. You should change these to fit your ideas. You need to present the colors in a grid. We have to be able to click these divs so they need to be big enough to click. Each div also needs to keep the class name: add-to-cart and the data-color and data-price attributes.
 
 ### 5 Genereate 100 colors
 
